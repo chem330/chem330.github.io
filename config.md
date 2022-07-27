@@ -16,10 +16,6 @@ generate_rss = true
 website_title = "chem330"
 website_descr = "CHEM 330: Aquatic Chemistry"
 website_url   = "https://chem330.github.io"
-
-# prepath for GH Pages
-
-@def prepath = "chem330"
 +++
 
 <!--
