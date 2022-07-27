@@ -13,9 +13,13 @@ ignore = ["node_modules/"]
 
 # RSS (the website_{title, descr, url} must be defined to get RSS)
 generate_rss = true
-website_title = "CHEM 330: Aquatic Chemistry"
+website_title = "chem330"
 website_descr = "CHEM 330: Aquatic Chemistry"
 website_url   = "https://chem330.github.io"
+
+# prepath for GH Pages
+
+@def prepath = "chem330"
 +++
 
 <!--
