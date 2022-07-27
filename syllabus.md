@@ -43,7 +43,7 @@ To achieve a satisfactory grade, students will:
 
 **Alternative Book:** Harvey, D. *Analytical Chemistry 2.1* Chem Libre Texts ([Free online!](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_(Harvey)))
 
-**Lab Manual:** All lab activities are posted [online]({{site.baseurl}})
+**Lab Manual:** All lab activities are posted online.
 
 **Technology:** Students will need a laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx).   Students will be required to use [Julia](https://julialang.org/) + [Pluto](https://github.com/fonsp/Pluto.jl) and may wish to install these on their computer; both are freely available for for all operating systems.  Alternatively, student may use Julia + Pluto via WCU's STEM VCAT (officially supported option for the course).  A web browser and internet connection capable of streaming video will be necessary for submitting homework assignments and accessing course materials.
 
