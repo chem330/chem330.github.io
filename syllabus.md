@@ -11,7 +11,7 @@ title = "Syllabus"
 
 **Email:** [dfischer@wcu.edu](mailto:dfischer@wcu.edu)  
 
-**Availability:** Email and office hours are the best ways to find me; I'm typically available to respond to emails from late morning through about 9 PM during the week.
+**Availability:** Email and office hours are good ways to find me; I'm typically available to respond to emails from late morning through about 9 PM during the week.  I also hang out on the class [Discord server](https://discord.gg/QAZw8FWH).
 
 <!-- <a href="https://github.com/chem370/chem370.github.io/raw/master/assets/pdf/syllabus.pdf" target="blank">Download Syllabus as  PDF</a>  -->
 
@@ -19,9 +19,14 @@ title = "Syllabus"
 
 ## Overview 
 
-This course is an introduction to instrumental analysis in the chemistry lab.  Students will be introduced to components of the “analyst’s toolbox” through real-world scenarios, including spectroscopy, mass spectrometry, and chromatography.   Students will conduct sample preparation, instrument calibration, and qualitative and quantitative analysis using UV-visible spectroscopy (UV-vis), gas-chromatography/mass spectrometry (GC-MS), high-performance liquid chromatography (HP-LC), flame atomic absorption spectroscopy (FAAS), and Fourier-transform infrared spectroscopy (FT-IR).  Throughout the semester, students will also work to develop skills related to reproducible data analysis, scientific communication, and collaboration in the laboratory.  Prerequisites include CHEM-232 (Quantitative Analysis) and CHEM-242 (Organic Chemistry II).
+This course is an introduction to aquatic chemistry, with a focus on chemical analysis of aquatic samples and the fate and transport of chemicals in aquatic systems.  Throughout the semester, students will work to develop skills related to chemical analysis (both wet chemical and instrumental methods), reproducible data analysis, scientific communication, and collaboration in the laboratory and field.  Some prerequisite chemical knowledge will be expected (CHEM 140), but no advanced chemistry knowledge is necessary.
 
 ## Student Learning Outcomes 
+
+- Describe chemical interactions and transport phenomena that affect the distribution of natural and anthropogenic compounds in aquatic ecosystems.
+- Use structure and physical properties of compounds to predict the solubility, reactions, and distribution in aquatic ecosystems.
+- Predict phase transfer, transformation, and transport processes in aquatic ecosystems.
+- Understand the broad, interdisciplinary field of aquatic chemistry.
 
 To achieve a satisfactory grade, students will:
 

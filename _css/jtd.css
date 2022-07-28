@@ -5,6 +5,8 @@ https://github.com/pmarsceill/just-the-docs/blob/master/LICENSE.txt
 (MIT licensed)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -22,7 +24,7 @@ body {
   margin: 0;
   position: relative;
   padding-bottom: 4rem;
-  font-family: -apple-system, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+  font-family: 'IBM Plex Serif', serif;
   font-size: inherit;
   line-height: 1.5;
   color: #5c5962;
@@ -37,6 +39,8 @@ body {
 }
 
 h1 {
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: 300;
   font-size: 2em;
   margin: 0.67em 0;
 }
