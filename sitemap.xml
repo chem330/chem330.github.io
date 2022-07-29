@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
+    <loc>https://chem330.github.io/experiment2/index.html</loc>
+    <lastmod>2022-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://chem330.github.io/lab-schedule/index.html</loc>
-    <lastmod>2022-07-27</lastmod>
+    <lastmod>2022-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -21,7 +27,13 @@
 </url>
 <url>
     <loc>https://chem330.github.io/syllabus/index.html</loc>
-    <lastmod>2022-07-27</lastmod>
+    <lastmod>2022-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://chem330.github.io/experiment1/index.html</loc>
+    <lastmod>2022-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
