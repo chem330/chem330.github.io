@@ -1,19 +1,5 @@
 +++
-title = "Experiment 2: Standardization - Nitrate and Phosphate"
+title = "Experiment 2: Sample Collection, Processing, and Storage"
 +++
 
-# Background
-
-# Procedure
-
-## Sample Collection
-
-## Standard Preparation
-
-## Determination of Nitrate
-
-### NitraVer Reagent
-
-### SpectroVis
-
-# What to Turn In
+# Meet at Cullowhee Creek

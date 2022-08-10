@@ -6,7 +6,7 @@ title = "Lab Schedule"
 
 The schedule and topics will change somewhat as we progress through the semester to meet the needs of the class.  Expect daily reading, weekly homework assignments, and 3-4 exams plus a final.
 
-The intent is for this course to be very hands-on.  As such, the Monday and Wendesday lectures will geared to preparing for that week's lab, and the Friday lecture periods will be used as hybrid data-processing workshops and lectures.  As we move through the semester, you should become more and more self-sufficient in the lab, so this format will move more toward a pure lecture format as the semester progresses.
+The intent is for this course to be very hands-on.  As such, the Monday and Wendesday lectures will geared to preparing for that week's lab, and the Friday lecture periods will be used as hybrid data-processing workshops and lectures.  As we move through the semester, you will likely become more and more self-sufficient in the lab, so this format will move more toward a pure lecture format as the semester progresses.
 
 ## Unit 1: Foundations
 
