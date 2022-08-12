@@ -1,9 +1,12 @@
 +++
-title = "Experiment 2: Standardization - Nitrate and Phosphate"
+title = "Experiment 4: Standardization - Nitrate and Phosphate"
 +++
 
-# Background
 
+https://archive.epa.gov/water/archive/web/html/vms57.html
+https://www.nemi.gov/methods/method_summary/5251/
+
+# Background
 
 Nitrate-nitrogen may be present in small amounts in fresh domestic wastewater.  However, it is seldom found in influents to treatment plants because the nitrate serves as an oxygen source in the biologically unstable wastewater.  On the other hand, nitrate is often found in the effluents of biological treatment plants, because it represents the final form of nitrogen from the oxidation of organic nitrogen compounds.  Trickling-filter and activated sludge treatment plant effluents may contain from 0 to 50 mg/L nitrate, depending on the total nitrogen content of the influent, the degree of loading, and the temperature of the sewage.
 
