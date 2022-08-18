@@ -1,9 +1,9 @@
 +++
-title = "Syllabus"
+title = "Lab Syllabus"
 +++
 
 
-# CHEM 330: Aquatic Chemistry - Syllabus
+# CHEM 330 Lab: Aquatic Chemistry Lab - Syllabus
 
 **Instructor:** Al Fischer, PhD   
 
@@ -19,57 +19,73 @@ title = "Syllabus"
 
 ## Overview 
 
-This course is an introduction to aquatic chemistry, with a focus on chemical analysis of aquatic samples and the fate and transport of chemicals in aquatic systems.  Throughout the semester, students will work to develop skills related to chemical analysis (both wet chemical and instrumental methods), reproducible data analysis, scientific communication, and collaboration in the laboratory and field.  Some prerequisite chemical knowledge will be expected (CHEM 140), but no advanced chemistry knowledge is necessary.
+This course in an introduction to the chemical analysis of water samples.  Throughout the semester, students will work to develop both qualitative and quantitative analytical skills related to chemical analysis (both wet chemical and instrumental analysis methods), reproducible data analysis, scientific communication, and collaboration in the laboratory and field.  Some prerequisite chemical knowledge will be expected (CHEM 140), but no advanced chemistry knowledge is necessary.  Simultaneous enrollment in CHEM 330 lecture is expected.
 
 ## Student Learning Outcomes 
 
-- Describe chemical interactions and transport phenomena that affect the distribution of natural and anthropogenic compounds in aquatic ecosystems.
-- Use structure and physical properties of compounds to predict the solubility, reactions, and distribution in aquatic ecosystems.
-- Predict phase transfer, transformation, and transport processes in aquatic ecosystems.
-- Understand the broad, interdisciplinary field of aquatic chemistry.
-
 To achieve a satisfactory grade, students will:
 
-1. Relate a theoretical, mechanical, and practical understanding of chemical instrumentation.
+1. Demonstrate proficiency in common analytical methods applied to aquatic samples.
 
-1. Combine concepts from Quantitative Analysis, Organic Chemistry, and General Chemistry with instrumental theory and programmatic data analysis to demonstrate accurate, reproducible qualitative and quantitative analysis of complex samples.
+1. Demonstrate rigorous, reproducible laboratory practice.
+
+1. Apply common analytical methods and concepts from general chemistry to fully, accurately, and precisely characterize real-world samples.
 
 1. Communicate analysis questions, methods, results, and conclusions using written word, pictorial figures, and data tables.
 
-1. Participate effectively in group projects.
-
 1. Demonstrate safe laboratory practices.
 
-1. Critically evaluate peer work.
+1. Participate effectively in group projects and demonstrate professionalism in the laboratory.
 
 ## Required Course Materials 
 
-**Text Book:**  Granger, R. M., Yochum, H. M., Granger, J. N., & Sienerth, K. D. (2017). *Instrumental Analysis*. Oxford University Press. (WCU rental book available at bookstore)
-
-**Alternative Book:** Harvey, D. *Analytical Chemistry 2.1* Chem Libre Texts ([Free online!](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_(Harvey)))
+**Supplemental Book:** Harvey, D. *Analytical Chemistry 2.1* Chem Libre Texts ([Free online!](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_(Harvey)))
 
 **Lab Manual:** All lab activities are posted [online]({{site.baseurl}})
 
-**Technology:** Students will need a laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx).   Students will be required to use [Julia](https://julialang.org/) + [Pluto](https://github.com/fonsp/Pluto.jl) and may wish to install these on their computer; both are freely available for for all operating systems.  Alternatively, student may use Julia + Pluto via WCU's STEM VCAT (officially supported option for the course).  A web browser and internet connection capable of streaming video will be necessary for submitting homework assignments and accessing course materials.
+**Lab Notebook:** A notebook with hardbound pages is required for use as a laboratory notebook.  Although there are dedicated lab notebook options available, you don't not necessarily need anything fancy -- a simple black and white composition notebook will work.  Alternatively, if you have room left in your carbonless copy notebook from CHEM 139/140, you may use that.
 
-The program [OpenChrom](https://lablicate.com/platform/openchrom) allows you to process chromatographic and mass spectrometric data on your personal computer.  This is not required but can speed up your data processing.
+**Technology:** Students will need a laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx) and should plan to bring this computer with them to lab every week.
 
-We will use Piazza for class discussion. The system is highly catered to getting you help fast and efficiently from classmates and your instructor. Rather than emailing questions to the teaching staff, I encourage you to post your questions on Piazza. If you have any problems or feedback for the developers, email team@piazza.com.  Find our class page at [here](https://piazza.com/wcu/spring2021/chem370/home).
+Students will need the following software:
+- Vernier [Logger Lite](https://www.vernier.com/downloads/logger-lite-updates/)
+- [Vernier Spectral Analysis](https://www.vernier.com/product/spectral-analysis/) (free)
+- Microsoft Office, especially Excel. ("free" through WCU -- install through your WCU email if you don't already have it, ask IT for help if needed)
+- A blue or black pen (not pencil!) for writing in your lab notebook.
+
 
 **Additional Required Course Materials:**  
 
-  - Goggles or safety glasses rated for chemical protection
+  - Goggles or safety glasses with splash gaurds rated for chemical protection
   - Nitrile gloves
-  -	Appropriate clothing: closed-toed shoes, long pants, hair tie for long hair
-  -	Permanent, felt-tipped marker (e.g. a Sharpie®)
-  - A laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx).
-  - A lab-use only face mask to prevent spread of coronavirus.
+  - Appropriate clothing: closed-toed shoes, long pants, hair tie for long hair
+  - Permanent, felt-tipped marker (e.g. a Sharpie®)
 
 Most materials are available from the WCU bookstore; goggles are also available from the WCU Chemistry Club (these goggles are recommended over cheaper ones).  A lab coat is optional.
 
+*Students not wearing appropriate PPE will be asked to leave lab.*
+
+See "Field Work", below, for addition recommended materials.
+
 ## Lab Notebooks and Data Analysis 
 
-Lab notebooks will be completed electronically using Julia and Pluto.  Students will be required to submit their data files along with their lab notebooks so that notebooks can be checked for accuracy.  A lab notebook that does not compile will not be graded.  *Lab notebooks should be filled out in lab!*
+Lab notebooks occassionally collected for review.  You should follow proper laboratory notebook protocol when filling out your notebook.  *Lab notebooks should be filled out during lab, not after!*  Students will be required to scan their lab notebook pages and turn them in on Canvas each day when leaving lab.
+
+Students will be provided with Excel templates for data analysis, and must turn in their templates and data files after each lab.  The Excel sheets will be checked for accuracy against calculations completed by the instructor, and students will be awarded full credit for getting the *exact* right answer, to the correct number of significant digits.  Partial credit may be awarded for other answers.
+
+## Field Work
+
+Portions of this course will be conducted outdoors in the field while collecting water samples for analysis.  This work may occur both on and off campus.  This year, we will travel to Black Mountain, NC to collect water samples from the Swannanoa River; the analysis results will be shared with the Town of Black Mountain stormwater program.  Students should make every effort to attend this field trip, and you will receive a grade for participation in the trip.  Any students not attending will be required to complete a makeup assignment with equal time and effort committments as the field trip.  Field work will occur rain or shine.
+
+The following materials are recommended during sampling days.  Keep in mind that all these materials may get dirty / rained on / fall in the river, etc., during field work, so don't bring your most favorite items unless you are prepared for them to get damaged.
+
+- Waterproof shoes (preferrably knee-high boots or waders)
+- Rain jacket
+- Waterproof backpack
+- Waterproof notebook (e.g. Rite in the Rain) and Sharpie or pencil
+- Water bottle, snacks, and a picnic lunch
+
+The Town of Black Mountain may take photos for educations / PR materials during this trip.  Any students wishing not to appear in these materials should notify their instructor.  Release forms will be provided to students prior to the trip.
 
 ## Grading 
 
@@ -77,18 +93,30 @@ Your grade is tied directly to the student learning outcomes for the course.  Ea
 
 ### Contributions to Your Grade
 
-1. (25%) Relate a theoretical, mechanical, and practical understanding of chemical instrumentation.
-     - Assessed by written quizzes and/or face-to-face examinations.
-1. (25%) Combine concepts from Quantitative Analysis, Organic Chemistry, and General Chemistry with instrumental theory and programmatic data analysis to demonstrate accurate, reproducible qualitative and quantitative analysis of complex samples.
-     - Assessed by inspection of lab notebooks for accuracy, thoroughness, and data quality.
-1. (25%) Communicate analysis questions, methods, results, and conclusions using written word, pictorial figures, and data tables.
-     - Assessed by peer and instructor review of technical reports for accuracy and clarity.
-1. (10%) Participate effectively in group projects.
-     - Assessed by peer and instructor evaluation.
-1. (10%) Demonstrate safe laboratory practices.
-     - Assessed by an ability and willingness to follow standard safety protocols.
-1. (5%) Critically evaluate peer work.
-     - Assessed by participation in peer-review exercises.
+1. (20%) Demonstrate proficiency in common analytical methods applied to aquatic samples.
+
+     - Assessed by observation of lab technique and accuracy of data analysis worksheets.
+
+1. Demonstrate rigorous, reproducible laboratory practice.
+
+	- Assessed by inspection of laboratory notebooks.
+
+1. (20%) Apply common analytical methods and concepts from general chemistry to fully, accurately, and precisely characterize real-world samples.
+
+     - Assessed by inspection of lab notebooks and worksheets for accuracy, thoroughness, and data quality.
+
+1. (15%) Communicate analysis questions, methods, results, and conclusions using written word, pictorial figures, and data tables.
+
+     - Assessed by instructor and/or professional review of final reports on the lab project.
+
+1. (15%) Demonstrate safe laboratory practices.
+
+     - Assessed by an ability and willingness to follow standard safety protocols, as judged by instructor observations.
+
+1. (10%) Participate effectively in group projects and demonstrate professionalism in the laboratory.
+
+     - Assessed by peer and instructor evaluation
+
 
 <!-- \pagebreak -->
 
@@ -114,19 +142,19 @@ These grades indicate levels in quality from excellent to unsatisfactory.  Stude
 
 ## Turning Things In
 
-Most assignments will be submitted electronically.  Unless otherwise specified, assignments are due at 23:59:59 on the due date and late work is not accepted.  A list of anticipated assignments is available in the Canvas site for the course, but is subject to change as needed.
+Most assignments will be submitted electronically.  Unless otherwise specified, assignments are due at 23:59:59 the night before lab and late work is not accepted.  A list of anticipated assignments is available in the Canvas site for the course, but is subject to change as needed.  *Canvas is the best place to track due dates!*
 
 ### Submitting Assignments
 
 When turning in assignments:
 
- - Files should be uploaded to each assignment page on Canvas.
+ - Files should be uploaded to the assignment page on Canvas.
  - Files should be of the types and quantity specified in the assignment.
  - Files should be given a clear, logical filename that reflects the assignment name.
  - Files may be sorted automatically by a computer.  Therefore, any files not named appropriately, not in the specified format, or submitted elsewhere (e.g. email) may not be graded.
  - Any electronic assignments turned in via hardcopy will not be graded.
 
-Submissions that do not follow these guidelines may incur point deductions.
+Submissions that do not follow these guidelines may incur point deductions or may not be graded.
 
 ### Late Work
 
@@ -138,17 +166,13 @@ Late work is not accepted in this course.  Due dates are automatically enforced 
 
 ## Course Policies 
 
-**COVID-19:** At the time of this writing, it is expected that all lab activities will occur in person.  During all in-person meetings, students *must*:
+**COVID-19:** At the time of this writing, it is expected that all lab activities will occur in person.  Please avoid coming to class if you experience any cold, flu, or [COVID19 symptoms](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html), have been diagnosed with COVID19, or have been in contact with someone who's recently tested positive for COVID19.
 
-  - Wear a face mask at all times (must be 'lab use only' - see "Masking for a Friend" statement below).  See [WCU's mask policy](https://www.wcu.edu/coronavirus/academic-affairs-faq.aspx) for more information.
-  - Practice good hygiene practices and follow [CDC guidelines](https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html) to minimize spread of COVID19.
-  - Avoid coming to class if you experience and cold, flu, or [COVID19 symptoms](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html), have been diagnosed with COVID19, or have been in contact with someone who's tested positive for COVID19 within the last 14 days.
-  
-Note that these policies are subject to changes as the COVID19 pandemic continues to develop.
+**Laboratory Behavior:** Students are expected to attend each lab period and participate fully in that day's activity.  Students should respect the rights of others and minimize avoidable distractions and come to lab prepared.
 
-**Laboratory Behavior:** Students are expected to attend each lab period and participate fully in that day's activity.  Students should respect the rights of others and minimize avoidable distractions.
+You should bring your laboratory notebook, paper, pen, and calculator to EVERY laboratory meeting.  Please read the Lab Guide for the experiment BEFORE coming to lab.  You can set up your lab notebook pages with the introduction, template procedure, and blank tables for recording lab data before you come to lab.
 
-Never bring food or drink into the laboratory.  This includes sealed bottles and items inside backpacks – leave them outside the lab!  Do not chew gum, use tobacco products, or apply cosmetics in the lab.  Do not place personal items inside fume hoods or where they may come into contact with chemicals.  Keep walkways clear of chairs, bookbags, etc. (place them in cubbies!).  Wash your hands before leaving lab, and never wear gloves or lab coats outside the lab!
+*Never bring food or drink into the laboratory.*  This includes sealed bottles and items inside backpacks – leave them outside the lab!  Do not chew gum, use tobacco products, or apply cosmetics in the lab.  Do not place personal items inside fume hoods or where they may come into contact with chemicals.  Keep walkways clear of chairs, bookbags, etc. (place them in cubbies!).  Wash your hands before leaving lab, and never wear gloves or lab coats outside the lab!
 
 The sparing use of cell phones during lab sessions is permitted but discouraged. If you must, please use your cell phone outside the laboratory, and never leave an experiment unattended to do so!  Likewise, do not place your cellphone in a fume hood or on a chemical bench!
 
@@ -166,9 +190,9 @@ In an effort to maintain a productive work environment for all students, please 
 
 **Pregnancy:** Certain chemicals can have severe harmful effects on unborn children.  Any student who is pregnant or might have become pregnant and wished to avoid these hazards should notify her TA or instructor before conducting any laboratory work so that proper safety precautions can be taken.
 
-**Attendance:** Please email your instructor *ahead of time* if you encounter circumstances that absolutely prevent you from making it to lab on time.  Attendance to all class periods is mandatory. Absences from group work sessions may incur a loss of points up to a zero for the assignment and deductions in the student's participation grade.  
+**Attendance:** Please email your instructor *ahead of time* if you encounter circumstances that absolutely prevent you from making it to lab on time.  Attendance to all class periods is mandatory. Absences from group work sessions may incur a loss of points up to a zero for the assignment and deductions in the student's group participation grade.  
 
-***If you experience any symptoms of COVID-19, cold, flu, or other contagious sickness please do NOT come to class!  Likewise, do not attend if you have been in contact with someone who has tested positive for COVID-19 or is suspected to have COVID-19.  Please maintain diligent communication with your instructor during these situations and appropriate accommodations will be made.***
+If you experience any symptoms of COVID-19, cold, flu, or other contagious sickness please do NOT come to class!  Likewise, do not attend if you have been in contact with someone who has tested positive for COVID-19 or is suspected to have COVID-19.  Please maintain diligent communication with your instructor during these situations and appropriate accommodations will be made.
 
 **Inclement Weather:** Please check the University website for campus closings during times of bad weather.  Your safety is a priority when traveling. Use common sense when attempting to get to campus and notify your instructor if you are unable to safely make it.  Announcements will be made via e-mail if class must be canceled when the University has not officially closed.
 
@@ -190,7 +214,7 @@ Written work may be checked for plagiarism using computer software.  Plagiarism 
 
 WCU provides many resources to help students succeed.  *All* students are encouraged to take advantage of resources such as the library and tutoring centers, regardless of their academic standing!  A few are listed below.
 
-- **Office Hours and Piazza** - don't hesitate to ask your instructor and classmates for help!  See the top of this document for more information.
+- **Office Hours** - don't hesitate to ask your instructor for help!  See the top of this document for more information.
 - **Writing and Learning Commons (WaLC)** for help and feedback on writing.  Visit [tutoring.wcu.edu](https://tutoring.wcu.edu) or call 828-227-2274.
 - **Math Tutoring Center** for help with calculations and math. For more information,  visit [mtc.wcu.edu](http://mtc.wcu.edu/) or call 828–227–3830.
 

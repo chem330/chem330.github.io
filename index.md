@@ -3,17 +3,20 @@
 
 # CHEM 330: Aquatic Chemistry
 
-CHEM 370 - Instrumental Analysis I (Laboratory) is an introduction to instrumental analysis in the chemistry lab. We will learn how to use and operate chemical instrumentation and learn how to reproducibly process the data they generate.
+Environmental aquatic chemistry is the branch of environmental chemistry that deals with chemical phenomena in water.  Aquatic chemistry is concerned with the chemical processes affecting the distribution and circulation of chemical compounds in natural waters.  One goal is to describe and predict the chemical behavior of oceans, estuaries, rivers, lakes, groundwater, and soil water systems, and to describe the processes involved in water treatment. The study of aquatic chemistry draws on the fundamentals of chemistry but is also influenced by other sciences, especially geology and biology. 
 
-CHEM 370 - Instrumental Analysis I (Lecture) is an introduction to common instrumental analysis techniques. Students will study the theoretical, electrical, and mechanical underpinnings of the most common methods of instrumental analysis. Topics covered include spectroscopy, mass spectrometry, separation science, and data interpretation.
-
-\tableofcontents <!-- you can use \toc as well -->
+This course is an introduction to environmental aquatic chemistry.  It is a hybrid between a traditional quantitative analysis course and aquatic chemistry course, focusing on both the analytical and theoretical aspects of aquatic chemistry.  Topic such as colorimetric, gravimetric, titrimetric, and instrumental analysis will be covered along with the distribution, fate, transport, and reaction kinetics of chemical species in the aquatic environment.  It is expected that students will have taken CHEM 139 and CHEM 140 (the General Chemistry sequence) prior to enrolling in this course; CHEM 232 (Quantitative Analysis) is recommended but not required.  Simultaneous enrollment in CHEM 330 Lab is expected.
 
 # Logistics
 
 - Course information for lecture and lab will be posted on this site.
 - Homework will be turned in on Canvas.
-- Office hours are by appointment.  Please use Calendly to sign up for a time.  Anytime shown is a time I'm available to meet.
+- Office hours are by appointment.  Please use [Calendly](https://calendly.com/drfischer/office-hours) to sign up for a time.  Anytime shown is a time I'm available to meet.
+- There is an unofficial [Discord server](https://discord.gg/QAZw8FWH) for the class, find me there to ask questions or connect with your classmates.
+
+# Lecture Assignments
+
+You should generally expect 3-4 exams plus the final over the course of the semester along with weekly reading and homework assignments.  There may be occassional in-class quizzes on recent reading material and/or topics covered in lecture.
 
 # Lab Assignments
 
@@ -24,10 +27,10 @@ CHEM 370 - Instrumental Analysis I (Lecture) is an introduction to common instru
 - Lab 3
 - Lab 4
 - Lab 5
-- Project Lab
-  - Group work grade
-  - Lab safety & Professionalism
+- Group work grade
+- Lab safety & Professionalism
 
 ## Group Assignments
 
+- Project lab
 - Final report / project

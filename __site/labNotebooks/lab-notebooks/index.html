@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <link rel="stylesheet" href="/libs/highlight/styles/github.min.css">
+   
+  <link rel="stylesheet" href="/css/jtd.css">
+<link rel="icon" href="/assets/favicon.ico">
+
+<style>
+  /* #148 wrap long header */
+  .franklin-content a.header-anchor,
+  .franklin-toc li a
+   {
+    word-wrap: break-word;
+    white-space: normal;
+  }
+</style>
+
+   <title>Project Information</title>  
+</head>
+<body>                      <!-- closed in foot.html -->
+<div class="page-wrap">   <!-- closed in foot.html -->
+  <!-- SIDE BAR -->
+  <div class="side-bar">
+    <div class="header">
+      <a href="/" class="title">
+        CHEM 330
+      </a>
+    </div>
+    <label for="show-menu" class="show-menu">MENU</label>
+    <input type="checkbox" id="show-menu" role="button">
+    <div class="menu" id="side-menu">
+      <ul class="menu-list">
+        <li class="menu-list-item "><a href="/" class="menu-list-link ">Home</a>
+        <li class="menu-list-item "><a href="/lab-syllabus/" class="menu-list-link ">Lab Syllabus</a>
+        <li class="menu-list-item "><a href="/lecture-syllabus/" class="menu-list-link ">Lecture Syllabus</a>
+        <li class="menu-list-item "><a href="/schedule/" class="menu-list-link ">Schedule</a>
+        <li class="menu-list-item "><a href="/lab-notebooks/" class="menu-list-link ">Lab Notebooks</a>
+        <li class="menu-list-item "><a href="/experiment1/" class="menu-list-link ">Exp 1: Errors</a>
+        <li class="menu-list-item "><a href="/experiment2/" class="menu-list-link ">Exp 2: Nitrate</a>
+	<li class="menu-list-item "><a href="/experiment3/" class="menu-list-link ">Exp 3: Phosphate</a>
+	<li class="menu-list-item "><a href="/experiment4/" class="menu-list-link ">Exp 4: Titrations</a>
+	<li class="menu-list-item "><a href="/experiment5/" class="menu-list-link ">Exp 5: TDS</a>
+	<li class="menu-list-item "><a href="/experiment6/" class="menu-list-link ">Exp 6: IC</a>
+	<li class="menu-list-item "><a href="/experiment7/" class="menu-list-link ">Exp 7: TBD</a>
+	<li class="menu-list-item "><a href="/project/" class="menu-list-link ">Project Info</a>
+          <!-- <ul class="menu-list-child-list ">
+            <li class="menu-list-item "><a href="#" class="menu-list-link">Submenu</a>
+          </ul> -->
+      </ul>
+    </div>
+    <div class="footer">
+      This is <em>Just the docs</em>, adapted from the <a href="https://github.com/pmarsceill/just-the-docs" target="_blank">Jekyll theme</a>.
+    </div>
+  </div>
+  <!-- CONTENT -->
+  <div class="main-content-wrap"> <!-- closed in foot.html -->
+    <div class="main-content">    <!-- closed in foot.html -->
+      <div class="main-header">
+        <a id="github" href="//github.com/chem330">CHEM330 on GitHub</a>
+      </div>
+
+
+
+<!-- Content appended here (in class franklin-content) -->
+<div class="franklin-content">
+<h1>Lab Notebook Guidelines for CHEM 330</h1>
+<div class="franklin-toc"><ol><li><a href="#keeping_an_archival_record">Keeping an Archival Record </a></li><li><a href="#writing_your_procedures">Writing Your Procedures </a></li><li><a href="#significant_figures">Significant Figures </a></li><li><a href="#creating_instrument_tables">Creating Instrument Tables </a></li><li><a href="#notebook_rubric">Notebook Rubric</a></li></ol></div>
+<h2>Overview</h2>
+<p>Your lab notebook is the single ***exact, permanent, legally defensible, archival record*** of what you did in lab.  In an academic setting, notebooks are often used by the person who wrote the notebook or a lab colleague when trying to repeat an experiment, process data, or publish results.  In a professional setting, they may be used to communicate work to new employees, defend against patent lawsuits, or support forensic or toxicological conclusions in a court of law.  A good test of your lab notebook is to imagine handing it to a peer who has never completed the lab.  Then, try to determine if there would enough information for them to &#40;1&#41; complete the lab with no other resources, &#40;2&#41; ***exactly*** repeat your data analysis and calculations and arrive at the ***exact*** same answer &#40;including all significant digits&#41;, and &#40;3&#41; understand your conclusions and how you arrived at those conclusions.  When in doubt, it&#39;s better to include too much than too little&#33;</p>
+<p>Instrumental analysis presents unique challenges when it comes to keeping lab notebooks.  Often, the final data collected is a spectrum or chromatogram with thousands of data points.  Instruments save this directly in an electronic format, and archiving it in a paper lab notebook is often unfeasible.  To deal with that, this lab uses electronic lab notebooks.  You should use your electronic lab notebook exactly as you&#39;ve used paper notebooks in the past – record ***exactly*** what you did in lab <em>as you do it</em> &#40;not afterwards&#33;&#41;.  Include direct observations as necessary.  In addition, you will be required to link all data files to your notebook so that your analysis can be exactly repeated and checked for accuracy.</p>
+<p>In an effort to conduct reproducible data analysis, you will use open-source tools for programmatic data analysis.  Your notebook will be kept using <a href="https://github.com/fonsp/Pluto.jl"><strong>Pluto</strong></a> &#40;or equivalent data analysis notebook utility&#41; and your data will be analyzed directly in your notebook using <a href="https://julialang.org/"><strong>Julia</strong></a> &#40;or equivalent data analysis language&#41;.</p>
+<h2>Example Lab Notebooks</h2>
+<ul>
+<li><p><a href="/lab-notebooks/good">Good Example</a> <em>Note: This notebook was created in Jupyter, not Pluto.</em>   </p>
+</li>
+<li><p><a href="/lab-notebooks/bad-1">Bad Example</a>  <em>Note: This notebook was created in Jupyter, not Pluto.</em>   </p>
+<ul>
+<li><p>This notebook contains no explanations of what was done and the data processing is incomplete.</p>
+</li>
+</ul>
+</li>
+<li><p><a href="/lab-notebooks/bad-2">Bad Example 2</a>  <em>Note: This notebook was created in Jupyter, not Pluto.</em>   </p>
+<ul>
+<li><p>This example contains many errors that should have been fixed before it was turned in.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="keeping_an_archival_record"><a href="#keeping_an_archival_record" class="header-anchor">Keeping an Archival Record </a></h2>
+<p>To maintain an archival record, the lab notebook should:  </p>
+<ul>
+<li><p>contain an ***exact*** record of what you ***did*** &#40;past tense&#41;;</p>
+</li>
+<li><p>show ***all*** procedures and calculations, instrument parameters, and pertinent conclusions and background information;</p>
+</li>
+<li><p>consist of functional code that can be run by another individual with no errors.</p>
+</li>
+</ul>
+<h2 id="writing_your_procedures"><a href="#writing_your_procedures" class="header-anchor">Writing Your Procedures </a></h2>
+<p>Your procedures in your notebook should state <em>exactly</em> what you did.  <em>Exactly&#33;</em>  This is your exact record you could use to redo calculations, remember what the sample looked like, remember what special steps you took on the instrument, etc.  This is not the same as the methods in your paper; those are a <em>summary</em> of what you did.</p>
+<ul>
+<li><p>Write all procedures in <em>past tense</em>. Do not just copy the handout.  </p>
+</li>
+</ul>
+<p>- *Good:* I added 1.0162 g of acetaminophen to a 200-mL volumetric flask and brought to volume with ultrapure water.
+- *Bad:* ~~Add 1 g of acetaminophen to 200 mL of water.~~
+
+- *Explanation:* The lab notebook is a record of what you did, not a cookbook.  If you were telling a friend about your vacation you wouldn&#39;t say &quot;Get on a plane. Fly to Europe. Go to hotel.&quot;, you would say &quot;I flew from Atlanta to Paris, and then stayed at a hotel in the city center.&quot;  Your lab notebook is no different.
+
+	More importantly, the difference in significant digits is drastic. In the first example, the results will be limited to 5 significant digits by the balance &#40;the balance reports 4 decimal places, or 5 SF in this case, and the volumetric flask contains 200 &#43;/- 0.15 mL&#41;; in the second, all that precision has been thrown away and we&#39;re left with a single significant digit.
+
+	Finally, the second provides no indication as to the purity of the water used, although this is very important for trace instrumental analysis.</p>
+<ul>
+<li><p>Include direct observations.</p>
+</li>
+</ul>
+<p>- *Good:* Upon collection, I saw that the e-cigarette liquid had turned from clear-yellow to clear-brown after aerosolization.
+- *Bad:* ~~e-Cigarette liquid was collected.~~
+
+- *Explanation:* The first example includes pertinent observations of exactly what occurred when the step was performed.  This helps someone who is doing the lab for the first time know what to expect, and helps you remember what happened when you&#39;re going back through your notes.  Importantly, the color change probably indicates a chemical change occured in the sample, which may be worth investigating later.</p>
+<h2 id="significant_figures"><a href="#significant_figures" class="header-anchor">Significant Figures </a></h2>
+<ul>
+<li><p><strong>Balances:</strong> In general, your significant digits should be limited by the balance. The exact number may depend on which balance you use.  Be sure to record all digits on the balance when mass is important, even if they are zeroes; if the last digit fluctuates do the best you can to estimate it.  Remember you do NOT have to weigh out the masses exactly as they appear on the worksheet – what matters is that you get close and that you record the actual <em>exact</em> mass you used&#33;</p>
+</li>
+<li><p><strong>Volumetric Glassware:</strong> All volumetric pipettes and flasks should be labeled with the volume of water they deliver or contain at room temperature along with the error associated with that volume.  Use this to determine your significant digits.  Flasks should be used <em>to contain</em> liquid &#40;marked TC&#41; and pipettes should be used <em>to deliver</em> liquid &#40;marked TD&#41;; if your pipette has lines for both make sure you use the correct one &#40;TD&#41;.</p>
+</li>
+<li><p><strong>Graduated cylinders:</strong> For small volumes, these typically have 3 significant digits.  You should interpolate to at least the nearest 0.5 mL when using a graduated cylinder.  Again, there is a large difference between recording 10 ml and 10.5 ml in your notebook in regards to significant figures &#40;1 vs 3&#41;&#33;  Most work in instrumental analysis should use volumetric glassware and not graduated cylinders.</p>
+</li>
+<li><p><strong>Beakers/Erlenmeyer Flasks:</strong> These should not be used to measure volumes in instrumental analysis..</p>
+</li>
+</ul>
+<h2 id="creating_instrument_tables"><a href="#creating_instrument_tables" class="header-anchor">Creating Instrument Tables </a></h2>
+<p>You are expected to provide a table of all relevant instrument information in your lab notebook for each instrument you use.  There is no specific formula for creating these – the information you need depends on the instrument.  The best way to learn what to include is to look at examples, a few of which are linked below.  You will need to look in the instrument method &#40;in the software&#41; and sometimes on the physical instrument itself to find the information you need.  If you&#39;re weary about opening an instrument up to look, please ask for help&#33;</p>
+<p><strong>Example Instrument Table for HPLC:</strong>   </p>
+<ul>
+<li><p><a href="https://www.osha.gov/dts/sltc/methods/mdt/mdt1007/1007.pdf">OSHA Method 1007</a> &#40;see p. 15, under Section 3.5, &quot;Liquid chromatograph conditions&quot;&#41;</p>
+</li>
+</ul>
+<p><strong>Example Instrument Table for Flame AA:</strong>   </p>
+<ul>
+<li><p>Flame AA: <a href="https://www.perkinelmer.com/lab-solutions/resources/docs/PinAAcleMineralsinVitaminsbyFAAAppNote.pdf">Perkin Elmer Application Note</a> &#40;See Table 1&#41;</p>
+</li>
+</ul>
+<p><strong>Example Instrument Table for FT-IR:</strong></p>
+<table><tr><th align="right">Parameter</th><th align="right">Value</th></tr><tr><td align="right">Make &amp; Model</td><td align="right">Thermo-Nicolet iS10</td></tr><tr><td align="right">Sampling Configuration</td><td align="right">Diamond ATR Cell</td></tr><tr><td align="right">Scan Range &#40;cm&lt;sup&gt;-1&lt;/sup&gt;&#41;</td><td align="right">4000-600</td></tr><tr><td align="right">Resolution &#40;cm&lt;sup&gt;-1&lt;/sup&gt;&#41;</td><td align="right">0.5</td></tr><tr><td align="right">No. Scans</td><td align="right">64</td></tr><tr><td align="right">Sampling Arrangement</td><td align="right">Diamond ATR</td></tr></table>
+<p><strong>Example Instrument Table for GC-MS:</strong></p>
+<p><em>Note: these are</em> examples <em>– the actual parameters you used may be different&#33;</em></p>
+<p><strong>Table 1: GC Method</strong></p>
+<table><tr><th align="right">Parameter</th><th align="right">Value</th></tr><tr><td align="right">Make &amp; Model</td><td align="right">Agilent 5890</td></tr><tr><td align="right">Column</td><td align="right">HP-5ms</td></tr><tr><td align="right">Carrier</td><td align="right">UHP He @ 9 psi</td></tr><tr><td align="right">Injection Port Temp &#40;°C&#41;</td><td align="right">250</td></tr><tr><td align="right">Initial Oven Temp</td><td align="right">30°C for 1 min</td></tr><tr><td align="right">Oven Ramp Rate</td><td align="right">30°C per min</td></tr><tr><td align="right">Final Oven</td><td align="right">250°C for 3 min</td></tr><tr><td align="right">Detector</td><td align="right">Mass Spectrometer</td></tr></table>
+<p><strong>Table 2: MS Parameters</strong></p>
+<table><tr><th align="right">Parameter</th><th align="right">Value</th></tr><tr><td align="right">Make &amp; Model</td><td align="right">Agilent 5975C</td></tr><tr><td align="right">Source</td><td align="right">Electron Ionization</td></tr><tr><td align="right">Mass Filter</td><td align="right">Quadrupole</td></tr><tr><td align="right">Detector</td><td align="right">Electron Multiplier</td></tr><tr><td align="right">Acquisition Mode</td><td align="right">Scan</td></tr><tr><td align="right">Scan Range</td><td align="right">30 - 400 m/z</td></tr><tr><td align="right">Scan Speed</td><td align="right">Normal</td></tr><tr><td align="right">Source Temp</td><td align="right">250°C</td></tr></table>
+<h2 id="notebook_rubric"><a href="#notebook_rubric" class="header-anchor">Notebook Rubric</a></h2>
+<p>I will use this rubric to judge the <em>content</em> &#40;not accuracy&#41; of your notebook.  For all items: &#39;2&#39; &#61; exceptional, &#39;1&#39; &#61; satisfactory, and &#39;0&#39; &#61; inadequate/not present.</p>
+<table><tr><th align="right">Item</th><th align="right">2</th><th align="right">1</th><th align="right">0</th></tr><tr><td align="right">Descriptive title present?</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">Introduction present describing experimental goals?</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">Materials and Methods: detailed enough to convey <em>exactly</em> what was done?</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">Materials and Methods: Instrument table&#40;s&#41; complete?</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">Results and Data: Calibration curve &#40;if needed&#41; plotted with high quality, including R2, slope, and intercept</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">Results and Data: all spectra, chromatograms, etc., plotted with high quality</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">Results and Data: Notebook runs without errors</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">Conclusion present and clearly states outcome of experiment while discussing errors/future direction as needed</td><td align="right"></td><td align="right"></td><td align="right"></td></tr><tr><td align="right">References clearly cited and used in the notebooks</td><td align="right"></td><td align="right"></td><td align="right"></td></tr></table>
+<hr>
+<div class="page-foot">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Al Fischer. Last modified: August 18, 2022.
+    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div> <!-- end of class main-content -->
+    </div> <!-- end of class main-content-wrap -->
+    </div> <!-- end of class page-wrap-->
+    
+    
+      <script src="/libs/highlight/highlight.min.js"></script>
+<script>hljs.highlightAll();hljs.configure({tabReplace: '    '});</script>
+
+    
+  </body>
+</html>

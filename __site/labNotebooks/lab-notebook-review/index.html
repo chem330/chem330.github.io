@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel="stylesheet" href="/css/jtd.css">
+<link rel="icon" href="/assets/favicon.ico">
+
+<style>
+  /* #148 wrap long header */
+  .franklin-content a.header-anchor,
+  .franklin-toc li a
+   {
+    word-wrap: break-word;
+    white-space: normal;
+  }
+</style>
+
+   <title>Lab Notebook Guidelines </title>  
+</head>
+<body>                      <!-- closed in foot.html -->
+<div class="page-wrap">   <!-- closed in foot.html -->
+  <!-- SIDE BAR -->
+  <div class="side-bar">
+    <div class="header">
+      <a href="/" class="title">
+        CHEM 330
+      </a>
+    </div>
+    <label for="show-menu" class="show-menu">MENU</label>
+    <input type="checkbox" id="show-menu" role="button">
+    <div class="menu" id="side-menu">
+      <ul class="menu-list">
+        <li class="menu-list-item "><a href="/" class="menu-list-link ">Home</a>
+        <li class="menu-list-item "><a href="/lab-syllabus/" class="menu-list-link ">Lab Syllabus</a>
+        <li class="menu-list-item "><a href="/lecture-syllabus/" class="menu-list-link ">Lecture Syllabus</a>
+        <li class="menu-list-item "><a href="/schedule/" class="menu-list-link ">Schedule</a>
+        <li class="menu-list-item "><a href="/lab-notebooks/" class="menu-list-link ">Lab Notebooks</a>
+        <li class="menu-list-item "><a href="/experiment1/" class="menu-list-link ">Exp 1: Errors</a>
+        <li class="menu-list-item "><a href="/experiment2/" class="menu-list-link ">Exp 2: Nitrate</a>
+	<li class="menu-list-item "><a href="/experiment3/" class="menu-list-link ">Exp 3: Phosphate</a>
+	<li class="menu-list-item "><a href="/experiment4/" class="menu-list-link ">Exp 4: Titrations</a>
+	<li class="menu-list-item "><a href="/experiment5/" class="menu-list-link ">Exp 5: TDS</a>
+	<li class="menu-list-item "><a href="/experiment6/" class="menu-list-link ">Exp 6: IC</a>
+	<li class="menu-list-item "><a href="/experiment7/" class="menu-list-link ">Exp 7: TBD</a>
+	<li class="menu-list-item "><a href="/project/" class="menu-list-link ">Project Info</a>
+          <!-- <ul class="menu-list-child-list ">
+            <li class="menu-list-item "><a href="#" class="menu-list-link">Submenu</a>
+          </ul> -->
+      </ul>
+    </div>
+    <div class="footer">
+      This is <em>Just the docs</em>, adapted from the <a href="https://github.com/pmarsceill/just-the-docs" target="_blank">Jekyll theme</a>.
+    </div>
+  </div>
+  <!-- CONTENT -->
+  <div class="main-content-wrap"> <!-- closed in foot.html -->
+    <div class="main-content">    <!-- closed in foot.html -->
+      <div class="main-header">
+        <a id="github" href="//github.com/chem330">CHEM330 on GitHub</a>
+      </div>
+
+
+
+<!-- Content appended here (in class franklin-content) -->
+<div class="franklin-content"><p><hr /> layout: default title: Peer Review of Lab Notebooks nav<em>order: 4 permalink: lab-notebook-review/ has</em>toc: false parent: Lab Notebooks grand_parent: Course Information –-</p>
+<h1 id="lab_notebook_guidelines"><a href="#lab_notebook_guidelines" class="header-anchor">Lab Notebook Guidelines </a></h1>
+<p>&#123;: .no_toc  &#125;</p>
+<hr />
+<p>&lt;details open markdown&#61;&quot;block&quot;&gt;   &lt;summary&gt;   Table of Contents   &lt;/summary&gt;</p>
+<p>&#123;: .text-delta &#125;</p>
+<ol>
+<li><p>TOC</p>
+</li>
+</ol>
+<p>&#123;:toc&#125; &lt;/details&gt;</p>
+<h2 id="overview"><a href="#overview" class="header-anchor">Overview</a></h2>
+<p>One purpose of your lab notebook is to convey what you did to other people &#40;e.g. coworkers, a judge or jury in court, a third-party accreditation agency, etc.&#41; who are trying to reproduce or verify your work.  In principle, someone reading your lab notebook should be able to tell <em>exactly</em> what you did – all steps, calculations, and even errors.  Ideally, the lab notebook should also include some notes as to <em>why</em> you did what you did.</p>
+<p>In an effort to conduct <a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/bes2.1801">reproducible data analysis</a>, you will use open-source tools for programmatic data analysis.  Your notebook will be kept using <a href="https://github.com/fonsp/Pluto.jl"><strong>Pluto</strong></a> &#40;or equivalent data analysis notebook utility&#41; and your data will be analyzed directly in your notebook using <a href="https://julialang.org/"><strong>Julia</strong></a> &#40;or equivalent data analysis language&#41;.</p>
+<p>Often, students struggle with recording the appropriate details in their lab notebooks, especially in electronic notebooks.  Because the notebooks on created on a computer, and much of the work focuses on data analysis, there is a temptation to only include the bare minimum calculation steps and present a brief, seemingly polished version of the lab work after the fact. However, this is incorrect; your notebook should include as much information as possible that&#39;s written down <em>during lab</em>.  The templates provided for you are merely starting points, and you are expected to add to them as you go through the lab.  You do not need to make your lab notebook perfect, but you do need to accurately convey the lab work you did.  If you are unsure what should go in your lab notebook, take a look at the <a href="/lab-notebooks">lab notebook guidelines</a>, which includes some examples and a basic rubric.</p>
+<h2 id="assignment"><a href="#assignment" class="header-anchor">Assignment</a></h2>
+<p>For the first lab, your notebook will be peer-reviewed by 1 or 2 other students in the class, and you will review 1 or 2 other students&#39; notebooks.  You will do this by completing a &quot;scavenger hunt&quot; of sorts in the other students&#39; notebooks.  In other words, you&#39;ll have certain quantities to find and will have to list those quantities on the assignment you turn in.  The hope is that this will help you develop an intuitive feel for what needs to be included in your lab notebook.  You will get credit for accurately completing the peer review, and your notebook will be graded based on how well the other students were able to find the requested details while reading your notebook.</p>
+<h2 id="revew_rubric_questions"><a href="#revew_rubric_questions" class="header-anchor">Revew Rubric Questions</a></h2>
+<p><em>For all questions, list what is written in the notebook you are reviewing, not what you think the answer is.  If you cannot find an answer, say so.</em></p>
+<ol>
+<li><p>What is the purpose of the lab, according to the notebook?</p>
+</li>
+<li><p>What was the concentration of the stock solution used for the standards?</p>
+</li>
+<li><p>What was the lot number of the chemicals used in the standards?</p>
+</li>
+<li><p>What was the lot number of the chemical used to create the QC?</p>
+</li>
+<li><p>What were the concentrations of the 5 standards?</p>
+</li>
+<li><p>What is the uncertainty on the standard concentrations?</p>
+</li>
+<li><p>What was the <em>known</em> concentration of the QC sample?</p>
+</li>
+<li><p>What integration time was used?</p>
+</li>
+<li><p>What emission wavelength was recorded?</p>
+</li>
+<li><p>What were the raw absorbance values for the 5 standards?</p>
+</li>
+</ol>
+<h2 id="review_of_vocabulary"><a href="#review_of_vocabulary" class="header-anchor">Review of Vocabulary</a></h2>
+<ul>
+<li><p><strong>Stock Solution &#40;&quot;Stock&quot;&#41;:</strong> A solution containing a known concentration of the analyte that is made at a high concentration and then diluted to make the <em>standards</em>.</p>
+</li>
+<li><p><strong>Standard Solution:</strong> A solution containing a known concentration of the analyte that is similar in concentration to the <em>unknonws</em>.  The standards are used to create a <em>standard curve</em>.</p>
+</li>
+<li><p><strong>Unknown Solution:</strong> A solution of unknown concentration.  You use the standard curve to determine the concentration of the unknown.  Often the unknown is called a &quot;sample&quot;.</p>
+</li>
+<li><p><strong>QC &#40;Quality Control Solution&#41;:</strong> A solution of known concentration that is treated like an unknown to check the accuracy of the standard curve.  The QC concentration should fall near the middle of the standard curve range.</p>
+</li>
+</ul>
+<hr>
+<div class="page-foot">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Al Fischer. Last modified: January 23, 2022.
+    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div> <!-- end of class main-content -->
+    </div> <!-- end of class main-content-wrap -->
+    </div> <!-- end of class page-wrap-->
+    
+    
+  </body>
+</html>
