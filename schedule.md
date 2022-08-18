@@ -8,13 +8,11 @@ The schedule and topics will change somewhat as we progress through the semester
 
 The intent is for this course to be very hands-on.  As such, the Monday and Wendesday lectures will geared to preparing for that week's lab, and the Friday lecture periods will be used as hybrid data-processing workshops and lectures.  As we move through the semester, you should become more and more self-sufficient in the lab, so this format will move more toward a pure lecture format as the semester progresses.
 
-## Unit 1: Foundations
-
-* Week 1: Intro and Sources of Error
-* Week 2: Water Properties and Sampling Protocols
-* Week 3: Titrations
-* Week 4: Standardization
-* Week 5: Wrap Up Unit 1 / Review / Exam 1
+**I intend to cover the following material:**
+ 1. Harvey Chapters 1-5
+ 2. Weiner Chapters 1-3, maybe more depending on time
+ 
+ I will jump around in the texts a bit, so certain sections from other chapters may be covered, too.
 
 # Lab Schedule
 

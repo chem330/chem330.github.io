@@ -46,6 +46,10 @@ This course is an introduction to environmental aquatic chemistry.  It is a hybr
 
 **Technology:** Students will need a laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx) with Microsoft Office installed.  Microsoft office is available for "free" through WCU; please visit Technology Commons or submit an IT help ticket if you don't know how to install it. A web browser and internet connection capable of streaming video will be necessary for submitting homework assignments and accessing course materials.
 
+## Field Work
+
+Portions of this course will be conducted outdoors in the field while collecting water samples for analysis.  This work may occur both on and off campus.  This year, we will travel to Black Mountain, NC to collect water samples from the Swannanoa River; the analysis results will be shared with the Town of Black Mountain stormwater program.  Students should make every effort to attend this field trip, and you will receive a grade for participation in the trip.  Any students not attending will be required to complete a makeup assignment with equal time and effort committments as the field trip.  Field work will occur rain or shine -- please see the lab syllabus for a list of recommended materials to bring with you to the field.
+
 ## Grading
 
 Your final grade for the semester will be weighted thusly:

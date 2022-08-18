@@ -27,6 +27,8 @@ To achieve a satisfactory grade, students will:
 
 1. Demonstrate proficiency in common analytical methods applied to aquatic samples.
 
+1. Demonstrate rigorous, reproducible laboratory practice.
+
 1. Apply common analytical methods and concepts from general chemistry to fully, accurately, and precisely characterize real-world samples.
 
 1. Communicate analysis questions, methods, results, and conclusions using written word, pictorial figures, and data tables.
@@ -63,11 +65,27 @@ Most materials are available from the WCU bookstore; goggles are also available 
 
 *Students not wearing appropriate PPE will be asked to leave lab.*
 
+See "Field Work", below, for addition recommended materials.
+
 ## Lab Notebooks and Data Analysis 
 
-Lab notebooks occassionally collected for review.  You should follow proper laboratory notebook protocol when filling out your notebook.  *Lab notebooks should be filled out during lab, not after!*
+Lab notebooks occassionally collected for review.  You should follow proper laboratory notebook protocol when filling out your notebook.  *Lab notebooks should be filled out during lab, not after!*  Students will be required to scan their lab notebook pages and turn them in on Canvas each day when leaving lab.
 
 Students will be provided with Excel templates for data analysis, and must turn in their templates and data files after each lab.  The Excel sheets will be checked for accuracy against calculations completed by the instructor, and students will be awarded full credit for getting the *exact* right answer, to the correct number of significant digits.  Partial credit may be awarded for other answers.
+
+## Field Work
+
+Portions of this course will be conducted outdoors in the field while collecting water samples for analysis.  This work may occur both on and off campus.  This year, we will travel to Black Mountain, NC to collect water samples from the Swannanoa River; the analysis results will be shared with the Town of Black Mountain stormwater program.  Students should make every effort to attend this field trip, and you will receive a grade for participation in the trip.  Any students not attending will be required to complete a makeup assignment with equal time and effort committments as the field trip.  Field work will occur rain or shine.
+
+The following materials are recommended during sampling days.  Keep in mind that all these materials may get dirty / rained on / fall in the river, etc., during field work, so don't bring your most favorite items unless you are prepared for them to get damaged.
+
+- Waterproof shoes (preferrably knee-high boots or waders)
+- Rain jacket
+- Waterproof backpack
+- Waterproof notebook (e.g. Rite in the Rain) and Sharpie or pencil
+- Water bottle, snacks, and a picnic lunch
+
+The Town of Black Mountain may take photos for educations / PR materials during this trip.  Any students wishing not to appear in these materials should notify their instructor.  Release forms will be provided to students prior to the trip.
 
 ## Grading 
 
@@ -75,15 +93,19 @@ Your grade is tied directly to the student learning outcomes for the course.  Ea
 
 ### Contributions to Your Grade
 
-1. (25%) Demonstrate proficiency in common analytical methods applied to aquatic samples.
+1. (20%) Demonstrate proficiency in common analytical methods applied to aquatic samples.
 
-     - Assessed by observation of lab technique and inspection of laboratory notebooks and data analysis worksheets.
+     - Assessed by observation of lab technique and accuracy of data analysis worksheets.
 
-1. (35%) Apply common analytical methods and concepts from general chemistry to fully, accurately, and precisely characterize real-world samples.
+1. Demonstrate rigorous, reproducible laboratory practice.
+
+	- Assessed by inspection of laboratory notebooks.
+
+1. (20%) Apply common analytical methods and concepts from general chemistry to fully, accurately, and precisely characterize real-world samples.
 
      - Assessed by inspection of lab notebooks and worksheets for accuracy, thoroughness, and data quality.
 
-1. (25%) Communicate analysis questions, methods, results, and conclusions using written word, pictorial figures, and data tables.
+1. (15%) Communicate analysis questions, methods, results, and conclusions using written word, pictorial figures, and data tables.
 
      - Assessed by instructor and/or professional review of final reports on the lab project.
 

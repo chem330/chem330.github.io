@@ -2,14 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://chem330.github.io/lab-schedule/index.html</loc>
-    <lastmod>2022-08-10</lastmod>
+    <loc>https://chem330.github.io/experiment1/index.html</loc>
+    <lastmod>2022-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://chem330.github.io/experiment1/index.html</loc>
-    <lastmod>2022-07-29</lastmod>
+    <loc>https://chem330.github.io/labNotebooks/lab-notebook-review/index.html</loc>
+    <lastmod>2022-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://chem330.github.io/project/index.html</loc>
+    <lastmod>2022-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -20,32 +26,68 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://chem330.github.io/experiment3/index.html</loc>
+    <lastmod>2022-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://chem330.github.io/experiment5/index.html</loc>
+    <lastmod>2022-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://chem330.github.io/experiment6/index.html</loc>
+    <lastmod>2022-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://chem330.github.io/labNotebooks/lab-notebooks/index.html</loc>
+    <lastmod>2022-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://chem330.github.io/experiment7/index.html</loc>
+    <lastmod>2022-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://chem330.github.io/index.html</loc>
-    <lastmod>2022-07-29</lastmod>
+    <lastmod>2022-08-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://chem330.github.io/lecture-syllabus/index.html</loc>
-    <lastmod>2022-08-11</lastmod>
+    <lastmod>2022-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://chem330.github.io/schedule/index.html</loc>
-    <lastmod>2022-08-10</lastmod>
+    <lastmod>2022-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://chem330.github.io/experiment2/index.html</loc>
-    <lastmod>2022-08-10</lastmod>
+    <lastmod>2022-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://chem330.github.io/lab-syllabus/index.html</loc>
-    <lastmod>2022-08-11</lastmod>
+    <lastmod>2022-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://chem330.github.io/lab-notebooks/index.html</loc>
+    <lastmod>2022-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -57,7 +99,13 @@
 </url>
 <url>
     <loc>https://chem330.github.io/experiment4/index.html</loc>
-    <lastmod>2022-08-10</lastmod>
+    <lastmod>2022-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://chem330.github.io/404/index.html</loc>
+    <lastmod>2022-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -68,8 +116,20 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://chem330.github.io/404/index.html</loc>
-    <lastmod>2022-07-29</lastmod>
+    <loc>https://chem330.github.io/labNotebooks/bad-1/bad-1/</loc>
+    <lastmod>2021-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://chem330.github.io/labNotebooks/good/good/</loc>
+    <lastmod>2021-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://chem330.github.io/labNotebooks/bad-2/bad-2/</loc>
+    <lastmod>2021-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
