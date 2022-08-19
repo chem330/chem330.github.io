@@ -35,7 +35,10 @@ body{
     padding-bottom:0;
   }
 }
-
+.franklin-content h1:first-of-type{
+  margin-top:0.5em;
+  color: #1E90FF;
+}
 h1{
   font-size:2em;
   margin:0.67em 0
