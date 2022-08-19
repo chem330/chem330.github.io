@@ -6,7 +6,7 @@
 
 **Email:** [dfischer@wcu.edu](mailto:dfischer@wcu.edu)  
 
-**Availability:** Email and office hours are good ways to find me; I'm typically available to respond to emails from late morning through about 9 PM during the week.  I also hang out on the class [Discord server](https://discord.gg/QAZw8FWH).
+**Availability:** Email and office hours are good ways to find me; I'm typically available to respond to emails from late morning through about 9 PM during the week.  I also hang out on the class [Discord server](hhttps://discord.gg/JFnSa9XJha).
 
 <!-- <a href="https://github.com/chem370/chem370.github.io/raw/master/assets/pdf/syllabus.pdf" target="blank">Download Syllabus as  PDF</a>  -->
 
