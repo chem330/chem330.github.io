@@ -41,7 +41,7 @@ To achieve a satisfactory grade, students will:
 
 **Supplemental Book:** Harvey, D. *Analytical Chemistry 2.1* Chem Libre Texts ([Free online!](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_(Harvey)))
 
-**Lab Manual:** All lab activities are posted [online]({{site.baseurl}})
+**Lab Manual:** All lab activities are posted [online](https://chem330.github.io)
 
 **Lab Notebook:** A notebook with hardbound pages is required for use as a laboratory notebook.  Although there are dedicated lab notebook options available, you don't not necessarily need anything fancy -- a simple black and white composition notebook will work.  Alternatively, if you have room left in your carbonless copy notebook from CHEM 139/140, you may use that.
 

@@ -40,7 +40,7 @@ This course is an introduction to environmental aquatic chemistry.  It is a hybr
 - Benjamin, Mark M. *Water Chemistry*, 2nd Edition.  Waveland Press.
 - Radojevic, Miroslav and Vladimir N Bashkin. *Practical Environmental Analysis*, 2nd Edition.  RSC Publishing.
 
-**Lab Manual:** All lab activities are posted [online]({{site.baseurl}})
+**Lab Manual:** All lab activities are posted [online](https://chem330.github.io)
 
 **Miscellaneous:** A scientific calculator not on a phone (for exams, a TI-XX will work but a simple \$10 Casio *fx*-300 will work just as well).
 

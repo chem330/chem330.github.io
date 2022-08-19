@@ -5,11 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{if hasmath}} {{insert head_katex.html }}     {{end}}
   {{if hascode}} {{insert head_highlight.html }}   {{end}}
-  {{insert style.html}}
+  <link rel="stylesheet" href="/css/jtd.css">
+  <link rel="icon" href="/assets/infra/logoF_square.gif">
   {{isdef title}} <title>{{fill title}}</title>  {{end}}
+
+  <!-- PLOTLY -->
+  {{if hasplotly}}
+  <script src="/libs/plotly/plotly.min.js"></script> 
+  <script>
+	const PlotlyJS_json = async (div, url) => {
+    response = await fetch(url); // get file
+    fig = await response.json(); // convert it to json
+    // Make the plot fit the screen responsively. See the documentation of plotly.js. https://plotly.com/javascript/responsive-fluid-layout/
+    if (typeof fig.config === 'undefined') { fig["config"]={} }
+    delete fig.layout.width
+    delete fig.layout.height
+    fig["layout"]["autosize"] = true
+    fig["config"]["autosizable"] = true
+    fig["config"]["responsive"] = true
+
+    // make it easier to scroll throught the website rather than being blocked by a figure.
+    fig.config["scrollZoom"] = false
+
+    // PlotlyJS.savefig by default add the some more attribute to make a static plot.
+    // Disable them to make the website fancier.
+    delete fig.config.staticPlot
+    delete fig.config.displayModeBar
+    delete fig.config.doubleClick
+    delete fig.config.showTips
+
+    Plotly.newPlot(div, fig);
+    };
+  </script>
+  {{end}}
+
 </head>
 <body>                      <!-- closed in foot.html -->
-{{insert pgwrap.html}}
+  <div class="page-wrap">   <!-- closed in foot.html -->
+    <!-- SIDE BAR -->
+    <div class="side-bar">
+      <div class="header">
+        <a href="/" class="h1" style="font-size: 30px">CHEM 330</a>
+      </div>
+      <label for="show-menu" class="show-menu">MENU</label>
+      <input type="checkbox" id="show-menu" role="button">
+      <div class="menu" id="side-menu">
+        <ul class="menu-list">
+          <!-- HOME -->
+          <li class="menu-list-item {{ispage index}}active{{end}}"><a href="/" class="menu-list-link">💧 Course Overview</a>
+          <!-- Syllabi -->
+		  <li class="menu-list-item {{ispage lecture-syllabus/*}}active{{end}}"><a href="/lecture-syllabus/" class="menu-list-link">📜 Lecture Syllabus</a>
+		  <li class="menu-list-item {{ispage lab-syllabus/*}}active{{end}}"><a href="/lab-syllabus/" class="menu-list-link">📜 Lab Syllabus</a>
+          <!-- Schedule -->
+		  <li class="menu-list-item {{ispage schedule/*}}active{{end}}"><a href="/schedule/" class="menu-list-link">📆 Schedule</a>
+          <!-- Lab Notebooks -->
+		  <li class="menu-list-item {{ispage lab-notebooks/*}}active{{end}}"><a href="/lab-notebooks/" class="menu-list-link">📓 Lab Notebooks</a>
+          <!-- Experiment 1 -->
+		  <li class="menu-list-parent {{ispage experiment1/*}}active{{end}}"><a href="/experiment1/" class="menu-list-link">🧪 Exp 1 Error</a>
+			  <ul class="menu-list-child-list">
+				<li class="menu-list-item {{ispage experiment1/index.html}}active{{end}}"><a href="/experiment1/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item {{ispage experiment1/instructor-info}}active{{end}}"><a href="/experiment1/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 2 -->
+		  <li class="menu-list-parent {{ispage experiment2/*}}active{{end}}"><a href="/experiment2/" class="menu-list-link">🧪 Exp 2 Nitrate</a>
+			  <ul class="menu-list-child-list">
+				<li class="menu-list-item {{ispage experiment2/index.html}}active{{end}}"><a href="/experiment2/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item {{ispage experiment2/instructor-info}}active{{end}}"><a href="/experiment2/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 3 -->
+		  <li class="menu-list-parent {{ispage experiment3/*}}active{{end}}"><a href="/experiment3/" class="menu-list-link">🧪 Exp 3 Phosphate</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item {{ispage experiment3/index.html}}active{{end}}"><a href="/experiment3/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item {{ispage experiment3/instructor-info}}active{{end}}"><a href="/experiment3/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 4 -->
+		  <li class="menu-list-parent {{ispage experiment4/*}}active{{end}}"><a href="/experiment4/" class="menu-list-link">🧪 Exp 4 Alkalinity</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item {{ispage experiment4/index.html}}active{{end}}"><a href="/experiment3/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item {{ispage experiment4/instructor-info}}active{{end}}"><a href="/experiment4/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 5 -->
+		  <li class="menu-list-parent {{ispage experiment5/*}}active{{end}}"><a href="/experiment5/" class="menu-list-link">🧪 Exp 5 TDS</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item {{ispage experiment5/index.html}}active{{end}}"><a href="/experiment5/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item {{ispage experiment5/instructor-info}}active{{end}}"><a href="/experiment5/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 6 -->
+		  <li class="menu-list-parent {{ispage experiment6/*}}active{{end}}"><a href="/experiment3/" class="menu-list-link">🧪 Exp 6 IC</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item {{ispage experiment6/index.html}}active{{end}}"><a href="/experiment6/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item {{ispage experiment6/instructor-info}}active{{end}}"><a href="/experiment6/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
 
+          <!-- Project -->
+		  <li class="menu-list-parent {{ispage project/*}}active{{end}}"><a href="/project/" class="menu-list-link">🥼 Project</a>
+      </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="main-content-wrap"> <!-- closed in foot.html -->
+      <div class="main-content" id="focus" tabindex="-1" style="outline:0;">    <!-- closed in foot.html -->
+        <div class="main-header">
+          <a name="pagetop"></a>
+		  <a id="github" href="https://github.com/chem330/chem330.github.io">GitHub Repository</a>
+        </div>
 
 <!-- Content appended here (in class franklin-content) -->

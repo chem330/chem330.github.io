@@ -3,76 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  
+   <!-- Un-minified script so that can play a bit -->
+<link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+   <!-- Syntax highlighting via Prism, note: restricted langs -->
+<link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
   <link rel="stylesheet" href="/css/jtd.css">
-<link rel="icon" href="/assets/favicon.ico">
+  <link rel="icon" href="/assets/infra/logoF_square.gif">
+   <title>Experiment 2: Standardization - Nitrate and Phosphate</title>  
 
-<style>
-  /* #148 wrap long header */
-  .franklin-content a.header-anchor,
-  .franklin-toc li a
-   {
-    word-wrap: break-word;
-    white-space: normal;
-  }
-</style>
+  <!-- PLOTLY -->
+  
 
-   <title>Experiment 3: Standardization - Phosphate</title>  
 </head>
 <body>                      <!-- closed in foot.html -->
-<div class="page-wrap">   <!-- closed in foot.html -->
-  <!-- SIDE BAR -->
-  <div class="side-bar">
-    <div class="header">
-      <a href="/" class="title">
-        CHEM 330
-      </a>
-    </div>
-    <label for="show-menu" class="show-menu">MENU</label>
-    <input type="checkbox" id="show-menu" role="button">
-    <div class="menu" id="side-menu">
-      <ul class="menu-list">
-        <li class="menu-list-item "><a href="/" class="menu-list-link ">Home</a>
-        <li class="menu-list-item "><a href="/lab-syllabus/" class="menu-list-link ">Lab Syllabus</a>
-        <li class="menu-list-item "><a href="/lecture-syllabus/" class="menu-list-link ">Lecture Syllabus</a>
-        <li class="menu-list-item "><a href="/schedule/" class="menu-list-link ">Schedule</a>
-        <li class="menu-list-item "><a href="/lab-notebooks/" class="menu-list-link ">Lab Notebooks</a>
-        <li class="menu-list-item "><a href="/experiment1/" class="menu-list-link ">Exp 1: Errors</a>
-        <li class="menu-list-item active"><a href="/experiment2/" class="menu-list-link ">Exp 2: Nitrate</a>
-	<li class="menu-list-item "><a href="/experiment3/" class="menu-list-link ">Exp 3: Phosphate</a>
-	<li class="menu-list-item "><a href="/experiment4/" class="menu-list-link ">Exp 4: Titrations</a>
-	<li class="menu-list-item "><a href="/experiment5/" class="menu-list-link ">Exp 5: TDS</a>
-	<li class="menu-list-item "><a href="/experiment6/" class="menu-list-link ">Exp 6: IC</a>
-	<li class="menu-list-item "><a href="/experiment7/" class="menu-list-link ">Exp 7: TBD</a>
-	<li class="menu-list-item "><a href="/project/" class="menu-list-link ">Project Info</a>
-          <!-- <ul class="menu-list-child-list ">
-            <li class="menu-list-item "><a href="#" class="menu-list-link">Submenu</a>
-          </ul> -->
-      </ul>
-    </div>
-    <div class="footer">
-      This is <em>Just the docs</em>, adapted from the <a href="https://github.com/pmarsceill/just-the-docs" target="_blank">Jekyll theme</a>.
-    </div>
-  </div>
-  <!-- CONTENT -->
-  <div class="main-content-wrap"> <!-- closed in foot.html -->
-    <div class="main-content">    <!-- closed in foot.html -->
-      <div class="main-header">
-        <a id="github" href="//github.com/chem330">CHEM330 on GitHub</a>
+  <div class="page-wrap">   <!-- closed in foot.html -->
+    <!-- SIDE BAR -->
+    <div class="side-bar">
+      <div class="header">
+        <a href="/" class="h1" style="font-size: 30px">CHEM 330</a>
       </div>
+      <label for="show-menu" class="show-menu">MENU</label>
+      <input type="checkbox" id="show-menu" role="button">
+      <div class="menu" id="side-menu">
+        <ul class="menu-list">
+          <!-- HOME -->
+          <li class="menu-list-item "><a href="/" class="menu-list-link">💧 Course Overview</a>
+          <!-- Syllabi -->
+		  <li class="menu-list-item "><a href="/lecture-syllabus/" class="menu-list-link">📜 Lecture Syllabus</a>
+		  <li class="menu-list-item "><a href="/lab-syllabus/" class="menu-list-link">📜 Lab Syllabus</a>
+          <!-- Schedule -->
+		  <li class="menu-list-item "><a href="/schedule/" class="menu-list-link">📆 Schedule</a>
+          <!-- Lab Notebooks -->
+		  <li class="menu-list-item "><a href="/lab-notebooks/" class="menu-list-link">📓 Lab Notebooks</a>
+          <!-- Experiment 1 -->
+		  <li class="menu-list-parent "><a href="/experiment1/" class="menu-list-link">🧪 Exp 1 Error</a>
+			  <ul class="menu-list-child-list">
+				<li class="menu-list-item "><a href="/experiment1/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/experiment1/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 2 -->
+		  <li class="menu-list-parent active"><a href="/experiment2/" class="menu-list-link">🧪 Exp 2 Nitrate</a>
+			  <ul class="menu-list-child-list">
+				<li class="menu-list-item active"><a href="/experiment2/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/experiment2/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 3 -->
+		  <li class="menu-list-parent "><a href="/experiment3/" class="menu-list-link">🧪 Exp 3 Phosphate</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/experiment3/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/experiment3/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 4 -->
+		  <li class="menu-list-parent "><a href="/experiment4/" class="menu-list-link">🧪 Exp 4 Alkalinity</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/experiment3/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/experiment4/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 5 -->
+		  <li class="menu-list-parent "><a href="/experiment5/" class="menu-list-link">🧪 Exp 5 TDS</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/experiment5/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/experiment5/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 6 -->
+		  <li class="menu-list-parent "><a href="/experiment3/" class="menu-list-link">🧪 Exp 6 IC</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/experiment6/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/experiment6/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
 
-
+          <!-- Project -->
+		  <li class="menu-list-parent "><a href="/project/" class="menu-list-link">🥼 Project</a>
+      </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="main-content-wrap"> <!-- closed in foot.html -->
+      <div class="main-content" id="focus" tabindex="-1" style="outline:0;">    <!-- closed in foot.html -->
+        <div class="main-header">
+          <a name="pagetop"></a>
+		  <a id="github" href="https://github.com/chem330/chem330.github.io">GitHub Repository</a>
+        </div>
 
 <!-- Content appended here (in class franklin-content) -->
 <div class="franklin-content">
-<p>https://archive.epa.gov/water/archive/web/html/vms57.html https://www.nemi.gov/methods/method_summary/5251/</p>
+<h1 id="nitrate_determination"><a href="#nitrate_determination" class="header-anchor">Nitrate Determination</a></h1>
 <h1 id="background"><a href="#background" class="header-anchor">Background</a></h1>
+<p>Nitrate-nitrogen may be present in small amounts in fresh domestic wastewater.  However, it is seldom found in influents to treatment plants because the nitrate serves as an oxygen source in the biologically unstable wastewater.  On the other hand, nitrate is often found in the effluents of biological treatment plants, because it represents the final form of nitrogen from the oxidation of organic nitrogen compounds.  Trickling-filter and activated sludge treatment plant effluents may contain from 0 to 50 mg/L nitrate, depending on the total nitrogen content of the influent, the degree of loading, and the temperature of the sewage.</p>
+<p>Nitrate may also be found in river water, lake water, and most importantly in ground water.  The nitrate may originate from sewage, or in rural areas, it may be produced by fertilizer or barnyard runoff.  The U.S. Public Health Service designated safe limit for nitrate in water is 45 ppm nitrate or 10 ppm nitrate-nitrogen.  Nitrate in drinking water is particularly dangerous to small children, infants, and unborn fetuses.</p>
+<p>This experiment uses commercially-available reagents, but is similar to <a href="https://www.nemi.gov/methods/method_summary/5251/">EPA method 353.3</a>.  More information can be found on the <a href="https://archive.epa.gov/water/archive/web/html/vms57.html">EPA web archive</a>.</p>
+<h2 id="absorption_spectroscopy_colorimetric_method"><a href="#absorption_spectroscopy_colorimetric_method" class="header-anchor">Absorption Spectroscopy &#40;Colorimetric Method&#41;</a></h2>
+<p>In this experiment, nitrate will be determined spectrophotometrically using the Vernier SpectroVis.  Spectrophometry is a commonly used method to determine aqueous anions.  The fundamentals of absorption spectrophotometry are shown below.  A light source shines light through a sample cell &#40;a cuvette&#41; and onto a detection system, which serves to convert the light into an electric signal &#40;Figure 1&#41;.  The basic idea is that as the concentration of the colored complex increases in the cuvette, we would expect less light to be transmitted to the detection system.  Hence, we are interested in the absorption of light by the sample:</p>
+<p>FIGURE 1</p>
+<h2 id="standardization"><a href="#standardization" class="header-anchor">Standardization</a></h2>
+<p>A series of solutions is prepared with a known amount of analyte &#40;standards&#41; and the absorbance is measured on the Vernier SpectroVis.  A graph is then prepared of absorbance &#40;y-axis&#41; versus concentration &#40;x-axis&#41;.  This graph is called a standard curve or calibration curve.  The calibration curve will be used to develop a quantitative relationship between concentration and absorbance.  Then absorbance will be measured for the water samples, and the graph will be used to calculate the concentration of analyte in the samples.  A generalized example is shown below in Figure 2.</p>
+
+<img src="/assets/experiment2/code/output/nitrate-cal.svg" alt="">
 <h1 id="procedure"><a href="#procedure" class="header-anchor">Procedure</a></h1>
 <h2 id="samples"><a href="#samples" class="header-anchor">Samples</a></h2>
-<p>Use the samples provided in lab.</p>
+<p>Use the samples previously collected from Cullowhee Creek.</p>
 <h2 id="standard_preparation"><a href="#standard_preparation" class="header-anchor">Standard Preparation</a></h2>
-<h2 id="determination_of_phosphate"><a href="#determination_of_phosphate" class="header-anchor">Determination of Phosphate</a></h2>
+<p><strong>A a 500-mg L\(^{-1}\) NO\(_3^-\) stock solution has been prepared for you.</strong></p>
+<ol>
+<li><p>Prepare a 10-ppm nitrate intermediate stock solution using the stock solution.</p>
+</li>
+<li><p>Using your intermediate stock solution, prepare 5 standards with concentrations ranging from &#40;approximately&#41; 0–10 mg L\(^{-1}\).  Make 25 mL of each solution, and remember that \(C_1V_1 = C_2V_2\).</p>
+</li>
+</ol>
+<h2 id="determination_of_nitrate"><a href="#determination_of_nitrate" class="header-anchor">Determination of Nitrate</a></h2>
+<h3 id="spectrovis"><a href="#spectrovis" class="header-anchor">SpectroVis</a></h3>
+<ol>
+<li><p>If you haven&#39;t already, download <a href="https://www.vernier.com/product/spectral-analysis/">Vernier Spectral Analysis</a> and install it on your computer.</p>
+</li>
+<li><p>Open the Spectral Analysis software and expand the <strong>Absorbance</strong> mode menu.  From there, choose <strong>Absorbance vs. Concentration &#40;Beer&#39;s Law&#41;</strong>.</p>
+</li>
+<li><p>Allow the lamp to automatically warm up for 90 seconds &#40;do not skip&#41;. </p>
+</li>
+<li><p>When the 90 seconds has passed, insert a cuvette containing your blank &#40;DI water&#41; into the spectrometer and click <strong>Finish Calibration</strong>.  &#40;This step appears to set the integration time of the spectrophotometer – it does not actually calibrate it or measure the sample.&#41;</p>
+</li>
+<li><p>After the previous step, a wizard will appear to choose the measurement wavelength.  Place your high standard into the instrument and follow the on-screen instructions to choose the wavelength with the highest absorbance.  Enter that wavelength into the &quot;Selected Wavelength&quot; box.  <em>If the wizard does not appear, click the settings icon in the top right of the software to access it.</em></p>
+</li>
+</ol>
+<h3 id="sample_preparation"><a href="#sample_preparation" class="header-anchor">Sample Preparation</a></h3>
 <p>The following procedure should be performed on each of your 6 calibration standards and each of your water samples.</p>
 <ol>
 <li><p>Place 25 mL of each standard and sample into separate 50-mL flasks.</p>
@@ -81,22 +134,61 @@
 </li>
 <li><p>Add the contents of one NitraVer5 Nitrate reagent packet to each sample.  <strong>Be careful&#33;</strong>  There is Cd metal in the reagent packet, so the contents of the reagent packet are toxic.  Wear gloves, goggles, and avoid inhaling the reagent powder.  Be careful about what you touch with your gloves.</p>
 </li>
-<li><p>Swirl each flask vigorously for 1 minute.</p>
+<li><p>Swirl each flask vigorously for 1 minute.  Wait at least 5 minutes, but no longer than 15 minutes before reading the absorbance of each sample.</p>
+</li>
+<li><p>After the designated time, use a plastic pipette to transfer some of each solution to the cuvette and complete a measurement. <strong>Follow the guidelines listed directly below&#33;</strong></p>
+<ul>
+<li><p>Always work from lowest concentration to highest concentration to avoid cross-contamination&#33;</p>
+</li>
+<li><p>Make sure to measure each standard once and each sample three times&#33;</p>
+</li>
+<li><p>Make sure to rinse the cuvette 3 times with DI water between each measurement&#33;</p>
+</li>
+<li><p>Make sure to record the instrument parameters &#40;measurement wavelength&#41; and your measurements in your notebook&#33;</p>
+</li>
+</ul>
 </li>
 </ol>
-<p>Wait at least 5 minutes, but no longer than 15 minutes before reading the absorbance of each sample.</p>
-<h3 id="spectrovis"><a href="#spectrovis" class="header-anchor">SpectroVis</a></h3>
-<h1 id="what_to_turn_in"><a href="#what_to_turn_in" class="header-anchor">What to Turn In</a></h1>
-<hr>
+<h2 id="what_to_turn_in"><a href="#what_to_turn_in" class="header-anchor">What to Turn In</a></h2>
+<ol>
+<li><p>Before you leave, scan your notebook pages using the scanners in the hallway.</p>
+<ul>
+<li><p>Scanners are available across from room 318 and in the copy room at the end of the hall by the restrooms.</p>
+</li>
+<li><p>To use the scanners, hold your CatCard up to RFID reader on the top of the printer/copier/scanner to log in with your ID.</p>
+</li>
+<li><p>Use the on-screen prompts to choose to scan your document.</p>
+</li>
+<li><p>You can have the scan sent to your email or to your OneDrive/Vault folder, where you can then download it to your computer.</p>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><p>Upload your scanned pages to the <a href="https://westerncarolina.instructure.com/courses/19308/assignments/383708">Week 2 Lab Notebook assignment</a> on Canvas.</p>
+</li>
+<li><p>Complete the Excel answer sheet in the <a href="https://westerncarolina.instructure.com/courses/19308/assignments/383673">Experiment 2 assignment</a> on Canvas by next week.</p>
+</li>
+</ol>
 <div class="page-foot">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Al Fischer. Last modified: August 18, 2022.
-    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  <div class="copyright">
+    &copy; Al Fischer. Last modified: August 19, 2022. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
     </div> <!-- end of class main-content -->
     </div> <!-- end of class main-content-wrap -->
     </div> <!-- end of class page-wrap-->
     
+      <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+    
+    
+      <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
     
   </body>
 </html>

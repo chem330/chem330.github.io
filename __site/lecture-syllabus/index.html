@@ -6,63 +6,81 @@
   
   
   <link rel="stylesheet" href="/css/jtd.css">
-<link rel="icon" href="/assets/favicon.ico">
-
-<style>
-  /* #148 wrap long header */
-  .franklin-content a.header-anchor,
-  .franklin-toc li a
-   {
-    word-wrap: break-word;
-    white-space: normal;
-  }
-</style>
-
+  <link rel="icon" href="/assets/infra/logoF_square.gif">
    <title>Lecture Syllabus</title>  
+
+  <!-- PLOTLY -->
+  
+
 </head>
 <body>                      <!-- closed in foot.html -->
-<div class="page-wrap">   <!-- closed in foot.html -->
-  <!-- SIDE BAR -->
-  <div class="side-bar">
-    <div class="header">
-      <a href="/" class="title">
-        CHEM 330
-      </a>
-    </div>
-    <label for="show-menu" class="show-menu">MENU</label>
-    <input type="checkbox" id="show-menu" role="button">
-    <div class="menu" id="side-menu">
-      <ul class="menu-list">
-        <li class="menu-list-item "><a href="/" class="menu-list-link ">Home</a>
-        <li class="menu-list-item "><a href="/lab-syllabus/" class="menu-list-link ">Lab Syllabus</a>
-        <li class="menu-list-item active"><a href="/lecture-syllabus/" class="menu-list-link ">Lecture Syllabus</a>
-        <li class="menu-list-item "><a href="/schedule/" class="menu-list-link ">Schedule</a>
-        <li class="menu-list-item "><a href="/lab-notebooks/" class="menu-list-link ">Lab Notebooks</a>
-        <li class="menu-list-item "><a href="/experiment1/" class="menu-list-link ">Exp 1: Errors</a>
-        <li class="menu-list-item "><a href="/experiment2/" class="menu-list-link ">Exp 2: Nitrate</a>
-	<li class="menu-list-item "><a href="/experiment3/" class="menu-list-link ">Exp 3: Phosphate</a>
-	<li class="menu-list-item "><a href="/experiment4/" class="menu-list-link ">Exp 4: Titrations</a>
-	<li class="menu-list-item "><a href="/experiment5/" class="menu-list-link ">Exp 5: TDS</a>
-	<li class="menu-list-item "><a href="/experiment6/" class="menu-list-link ">Exp 6: IC</a>
-	<li class="menu-list-item "><a href="/experiment7/" class="menu-list-link ">Exp 7: TBD</a>
-	<li class="menu-list-item "><a href="/project/" class="menu-list-link ">Project Info</a>
-          <!-- <ul class="menu-list-child-list ">
-            <li class="menu-list-item "><a href="#" class="menu-list-link">Submenu</a>
-          </ul> -->
-      </ul>
-    </div>
-    <div class="footer">
-      This is <em>Just the docs</em>, adapted from the <a href="https://github.com/pmarsceill/just-the-docs" target="_blank">Jekyll theme</a>.
-    </div>
-  </div>
-  <!-- CONTENT -->
-  <div class="main-content-wrap"> <!-- closed in foot.html -->
-    <div class="main-content">    <!-- closed in foot.html -->
-      <div class="main-header">
-        <a id="github" href="//github.com/chem330">CHEM330 on GitHub</a>
+  <div class="page-wrap">   <!-- closed in foot.html -->
+    <!-- SIDE BAR -->
+    <div class="side-bar">
+      <div class="header">
+        <a href="/" class="h1" style="font-size: 30px">CHEM 330</a>
       </div>
+      <label for="show-menu" class="show-menu">MENU</label>
+      <input type="checkbox" id="show-menu" role="button">
+      <div class="menu" id="side-menu">
+        <ul class="menu-list">
+          <!-- HOME -->
+          <li class="menu-list-item "><a href="/" class="menu-list-link">💧 Course Overview</a>
+          <!-- Syllabi -->
+		  <li class="menu-list-item active"><a href="/lecture-syllabus/" class="menu-list-link">📜 Lecture Syllabus</a>
+		  <li class="menu-list-item "><a href="/lab-syllabus/" class="menu-list-link">📜 Lab Syllabus</a>
+          <!-- Schedule -->
+		  <li class="menu-list-item "><a href="/schedule/" class="menu-list-link">📆 Schedule</a>
+          <!-- Lab Notebooks -->
+		  <li class="menu-list-item "><a href="/lab-notebooks/" class="menu-list-link">📓 Lab Notebooks</a>
+          <!-- Experiment 1 -->
+		  <li class="menu-list-parent "><a href="/experiment1/" class="menu-list-link">🧪 Exp 1 Error</a>
+			  <ul class="menu-list-child-list">
+				<li class="menu-list-item "><a href="/experiment1/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/experiment1/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 2 -->
+		  <li class="menu-list-parent "><a href="/experiment2/" class="menu-list-link">🧪 Exp 2 Nitrate</a>
+			  <ul class="menu-list-child-list">
+				<li class="menu-list-item "><a href="/experiment2/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/experiment2/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 3 -->
+		  <li class="menu-list-parent "><a href="/experiment3/" class="menu-list-link">🧪 Exp 3 Phosphate</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/experiment3/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/experiment3/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 4 -->
+		  <li class="menu-list-parent "><a href="/experiment4/" class="menu-list-link">🧪 Exp 4 Alkalinity</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/experiment3/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/experiment4/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 5 -->
+		  <li class="menu-list-parent "><a href="/experiment5/" class="menu-list-link">🧪 Exp 5 TDS</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/experiment5/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/experiment5/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 6 -->
+		  <li class="menu-list-parent "><a href="/experiment3/" class="menu-list-link">🧪 Exp 6 IC</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/experiment6/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/experiment6/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
 
-
+          <!-- Project -->
+		  <li class="menu-list-parent "><a href="/project/" class="menu-list-link">🥼 Project</a>
+      </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="main-content-wrap"> <!-- closed in foot.html -->
+      <div class="main-content" id="focus" tabindex="-1" style="outline:0;">    <!-- closed in foot.html -->
+        <div class="main-header">
+          <a name="pagetop"></a>
+		  <a id="github" href="https://github.com/chem330/chem330.github.io">GitHub Repository</a>
+        </div>
 
 <!-- Content appended here (in class franklin-content) -->
 <div class="franklin-content">
@@ -96,7 +114,7 @@
 <li><p>Radojevic, Miroslav and Vladimir N Bashkin. <em>Practical Environmental Analysis</em>, 2nd Edition.  RSC Publishing.</p>
 </li>
 </ul>
-<p><strong>Lab Manual:</strong> All lab activities are posted <a href="">online</a></p>
+<p><strong>Lab Manual:</strong> All lab activities are posted <a href="https://chem330.github.io">online</a></p>
 <p><strong>Miscellaneous:</strong> A scientific calculator not on a phone &#40;for exams, a TI-XX will work but a simple &#36;10 Casio <em>fx</em>-300 will work just as well&#41;.</p>
 <p><strong>Technology:</strong> Students will need a laptop computer meeting Chemistry and Physics&#39; <a href="https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx">minimum computer requirements</a> with Microsoft Office installed.  Microsoft office is available for &quot;free&quot; through WCU; please visit Technology Commons or submit an IT help ticket if you don&#39;t know how to install it. A web browser and internet connection capable of streaming video will be necessary for submitting homework assignments and accessing course materials.</p>
 <h2 id="field_work"><a href="#field_work" class="header-anchor">Field Work</a></h2>
@@ -176,10 +194,10 @@
 </li>
 </ul>
 <p><em>This syllabus and the course schedule are subject to revision as needed. Students will be notified of changes and are responsible for adhering to the modifications.</em></p>
-<hr>
 <div class="page-foot">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Al Fischer. Last modified: August 16, 2022.
-    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  <div class="copyright">
+    &copy; Al Fischer. Last modified: August 19, 2022. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
     </div> <!-- end of class main-content -->
