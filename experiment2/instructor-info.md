@@ -2,8 +2,9 @@
 title = "Experiment 2: Instructor Info"
 +++
 
-# Experiment 2: Instructor / Prep Information
- 
+Nitrate Instructor / Prep Information
+=======================================
+
 This experiment requires the following items.
 
 # Supplies

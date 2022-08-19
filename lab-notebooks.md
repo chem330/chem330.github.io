@@ -10,9 +10,9 @@ title = "Project Information"
 
 Your lab notebook is the single **exact, permanent, legally defensible, archival record** of what you did in lab.  In an academic setting, notebooks are often used by the person who wrote the notebook or a lab colleague when trying to repeat an experiment, process data, or publish results.  In a professional setting, they may be used to communicate work to new employees, defend against patent lawsuits, or support forensic or toxicological conclusions in a court of law.  A good test of your lab notebook is to imagine handing it to a peer who has never completed the lab.  Then, try to determine if there would enough information for them to (1) complete the lab with no other resources, (2) **exactly** repeat your data analysis and calculations and arrive at the **exact** same answer (including all significant digits), and (3) understand your conclusions and how you arrived at those conclusions.  When in doubt, it's better to include too much than too little!
 
-In the context of Aquatic Chemistry, you may imagine working in an EPA-certified water anlysis lab where a lack of thorough records may lead to the company losing EPA certification.  Or perhaps one may work for an environmental consulting firm that conducts water analysis that is the key evidence in a court case against a polluting entity -- in such a case a good lab notebook could make or break the case!
+In the context of Aquatic Chemistry, you may imagine working in an EPA-certified water anlysis lab where a lack of thorough records may lead to the company losing EPA certification.  Or perhaps one may work for an environmental consulting firm that conducts water analysis that is the key evidence in a court case against a polluting entity -- in such a case a good lab notebook could make or break the defense or prosecution!
 
-In an effor to keep good records, the following apply to all lab notebooks:
+In an effort to keep good records, the following apply to all lab notebooks:
 
 1. Your lab notebook should have a glued or sewn binding (not spiral, as pages can more easily be ripped out after the fact).  There are dedicated lab notebooks available for puchase, but a basic composition book will work just fine.
 1. Each page should be numbered and dated.  In the case of a true lab notebook, there is usually a template for this; in the case of a composition book, you will have to add this yourself.
@@ -33,7 +33,7 @@ In an effor to keep good records, the following apply to all lab notebooks:
 
 ## Writing Your Procedures 
 
-Your procedures in your notebook should state *exactly* what you did.  *Exactly!*  This is your exact record you could use to redo calculations, remember what the sample looked like, remember what special steps you took on the instrument, etc.  This is not the same as the methods in your paper; those are a *summary* of what you did.
+Your procedures in your notebook should state *exactly* what you did.  *Exactly!*  This is your exact record you could use to redo calculations, remember what the sample looked like, remember what special steps you took on the instrument, etc.  This is not the same as the methods in a paper or lab report; those are a *summary* of what you did.
 
 - Write all procedures in *past tense*. Do not just copy the handout.  
 
@@ -50,9 +50,9 @@ Your procedures in your notebook should state *exactly* what you did.  *Exactly!
 
 > Note: Some students like to write out their procedures before coming to lab to help in planning.  This is great!  However, these will by default be general procedures and not *exactly* what you did.  So if you do this, you should leave room to add exactly what you did -- and make sure you do in fact add it in during lab!
 
-## Significant Figures 
+## Significant Figures and Errors
 
-- **Balances:** In general, your significant digits should be limited by the balance. The exact number may depend on which balance you use.  Be sure to record all digits on the balance when mass is important, even if they are zeroes; if the last digit fluctuates do the best you can to estimate it.  Remember you do NOT have to weigh out the masses exactly as they appear on the worksheet -- what matters is that you get close and that you record the actual *exact* mass you used!
-- **Volumetric Glassware:** All volumetric pipettes and flasks should be labeled with the volume of water they deliver or contain at room temperature along with the error associated with that volume.  Use this to determine your significant digits.  Flasks should be used *to contain* liquid (marked TC) and pipettes should be used *to deliver* liquid (marked TD); if your pipette has lines for both make sure you use the correct one (TD).
-- **Graduated cylinders:** For small volumes, these typically have 3 significant digits.  You should interpolate to at least the nearest 0.5 mL when using a graduated cylinder.  Again, there is a large difference between recording 10 ml and 10.5 ml in your notebook in regards to significant figures (1 vs 3)!  Most work in instrumental analysis should use volumetric glassware and not graduated cylinders.
-- **Beakers/Erlenmeyer Flasks:** These should not be used to measure volumes in instrumental analysis.
+- **Balances:** The exact number of significant digits from the balance may depend on which balance you use.  Be sure to record all digits on the balance when mass is important, even if they are zeroes; if the last digit fluctuates do the best you can to estimate it.  Remember you do NOT have to weigh out the masses exactly as they appear on the worksheet -- what matters is that you get close and that you record the actual *exact* mass you used!
+- **Volumetric Glassware:** All volumetric pipettes and flasks are labeled with the volume of water they deliver or contain at room temperature along with the error associated with that volume.  Use this to determine your significant digits.  Flasks should be used *to contain* liquid (marked TC) and pipettes should be used *to deliver* liquid (marked TD); if your pipette has lines for both make sure you use the correct one (TD).
+- **Graduated cylinders:** For small volumes, these typically have 3 significant digits.  You should interpolate to at least the nearest 0.5 mL when using a small or medium-sized graduated cylinder.  Remember, there is a large difference between recording 10 ml and 10.5 ml in your notebook in regards to significant figures (1 vs 3)!  Most work in this course should use volumetric glassware and not graduated cylinders.
+- **Beakers/Erlenmeyer Flasks:** These should not be used to measure volumes!  They are just for temporarily holding solutions or performing a reaction / extraction.

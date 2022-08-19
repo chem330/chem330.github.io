@@ -1,8 +1,3 @@
-+++
-title = "Lab Syllabus"
-+++
-
-
 # CHEM 330 Lab: Aquatic Chemistry Lab - Syllabus
 
 **Instructor:** Al Fischer, PhD   
@@ -51,8 +46,6 @@ Students will need the following software:
 - Vernier [Logger Lite](https://www.vernier.com/downloads/logger-lite-updates/)
 - [Vernier Spectral Analysis](https://www.vernier.com/product/spectral-analysis/) (free)
 - Microsoft Office, especially Excel. ("free" through WCU -- install through your WCU email if you don't already have it, ask IT for help if needed)
-- A blue or black pen (not pencil!) for writing in your lab notebook.
-
 
 **Additional Required Course Materials:**  
 
@@ -60,6 +53,7 @@ Students will need the following software:
   - Nitrile gloves
   - Appropriate clothing: closed-toed shoes, long pants, hair tie for long hair
   - Permanent, felt-tipped marker (e.g. a Sharpie®)
+  - A blue or black pen (not pencil!) for writing in your lab notebook.
 
 Most materials are available from the WCU bookstore; goggles are also available from the WCU Chemistry Club (these goggles are recommended over cheaper ones).  A lab coat is optional.
 
@@ -69,9 +63,9 @@ See "Field Work", below, for addition recommended materials.
 
 ## Lab Notebooks and Data Analysis 
 
-Lab notebooks occassionally collected for review.  You should follow proper laboratory notebook protocol when filling out your notebook.  *Lab notebooks should be filled out during lab, not after!*  Students will be required to scan their lab notebook pages and turn them in on Canvas each day when leaving lab.
+Lab notebooks will be collected weekly for review.  You should follow proper laboratory notebook protocol when filling out your notebook.  **Lab notebooks should be filled out during lab, not after!**  Students will be required to scan their lab notebook pages and turn them in on Canvas each day when leaving lab.
 
-Students will be provided with Excel templates for data analysis, and must turn in their templates and data files after each lab.  The Excel sheets will be checked for accuracy against calculations completed by the instructor, and students will be awarded full credit for getting the *exact* right answer, to the correct number of significant digits.  Partial credit may be awarded for other answers.
+Students will be provided with Excel templates for data analysis, and must turn in their templates and data files for each lab.  The Excel sheets will be checked for accuracy against calculations completed by the instructor, and students will be awarded full credit for getting the *exact* right answer, to the correct number of significant digits.  Partial credit may be awarded for close answers.
 
 ## Field Work
 
@@ -99,11 +93,11 @@ Your grade is tied directly to the student learning outcomes for the course.  Ea
 
 1. Demonstrate rigorous, reproducible laboratory practice.
 
-	- Assessed by inspection of laboratory notebooks.
+	 - Assessed by inspection of laboratory notebooks.
 
 1. (20%) Apply common analytical methods and concepts from general chemistry to fully, accurately, and precisely characterize real-world samples.
 
-     - Assessed by inspection of lab notebooks and worksheets for accuracy, thoroughness, and data quality.
+     - Assessed by succsessful completion of the project, including accurate data analysis.
 
 1. (15%) Communicate analysis questions, methods, results, and conclusions using written word, pictorial figures, and data tables.
 
@@ -115,10 +109,8 @@ Your grade is tied directly to the student learning outcomes for the course.  Ea
 
 1. (10%) Participate effectively in group projects and demonstrate professionalism in the laboratory.
 
-     - Assessed by peer and instructor evaluation
+     - Assessed by peer and instructor evaluation.
 
-
-<!-- \pagebreak -->
 
 ### Grading Scale
 

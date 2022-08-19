@@ -2,7 +2,7 @@
 @def hasmath = false              <!-- mostly there's no maths on pages -->
 @def generate_rss = false
 
-@def mintoclevel = 2              <!-- TOCS only for level h2 and higher -->
+@def mintoclevel = 1              <!-- TOCS only for level h2 and higher -->
 @def maxtoclevel = 3              <!-- TOCS only up to level 3 included -->
 
 @def hasplotly = false
@@ -53,3 +53,4 @@ Useful HTML snippets
 
 \newcommand{\smindent}[1]{\span{width:45px;text-align:right;color:slategray;}{#1}}
 \newcommand{\smnote}[1]{\style{font-size:85%;line-height:0em;}{#1}}
+

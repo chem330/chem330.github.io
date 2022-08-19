@@ -3,7 +3,10 @@ title = "Experiment 2: Standardization - Nitrate and Phosphate"
 +++
 
 
-# Nitrate Determination
+Nitrate Determination
+=========================
+
+\toc
 
 # Background
 
@@ -43,7 +46,12 @@ savefig(joinpath(@OUTPUT, "nitrate-cal.svg")) # hide
 
 ## Samples
 
-Use the samples previously collected from Cullowhee Creek.
+Collect samples from a location of your choice for this experiment.  Some options are:
+- Water fountain in ASB
+- Tap water from your home
+- Water from Cullowhee Creek
+- Water from the Tuckasegee River
+- Others are OK too
 
 ## Standard Preparation
 
@@ -54,7 +62,7 @@ Use the samples previously collected from Cullowhee Creek.
 
 ## Determination of Nitrate
 
-### SpectroVis
+### SpectroVis Setup
 
 1. If you haven't already, download [Vernier Spectral Analysis](https://www.vernier.com/product/spectral-analysis/) and install it on your computer.
 1. Open the Spectral Analysis software and expand the **Absorbance** mode menu.  From there, choose **Absorbance vs. Concentration (Beer's Law)**.
@@ -62,7 +70,7 @@ Use the samples previously collected from Cullowhee Creek.
 1. When the 90 seconds has passed, insert a cuvette containing your blank (DI water) into the spectrometer and click **Finish Calibration**.  (This step appears to set the integration time of the spectrophotometer -- it does not actually calibrate it or measure the sample.)
 1. After the previous step, a wizard will appear to choose the measurement wavelength.  Place your high standard into the instrument and follow the on-screen instructions to choose the wavelength with the highest absorbance.  Enter that wavelength into the "Selected Wavelength" box.  *If the wizard does not appear, click the settings icon in the top right of the software to access it.*
 
-### Sample Preparation
+### Sample Color Development
 
 The following procedure should be performed on each of your 6 calibration standards and each of your water samples.
 
@@ -70,12 +78,17 @@ The following procedure should be performed on each of your 6 calibration standa
 2. Create a blank with 25 mL of deionized water.
 3. Add the contents of one NitraVer5 Nitrate reagent packet to each sample.  **Be careful!**  There is Cd metal in the reagent packet, so the contents of the reagent packet are toxic.  Wear gloves, goggles, and avoid inhaling the reagent powder.  Be careful about what you touch with your gloves.
 4. Swirl each flask vigorously for 1 minute.  Wait at least 5 minutes, but no longer than 15 minutes before reading the absorbance of each sample.
+
+### Determination of Nitrate
+
 5. After the designated time, use a plastic pipette to transfer some of each solution to the cuvette and complete a measurement. **Follow the guidelines listed directly below!**
 
    - Always work from lowest concentration to highest concentration to avoid cross-contamination!
    - Make sure to measure each standard once and each sample three times!
    - Make sure to rinse the cuvette 3 times with DI water between each measurement!
    - Make sure to record the instrument parameters (measurement wavelength) and your measurements in your notebook!
+
+1. After measuring the absorbance of the standards, make a plot of absorbance versus concentration as described by your instructor using Excel.  Add a trendline to your graph with the intercept set to zero and add the equation for the trendline and the $R^2$ value to your graph.  Label the $x$- and $y$-axes, including units for the concentration.  Use the equation of the trendline to determine the nitrate concentration in the samples.
    
 ## What to Turn In
 

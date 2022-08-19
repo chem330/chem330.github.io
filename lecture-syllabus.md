@@ -1,8 +1,5 @@
-+++
-title = "Lecture Syllabus"
-+++
 
-# CHEM 330 Lecture: Aquatic Chemistry - Syllabus (Lecture)
+# CHEM 330 Lecture: Aquatic Chemistry - Syllabus
 
 **Instructor:** Al Fischer, PhD   
 
@@ -20,14 +17,16 @@ title = "Lecture Syllabus"
 
 Environmental aquatic chemistry is the branch of environmental chemistry that deals with chemical phenomena in water.  Aquatic chemistry is concerned with the chemical processes affecting the distribution and circulation of chemical compounds in natural waters.  One goal is to describe and predict the chemical behavior of oceans, estuaries, rivers, lakes, groundwater, and soil water systems, and to describe the processes involved in water treatment. The study of aquatic chemistry draws on the fundamentals of chemistry but is also influenced by other sciences, especially geology and biology. 
 
-This course is an introduction to environmental aquatic chemistry.  It is a hybrid between a traditional quantitative analysis course and aquatic chemistry course, focusing on both the analytical and theoretical aspects of aquatic chemistry.  Topic such as colorimetric, gravimetric, titrimetric, and instrumental analysis will be covered along with the distribution, fate, transport, and reaction kinetics of chemical species in the aquatic environment.  It is expected that students will have taken CHEM 139 and CHEM 140 (the General Chemistry sequence) prior to enrolling in this course; CHEM 232 (Quantitative Analysis) is recommended but not required.  Simultaneous enrollment in CHEM 330 Lab is expected.
+This course is an introduction to environmental aquatic chemistry.  It is a hybrid between a traditional quantitative analysis course and aquatic chemistry course, focusing on both the analytical and theoretical aspects of aquatic chemistry.  Topics such as colorimetric, gravimetric, titrimetric, and instrumental analysis will be covered along with the distribution, fate, transport, and reaction kinetics of chemical species in the aquatic environment.  It is expected that students will have taken CHEM 139 and CHEM 140 (the General Chemistry sequence) prior to enrolling in this course; CHEM 232 (Quantitative Analysis) is recommended but not required.  Simultaneous enrollment in CHEM 330 Lab is expected.
 
 ## Student Learning Outcomes 
 
-- Understand chemical interactions and transport phenomena that affect the distribution of natural and anthropogenic compounds in aquatic ecosystems.
-- Understand how the structure and physical chemical properties of compounds can be used to predict the solubility, reactions, and distribution in aquatic ecosystems.
-- Understand and predict phase transfer, transformation, and transport processes in aquatic ecosystems.
-- Understand the broad, interdisciplinary field of aquatic chemistry.
+- Recognize the different types of chemical analysis that can be applied to water.
+- Critically evaluate the quality of analytical data using statistical methods.
+- Recall how various wet chemistry and instrumental methods of analysis work.
+- Solve chemical problems that relate to aquatic systems, including problems dealing with stoichiometry, units and dimensional analysis, pH, and similar topics.
+- Relate how the structure, physical properties, and chemical properties of a compound can be used to predict its behavior in aqautic ecosystems.
+- Illustrate how chemical phenomena in aquatic systems extend beyond those systems to affect plants, animals, humans, political policy, etc.
 
 ## Required Course Materials 
 
@@ -40,15 +39,15 @@ This course is an introduction to environmental aquatic chemistry.  It is a hybr
 - Benjamin, Mark M. *Water Chemistry*, 2nd Edition.  Waveland Press.
 - Radojevic, Miroslav and Vladimir N Bashkin. *Practical Environmental Analysis*, 2nd Edition.  RSC Publishing.
 
-**Lab Manual:** All lab activities are posted [online](https://chem330.github.io)
+**Lab Manual:** All lab activities are posted [online](https://chem330.github.io).
 
-**Miscellaneous:** A scientific calculator not on a phone (for exams, a TI-XX will work but a simple \$10 Casio *fx*-300 will work just as well).
+**Miscellaneous:** A scientific calculator **not** on a phone (for exams, a TI-XX will work but a simple \$10 Casio *fx*-300 will work just as well).
 
 **Technology:** Students will need a laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx) with Microsoft Office installed.  Microsoft office is available for "free" through WCU; please visit Technology Commons or submit an IT help ticket if you don't know how to install it. A web browser and internet connection capable of streaming video will be necessary for submitting homework assignments and accessing course materials.
 
 ## Field Work
 
-Portions of this course will be conducted outdoors in the field while collecting water samples for analysis.  This work may occur both on and off campus.  This year, we will travel to Black Mountain, NC to collect water samples from the Swannanoa River; the analysis results will be shared with the Town of Black Mountain stormwater program.  Students should make every effort to attend this field trip, and you will receive a grade for participation in the trip.  Any students not attending will be required to complete a makeup assignment with equal time and effort committments as the field trip.  Field work will occur rain or shine -- please see the lab syllabus for a list of recommended materials to bring with you to the field.
+Portions of this course will be conducted outdoors in the field while collecting water samples for analysis.  This work may occur both on and off campus.  This year, we will travel to Black Mountain, NC to collect water samples from the Swannanoa River; the analysis results will be shared with the Town of Black Mountain stormwater program.  Students should make every effort to attend this field trip, and you will receive a grade for participation in the trip.  Any students not attending will be required to complete a makeup assignment with equal time and effort committments as the field trip.  Field work will occur rain or shine -- please see the [lab syllabus](https://chem330.github.io/lab-syllabus/#field_work) for a list of recommended materials to bring with you to the field.
 
 ## Grading
 
@@ -57,7 +56,7 @@ Your final grade for the semester will be weighted thusly:
 - Cumulative Grade: 90%  
 - Discretionary: 10%   
 
-Your **cumulative grade** will be calculated as the total points you earned divided by the total points available (x 100%).  For exams, quizzes, and classwork, each question or assignment will specify the number of points available.  For homework, all questions will be graded on the point system of: 0 (did not attempt), 1 (attempted but entirely incorrect), 2 (incorrect, but close), or 3 (perfect), unless otherwise specified.  
+Your **cumulative grade** will be calculated as the total points you earned divided by the total points available (x 100%).  For exams, quizzes, and classwork, each question or assignment will specify the number of points available.
 
 **Discretionary** points are determined at the end of the semester based on participation, effort, attendance, and overall respect for your peers/classmates, your instructor, and their time, both inside and outside the classroom.
 

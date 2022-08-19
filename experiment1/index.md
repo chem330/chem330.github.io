@@ -2,7 +2,12 @@
 title = "Experiment 1: Error Analysis"
 +++
 
-# Experiment 1: Error Analysis
+Error Analysis
+=========================
+
+\toc
+
+# Background
 
 The objective of this experiment is to conduct a statistical analysis of the error associated with different methods of measuring the volume of liquids.  Aliquots of distilled water in will be measured several different ways: using beakers, graduated cylinders, volumetric glass pipets, and mechanical pipets.  The mass of each sample will be measured using an analytical balance and the density of each sample will be calculated.  You will then conduct a statistical analysis of the error associated with the different methods used in the experiment, and compare your data to the class data. The class data will be entered into a spreadsheet available on the assignment page on Canvas.
 

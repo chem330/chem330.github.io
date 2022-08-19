@@ -2,9 +2,12 @@
 title = "Experiment 4: Potentiometric Titration (Alkalinity)"
 +++
 
-# Introduction
+Alkalinity (Potentiometric Titration)
+========================================
 
-In this analysis, you will determine the alkalinity of samples collected from Cullowhee Creek on campus.  To do this, you will perform a potentiometric titration.  In such a method, a titrant (in this case the strong acid HCl) is slowly added to the sample, which contains a weak base ("alkalinity" -- actually multiple chemical species that we treat as one thing).  As the acid is added, the base becomes neutralized, and the volume of acid it takes to completely neutralize the sample is related to the alkalinity of the sample.  You will use a pH probe to monitor the reaction and determine when you have reached the *endpoint*.  The *equivalence point* can then be determined through either the inflection point method or the first-derivative method.
+# Background
+
+In this analysis, you will determine the alkalinity of samples.  To do this, you will perform a potentiometric titration.  In such a method, a titrant (in this case the strong acid HCl) is slowly added to the sample, which contains a weak base ("alkalinity" -- actually multiple chemical species that we treat as one thing).  As the acid is added, the base becomes neutralized, and the volume of acid it takes to completely neutralize the sample is related to the alkalinity of the sample.  You will use a pH probe to monitor the reaction and determine when you have reached the *endpoint*.  The *equivalence point* can then be determined through either the inflection point method or the first-derivative method.
 
 # Procedure
 

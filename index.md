@@ -1,4 +1,4 @@
-@def title = "Franklin Example"
+@def title = "CHEM 330: Aquatic Chemistry"
 @def tags = ["syntax", "code"]
 
 # CHEM 330: Aquatic Chemistry
