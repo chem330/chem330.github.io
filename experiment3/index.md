@@ -17,7 +17,7 @@ Spectrophometry is a commonly used method to determine aqueous anions.  In this 
 
 The fundamentals of absorption spectrophotometry are shown below.  A light source shines light through a sample cell (a cuvette) and onto a detection system, which serves to convert the light into an electric signal (Figure 1).  The basic idea is that as the concentration of the colored complex increases in the cuvette, we would expect less light to be transmitted to the detection system.  Hence, we are interested in the ratio of light intensity transmitted by the sample ($I$) to the incident light intensity ($I_0$), which is called the transmittance ($T$):
 
-FIGURE 1
+![Schematic of absorption spectroscopy](absorption_spectroscopy.png)
 
 ## Standardization
 

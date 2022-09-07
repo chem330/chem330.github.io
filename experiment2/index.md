@@ -20,7 +20,7 @@ This experiment uses commercially-available reagents, but is similar to [EPA met
 
 In this experiment, nitrate will be determined spectrophotometrically using the Vernier SpectroVis.  Spectrophometry is a commonly used method to determine aqueous anions.  The fundamentals of absorption spectrophotometry are shown below.  A light source shines light through a sample cell (a cuvette) and onto a detection system, which serves to convert the light into an electric signal (Figure 1).  The basic idea is that as the concentration of the colored complex increases in the cuvette, we would expect less light to be transmitted to the detection system.  Hence, we are interested in the absorption of light by the sample:
 
-FIGURE 1
+![Schematic of absorption spectroscopy](absorption_spectroscopy.png)
 
 ## Standardization
 
