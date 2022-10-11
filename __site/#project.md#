@@ -5,7 +5,7 @@ title = "Project Information"
 
 # Class Project
 
-The goal of the lab project this semester is to provide the Town of Black Mountain (TOBM) with *accurate* data they can use as a baseline dataset for their stormwater program.  The results from your analyses will be shared with Black Mountain.  Since this data will be used to inform TOBM about the water quality in the Swannanoa River and its tributaries, it is imperative that it is of the highest quality!  As you work through each lab be vigilant about avoiding contamination, and use appropriate quality control to check your accuracy and precision as you work.  You *must* get an accurate answer before turning in your final report; if your results are not accurate or have unacceptably low precision you must repeat the analysis again to obtain high-quality data.
+The goal of the lab project this semester is to provide the Town of Black Mountain (TOBM) with *accurate* data they can use as a baseline dataset for their stormwater program.  The results from your analyses will be shared with Black Mountain.  Since this data will be used to inform TOBM about the water quality in the Swannanoa River and its tributaries, it is imperative that it is of the highest quality!  As you work through each lab be vigilant about avoiding contamination, and use appropriate quality control to check your accruacy and precision as you work.  You *must* get an accurate answer before turning in your final report; if your results are not accurate or have unacceptably low precision you must repeat the analysis again to obtain high-quality data.
 
 *The goal for this project is help you become self-sufficient in the lab and help you learn how to know that your data is likely to be accurate.  As such, there will be little day-to-day direction of your activities, and will be up to you and your lab partner to plan your time and implement appropriate practices in your lab work.*
 
@@ -43,14 +43,14 @@ Samples will be collected in several locations in Black Mountain, NC (shown belo
 
 For each analysis you perform, you should create a daily plan and check in with Dr. Fischer prior to beginning the analysis.  When you finish the analysis, you should share your results with Dr. Fischer prior to moving on to the next analysis.  It is in your best interest to process as much data as possible in real time.
 
-*You may need to make solutions and gather equipment as part of your lab work, even if they were provided during previous labs.  The main exceptions to this will be any solutions requiring the use of concentrated acids or bases, or exceptionally toxic chemicals (e.g. mercury).*
+*You may need to make solutions and gather equipment as part of your lab work, even if they were provided during previous labs.  The main exceptions to this will be any solutions requiring the use of concentrated acids or bases, or exceptionally toxic chemicals (e.g. mercury).*p
 
 **You should conduct the following analyses on your samples:**
 
 - Nitrate (Colorimetric/NitraVer 5 Method)
-  \note{ You must use the Agilent 8453 Diode Array UV-visible Spectrometer for this analysis.  You will need to get trained by [Matt Burleson](https://www.wcu.edu/faculty/mburleson.aspx), CHPH Instrumentation Specialist prior to using the instrument.  Please contact him to arrange training.}
+  \note{ You must use the Agilent 8453 Diode Array UV-visible Spectrometer for this anlaysis.  You will need to get trained by [Matt Burleson](https://www.wcu.edu/faculty/mburleson.aspx), CHPH Instrumentation Specialist prior to using the instrument.  Please contact him to arrange training.}
 - Phosphate (Colorimetric Method)
-  \note{ You must use the Agilent 8453 Diode Array UV-visible Spectrometer for this analysis.  You will need to get trained by [Matt Burleson](https://www.wcu.edu/faculty/mburleson.aspx), CHPH Instrumentation Specialist prior to using the instrument.  Please contact him to arrange training.}
+  \note{ You must use the Agilent 8453 Diode Array UV-visible Spectrometer for this anlaysis.  You will need to get trained by [Matt Burleson](https://www.wcu.edu/faculty/mburleson.aspx), CHPH Instrumentation Specialist prior to using the instrument.  Please Rcontact him to arrange training.}
 - Alkalinity (potentiometric titration - use the [USGS Method](https://pubs.usgs.gov/twri/twri9a6/twri9a66/twri9a_chapter6.6._v3.pdf))
 - Hardness (complexometric titration with EDTA - use [EPA Method 130.1](https://www.epa.gov/sites/default/files/2015-08/documents/method_130-1_1971.pdf))
 - Total Dissolved Solids (gravimetric - use [EPA Method 160.1](https://www.nemi.gov/methods/method_summary/5212/))
@@ -58,24 +58,24 @@ For each analysis you perform, you should create a daily plan and check in with 
 - Temperature (collected at site using YSI meter)
 - Conductivity (use the electrode provided in class)
 - Total Anions (use [EPA Method 300.0](https://www.epa.gov/sites/default/files/2015-08/documents/method_300-0_rev_2-1_1993.pdf))
-  \note{ You must use the Ion Chromatograph for this analysis.  You will need to get trained by [Matt Burleson](https://www.wcu.edu/faculty/mburleson.aspx), CHPH Instrumentation Specialist prior to using the instrument.  Please contact him to arrange training.}
+  \note{ You must use the Ion Chromatograph for this anlaysis.  You will need to get trained by [Matt Burleson](https://www.wcu.edu/faculty/mburleson.aspx), CHPH Instrumentation Specialist prior to using the instrument.  Please contact him to arrange training.}
 
 **If time / resources allow, we will also complete one or more of the following:**
 
 - Analysis of suspended sediments using scanning electron microscopy
 
-  \note{ You must use the SEM for this analysis.  You will need to get trained prior to using it.}
+  \note{ You must use the SEM for this anlaysis.  You will need to get trained prior to using it.}
 
 - Mercury concentration
 
-  \note{ You must use the flow-injection mercury system for this analysis.  You will need to get trained by Dr. Fischer prior to using it.}
+  \note{ You must use the flow-injection mercury system for this anlaysis.  You will need to get trained by Dr. Fischer prior to using it.}
 
 # Reporting
 
 You should present your results in two ways:
 
-1. A professional-quality lab report written in the style of a USGS water quality report.  (This counts toward your lab grade.)
-2. A professional-quality pamphlet showing a summary of the results, prepared in the style of a municipal consumer confidence report (CCR). (This will count as part of your final exam grade for lecture.)
+1. A professional-quality lab report writtin in the style of a USGS water quality report.  (This counts toward your lab grade.)
+2. A professional-quality pamphlet showing a summary of the results, prepared in the style of a municile consumer confidence report (CCR). (This will count as part of your final exam grade for lecture.)
 
 There will likely be a lot of overlap between these two documents -- if you plan appropriately you may be able to use many of the same figures and data tables.  The focus of the lab report is the lab work and the results from it, with some comparisons to other data sources for context.  The focus of the CCR-type report should be on summarizing the results and their implications for a general audience.
 
@@ -112,6 +112,6 @@ This report should be written as if it were a professional document designed to 
 
 A good example CCR is the [City of Raleigh CCR](https://cityofraleigh0drupal.blob.core.usgovcloudapi.net/drupal-prod/COR25/2021CCR.pdf) (PDF).  Every public water supply is required to provide a CCR to it's users (including [WCU](https://www.wcu.edu/WebFiles/FM-2020-Annual-Drinking-Water-Quality-Report.pdf)!), so feel free to browse for additional examples.
 
-Your CCR should include a short (~1 paragraph) summary of each parameter measured and why it's important.  You should also include the data you measured with "typical" values for context.  It is important to explain why each parameter is important and also give context as to whether each value you measured is normal or cause for alarm.
+Your CCR should include a short (~1 paragaph) summary of each parameter measured and why it's important.  You should also inlcude the data you measured with "typical" values for context.  It is important to explain why each parameter is important and also give context as to weather each value you measured is normal or cause for alarm.
 
 \note{ CCRs are provided for drinking water.  Since we are measuring surface water as part of a stormwater program, this is not a true CCR!  It is just a convenient format for us to use for reporting the results.}
