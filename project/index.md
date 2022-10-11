@@ -5,9 +5,11 @@ title = "Project Information"
 
 # Class Project
 
-The goal of the lab project this semester is to provide the Town of Black Mountain (TOBM) with *accurate* data they can use as a baseline dataset for their stormwater program.  The results from your analyses will be shared with Black Mountain.  Since this data will be used to inform TOBM about the water quality in the Swannanoa River and its tributaries, it is imperative that it is of the highest quality!  As you work through each lab be vigilant about avoiding contamination, and use appropriate quality control to check your accuracy and precision as you work.  You *must* get an accurate answer before turning in your final report; if your results are not accurate or have unacceptably low precision you must repeat the analysis again to obtain high-quality data.
+The goal of the lab project this semester is to provide the Town of Black Mountain (TOBM) with *accurate* data they can use as a baseline dataset for their stormwater program.  The results from your analyses will be shared with Black Mountain.  Since this data will be used to inform TOBM about the water quality in the Swannanoa River and its tributaries, it is imperative that it is of the highest quality!  As you work through each lab be vigilant about avoiding contamination, and use appropriate quality control measures to check your accuracy and precision as you work.  You *must* get an accurate answer before turning in your final report; if your results are not accurate or have unacceptably low precision you must repeat the analysis again to obtain high-quality data.
 
-*The goal for this project is help you become self-sufficient in the lab and help you learn how to know that your data is likely to be accurate.  As such, there will be little day-to-day direction of your activities, and will be up to you and your lab partner to plan your time and implement appropriate practices in your lab work.*
+*One intent for this project is to help you become self-sufficient in the lab and help you learn how to know that your data is likely to be accurate.  As such, there will be little day-to-day direction of your activities from your instructor, and it will be up to you and your lab partner to plan your time and implement appropriate practices in your lab work.*
+
+\toc
 
 # Sample Collection
 
@@ -16,8 +18,6 @@ Samples will be collected in several locations in Black Mountain, NC (shown belo
 ~~~
 <iframe src="https://www.google.com/maps/d/embed?mid=1qoXpfoAHsErE7sOl9jNmHeV4WrMXu_I&ehbc=2E312F" width="640" height="480"></iframe>
 ~~~
-
-### Sample Collection Protocol
 
 1. (This step has been done for you.) Wash 3 1-L plastic sample bottles with hot water and rinse 3X with DI water.  Seal the bottle until sample collection.
 2. (This step has been done for you.) Fill one of the bottles with DI water as a field blank.
@@ -45,19 +45,57 @@ For each analysis you perform, you should create a daily plan and check in with 
 
 *You may need to make solutions and gather equipment as part of your lab work, even if they were provided during previous labs.  The main exceptions to this will be any solutions requiring the use of concentrated acids or bases, or exceptionally toxic chemicals (e.g. mercury).*
 
+## Laboratory Practice
+
+It is imperative that you avoid contamination during your lab work to avoid inaccurate results!  Remember to wash all glassware with Alconox and warm water and then rinse it three times with deionized water prior to beginning analysis. (The exception to this is the phosphate analysis -- remember that Alconox contains a high percentage of phosphate!)  Do not assume the glassware is clean!
+
+It is also important that your results are as accurate and precise as possible.  Remember to use the right glassware for each sitution.
+  - Use volumetric pipettes to deliver a specified volume. Do not combine pipettes to get a desired volume; instead, find the pipette of appropriate volume (or ask for one if you can't find it).
+  - Use volumetric flasks to contain a specified volume.
+  - Record all certain digits plus one uncertain digit when writing down data.
+  
+It is also important that you have high statistical confidence in the data.  Measure all samples in triplicate and report 
+  
+## Required Analyses
+
 **You should conduct the following analyses on your samples:**
 
+\note{ As you work through the following methods, make sure to keep track of any deviations you make from the standard method provided.  For example, if the method calls for sodium chloride and you use potassium chloride instead, make that clear. }
+
 - Nitrate (Colorimetric/NitraVer 5 Method)
+   - Passing $R^2 > 0.990$
+   - Passing QC is $\pm 10\%$ of the expected value
+   - Analyze samples in triplicate
+   - Report as mg nitrate per L with 95% confidence interval
   \note{ You must use the Agilent 8453 Diode Array UV-visible Spectrometer for this analysis.  You will need to get trained by [Matt Burleson](https://www.wcu.edu/faculty/mburleson.aspx), CHPH Instrumentation Specialist prior to using the instrument.  Please contact him to arrange training.}
 - Phosphate (Colorimetric Method)
+   - Passing $R^2 > 0.990$
+   - Passing QC is $\pm 10\%$ of the expected value
+   - Analyze samples in triplicate
+   - Report as mg phosphate per L with 95% confidence interval
   \note{ You must use the Agilent 8453 Diode Array UV-visible Spectrometer for this analysis.  You will need to get trained by [Matt Burleson](https://www.wcu.edu/faculty/mburleson.aspx), CHPH Instrumentation Specialist prior to using the instrument.  Please contact him to arrange training.}
 - Alkalinity (potentiometric titration - use the [USGS Method](https://pubs.usgs.gov/twri/twri9a6/twri9a66/twri9a_chapter6.6._v3.pdf))
+   - Analyze samples in triplicate
+   - Make sure to standardize your acid against a primary standard
+   - Report as mg/L CaCO$_3$ using the Gran plot method and give the 95% confidence interval
 - Hardness (complexometric titration with EDTA - use [EPA Method 130.1](https://www.epa.gov/sites/default/files/2015-08/documents/method_130-1_1971.pdf))
+   - Analyze each sample in triplicate
+   - Make sure to standardize your EDTA against a primary standard
+   - Report as mg CaCO$_3$ per L with 95% confidence interval
 - Total Dissolved Solids (gravimetric - use [EPA Method 160.1](https://www.nemi.gov/methods/method_summary/5212/))
+   - Report your results as mg filterable residue per L
+   - *If you have enough sample* perform this analysis in triplicate and provide the 95% confidence interval
 - Dissolved Oxygen (collected at site using YSI meter)
 - Temperature (collected at site using YSI meter)
 - Conductivity (use the electrode provided in class)
 - Total Anions (use [EPA Method 300.0](https://www.epa.gov/sites/default/files/2015-08/documents/method_300-0_rev_2-1_1993.pdf))
+   - Use 5 standards that bracket your sample(s).
+   - A passing standard curve will have an $R^2 > 0.9995$.
+   - Use a rinse blank after your high standard
+   - A passing QC is $\pm 10\%$ of the expected value; run the QC after your standards, after every 10 samples, and always finish the run with a QC.
+   - Analyze samples in triplicate
+   - Analyze blanks once each (field blank, rinse blank, and lab/reagent blank)
+   - Report results as mg nitrate per L with 95% confidence interval 
   \note{ You must use the Ion Chromatograph for this analysis.  You will need to get trained by [Matt Burleson](https://www.wcu.edu/faculty/mburleson.aspx), CHPH Instrumentation Specialist prior to using the instrument.  Please contact him to arrange training.}
 
 **If time / resources allow, we will also complete one or more of the following:**
@@ -79,15 +117,19 @@ You should present your results in two ways:
 
 There will likely be a lot of overlap between these two documents -- if you plan appropriately you may be able to use many of the same figures and data tables.  The focus of the lab report is the lab work and the results from it, with some comparisons to other data sources for context.  The focus of the CCR-type report should be on summarizing the results and their implications for a general audience.
 
+I encourage you to use a "divide and conquer" approach to writing this report -- you each likely have different skills that you can use to benefit the group, so that breaking up the writing and figure preparation will both be more efficient and will produce better results.
+
 ## Lab Report
 
 This report should be written as if it were a professional document prepared to be shared with aquatic chemists and other water-quality professionals who are familiar with water chemistry and chemical analysis.  You can assume this knowledge when writing it (e.g. you do not need to explian what a titration is, but rather can just say you performed a specific type of titration).
 
-- You may want to view my [style guide](https://chem370.github.io/technical-reports/writing-guide) for scientific writing.  You should follow these guidelines when writing your report.
-- You may also want to view my [guide to publication-quality figure](https://chem370.github.io/technical-reports/figures).  All figures in your reports should be "publication quality".
+- You should follow my [style guide](https://chem370.github.io/technical-reports/writing-guide) for scientific writing when writing your report.
+- You should also read my [guide to publication-quality figure](https://chem370.github.io/technical-reports/figures).  All figures in your reports should be "publication quality".
 - Some example reports are available via [this link](https://pubs.usgs.gov/ds/423/pdf/report.pdf) (PDF) and [this link](https://pubs.usgs.gov/sir/2009/5149/pdf/sir20095149.pdf) (PDF).
 
 *A Word template for your report will be posted soon.*
+
+We will conduct one or two rounds of peer-review on these reports. For the first round, aim to have the introduction written and whatever portion of the other section you are able to complete based on the analyses you've finished.  For the second peer-review, you should fix any errors noted in the first round and have the report almost complete.
 
 **Your report should include the following sections:**
 
