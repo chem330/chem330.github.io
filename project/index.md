@@ -108,6 +108,12 @@ It is also important that you have high statistical confidence in the data.  Mea
 
   \note{ You must use the flow-injection mercury system for this analysis.  You will need to get trained by Dr. Fischer prior to using it.}
 
+## Waste Disposal
+
+- Waste for nitrate, phosphate, hardness, and anion analyses can be combined in a the waste bucket provided in lab.
+- Neutralized waste from the alkalinity titration can be disposed of down the drain.
+- Dissolved solids wastes can be disposed of in the trash and/or down the drain.
+
 # Reporting
 
 You should present your results in two ways:
