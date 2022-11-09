@@ -108,6 +108,12 @@ It is also important that you have high statistical confidence in the data.  Mea
 
   \note{ You must use the flow-injection mercury system for this analysis.  You will need to get trained by Dr. Fischer prior to using it.}
 
+## Waste Disposal
+
+- Waste for nitrate, phosphate, hardness, and anion analyses can be combined in a the waste bucket provided in lab.
+- Neutralized waste from the alkalinity titration can be disposed of down the drain.
+- Dissolved solids wastes can be disposed of in the trash and/or down the drain.
+
 # Reporting
 
 You should present your results in two ways:
@@ -117,7 +123,7 @@ You should present your results in two ways:
 
 There will likely be a lot of overlap between these two documents -- if you plan appropriately you may be able to use many of the same figures and data tables.  The focus of the lab report is the lab work and the results from it, with some comparisons to other data sources for context.  The focus of the CCR-type report should be on summarizing the results and their implications for a general audience.
 
-I encourage you to use a "divide and conquer" approach to writing this report -- you each likely have different skills that you can use to benefit the group, so that breaking up the writing and figure preparation will both be more efficie.
+I encourage you to use a "divide and conquer" approach to writing this report -- you each likely have different skills that you can use to benefit the group, so that breaking up the writing and figure preparation will both be more efficient and will produce better results.
 
 ## Lab Report
 
@@ -126,8 +132,8 @@ This report should be written as if it were a professional document prepared to 
 - You should follow my [style guide](https://chem370.github.io/technical-reports/writing-guide) for scientific writing when writing your report.
 - You should also read my [guide to publication-quality figure](https://chem370.github.io/technical-reports/figures).  All figures in your reports should be "publication quality".
 - Some example reports are available via [this link](https://pubs.usgs.gov/ds/423/pdf/report.pdf) (PDF) and [this link](https://pubs.usgs.gov/sir/2009/5149/pdf/sir20095149.pdf) (PDF).
-
-*A Word template for your report will be posted soon.*
+- An example "A" student report (from another class) can be viewed [here](https://github.com/dr-fischer/chem370/raw/master/assets/pdf/chem370_technical_report_example.pdf).
+- A Word template for your report is available [here]().
 
 We will conduct one or two rounds of peer-review on these reports. For the first round, aim to have the introduction written and whatever portion of the other section you are able to complete based on the analyses you've finished.  For the second peer-review, you should fix any errors noted in the first round and have the report almost complete.
 
