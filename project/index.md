@@ -134,7 +134,7 @@ This report should be written as if it were a professional document prepared to 
 - Some example reports are available via [this link](https://pubs.usgs.gov/ds/423/pdf/report.pdf) (PDF) and [this link](https://pubs.usgs.gov/sir/2009/5149/pdf/sir20095149.pdf) (PDF).
 - An example "A" student report (from another class) can be viewed [here](https://github.com/dr-fischer/chem370/raw/master/assets/pdf/chem370_technical_report_example.pdf).
 - A Word template for your report is available [here](https://catamountwcu-my.sharepoint.com/:w:/g/personal/dfischer_wcu_edu/EaZ2pihy7FVIhxbqDQQ2ZoEB7X-vEyG6d6eVY3yFnhgwpA?e=9ctfg7).
-- The rubric I will use to grade your report is available here (link coming soon).
+- The rubric I will use to grade your report is available [here](https://github.com/chem330/chem330.github.io/raw/main/_assets/pdf/lab-report-rubric-c330.pdf).
 
 We will conduct one or two rounds of peer-review on these reports. For the first round, aim to have the introduction written and whatever portion of the other section you are able to complete based on the analyses you've finished.  For the second peer-review, you should fix any errors noted in the first round and have the report almost complete.
 
