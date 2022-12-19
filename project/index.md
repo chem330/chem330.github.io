@@ -1,6 +1,7 @@
-+++
-title = "Project Information"
-+++
+<!-- +++ -->
+<!-- title = "Project Information" -->
+<!-- +++ -->
+<!-- \toc -->
 
 
 # Class Project
@@ -9,7 +10,6 @@ The goal of the lab project this semester is to provide the Town of Black Mounta
 
 *One intent for this project is to help you become self-sufficient in the lab and help you learn how to know that your data is likely to be accurate.  As such, there will be little day-to-day direction of your activities from your instructor, and it will be up to you and your lab partner to plan your time and implement appropriate practices in your lab work.*
 
-\toc
 
 # Sample Collection
 
