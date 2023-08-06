@@ -39,4 +39,4 @@ function check_answer_errorLab(X, μ, sig, param; debounce = 2)
 	end	
 end
 
-hint(text) = Markdown.MD(Markdown.Admonition("hint", "Hint", [text]));
+# hint(text) = Markdown.MD(Markdown.Admonition("hint", "Hint", [text]));
