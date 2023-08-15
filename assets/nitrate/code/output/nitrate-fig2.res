@@ -1,0 +1,1 @@
+"/home/al/Documents/github/chem330.github.io/__site/assets/nitrate/code/output/nitrate-cal.svg"
