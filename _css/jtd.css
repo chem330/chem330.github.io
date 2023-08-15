@@ -5,7 +5,12 @@ https://github.com/pmarsceill/just-the-docs/blob/master/LICENSE.txt
 (MIT licensed)
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:wght@200;400;700&family=Lato&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:wght@200;400;700&family=Lato&display=swap');
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500;1,9..144,700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 html{
   font-family: sans-serif;
@@ -23,7 +28,7 @@ body{
   margin:0;
   position:relative;
   padding-bottom:4rem;
-  font-family: Cardo, serif;
+  font-family: Lora, serif;
   font-size:inherit;
   line-height:1.5;
   color:#343434;
@@ -37,11 +42,13 @@ body{
 }
 .franklin-content h1:first-of-type{
   margin-top:0.5em;
-  color: #1E90FF;
+  color: #256D7B;
+/* color: #1E90FF; */
 }
 h1{
   font-size:2em;
-  margin:0.67em 0
+  margin:0.67em 0;
+  font-weight: 900 !important;
 }
 sub,sup{
   font-size:75%;
@@ -62,7 +69,7 @@ p,h1,h2,h3,h4,h5,h6,ol,ul,pre,address,blockquote,dl,div,fieldset,form,hr,noscrip
   margin-top:0
 }
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Fraunces', sans-serif;
   margin-top:1.2em;
   margin-bottom:0.8em;
   font-weight:500;
@@ -81,7 +88,7 @@ table {
 }
 
 th {
-	background-color: #1E90FF;
+	background-color: #256D7B;
 	color: white;
 	font-weight: bold;
 }
@@ -96,10 +103,10 @@ tr {
 }
 
 tr:hover {
-	color: #1E90FF;;
+	color: #256D7B;;
 }
 tr:last-child {
-	border-bottom: 2px solid #1E90FF;
+	border-bottom: 2px solid #256D7B;
 }
 
 .franklin-content table {
@@ -122,17 +129,17 @@ td {
 }
 
 .franklin-content tr:hover {
-	color: #1E90FF;;
+	color: #256D7B;;
 }
 .franklin-content tr:last-child {
-	border-bottom: 2px solid #1E90FF;
+	border-bottom: 2px solid #256D7B;
 };
 }
 p{
   margin-bottom:1em
 }
 a{
-  color:#1E90FF;
+  color:#256D7B;
   text-decoration:none;
 }
 pre{
@@ -827,7 +834,7 @@ table {
 }
 
 th {
-	background-color: #1E90FF;
+	background-color: #256D7B;
 	color: white;
 	font-weight: bold;
 }
@@ -842,10 +849,10 @@ tr {
 }
 
 tr:hover {
-	color: #1E90FF;;
+	color: #256D7B;;
 }
 tr:last-child {
-	border-bottom: 2px solid #1E90FF;
+	border-bottom: 2px solid #256D7B;
 }
 
 .franklin-content table {
@@ -868,8 +875,8 @@ td {
 }
 
 .franklin-content tr:hover {
-	color: #1E90FF;;
+	color: #256D7B;;
 }
 .franklin-content tr:last-child {
-	border-bottom: 2px solid #1E90FF;
+	border-bottom: 2px solid #256D7B;
 }
