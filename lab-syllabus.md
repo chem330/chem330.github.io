@@ -173,6 +173,8 @@ If you experience any symptoms of COVID-19, cold, flu, or other contagious sickn
 
 Written work may be checked for plagiarism using computer software.  Plagiarism will NOT be tolerated and will by handled according to WCU's academic honesty policy.
 
+Artificial intelligence (AI) tools may be very valuable, but must also be used with extreme caution.  Although you are not disallowed from using AI to help with your work, you must follow certain guidelines if you decide to do so.  These are: (1) Do not use AI and the sole tool for your assignment; (2) if you use AI, you must explicitly state that you did so and cite the AI engine you used (e.g. ChatGPT-X); (3) you must fact check anything you produce with AI; (4) you should never use AI to be deceptive.  Students found to be using AI outside these guidelines will be considered in violation of WCU's academic honesty policy.
+
 **Community Vision for Inclusive Excellence**: All members of the WCU community are expected to embrace WCU's mission of inclusive excellence.  See the [Community Vision for Inclusive Excellence](https://www.wcu.edu/discover/diversity/eodp/).
 
 ## Resources 
