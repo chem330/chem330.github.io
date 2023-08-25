@@ -17,7 +17,7 @@ function check_input_sf(X, glassware; balanceType = nothing, debouce = 2)
 		end
 	
 		if any(.!(ismissing.(X))) && any(length.(string.(X)) .!= sig+1)
-			Markdown.MD(Markdown.Admonition("danger", "Heads Up!", [md"Remember to record all known digits plus one uncertain digit for all measurements!"]))
+			Markdown.MD(Markdown.Admonition("danger", "Check your sig figs!", [md"Remember to record all known digits plus one uncertain digit for all measurements!"]))
 		end
 	
 	catch
