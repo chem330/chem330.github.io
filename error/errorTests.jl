@@ -4,6 +4,8 @@ function check_input_sf(X, glassware; balanceType = nothing, debouce = 2)
 		sleep(debouce)
 		if glassware == "balance" && balanceType == "A"
 			sig = 6
+		elseif glassware == "balance" && balanceType == "choose one..."
+			Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))	
 		elseif glassware == "balance" && balanceType == "B"
 			sig = 5
 		elseif glassware == "beaker"
