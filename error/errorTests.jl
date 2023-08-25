@@ -1,8 +1,12 @@
 [
-function check_input_sf(X, glassware; debouce = 2)
+function check_input_sf(X, glassware; balanceType = nothing, debouce = 2)
 	try
 		sleep(debouce)
-		if glassware == "beaker"
+		if glassware == "balance" && balanceType == "A"
+			sig = 6
+		elseif glassware == "balance" && balanceType == "B"
+			sig = 5
+		elseif glassware == "beaker"
 			sig = 3
 		elseif glassware == "cylinder"
 			sig = 4
