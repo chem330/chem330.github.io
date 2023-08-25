@@ -16,7 +16,7 @@ function check_input_sf(X, glassware; balanceType = nothing, debouce = 2)
 			"Unrecognized glassware"
 		end
 	
-		if any(.!(ismissing.(X))) && any(length.(string.(X)) .!= sig+1)
+		if any(cylinder_masses .!= 0) && any(length.(string.(X)) .!= sig+1)
 			Markdown.MD(Markdown.Admonition("warning", "Check your sig figs!", [md"Remember to record all known digits plus one uncertain digit for all measurements!"]))
 		end
 	
