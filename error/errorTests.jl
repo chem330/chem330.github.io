@@ -17,12 +17,12 @@ function check_input_sf(X, glassware; balanceType = nothing, debouce = 2)
 		end
 	
 		if any(.!(ismissing.(X))) && any(length.(string.(X)) .!= sig+1)
-			Markdown.MD(Markdown.Admonition("danger", "Check your sig figs!", [md"Remember to record all known digits plus one uncertain digit for all measurements!"]))
+			Markdown.MD(Markdown.Admonition("warning", "Check your sig figs!", [md"Remember to record all known digits plus one uncertain digit for all measurements!"]))
 		end
 	
 	catch
 		if glassware == "balance" && balanceType == "choose one..."
-			Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
+			Markdown.MD(Markdown.Admonition("warning", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
 		else
 			"Error"
 		end
