@@ -11,6 +11,10 @@ Error Analysis
 
 In this lab, you will examine the uncertainty associated with different ways of delivering a specified volume of liquid.  You will do this by measuring deionized water using four methods: (1) a beaker, (2) a graduated cylinder, (3) a volumetric glass pipette, and (4) a mechanical pipette. Each of these will be compared against an analytical balance.  As a final exercise, you will choose one of these methods to use to determe the identity (based on density) of an unknown liquid with the **smallest possible uncertainty**.  To obtain a bigger dataset for analysis, we will compile the data and determine statistics at the class level.
 
+There is a Pluto notebook template for this lab.  Copy and past this link into the open from URL dialog box in Pluto: [https://raw.githubusercontent.com/chem330/chem330.github.io/main/error/error-lab-notebook.jl](https://raw.githubusercontent.com/chem330/chem330.github.io/main/error/error-lab-notebook.jl)
+
+(Right click on the link, then choose "Copy Link Address" or "Copy Link" in Chrome or Firefox, respectively.)
+
 # Part 1: Measuring Volume with a Beaker
 
 Use a 25 mL beaker to measure 15 mL of distilled water.  Use a balance to measure the mass of this 15 mL sample of water.  Calculate the density of the water.  Pour the water out, and repeat 4 more times.  Calculate the mean and standard deviation for the density of the water.  Put your mean on assignment page in Canvas in the table entitled "Part 1: Beakers".
