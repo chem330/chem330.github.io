@@ -84,6 +84,15 @@ md"# Methods and Calculations"
 # ╔═╡ 49a5987e-6104-4873-b3ea-e8644a4b3a21
 md"This loads the Statistics package."
 
+# ╔═╡ 0b4d679a-74ea-457c-9c4c-bfcb23d53420
+md"""
+## Balance Info
+
+Make sure to choose the correct info for the balance you are using in the dropdown menu below.  Use the same balance for all measurements!
+
+**Balance Label:** $@bind balance Select(["choose one...", "A", "B"]))
+"""
+
 # ╔═╡ 3ff2734a-2785-4a78-9ea3-87f3b264b3e9
 md"## Part 1: Beakers"
 
@@ -95,10 +104,10 @@ Write your methods here using Markdown.  You can click the play button at the bo
 """
 
 # ╔═╡ c13c4fe8-346e-11ee-0b45-e9a54dd8538a
-beaker_masses = [ missing, missing, missing, missing, missing ]
+beaker_masses = ( 0, 0, 0, 0, 0 )
 
 # ╔═╡ de8ef3c6-2cb3-4c8d-823c-6e2b6de7c47e
-check_input_sf(beaker_masses, "beaker")
+check_input_sf(beaker_masses, "balance", balanceType = balance)
 
 # ╔═╡ ed4f1809-29e4-4b5d-8145-5327d97f316e
 md"### Mean"
@@ -116,11 +125,15 @@ Enter your **mean** here to the correct number of significant digits.  If your a
 $(@bind beaker_mean_final TextField(default = "0.00"))
 """
 
-# ╔═╡ 44684706-3a54-4e51-8e69-ff4699868c78
-
-
 # ╔═╡ 574806d7-4d56-43c8-8fe8-d10d0e0195e7
-check_answer_errorLab(beaker_mean_final, mean(beaker_masses), 1000, "mean")
+if balance == "A"
+	check_answer_errorLab(beaker_mean_final, mean(beaker_masses), 1000000, "mean")
+elseif balance == "B"
+	check_answer_errorLab(beaker_mean_final, mean(beaker_masses), 100000, "mean")
+else
+	Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
+
+end
 
 # ╔═╡ 3f3a60b7-ea28-4406-a821-c24f3f6e199b
 md"### Standard Deviation"
@@ -139,7 +152,13 @@ $(@bind beaker_sd_final TextField(default = "0.00"))
 """
 
 # ╔═╡ 636f627f-d3ee-4fd5-b52c-f023484736c2
-check_answer_errorLab(beaker_sd_final, std(beaker_masses), 10, "standard deviation")
+if balance == "A"
+	check_answer_errorLab(beaker_sd_final, std(beaker_masses), 10000, "standard deviation")
+elseif balance == "B"
+	check_answer_errorLab(beaker_sd_final, std(beaker_masses), 1000, "standard deviation")
+else
+	Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
+end
 
 # ╔═╡ b4734832-7f36-4fe9-8a3b-3dc3fc65362a
 md"## Part 2: Graduated Cylinders"
@@ -152,10 +171,10 @@ Write your methods here using Markdown.  You can click the play button at the bo
 """
 
 # ╔═╡ bb1dce14-3e33-4762-a58f-95b76ac13e35
-cylinder_masses =  [ missing, missing, missing, missing, missing ]
+cylinder_masses =  ( 0, 0, 0, 0, 0 )
 
 # ╔═╡ 2a221c37-6fbd-4f5d-95c0-70af4b5e8d89
-check_input_sf(cylinder_masses, "cylinder")
+check_input_sf(cylinder_masses, "balance", balanceType = balance)
 
 # ╔═╡ 06285717-20f9-49e6-93d1-be1c80ca3dcb
 md"### Mean"
@@ -165,13 +184,20 @@ md"### Mean"
 
 # ╔═╡ 5005ea04-ec00-4204-a7d7-38cc2d026dbe
 md"""
-Enter your **standard deviation** here to the correct number of significant digits:
+Enter your **mean** here to the correct number of significant digits:
 
 $(@bind cyl_mean_final TextField(default = "0.00"))
 """
 
 # ╔═╡ 2cf45f5a-10d4-4610-8836-73478d9692dc
-check_answer_errorLab(cyl_mean_final, mean(cylinder_masses), 10000, "mean")
+if balance == "A"
+	check_answer_errorLab(cyl_mean_final, mean(cylinder_masses), 1000000, "mean")
+elseif balance == "B"
+	check_answer_errorLab(cyl_mean_final, mean(cylinder_masses), 100000, "mean")
+else
+	Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
+
+end
 
 # ╔═╡ c7f27f8e-5390-4f55-8e33-5511e10aff01
 md"### Standard Deviation"
@@ -187,7 +213,13 @@ $(@bind cyl_sd_final TextField(default = "0.00"))
 """
 
 # ╔═╡ 446bc90e-a6f9-4f77-9741-565ab1dabb6e
-check_answer_errorLab(cyl_sd_final, std(cylinder_masses), 100, "standard deviation")
+if balance == "A"
+	check_answer_errorLab(cyl_sd_final, std(cylinder_masses), 10000, "standard deviation")
+elseif balance == "B"
+	check_answer_errorLab(cyl_sd_final, std(cylinder_masses), 1000, "standard deviation")
+else
+	Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
+end
 
 # ╔═╡ bcdab602-2673-45f3-85d5-67a7f5badc65
 md"## Part 3: Volumetric Pipette"
@@ -200,10 +232,10 @@ Write your methods here using Markdown.  You can click the play button at the bo
 """
 
 # ╔═╡ 3c9eb120-dbd2-494c-97b4-44369a6794be
-pipette_masses =  [ missing, missing, missing, missing, missing ]
+pipette_masses =  ( 0, 0, 0, 0, 0 )
 
 # ╔═╡ 771d7504-6a1b-4f95-8b95-42ddfb09c439
-check_input_sf(pipette_masses, "volumetric pipette")
+check_input_sf(pipette_masses, "balance", balanceType = balance)
 
 # ╔═╡ 4db12e02-5183-4afd-83fd-0066a3feb993
 md"### Mean"
@@ -219,7 +251,14 @@ $(@bind pip_mean_final TextField(default = "0.00"))
 """
 
 # ╔═╡ 4f86d103-4d0b-4e8e-8509-02b712cad593
-check_answer_errorLab(pip_mean_final, mean(pipette_masses), 10000, "mean")
+if balance == "A"
+	check_answer_errorLab(pip_mean_final, mean(pipette_masses), 1000000, "mean")
+elseif balance == "B"
+	check_answer_errorLab(pip_mean_final, mean(pipette_masses), 100000, "mean")
+else
+	Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
+
+end
 
 # ╔═╡ 03fe9ef5-6419-44e9-ae18-4391782c3098
 md"### Standard Deviation"
@@ -235,7 +274,13 @@ $(@bind pip_sd_final TextField(default = "0.00"))
 """
 
 # ╔═╡ de2eb273-702f-47fe-92ea-acc44436b9c4
-check_answer_errorLab(pip_sd_final, std(pipette_masses), 100, "standard deviation")
+if balance == "A"
+	check_answer_errorLab(pip_sd_final, std(pipette_masses), 10000, "standard deviation")
+elseif balance == "B"
+	check_answer_errorLab(pip_sd_final, std(pipette_masses), 1000, "standard deviation")
+else
+	Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
+end
 
 # ╔═╡ ffc5067b-89fd-4c90-92d5-1a68e0ee0548
 md"## Part 4: Mechanical Pipette"
@@ -248,10 +293,10 @@ Write your methods here using Markdown.  You can click the play button at the bo
 """
 
 # ╔═╡ 8ca4d6ad-bdd7-4ee8-a0d7-9baecb407061
-mechanical_masses =  [ missing, missing, missing, missing, missing ]
+mechanical_masses = ( 0, 0, 0, 0, 0 )
 
 # ╔═╡ 016eb596-2422-4dda-a22a-fd6224d92688
-check_input_sf(mechanical_masses, "mechanical pipette")
+check_input_sf(mechanical_masses, "balance", balanceType = balance)
 
 # ╔═╡ 0faae04f-e6c4-496c-8933-61b77e021d79
 md"### Mean"
@@ -267,7 +312,14 @@ $(@bind mech_mean_final TextField(default = "0.00"))
 """
 
 # ╔═╡ 47c211e9-70a2-4a17-bc14-af92e5cce02e
-check_answer_errorLab(pip_mean_final, mean(pipette_masses), 1000, "mean")
+if balance == "A"
+	check_answer_errorLab(mech_mean_final, mean(mechanical_masses), 1000000, "mean")
+elseif balance == "B"
+	check_answer_errorLab(mech_mean_final, mean(mechanical_masses), 100000, "mean")
+else
+	Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
+
+end
 
 # ╔═╡ efea170a-6c84-462c-b519-3bcb0b4702ae
 md"### Standard Deviation"
@@ -283,7 +335,13 @@ $(@bind mech_sd_final TextField(default = "0.00"))
 """
 
 # ╔═╡ 7de78c4e-457f-40ad-8a06-ccb7dc6a9030
-check_answer_errorLab(mech_sd_final, std(mechanical_masses), 1000, "standard deviation")
+if balance == "A"
+	check_answer_errorLab(mech_sd_final, std(mechanical_masses), 10000, "standard deviation")
+elseif balance == "B"
+	check_answer_errorLab(mech_sd_final, std(mechanical_masses), 1000, "standard deviation")
+else
+	Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
+end
 
 # ╔═╡ 4fc78cf4-c0e6-46bf-b2e0-a836d0d64a04
 md"## Part 5: Determination of an Unknown Liquid"
@@ -299,10 +357,10 @@ Write your methods here using Markdown.  You can click the play button at the bo
 md"Select the unknown solution analyzed with the dropdown below:"
 
 # ╔═╡ f751e40c-880f-4f74-94fa-7d1cd4114a32
-@bind unk Select(["Unknown A", "Unknown B"])
+@bind unk Select(["choose one...", "Unknown A", "Unknown B"])
 
 # ╔═╡ 2ba6507a-8bde-41b3-a65f-e8e397f97224
-unknown_masses =  [ missing, missing, missing, missing, missing ]
+unknown_masses =  ( 0, 0, 0, 0, 0)
 
 # ╔═╡ 1e957906-1491-45ee-afa8-38e510e4c53e
 md"### Mean"
@@ -312,13 +370,19 @@ md"### Mean"
 
 # ╔═╡ b8eda92a-d1c6-46f8-99b1-fdfbabfcba05
 md"""
-Enter your **standard deviation** here to the correct number of significant digits:
+Enter your **mean** here to the correct number of significant digits:
 
 $(@bind unk_mean_final TextField(default = "0.00"))
 """
 
 # ╔═╡ e89f202d-d4cf-47f5-8066-94ffad6142f9
-check_answer_errorLab(unk_mean_final, mean(unknown_masses), 10000, "mean")
+if balance == "A"
+	check_answer_errorLab(unk_mean_final, mean(unknown_masses), 1000000, "mean")
+elseif balance == "B"
+	check_answer_errorLab(unk_mean_final, mean(unknown_masses), 100000, "mean")
+else
+	Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
+end
 
 # ╔═╡ 0ebcb4a7-d008-417e-81a3-cebfd00ac991
 md"### Standard Deviation"
@@ -334,7 +398,14 @@ $(@bind unk_sd_final TextField(default = "0.00"))
 """
 
 # ╔═╡ 1adbf59c-a43b-41a9-805a-8c4f71eaea86
-check_answer_errorLab(unk_sd_final, std(unknown_masses), 100, "standard deviation")
+if balance == "A"
+	check_answer_errorLab(unk_sd_final, std(unknown_masses), 10000, "standard deviation")
+elseif balance == "B"
+	check_answer_errorLab(unk_sd_final, std(unknown_masses), 1000, "standard deviation")
+else
+	Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
+
+end
 
 # ╔═╡ 74a5babe-163c-4da1-933e-4ea989ee5b9a
 md"""
@@ -377,7 +448,7 @@ hint(text) = Markdown.MD(Markdown.Admonition("hint", "Hint", [text]));
 # Do not edit this cell!!!
 begin
 	savefinaldat
-	dat = "Item\tMean\tSD\n"*"Beaker - 25 ml"*"\t"*string(beaker_mean_final)*"\t"*string(beaker_sd_final)*"\n"*"Grad. Cylinder"*"\t"*string(cyl_mean_final)*"\t"*string(cyl_sd_final)*"\n"*"Glass Pipette"*"\t"*string(pip_mean_final)*"\t"*string(pip_sd_final)*"\n"*"Mech Pipette"*"\t"*string(mech_mean_final)*"\t"*string(mech_sd_final)*"\n"*unk*"\t"*string(unk_mean_final)*"\t"*string(unk_sd_final)
+	dat = "Item\tMean\tSD\n"*"Beaker - 25 ml"*"\t"*string(beaker_mean_final)*"\t"*string(beaker_sd_final)*"\t"*string(balance)*"\t"*"\n"*"Grad. Cylinder"*"\t"*string(cyl_mean_final)*"\t"*string(cyl_sd_final)*"\t"*string(balance)*"\t"*"\n"*"Glass Pipette"*"\t"*string(pip_mean_final)*"\t"*string(pip_sd_final)*"\t"*string(balance)*"\t"*"\n"*"Mech Pipette"*"\t"*string(mech_mean_final)*"\t"*string(mech_sd_final)*"\t"*string(balance)*"\t"*"\n"*unk*"\t"*string(unk_mean_final)*"\t"*string(unk_sd_final)*"\t"*string(balance)*"\t"
 	savepath = pwd()*"/errorLab_finalData.csv"
 	open(savepath, "w") do datfile
 		write(datfile, dat)
@@ -501,10 +572,10 @@ deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 
 [[deps.JLLWrappers]]
-deps = ["Preferences"]
-git-tree-sha1 = "abc9885a7ca2052a736a600f7fa66209f96506e1"
+deps = ["Artifacts", "Preferences"]
+git-tree-sha1 = "7e5d6779a1e09a36db2a7b6cff50942a0a7d0fca"
 uuid = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
-version = "1.4.1"
+version = "1.5.0"
 
 [[deps.JSON]]
 deps = ["Dates", "Mmap", "Parsers", "Unicode"]
@@ -543,9 +614,9 @@ uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 
 [[deps.LoggingExtras]]
 deps = ["Dates", "Logging"]
-git-tree-sha1 = "cedb76b37bc5a6c702ade66be44f831fa23c681e"
+git-tree-sha1 = "a03c77519ab45eb9a34d3cfe2ca223d79c064323"
 uuid = "e6f89c97-d47a-5376-807f-9c37f3926c36"
-version = "1.0.0"
+version = "1.0.1"
 
 [[deps.MIMEs]]
 git-tree-sha1 = "65f28ad4b594aebe22157d6fac869786a255b7eb"
@@ -738,6 +809,7 @@ version = "17.4.0+0"
 # ╟─6e105c71-32c9-427b-bb02-b4ab04e24765
 # ╟─49a5987e-6104-4873-b3ea-e8644a4b3a21
 # ╠═ad8c8370-4121-47df-804f-ebb6b88f85e4
+# ╟─0b4d679a-74ea-457c-9c4c-bfcb23d53420
 # ╟─3ff2734a-2785-4a78-9ea3-87f3b264b3e9
 # ╠═eb1b6135-e733-4391-af43-f8d7ab519d3e
 # ╠═c13c4fe8-346e-11ee-0b45-e9a54dd8538a
@@ -746,7 +818,6 @@ version = "17.4.0+0"
 # ╟─a52d8cdc-6ee0-4e1f-b439-dcbea5eba032
 # ╠═0ff710f8-e05c-4760-8146-a03bd31be00f
 # ╟─8f4b8587-0d33-4bea-9746-c766bccf782a
-# ╠═44684706-3a54-4e51-8e69-ff4699868c78
 # ╟─574806d7-4d56-43c8-8fe8-d10d0e0195e7
 # ╟─3f3a60b7-ea28-4406-a821-c24f3f6e199b
 # ╟─5980a68a-1808-48bf-b58e-47d05e283d88
@@ -810,7 +881,7 @@ version = "17.4.0+0"
 # ╟─a2596e0c-96d0-460a-ac79-a8b4d5495335
 # ╟─60885571-b9e0-4c11-8b38-86bb648186d8
 # ╟─6163cfd2-5986-450a-83c3-838acbd53bb3
-# ╠═73edfac2-cfab-42d0-89b3-14693958292f
-# ╠═dbe1360c-4b71-43f6-ad9b-7a30b009769e
+# ╟─73edfac2-cfab-42d0-89b3-14693958292f
+# ╟─dbe1360c-4b71-43f6-ad9b-7a30b009769e
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
