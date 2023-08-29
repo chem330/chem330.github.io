@@ -36,7 +36,7 @@ md"""
 
 # Introduction
 
-In this lab, you will examine the uncertainty associated with different ways of delivering a specified volume of liquid.  You will do this by measuring deionized water using four methods: (1) a beaker, (2) a graduated cylinder, (3) a volumetric glass pipette, and (4) a mechanical pipette. Each of these will be compared against an analytical balance.   As a final exercise, you will choose one of these methods to use to determine the identity (based on density) of an unknown liquid with the **smallest possible uncertainty**.  To obtain a bigger dataset for analysis, we will compile the data and determine statistics at the class level.
+In this lab, you will examine the uncertainty associated with different ways of delivering a specified volume of liquid.  You will do this by measuring deionized water using four methods: (1) a beaker, (2) a graduated cylinder, (3) a volumetric glass pipette, and (4) a mechanical pipette. Each of these will be compared against an analytical balance.  To obtain a bigger dataset for analysis, we will compile the data and determine statistics at the class level.
 
 In this lab, you will determine the mean and standard deviation of your group's data (we will look at additional statistics on the class-level data later).
 
@@ -104,7 +104,7 @@ Write your methods here using Markdown.  You can click the play button at the bo
 """
 
 # ╔═╡ c13c4fe8-346e-11ee-0b45-e9a54dd8538a
-beaker_masses = ( 0, 0, 0, 0, 0 )
+beaker_masses = [ 0, 0, 0, 0, 0 ]
 
 # ╔═╡ de8ef3c6-2cb3-4c8d-823c-6e2b6de7c47e
 check_input_sf(beaker_masses, "balance", balanceType = balance)
@@ -171,7 +171,7 @@ Write your methods here using Markdown.  You can click the play button at the bo
 """
 
 # ╔═╡ bb1dce14-3e33-4762-a58f-95b76ac13e35
-cylinder_masses =  ( 0, 0, 0, 0, 0 )
+cylinder_masses =  [ 0, 0, 0, 0, 0 ]
 
 # ╔═╡ 2a221c37-6fbd-4f5d-95c0-70af4b5e8d89
 check_input_sf(cylinder_masses, "balance", balanceType = balance)
@@ -232,7 +232,7 @@ Write your methods here using Markdown.  You can click the play button at the bo
 """
 
 # ╔═╡ 3c9eb120-dbd2-494c-97b4-44369a6794be
-pipette_masses =  ( 0, 0, 0, 0, 0 )
+pipette_masses =  [ 0, 0, 0, 0, 0 ]
 
 # ╔═╡ 771d7504-6a1b-4f95-8b95-42ddfb09c439
 check_input_sf(pipette_masses, "balance", balanceType = balance)
@@ -293,7 +293,7 @@ Write your methods here using Markdown.  You can click the play button at the bo
 """
 
 # ╔═╡ 8ca4d6ad-bdd7-4ee8-a0d7-9baecb407061
-mechanical_masses = ( 0, 0, 0, 0, 0 )
+mechanical_masses = [ 0, 0, 0, 0, 0 ]
 
 # ╔═╡ 016eb596-2422-4dda-a22a-fd6224d92688
 check_input_sf(mechanical_masses, "balance", balanceType = balance)
@@ -343,70 +343,6 @@ else
 	Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
 end
 
-# ╔═╡ 4fc78cf4-c0e6-46bf-b2e0-a836d0d64a04
-md"## Part 5: Determination of an Unknown Liquid"
-
-# ╔═╡ 1b8dc9ef-d49c-4633-af4f-a354db862522
-md"""
-
-Write your methods here using Markdown.  You can click the play button at the bottom right of this box when you are done to render the text and then click eyeball icon to the left to hide the code input box.
-
-"""
-
-# ╔═╡ 9e24ec51-218a-4052-81f2-425ebc446136
-md"Select the unknown solution analyzed with the dropdown below:"
-
-# ╔═╡ f751e40c-880f-4f74-94fa-7d1cd4114a32
-@bind unk Select(["choose one...", "Unknown A", "Unknown B"])
-
-# ╔═╡ 2ba6507a-8bde-41b3-a65f-e8e397f97224
-unknown_masses =  ( 0, 0, 0, 0, 0)
-
-# ╔═╡ 1e957906-1491-45ee-afa8-38e510e4c53e
-md"### Mean"
-
-# ╔═╡ 8dfa038e-89b9-4692-8ddc-dd6e8283307e
-
-
-# ╔═╡ b8eda92a-d1c6-46f8-99b1-fdfbabfcba05
-md"""
-Enter your **mean** here to the correct number of significant digits:
-
-$(@bind unk_mean_final TextField(default = "0.00"))
-"""
-
-# ╔═╡ e89f202d-d4cf-47f5-8066-94ffad6142f9
-if balance == "A"
-	check_answer_errorLab(unk_mean_final, mean(unknown_masses), 1000000, "mean")
-elseif balance == "B"
-	check_answer_errorLab(unk_mean_final, mean(unknown_masses), 100000, "mean")
-else
-	Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
-end
-
-# ╔═╡ 0ebcb4a7-d008-417e-81a3-cebfd00ac991
-md"### Standard Deviation"
-
-# ╔═╡ bdaf95d4-6a8b-4de6-b78b-2accdbba712b
-
-
-# ╔═╡ 9057b784-91a3-44e3-a333-6ede09b8b954
-md"""
-Enter your **standard deviation** here to the correct number of significant digits:
-
-$(@bind unk_sd_final TextField(default = "0.00"))
-"""
-
-# ╔═╡ 1adbf59c-a43b-41a9-805a-8c4f71eaea86
-if balance == "A"
-	check_answer_errorLab(unk_sd_final, std(unknown_masses), 10000, "standard deviation")
-elseif balance == "B"
-	check_answer_errorLab(unk_sd_final, std(unknown_masses), 1000, "standard deviation")
-else
-	Markdown.MD(Markdown.Admonition("danger", "Choose the correct balance!", [md"There are several types of balances in use.  Yours should be marked with an A or B.  Make sure to choose the correct one from the dropdown."]))
-
-end
-
 # ╔═╡ 74a5babe-163c-4da1-933e-4ea989ee5b9a
 md"""
 ## Confidence Intervals
@@ -422,12 +358,9 @@ md"# Conclusions"
 
 # ╔═╡ ab505d06-3005-41e5-b818-efb9d9ddf484
 md"""
-Write a conclusion in the box below.  Make sure to specifically answer the following questions in your conclusions.
+Write a conclusion in the box below.  Make sure to specifically answer the following question(s) in your conclusions.
 
-1. Which had the smallest standard deviation, your data or the class data? Is that what you expected? Why or why not?
-2. Discuss the magnitude of the random (indeterminate) error in measurements using the different methods for measuring volume.  Which method has the smallest random error?  Why?
-3. Do you suspect any systematic error in this experiment? Why? What could be done to correct it?
-4. What was the identity of your unknown liquid? How do you know?  Is your result *significant*?
+1. Discuss the magnitude of the random (indeterminate) error in measurements using the different methods for measuring volume.  Which method has the smallest random error?  Why?
 """
 
 # ╔═╡ d3b861f4-4a67-4be9-823f-7cae385f0297
@@ -444,12 +377,15 @@ Write your conclusion here using Markdown.  You can click the play button at the
 # Do not edit this cell!!!
 hint(text) = Markdown.MD(Markdown.Admonition("hint", "Hint", [text]));
 
-# ╔═╡ dbe1360c-4b71-43f6-ad9b-7a30b009769e
+# ╔═╡ 083110af-44d0-4032-9d43-d725bdf3cb79
 # Do not edit this cell!!!
 begin
 	savefinaldat
-	dat = "Item\tMean\tSD\n"*"Beaker - 25 ml"*"\t"*string(beaker_mean_final)*"\t"*string(beaker_sd_final)*"\t"*string(balance)*"\t"*"\n"*"Grad. Cylinder"*"\t"*string(cyl_mean_final)*"\t"*string(cyl_sd_final)*"\t"*string(balance)*"\t"*"\n"*"Glass Pipette"*"\t"*string(pip_mean_final)*"\t"*string(pip_sd_final)*"\t"*string(balance)*"\t"*"\n"*"Mech Pipette"*"\t"*string(mech_mean_final)*"\t"*string(mech_sd_final)*"\t"*string(balance)*"\t"*"\n"*unk*"\t"*string(unk_mean_final)*"\t"*string(unk_sd_final)*"\t"*string(balance)*"\t"
+	dat = "Beaker\tGraduated_Cylinder\tGlass_Pipette\tMech_Pipette\tBalance\n"*
+	strip(replace(replace(string(hcat(beaker_masses, cylinder_masses, pipette_masses, mechanical_masses, repeat([balance], 5))), "; " => "\n"), " " => "\t"), ['[', ']', 'A', 'n', 'y'])
+	
 	savepath = pwd()*"/errorLab_finalData.csv"
+	
 	open(savepath, "w") do datfile
 		write(datfile, dat)
     end
@@ -860,19 +796,6 @@ version = "17.4.0+0"
 # ╠═8653b826-04de-4c5b-8c97-d14a4c54977b
 # ╟─bc7b17f6-8070-49d9-8d9a-9b766ee77e5e
 # ╟─7de78c4e-457f-40ad-8a06-ccb7dc6a9030
-# ╟─4fc78cf4-c0e6-46bf-b2e0-a836d0d64a04
-# ╠═1b8dc9ef-d49c-4633-af4f-a354db862522
-# ╟─9e24ec51-218a-4052-81f2-425ebc446136
-# ╟─f751e40c-880f-4f74-94fa-7d1cd4114a32
-# ╠═2ba6507a-8bde-41b3-a65f-e8e397f97224
-# ╟─1e957906-1491-45ee-afa8-38e510e4c53e
-# ╠═8dfa038e-89b9-4692-8ddc-dd6e8283307e
-# ╟─b8eda92a-d1c6-46f8-99b1-fdfbabfcba05
-# ╟─e89f202d-d4cf-47f5-8066-94ffad6142f9
-# ╟─0ebcb4a7-d008-417e-81a3-cebfd00ac991
-# ╠═bdaf95d4-6a8b-4de6-b78b-2accdbba712b
-# ╟─9057b784-91a3-44e3-a333-6ede09b8b954
-# ╟─1adbf59c-a43b-41a9-805a-8c4f71eaea86
 # ╟─74a5babe-163c-4da1-933e-4ea989ee5b9a
 # ╟─3eeb01d3-1dc1-4a0f-b70b-1d771d92fd6c
 # ╟─25a9b35e-3984-4263-b5ee-f51c92151189
@@ -882,6 +805,6 @@ version = "17.4.0+0"
 # ╟─60885571-b9e0-4c11-8b38-86bb648186d8
 # ╟─6163cfd2-5986-450a-83c3-838acbd53bb3
 # ╟─73edfac2-cfab-42d0-89b3-14693958292f
-# ╟─dbe1360c-4b71-43f6-ad9b-7a30b009769e
+# ╟─083110af-44d0-4032-9d43-d725bdf3cb79
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002

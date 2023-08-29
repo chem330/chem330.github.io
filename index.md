@@ -12,7 +12,7 @@ This course is an introduction to environmental aquatic chemistry.  It is a hybr
 - Course information for lecture and lab will be posted on this site.
 - Homework will be turned in on Canvas.
 - Office hours are by appointment.  Please use [Calendly](https://calendly.com/drfischer/office-hours) to sign up for a time.  Anytime shown is a time I'm available to meet.
-- There is an unofficial [Discord server](https://discord.gg/QAZw8FWH) for the class, find me there to ask questions or connect with your classmates.
+- There is an unofficial [Discord server](https://discord.gg/nyuhfZRf) for the class, find me there to ask questions or connect with your classmates.
 
 # Lecture Assignments
 
