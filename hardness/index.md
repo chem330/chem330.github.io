@@ -25,11 +25,13 @@ The EPA provides [method 130.2](https://www.nemi.gov/methods/method_summary/4684
 
 Hardness can also be determined by measuring the concentration of magnesium and calcium using instrumental methods such as inductively coupled plasma mass spectrometry (ICP-MS) or flame atomic absorption spectrophotometry (FAAS).
 
-# Procedure
+# Part 0: Sample Preparation
 
-## Samples
+1. Collect a sample of tap water from wherever you usually get your drinking water.
+2. According to EPA Method 130.2, "For drinking waters, surface waters, saline waters, and dilutions
+thereof, no pretreatment steps are necessary."
 
-Use the samples provided in lab.
+# Part 1: EDTA Titration
 
 ## Prepare the EDTA Titrant
 
@@ -66,7 +68,7 @@ Before using the EDTA to titrate water samples, we must know its exact concentra
 5. Repeat this procedure at least two additional times. 
 6. Use this data and the data from parts A and B to calculate the hardness of your water sample in 	milligrams of $\ce{CaCO3}$ per liter. 
 
-### Hard Water Sample
+### Hard Water or Seawater
 
 1. Measure exactly 5.0 mL of the ocean water sample into a 250 mL flask.  Dilute the ocean water 	1:10 by adding 45 mL of deionized water to the flask.  Because the ocean water has a 	significantly higher concentration of $\ce{Ca^2+}$ ions, this dilution will decrease the amount of EDTA titrant required to reach the endpoint.
 2. Add 2.0 mL of the buffer solution.  The remainder of the titration must be completed within 15 	minutes of the time when the buffer is added.
@@ -75,7 +77,22 @@ Before using the EDTA to titrate water samples, we must know its exact concentra
 5. Repeat this procedure at least two additional times.  
 6. Use this data and the data from parts A and B to calculate the hardness of your water sample in 	mg $\ce{CaCO3}$ per L.  Make sure you take into account the 1:10 dilution of your ocean water sample.  (The hardness of the ocean water will actually be 10 times the value you calculate because of the 	10-fold dilution of the water sample.)
 
-# What to Turn In
+### What to Turn In - Part 1
 
-1. Turn in your scanned lab notebook pages before leaving lab.
-2. Turn in your Excel worksheet before the due date.
+1. Turn in your completed Pluto notebook as an HTML file.
+2. Turn in your completed Pluto notebook as a .jl file.
+3. Turn in a CSV file exported from Julia containing your data.
+
+# Part 2: Flame Atomic Absorption
+
+## Prepare your standards
+
+## Prepare your samples
+
+### Quality Control Sample
+
+### Unknown Samples
+
+## Analyze your samples
+
+## What to Turn In - Part 2

@@ -33,11 +33,7 @@ Repeat the experiment, except use a 15-ml volumetric pipette to measure the volu
 
 # Part 4: Mechanical Pipette
 
-Repeat the experiment, except use a 5-ml mechanical pipette (often called a micropipette) to measure the volume instead of a beaker.  Enter your results in the appropriate section of the notebook template.
-
-# Part 5: Determination of an Unknown Liquid
-
-Choose the method with the smallest uncertainty to measure the mass of an unknown liquid 5 times.  Use 5 ml of the unknown liquid for each measurement of the mass.  Calculate the mean and standard deviation of the masses you record.  In your lab notebook, indicate which of the above methods you used to determine the density and which unknown you analyzed!
+Repeat the experiment, except use a 5-ml mechanical pipette (often called a micropipette) to measure the volume instead of a beaker.  Enter your results in the appropriate section of the notebook template. (There may be a limited number of 5-mL pipettes so please share with your neighbors!)
 
 # What to turn in
 
