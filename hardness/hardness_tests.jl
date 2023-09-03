@@ -1,4 +1,5 @@
 [
+inst_stock_conc=0.02;
 function check_input_sf(X, glassware; balanceType = nothing, debouce = 2)
 	sleep(debouce)
 	bur = false
