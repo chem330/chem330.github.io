@@ -1,58 +1,58 @@
 [
-inst_stock_conc = 0.02 #N
+# inst_stock_conc = 0.02 #N
 
-	bp = plot(ylims=(0, yu), border = :box, grid = false, xticks = false, )
-	ylabel!("Hardness (mg/L CaCO₃)")
-	# plot!(twinx(), yminorticks = 0:20:500, ylims = (0, 500))
+# 	bp = plot(ylims=(0, yu), border = :box, grid = false, xticks = false, )
+# 	ylabel!("Hardness (mg/L CaCO₃)")
+# 	# plot!(twinx(), yminorticks = 0:20:500, ylims = (0, 500))
 
-	if drawlevels
-		hline!([1000], fill = 0, linewidth = 0, color = :navajowhite, label = "Very Hard")
-		hline!([300], fill = 150, color = :antiquewhite, linedwidth = 0, label = "Hard")
-		hline!([150], fill = 5, color = :ivory1, linedwidth = 0, label = "Moderately Hard")
-		hline!([50], fill = 0, color = :honeydew2, linedwidth = 0, label = "soft")
+# 	if drawlevels
+# 		hline!([1000], fill = 0, linewidth = 0, color = :navajowhite, label = "Very Hard")
+# 		hline!([300], fill = 150, color = :antiquewhite, linedwidth = 0, label = "Hard")
+# 		hline!([150], fill = 5, color = :ivory1, linedwidth = 0, label = "Moderately Hard")
+# 		hline!([50], fill = 0, color = :honeydew2, linedwidth = 0, label = "soft")
 
-	end
-	plot!(yminorticks = 0:20:500)
-	xlims!(0, 3)
-	
-# 	function check_input_sf(X, glassware; balanceType = nothing, debouce = 1)
-# 		sleep(debouce)
-# 		bur = false
-# 		try
-# 			if glassware == "balance" && balanceType == "A"
-# 				sig = 6
-# 			elseif glassware == "burette"  
-# 				sig = -99
-# 				bd = split.(string.(X), ".")
-# 				nodecimals = ones(size(bd)[1])
-# 				for i in 1:size(bd)[1]
-# 					nodecimals[i] = length(bd[i][2])
-# 				end
-# 				if any(nodecimals .!= 2)
-# 					bur = true
-# 						else
-# 					bur = false
-# 				end
-# 			elseif glassware == "balance" && balanceType == "B"
-# 				sig = 5
-# 			elseif glassware == "beaker"
-# 				sig = 3
-# 			elseif glassware == "cylinder"
-# 				sig = 4
-# 			elseif glassware == "volumetric pipette"
-# 				sig = 4
-# 			else 
-# 				"Unrecognized glassware"
-# 			end
-		
-# 			if any(X .!= 0) && any(length.(string.(X)) .!= sig+1) && bur != false
-# 				Markdown.MD(Markdown.Admonition("warning", "Check your sig figs!", [md"Remember to record all known digits plus one uncertain digit for all measurements! $(bur)"]))
-# 			end
-		
-# 		catch e
-# 			println(e)
-# 		end
 # 	end
+# 	plot!(yminorticks = 0:20:500)
+# 	xlims!(0, 3)
+	
+	function check_input_sf(X, glassware; balanceType = nothing, debouce = 1)
+		sleep(debouce)
+		bur = false
+		try
+			if glassware == "balance" && balanceType == "A"
+				sig = 6
+			elseif glassware == "burette"  
+				sig = -99
+				bd = split.(string.(X), ".")
+				nodecimals = ones(size(bd)[1])
+				for i in 1:size(bd)[1]
+					nodecimals[i] = length(bd[i][2])
+				end
+				if any(nodecimals .!= 2)
+					bur = true
+						else
+					bur = false
+				end
+			elseif glassware == "balance" && balanceType == "B"
+				sig = 5
+			elseif glassware == "beaker"
+				sig = 3
+			elseif glassware == "cylinder"
+				sig = 4
+			elseif glassware == "volumetric pipette"
+				sig = 4
+			else 
+				"Unrecognized glassware"
+			end
+		
+			if any(X .!= 0) && any(length.(string.(X)) .!= sig+1) && bur != false
+				Markdown.MD(Markdown.Admonition("warning", "Check your sig figs!", [md"Remember to record all known digits plus one uncertain digit for all measurements! $(bur)"]))
+			end
+		
+		catch e
+			println(e)
+		end
+	end
 
 # 	function check_edta_conc(check_string, mass, volume)
 # 		if check_string != "0.00"
