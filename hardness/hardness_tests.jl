@@ -1,5 +1,5 @@
 [
-function check_input_sf(X, glassware; balanceType = nothing, debouce = 1)
+function check_input_sf(X, glassware; balanceType = nothing, debouce = 2)
 	sleep(debouce)
 	bur = false
 	try
