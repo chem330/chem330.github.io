@@ -310,8 +310,8 @@ md"""
 ## Final Titrations
 """
 
-# ╔═╡ ba950b2c-098d-4069-97ed-e0e5d2b8d516
-volume_water = [ missing, missing, missing ]
+# ╔═╡ 529ecdc2-f822-47d6-a8ab-337619346cab
+md"### Sample 1"
 
 # ╔═╡ 62104a86-5675-4180-bcf6-9b68d6589372
 water_volume = [ missing, missing, missing ]
@@ -332,6 +332,24 @@ if all(.!ismissing.(endpoints))
 	check_input_sf(endpoints, "burette") 
 end
 
+# ╔═╡ 9bbda8a8-7ed3-407a-aebc-ae4d2d21e6d1
+md"### Sample 2"
+
+# ╔═╡ dfc14892-f48e-44f1-bc66-c1f60b5d2ebe
+water_volume_s2 = [ missing, missing, missing ]
+
+# ╔═╡ d215bbbe-8bc2-44c0-85d9-cfe4383061cd
+starting_volumes_s2 = [ missing, missing, missing ]
+
+# ╔═╡ 7c57df57-4595-4937-ae0e-7db2d8312897
+endpoints_s2 = [ missing, missing, missing ]
+
+# ╔═╡ d78edaf8-e526-47e4-b336-87762943daad
+
+
+# ╔═╡ 0a3e5e4f-796d-4deb-a1ef-01af01bfff8c
+
+
 # ╔═╡ 72b7176d-349d-4f1e-bbad-1d822ad0338a
 md"## Water Hardness Result"
 
@@ -343,9 +361,18 @@ md"""
 # ╔═╡ 4025c24c-d134-4ac1-a1a7-02580f401b1b
 
 
+# ╔═╡ 8be5bbc9-92e5-4398-86b7-ab4788633d28
+
+
 # ╔═╡ db10e70f-3fe9-42b4-a886-171eedd05ecc
 md"""
-**Hardness of Samples:** $(@bind final_mean_hardness TextField(default = "0.00")) mg/L CaCO₃
+**Hardness of Sample 1:** $(@bind final_mean_hardness TextField(default = "0.00")) mg/L CaCO₃
+
+"""
+
+# ╔═╡ 2dbca923-7c36-4c3f-97f2-8f5ce034a537
+md"""
+**Hardness of Sample 2:** $(@bind final_mean_hardness_2 TextField(default = "0.00")) mg/L CaCO₃
 
 """
 
@@ -354,15 +381,17 @@ check_hardness(final_mean_hardness, starting_volumes, endpoints, blank_vol, inst
 
 # ╔═╡ 3f5a4b8b-f628-43bd-bd2a-b8ddf99e9a8a
 md"""
-**Add your result to the graph below as a barplot.  Include a y-error bar that represents the standard deviation of the sample.**
+**Add your results to the graph below as a barplot.  Include a y-error bar that represents the standard deviation of the sample.**
 
 The command to add at bar to the plot is:
 
-	bar!([your_data], color = "your_color", yerr = your_y_err)
+	bar!([s1_data, s2_data], color = "your_color", yerr = [s1_error, s2_error])
 
 I suggest you also add the argument `label = false` to avoid adding an entry in the legend.
 
 You can the color names in the [documentation for Colors.jl](http://juliagraphics.github.io/Colors.jl/stable/namedcolors/)!  (These are all built-in to Julia.)  Or, if you want additional colors, you can load the package [NamedColors.jl](https://github.com/JuliaGraphics/NamedColors.jl) and use many more colors, such as the [XKCD colors](https://xkcd.com/color/rgb/) or [Crayola colors](https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors)! If you want to use NamedColors.jl, add `NamedColors` to the first cell at the top of the notebook where packages are loaded.
+
+Once you've added your data, change the labels on the x-axis to reflect to collection locations of your samples.
 
 """
 
@@ -407,7 +436,7 @@ begin
 
 	end
 	plot!(yminorticks = 0:20:500)
-	xlims!(0, 3)
+	xlims!(0, 4)
 end;
 
 # ╔═╡ 5217fa57-31c1-48e9-82b2-0fbf032f58a2
@@ -415,7 +444,10 @@ begin
 	bp # leave this line alone - it prints a plot template for you to start with
 	# add your data to the plot using at barplot command
 
+		
 	
+	# once you've added your data bars, you can change the labels to match yours:
+	xticks!([1, 2], ["Sample 1", "Sample 2"])
 end
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
@@ -1514,16 +1546,24 @@ version = "1.4.1+0"
 # ╟─4578ddb1-4d6c-462d-a801-0fb4bd602f8d
 # ╟─ed85ac6b-d1a2-4688-8ac4-3293f1dd1cb2
 # ╟─2e1d8757-faba-479c-8687-3fd0f7ef8344
-# ╠═ba950b2c-098d-4069-97ed-e0e5d2b8d516
+# ╟─529ecdc2-f822-47d6-a8ab-337619346cab
 # ╠═62104a86-5675-4180-bcf6-9b68d6589372
 # ╠═35221e1e-4373-4078-98ee-3fd3a6ddf911
 # ╠═c36311fb-d01f-4a47-88fc-ab3b4cf1d8b9
 # ╟─47ad7d8f-b590-433d-98c9-72c243cb8214
 # ╟─40bc05c0-5622-4149-943c-6c5739fff534
+# ╟─9bbda8a8-7ed3-407a-aebc-ae4d2d21e6d1
+# ╠═dfc14892-f48e-44f1-bc66-c1f60b5d2ebe
+# ╠═d215bbbe-8bc2-44c0-85d9-cfe4383061cd
+# ╠═7c57df57-4595-4937-ae0e-7db2d8312897
+# ╟─d78edaf8-e526-47e4-b336-87762943daad
+# ╟─0a3e5e4f-796d-4deb-a1ef-01af01bfff8c
 # ╟─72b7176d-349d-4f1e-bbad-1d822ad0338a
 # ╟─664e0bcd-a9ce-4cda-9c4a-55336868a838
 # ╠═4025c24c-d134-4ac1-a1a7-02580f401b1b
+# ╠═8be5bbc9-92e5-4398-86b7-ab4788633d28
 # ╟─db10e70f-3fe9-42b4-a886-171eedd05ecc
+# ╟─2dbca923-7c36-4c3f-97f2-8f5ce034a537
 # ╟─10887f16-8060-400a-ab0b-4047d65517fa
 # ╟─3f5a4b8b-f628-43bd-bd2a-b8ddf99e9a8a
 # ╟─1b856ce5-7e99-42b6-bc90-eb2f456a8324
