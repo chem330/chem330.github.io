@@ -1,6 +1,6 @@
-Item	Mean	SD
-Beaker - 25 ml	0.00	0.00
-Grad. Cylinder	0.00	0.00
-Glass Pipette	0.00	0.00
-Mech Pipette	0.00	0.00
-Unknown A	0.00	0.00
+Beaker	Graduated_Cylinder	Glass_Pipette	Mech_Pipette	Balance
+0	0	0	0	"choose	one..."
+0	0	0	0	"choose	one..."
+0	0	0	0	"choose	one..."
+0	0	0	0	"choose	one..."
+0	0	0	0	"choose	one..."
