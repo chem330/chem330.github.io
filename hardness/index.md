@@ -10,6 +10,7 @@ Water Hardness
 # Background
 
 *This is a 2-week lab.*
+ - *Week 1 notebook template:* [week 1 notebook template link](https://raw.githubusercontent.com/chem330/chem330.github.io/main/hardness/water-hardness-notebook.jl)
 
 Water "hardness" is not a single chemical species, but rather a character of the water that can result from the presence of several species, primarily magnesium and calcium.  The term "hard water" results from the fact that metal ions will precipitate soap molecules from water making it "hard" to get things clean.  Hard water can also cause problems in plumbing, especially in water heaters and boilers, by causing lime scale when the calcium precipitates out of solution as calcium carbonate upon heating; this is sometimes referred to as temporary hardness.  The convention for reporting hardness is to report it as milligrams of $\ce{CaCO3}$ per liter, as if all of the hardness were from calcium carbonate.  This allows hardness values to be compared from different locations, regardless of the ions that contribute to hardness, but requires that results be mathematically converted to $\ce{CaCO3}$ before they are reported.
 
