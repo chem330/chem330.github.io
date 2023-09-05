@@ -407,7 +407,7 @@ md"""
 
 Write a 1-2 paragraph conclusion in the cell below.  Make sure to fully summarize your results, including any key numbers.  If possible, put your results into perspective by relating to other sources.  In particular, answer the following question(s):
 
-1. Is your water hard or soft?
+1. Is your water hard or soft?  What are the broader implications of this finding?
 1. EPA method 130.2 specifies a precision (as standard deviation) for this method of approximately 3 mg/L CaCO₃ for samples below 300 mg/L CaCO₃.  Did you achieve this precision?  Specify the exact value of your standard deviation in addition to saying whether or not it is close to the EPA values.
 
 """
