@@ -1,6 +1,6 @@
 [
 function setstockconc()
-	0.02
+	0.020
 end
 function check_input_sf(X, glassware; balanceType = nothing, debouce = 2)
 	sleep(debouce)
@@ -42,7 +42,7 @@ function check_input_sf(X, glassware; balanceType = nothing, debouce = 2)
 end
 function check_edta_conc(check_string, mass, volume)
 	if check_string != "0.00"
-		if isapprox(parse(Float64, check_string), (mass / volume) * (1/(292.2438 + 22.989769 + 22.989769)), atol = 0.00005)
+		if isapprox(parse(Float64, check_string), (mass / volume) * (1/(372.24)), atol = 0.00005)
 			Markdown.MD(Markdown.Admonition("correct", "Correct!", [md"Your calculation is correct!"]))
 		else
 			Markdown.MD(Markdown.Admonition("danger", "This doesn't seem right...", [md"Something's wrong with your calculation."]))
