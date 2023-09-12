@@ -53,7 +53,7 @@ function check_edta_conc(check_string, mass, volume)
 end
 function check_ca_amount(check_string, stock_vol, stock_conc)
 	if !ismissing(stock_vol) && check_string != "0.00"
-		if isapprox(parse(Float64, check_string), stock_conc * stock_vol, atol = 0.01)
+		if isapprox(parse(Float64, check_string), stock_conc * stock_vol * 0.5, atol = 0.01)
 			Markdown.MD(Markdown.Admonition("correct", "Correct!", [md"Your calculation is correct!"]))
 		else
 			Markdown.MD(Markdown.Admonition("danger", "This doesn't seem right...", [md"Something's wrong with your calculation."]))
