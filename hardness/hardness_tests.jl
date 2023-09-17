@@ -1,6 +1,6 @@
 [
 function setstockconc()
-	0.02
+	0.040
 end
 function check_input_sf(X, glassware; balanceType = nothing, debouce = 2)
 	sleep(debouce)
@@ -42,7 +42,7 @@ function check_input_sf(X, glassware; balanceType = nothing, debouce = 2)
 end
 function check_edta_conc(check_string, mass, volume)
 	if check_string != "0.00"
-		if isapprox(parse(Float64, check_string), (mass / volume) * (1/(292.2438 + 22.989769 + 22.989769)), atol = 0.00005)
+		if isapprox(parse(Float64, check_string), (mass / volume) * (1/(372.24)), atol = 0.00005)
 			Markdown.MD(Markdown.Admonition("correct", "Correct!", [md"Your calculation is correct!"]))
 		else
 			Markdown.MD(Markdown.Admonition("danger", "This doesn't seem right...", [md"Something's wrong with your calculation."]))
@@ -64,7 +64,7 @@ function check_ca_amount(check_string, stock_vol, stock_conc)
 end
 function check_edta_volume_needed(check_string, stock_conc, stock_vol, mass_edta, vol_edta_flask; atol = 0.005)
 	if check_string != "0.00"
-		if isapprox(parse(Float64, check_string), stock_conc * stock_vol * 0.5 * 1/((mass_edta / volume_edta_flask) * (1/(292.2438 + 22.989769 + 22.989769))), atol = atol) && check_string != "0.00"
+		if isapprox(parse(Float64, check_string), stock_conc * stock_vol * 0.5 * 1/((mass_edta / volume_edta_flask) * (1/(372.24))), atol = atol) && check_string != "0.00"
 			Markdown.MD(Markdown.Admonition("correct", "Correct!", [md"Your calculation is correct.  You should be able to add almost this amount in one go.  When you get within 5 mL or so of the endpoint you will want to slow down!"]))
 		elseif check_string == "0.00"
 		else
