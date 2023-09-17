@@ -1,7 +1,10 @@
 [
-inst_ca_stock = 0.51136 # mg/L
-inst_mg_stock = 0.5860 # mg/L
-
+function setstockconcs()
+	inst_ca_stock = 0.51136 # mg/L
+  inst_mg_stock = 0.5860 # mg/L
+  return (ca = inst_ca_stock, mg = inst_mg_stock)
+end
+  
 function check_dilutions(X, stock, vf, pip; species, a = 0.00001)
   if all(.!ismissing.(vf)) && all(.!ismissing.(pip)) && all(.!ismissing.(X))
     if all(isapprox.(X, stock .* pip ./ vf, atol = a)) || all(isapprox.(reverse(X), stock .* pip ./ vf), atol = a) 
