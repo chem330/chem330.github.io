@@ -1,6 +1,6 @@
 [
 function setstockconcs()
-	inst_ca_stock = 0.51136 # mg/L
+  inst_ca_stock = 0.51136 # mg/L
   inst_mg_stock = 0.5860 # mg/L
   return (ca = inst_ca_stock, mg = inst_mg_stock)
 end
