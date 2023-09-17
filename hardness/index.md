@@ -52,7 +52,7 @@ Prepare 500 mL of EDTA titrant by weighing 1.8615 g disodium ethylenediaminetetr
 
 1. Measure approximately 50 mL of deionized water into a suitable container for titration (i.e. a flask or beaker with sufficient volume to accept the titrant).
 2. Add about 2 mL of odorless water hardness buffer solution (you can use a plastic pipette for this and be approximate).
-3. Add about 4 drops of Calmagite indicator solution.
+3. Add about 5-6 drops of Calmagite indicator solution.
 4. Titrate using the EDTA titrant.  At the end point, the color should change from red to blue.
 
 \note{ It will likely only take **1-2 drops** to reach the end point, so go slowly with the blank!  }
@@ -64,9 +64,9 @@ Prepare 500 mL of EDTA titrant by weighing 1.8615 g disodium ethylenediaminetetr
 
 Before using the EDTA to titrate water samples, we must know its exact concentration.  We will use a solution of calcium carbonate ($\ce{CaCO3}$) as a *primary standard* to determine the exact concentration of EDTA solution.  A stock solution of calcium carbonate will be provided in lab.
 
-1. Measure *exactly* 20.00 mL of the $\ce{CaCO3}$ standard solution into a suitable container for titration.  Add approximately 30 mL of deionized water to the flask.
+1. Measure *exactly* 10.00 mL of the $\ce{CaCO3}$ standard solution into a suitable container for titration.  Add approximately 30 mL of deionized water to the flask.
 2. Add 2 mL of the buffer solution.
-3. Add 4 drops of Calmagite indicator solution.
+3. Add 5-6 drops of Calmagite indicator solution.
 4. Titrate using your EDTA titrant.  At the end point, the color should change from red to blue.
 5. Repeat this procedure at least two additional times.
 6. Use these data and the data from part A to calculate exactly how much EDTA titrant is needed to react with 1.00 mg of $\ce{CaCO3}$.  You will use this value in your calculations to determine the water hardness.
@@ -78,7 +78,7 @@ Before using the EDTA to titrate water samples, we must know its exact concentra
 *Most water samples can be titrated without dilution.  Try these steps first unless you are certain you are working with very hard water.*
 
 1. Measure exactly 50 mL of the water sample into a suitable container for titration.  
-2. Add 2.0 mL of the buffer solution.
+2. Add 2.0 mL of the buffer solution plus 5-6 drops of indicator.
 4. Titrate using the EDTA titrant.  At the end point the color should change from red to blue.
 5. Repeat this procedure at least two additional times. 
 6. Use this data and the data from parts A and B to calculate the hardness of your water sample in 	milligrams of $\ce{CaCO3}$ per liter. 
@@ -98,7 +98,6 @@ Before using the EDTA to titrate water samples, we must know its exact concentra
 
 1. Turn in your completed Pluto notebook as an HTML file.
 2. Turn in your completed Pluto notebook as a .jl file.
-3. Turn in a CSV file exported from Julia containing your data.
 
 **Also make sure to place your acidified sample in the fridge for next week!**
 
@@ -106,28 +105,36 @@ Before using the EDTA to titrate water samples, we must know its exact concentra
 
 ## Prepare your standards
 
-+ Calculate the expected $\ce{Mg^2+}$ and $\ce{Ca^2+}$ concentrations based on your titration results from the previous week.
+**Before Lab:** Calculate the expected $\ce{Mg^2+}$ and $\ce{Ca^2+}$ concentrations based on your titration results from the previous week.
 
-\note{ If your expected concentrations are over 100 mg/L, you should dilute your sample prior to analysis.  The ideal range is about 10 mg/L. }
+\note{ If your expected concentrations are over 20 mg/L, you will need to dilute your sample prior to analysis.  The ideal range is about 5-10 mg/L. }
 
-+ Prepare 5 standards that bracket the expected concentration (i.e. some should be lower and some should be higher).  Overall you will want to span about 1 order of magnitude in concentration.  Remember to factor in any dilutions you use!  You can use the stock provided and dilute it with deionized or ultrapure water to create your standards.
+1. Prepare 5 standards that bracket the expected concentration (i.e. some should be lower and some should be higher).  Overall you will want to span about 1 order of magnitude in concentration.  Remember to factor in any dilutions you use!  You can use the stock provided and dilute it with deionized or ultrapure water to create your standards.
 
-\note{ When preparing your standards, be sure to use class A glassware and work with precision and accuracy! }
+  \note{ When preparing your standards, be sure to use class A glassware and work with precision and accuracy! }
 
-+ Place approximately 10-15 mL of your samples in **labeled** plastic 15-mL centrifuge tubes.  Make sure the tubes are labeled with your names and the concentrations of the standards!
+1. Place exactly 10.00 mL of your standards in **labeled** plastic 15-mL centrifuge tubes.  Make sure the tubes are labeled with your names and the concentrations of the standards!
+2. Add exactly 1.00 mL of lanthanum solution as a releasing agent.
+3. Cap your tubes and shake them to mix the releasing agent well.
 
 ## Prepare your samples
 
 ### Quality Control Sample
 
-+ A *quality control* (QC) sample will be provided for you.
-+ Place approximately 10-15 mL of the QC is a labeled plastic 15-mL centrifuge tube.  Make sure the tube is labeled with your names and the identity of the sample!
+1. A *quality control* (QC) sample will be provided for you.
+2. Place exactly 10.00 mL of the QC is a labeled plastic 15-mL centrifuge tube.  Make sure the tube is labeled with your names and the identity of the sample!
+2. Add exactly 1.00 ml of lanthanum solution as a releasing agent.
+3. Cap your tubes and shake them to mix the releasing agent well.
 
 ### Unknown Samples
 
-\note{ If your samples are soft you can run them without dilution.  If your samples are going to be above 100 mg/L for any analyte you should dilute them down to approximately 10 mg/L using deionized or ultrapure water. Make sure you keep track of the exact dilution you use! }
+You should analyze your filtered, acidified sample and your unfiltered sample.  We will test to see if there is a difference between the two.
 
-+ Place approximately 10-15 mL of your samples in **labeled** plastic 15-mL centrifuge tubes.  Make sure the tubes are labeled with your names and the identity of the samples!
+\note{ If your samples are very soft you can run them without dilution.  If your samples are going to be above 10 mg/L for any analyte you should dilute them down to approximately 1-10 mg/L using deionized or ultrapure water. Make sure you keep track of the exact dilution you use! }
+
+1. Place exactly 10.00 mL of your samples in **labeled** plastic 15-mL centrifuge tubes.  Make sure the tubes are labeled with your names and the identity of the samples!
+2. Add exactly 1.00 ml of lanthanum solution as a releasing agent.
+3. Cap your tubes and shake them to mix the releasing agent well.
 
 ## Analyze your samples
 
@@ -137,4 +144,4 @@ When your samples are ready for analysis, coordinate with your instructor to run
 
 1. Turn in your completed Pluto notebook as an HTML file.
 2. Turn in your completed Pluto notebook as a .jl file.
-3. Turn in a CSV file exported from Julia containing your data.
+3. A CSV file containing your data will be uploaded by your instructor.
