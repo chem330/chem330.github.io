@@ -1,3 +1,4 @@
+[
 inst_ca_stock = 0.51136 # mg/L
 inst_mg_stock = 0.5860 # mg/L
 
@@ -10,3 +11,4 @@ function check_dilutions(X, stock, vf, pip; species)
     end
   end
 end
+]
