@@ -114,7 +114,11 @@ Before using the EDTA to titrate water samples, we must know its exact concentra
   \note{ When preparing your standards, be sure to use class A glassware and work with precision and accuracy! }
 
 1. Place exactly 10.00 mL of your standards in **labeled** plastic 15-mL centrifuge tubes.  Make sure the tubes are labeled with your names and the concentrations of the standards!
-2. Add exactly 1.00 mL of lanthanum solution as a releasing agent.
+1. Place exactly 10.00 ml of deionized water acidified to a pH < 2.
+2. Add exactly 1.00 mL of lanthanum solution as a releasing agent to each tube.
+   
+   \note{ The releasing agent is expensive and we don't have a lot of it!  Only use the amount required! }
+
 3. Cap your tubes and shake them to mix the releasing agent well.
 
 ## Prepare your samples
