@@ -103,6 +103,8 @@ Before using the EDTA to titrate water samples, we must know its exact concentra
 
 # Part 2: Flame Atomic Absorption
 
+[This is the link for notebook template for Part 2.](https://raw.githubusercontent.com/chem330/chem330.github.io/main/hardness/water-hardness-notebook-faas.jl)
+
 ## Prepare your standards
 
 **Before Lab:** Calculate the expected $\ce{Mg^2+}$ and $\ce{Ca^2+}$ concentrations based on your titration results from the previous week.
