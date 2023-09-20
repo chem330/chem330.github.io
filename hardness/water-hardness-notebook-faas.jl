@@ -62,7 +62,11 @@ md"""
 
 # ╔═╡ 460bc0a6-00ec-4f28-81bb-f9257c946394
 md"""
-A stock solution was prepared by the instructor by dissolving **0.5860 g Mg** filings in a minimum of 1:1 trace-metals grade nitric acid.  This was added to approximately 500 ml of deionized water in a **1-L volumetric flask**, to which **1.2770 g of $\ce{CaCO3}$** were added and allowed to dissolve.  After dissolution, the flask was placed in a sonicator on degas mode for approximately 2 minutes to ensure all $\ce{CO2}$ was released from solution.  Finally, the flask was brought to volume with deionized water, the solution transferred to a 1-L polylpropylene flask and stored at 4°C until analysis. The stock was brought to room temperature prior to analysis.  All glassware was washed with Alconox detergent and warm water and then triple rinsed with deionized water prior to use. $\ce{CaCO3}$ was dried overnight in an oven and then stored in a dessicator until use.
+A stock solution was prepared by the instructor by dissolving **0.5860 g Mg** filings (Fisher Lot 974419) in a minimum of 1:1 trace-metals grade nitric acid.  This was added to approximately 500 ml of deionized water in a **1-L volumetric flask**, to which **1.2770 g of $\ce{CaCO3}$** (MP Lot M5578) were added and allowed to dissolve.  After dissolution, the flask was placed in a sonicator on degas mode for approximately 2 minutes to ensure all $\ce{CO2}$ was released from solution.  Finally, the flask was brought to volume with deionized water, the solution transferred to a 1-L polylpropylene flask and stored at 4°C until analysis. The stock was brought to room temperature prior to analysis.  All glassware was washed with Alconox detergent and warm water and then triple rinsed with deionized water prior to use. $\ce{CaCO3}$ was dried overnight in an oven and then stored in a dessicator until use.
+
+A QC sample containing at 5.274 mg/L and 4.60 mg/L for Mg and Ca, respectively, was provided by the instructor.
+
+A lanthanum solution was prepared as a releasing agent by dissolving 4.570 g LaCl in deionized water.
 """
 
 # ╔═╡ 0974b715-3464-4c10-85b9-fbae31171d94
