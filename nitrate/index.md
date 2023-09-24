@@ -1,5 +1,5 @@
 +++
-title = "Experiment 2: Standardization - Nitrate and Phosphate"
+title = "Experiment 2: Standardization - Nitrate"
 +++
 
 
@@ -22,6 +22,8 @@ In this experiment, nitrate will be determined spectrophotometrically using the 
 
 ![Schematic of absorption spectroscopy](absorption_spectroscopy.png)
 
+Methods that use visible light to detect the analyte are called **colorimetric** methods.
+
 ## Standardization
 
 A series of solutions is prepared with a known amount of analyte (standards) and the absorbance is measured on the Vernier SpectroVis.  A graph is then prepared of absorbance (y-axis) versus concentration (x-axis).  This graph is called a standard curve or calibration curve.  The calibration curve will be used to develop a quantitative relationship between concentration and absorbance.  Then absorbance will be measured for the water samples, and the graph will be used to calculate the concentration of analyte in the samples.  A generalized example is shown below in Figure 2.
@@ -43,20 +45,13 @@ savefig(joinpath(@OUTPUT, "nitrate-cal.svg")) # hide
 
 # Procedure
 
-## Samples
-
-Collect samples from a location of your choice for this experiment.  Some options are:
-- Water fountain in ASB
-- Tap water from your home
-- Water from Cullowhee Creek
-- Water from the Tuckasegee River
-- Others are OK too
+The notebook template for this lab can be found on [GitHub](https://raw.githubusercontent.com/chem330/chem330.github.io/main/nitrate/nitrate-notebook.jl).
 
 ## Standard Preparation
 
-**A a 500-mg L$^{-1}$ NO$_3^-$ stock solution has been prepared for you.**
+**A ~500-mg L$^{-1}$ NO$_3^-$ stock solution has been prepared for you.**
 
-1. Prepare a 10-ppm nitrate intermediate stock solution using the stock solution.
+1. Prepare a ~10-ppm nitrate intermediate stock solution using the 500-ppm stock solution provided.  You will need about 50 ml of this solution.
 2. Using your intermediate stock solution, prepare 5 standards with concentrations ranging from (approximately) 0--10 mg L$^{-1}$.  Make 25 mL of each solution, and remember that $C_1V_1 = C_2V_2$.
 
 ## Determination of Nitrate
@@ -73,14 +68,14 @@ Collect samples from a location of your choice for this experiment.  Some option
 
 The following procedure should be performed on each of your 6 calibration standards and each of your water samples.
 
-1. Place 25 mL of each standard and sample into separate 50-mL flasks.
+1. Place 25 mL of each standard and sample into separate 50-mL beakers or Erlenmeyer flasks.
 2. Create a blank with 25 mL of deionized water.
 3. Add the contents of one NitraVer5 Nitrate reagent packet to each sample.  **Be careful!**  There is Cd metal in the reagent packet, so the contents of the reagent packet are toxic.  Wear gloves, goggles, and avoid inhaling the reagent powder.  Be careful about what you touch with your gloves.
 4. Swirl each flask vigorously for 1 minute.  Wait at least 5 minutes, but no longer than 15 minutes before reading the absorbance of each sample.
 
 ### Determination of Nitrate
 
-5. After the designated time, use a plastic pipette to transfer some of each solution to the cuvette and complete a measurement. **Follow the guidelines listed directly below!**
+1. After the designated time, use a plastic pipette to transfer some of each solution to the cuvette and complete a measurement. **Follow the guidelines listed directly below!**
 
    - Always work from lowest concentration to highest concentration to avoid cross-contamination!
    - Make sure to measure each standard once and each sample three times!
@@ -91,4 +86,4 @@ The following procedure should be performed on each of your 6 calibration standa
    
 ## What to Turn In
 
-1. Upload two copies (.jl and .html) of your completed notebook to the assignment for this experiment on Canvas.
+1. Upload the .jl and .html versions of your completed notebook to the assignment for this experiment on Canvas.
