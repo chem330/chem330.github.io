@@ -43,20 +43,11 @@ savefig(joinpath(@OUTPUT, "nitrate-cal.svg")) # hide
 
 # Procedure
 
-## Samples
-
-Collect samples from a location of your choice for this experiment.  Some options are:
-- Water fountain in ASB
-- Tap water from your home
-- Water from Cullowhee Creek
-- Water from the Tuckasegee River
-- Others are OK too
-
 ## Standard Preparation
 
-**A a 500-mg L$^{-1}$ NO$_3^-$ stock solution has been prepared for you.**
+**A ~500-mg L$^{-1}$ NO$_3^-$ stock solution has been prepared for you.**
 
-1. Prepare a 10-ppm nitrate intermediate stock solution using the stock solution.
+1. Prepare a ~10-ppm nitrate intermediate stock solution using the 500-ppm stock solution provided.  You will 
 2. Using your intermediate stock solution, prepare 5 standards with concentrations ranging from (approximately) 0--10 mg L$^{-1}$.  Make 25 mL of each solution, and remember that $C_1V_1 = C_2V_2$.
 
 ## Determination of Nitrate
@@ -91,5 +82,4 @@ The following procedure should be performed on each of your 6 calibration standa
    
 ## What to Turn In
 
-1. Upload your completed notebook to the assignment for this experiment on Canvas.
-2. Complete the Excel answer sheet in the [Experiment 2 assignment](https://westerncarolina.instructure.com/courses/19308/assignments/383673) on Canvas by next week.
+1. Upload two copies (.jl and .html) of your completed notebook to the assignment for this experiment on Canvas.
