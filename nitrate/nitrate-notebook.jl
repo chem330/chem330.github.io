@@ -41,6 +41,13 @@ md"""
 # Materials and Methods
 """
 
+# ╔═╡ 76db857b-e0a9-4a94-b351-0c7d208aa095
+md"""
+## Sample Collection
+
+Samples were collected in 1-L polyethylene bottles that had been analytically cleaned with a laboratory dishwasher.  The bottles were sealed until being opened at the site, where they were rinsed three times with sample water.  Then, the bottles were filled by submerging underwater with the mouth facing upstream, taking care to move approximately 1 m upstream from where the bottles were rinsed to avoid collecting disturbed sediment.  Samples were immediately placed at 4°C and stored overnight prior to analysis.  Additional details about specific sampling sites are located in [Appendix A](http://localhost:1235/edit?id=b78697e4-5cb7-11ee-1850-3918f799a9a7#014fa456-f9ff-418f-9267-78a1a3c0aa12).
+"""
+
 # ╔═╡ 4c07905f-42bd-488a-a01f-d40c8bbc962b
 # methods go here
 
@@ -137,7 +144,7 @@ end
 md"## Sample Concentrations"
 
 # ╔═╡ 110ba4ab-cfb7-4a51-afcc-f3d1e0a5ead0
-nitrate_mg = ((sample_A .- coef(calibration_fit)[1]) / coef(calibration_fit)[2])
+nitrate_mg = missing
 
 # ╔═╡ e40e5c72-59d5-4276-ba1f-8bdbdb862b26
 if any(.!ismissing.(nitrate_mg))  && !ismissing(sample_A)
@@ -148,11 +155,8 @@ if any(.!ismissing.(nitrate_mg))  && !ismissing(sample_A)
 	end
 end
 
-# ╔═╡ 300419c4-fd83-48cb-8f7f-c409831639bb
-(.!ismissing.(nitrate_mg))
-
 # ╔═╡ 86fcfc32-f6cd-45fe-aa62-2f663630c370
-nitrate_N = (nitrate_mg/62) * (14)
+nitrate_N = missing
 
 # ╔═╡ 76dcd4aa-9be3-41fb-b0f9-d7f51409fde7
 if any(.!ismissing.(nitrate_N)) && any(.!ismissing.(nitrate_mg))
@@ -180,6 +184,47 @@ Write your conclusions below.  Here are some ideas of things to include:
 
 # ╔═╡ a9f869eb-aec4-4bf9-9d1c-6dd1e0dbc9bd
 # conclusion here
+
+# ╔═╡ 014fa456-f9ff-418f-9267-78a1a3c0aa12
+md"# Appendix A: Sampling Site Info"
+
+# ╔═╡ 854d1624-ec4f-4c96-bdf0-1b42c216d461
+md"""
+## Site 1: Tuckasegee River at Cullowhee Dam
+Coordiantes: (35.315002, -83.175344)
+
+Water was collected at the easternmost boat ramp at the Lena Harris River Access Area in Cullowhee, NC (above Cullowhee Dam and the WCU water intake).
+"""
+
+# ╔═╡ 42c1bee5-83f3-4559-a1ea-a8feaeb427b0
+md"""
+## Site 2: Tuckasegee River at TWSA
+Cooridinates: (35.3507278, 83.23899166)
+
+Water was collected approximately 1 m downstream from the discharge outlet of the Tuckaseigee Water and Sewer Authority Wastewater Treatment Plant on North River Road in Sylva, NC.  The site was approximately 5 m off of North River Road.
+
+Algae and trash/litter were visible on the river bed and growing on the waste pipe.
+"""
+
+# ╔═╡ 116686ba-72a6-4718-8828-b1856f1fda5a
+md"""
+![](https://github.com/chem330/chem330.github.io/blob/main/nitrate/PXL_20230926_200914356.jpg?raw=true)
+
+![](https://github.com/chem330/chem330.github.io/blob/main/nitrate/PXL_20230926_200928312.jpg?raw=true)
+"""
+
+# ╔═╡ 50e40630-92b1-495b-8290-c1eb4cd5c76c
+md"## Site 3: Tuckasegee River Below Scott Creek"
+
+# ╔═╡ 84263ef4-8aad-4687-a08b-6cb1f2320150
+md"""
+Coordiantes: (35.3670444, 83.2608666)
+
+This site is located approximately 500 meters downstream from the confluence with Scott Creek.  Water was sampled approximately 5 m off the road below the entrance to Harrison Construction.  Lots of fine, muddy sediment was noted to be coating rocks and woody debris along the river bank.
+"""
+
+# ╔═╡ 73c52c90-e4fc-4692-b70a-11858b918ff7
+md"![](https://github.com/chem330/chem330.github.io/blob/main/nitrate/PXL_20230926_201630378.jpg?raw=true)"
 
 # ╔═╡ 66561306-e037-45a0-a2e7-8f373e821c71
 PlutoUI.TableOfContents()
@@ -1472,6 +1517,7 @@ version = "1.4.1+0"
 # ╟─e7afde9c-110d-4cca-8a6e-2cf431df3f15
 # ╠═f03ffccc-3772-4837-a75a-3ee6ff0c62d5
 # ╟─7b2a4668-2fca-44e5-a1dc-968cd0d0e544
+# ╟─76db857b-e0a9-4a94-b351-0c7d208aa095
 # ╠═4c07905f-42bd-488a-a01f-d40c8bbc962b
 # ╟─a940600b-9e62-48b4-92c8-895363d314ac
 # ╟─b63b1c8b-e73e-4d07-9d00-430289b3510d
@@ -1499,12 +1545,18 @@ version = "1.4.1+0"
 # ╟─974b1799-0277-4b0f-b280-5a6034273baf
 # ╠═110ba4ab-cfb7-4a51-afcc-f3d1e0a5ead0
 # ╟─e40e5c72-59d5-4276-ba1f-8bdbdb862b26
-# ╠═300419c4-fd83-48cb-8f7f-c409831639bb
 # ╠═86fcfc32-f6cd-45fe-aa62-2f663630c370
 # ╟─76dcd4aa-9be3-41fb-b0f9-d7f51409fde7
 # ╠═b5edb4e9-fc6a-413b-8d94-65db96eafb77
 # ╟─58e4ff0f-910e-48aa-a367-6f5efe119e99
 # ╠═a9f869eb-aec4-4bf9-9d1c-6dd1e0dbc9bd
+# ╟─014fa456-f9ff-418f-9267-78a1a3c0aa12
+# ╟─854d1624-ec4f-4c96-bdf0-1b42c216d461
+# ╟─42c1bee5-83f3-4559-a1ea-a8feaeb427b0
+# ╟─116686ba-72a6-4718-8828-b1856f1fda5a
+# ╟─50e40630-92b1-495b-8290-c1eb4cd5c76c
+# ╟─84263ef4-8aad-4687-a08b-6cb1f2320150
+# ╟─73c52c90-e4fc-4692-b70a-11858b918ff7
 # ╟─bbba4d72-8b55-4a30-a69f-4d8010c81253
 # ╟─fe60269c-6a24-44a2-8915-1993709dce07
 # ╟─66561306-e037-45a0-a2e7-8f373e821c71
