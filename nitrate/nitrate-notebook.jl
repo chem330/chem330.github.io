@@ -199,7 +199,7 @@ Water was collected at the easternmost boat ramp at the Lena Harris River Access
 # ╔═╡ 42c1bee5-83f3-4559-a1ea-a8feaeb427b0
 md"""
 ## Site 2: Tuckasegee River at TWSA
-Cooridinates: (35.3507278, 83.23899166)
+Cooridinates: (35.350727, -83.238991)
 
 Water was collected approximately 1 m downstream from the discharge outlet of the Tuckaseigee Water and Sewer Authority Wastewater Treatment Plant on North River Road in Sylva, NC.  The site was approximately 5 m off of North River Road.
 
@@ -218,7 +218,7 @@ md"## Site 3: Tuckasegee River Below Scott Creek"
 
 # ╔═╡ 84263ef4-8aad-4687-a08b-6cb1f2320150
 md"""
-Coordiantes: (35.3670444, 83.2608666)
+Coordiantes: (35.367044, -83.260866)
 
 This site is located approximately 500 meters downstream from the confluence with Scott Creek.  Water was sampled approximately 5 m off the road below the entrance to Harrison Construction.  Lots of fine, muddy sediment was noted to be coating rocks and woody debris along the river bank.
 """
