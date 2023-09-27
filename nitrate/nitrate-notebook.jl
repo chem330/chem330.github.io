@@ -48,8 +48,19 @@ md"""
 Samples were collected in 1-L polyethylene bottles that had been analytically cleaned with a laboratory dishwasher.  The bottles were sealed until being opened at the site, where they were rinsed three times with sample water.  Then, the bottles were filled by submerging underwater with the mouth facing upstream, taking care to move approximately 1 m upstream from where the bottles were rinsed to avoid collecting disturbed sediment.  Samples were immediately placed at 4°C and stored overnight prior to analysis.  Additional details about specific sampling sites are located in [Appendix A](http://localhost:1235/edit?id=b78697e4-5cb7-11ee-1850-3918f799a9a7#014fa456-f9ff-418f-9267-78a1a3c0aa12).
 """
 
-# ╔═╡ 4c07905f-42bd-488a-a01f-d40c8bbc962b
-# methods go here
+# ╔═╡ f07dd13c-42b7-4fd9-8000-42a95ce187ca
+md"## Standards"
+
+# ╔═╡ 3cf9d404-6f69-417a-932c-51cb07dc3e8f
+md"""
+
+A stock solution was prepared by dissolving 0.1623 g sodium nitrate (Fisher Lot # 912637A) in DI water using a 1000-ml volumetric flask.  The sodium nitrate was ACS grade and had been dried overnight in an 80°C oven immediately prior to use.
+
+A QC solution was also prepared from sodium nitrate at a concentration of 7.696 mg/L.
+"""
+
+# ╔═╡ 698b894d-4534-4587-8a2a-e23bf1139e36
+md"## Absorbance Measurement"
 
 # ╔═╡ a940600b-9e62-48b4-92c8-895363d314ac
 md"""
@@ -60,16 +71,11 @@ md"""
 | Wavelengths(s) (nm)		|           |
 """
 
+# ╔═╡ 4c07905f-42bd-488a-a01f-d40c8bbc962b
+# more methods go here
+
 # ╔═╡ b63b1c8b-e73e-4d07-9d00-430289b3510d
 md"## Standard Calculations"
-
-# ╔═╡ 3cf9d404-6f69-417a-932c-51cb07dc3e8f
-md"""
-
-A stock solution was prepared by dissolving 0.1623 g sodium nitrate (Fisher Lot# ) in DI water using a 1000-ml volumetric flask.  The sodium nitrate was ACS grade and had been dried overnight in an 80°C oven immediately prior to use.
-
-A QC solution was also prepared from sodium nitrate at a concentration of 7.696 mg/L.
-"""
 
 # ╔═╡ 42b25c2f-0170-4098-9fe3-db35d36e33e1
 stock_nitrate_conc = missing
@@ -1532,10 +1538,12 @@ version = "1.4.1+0"
 # ╠═f03ffccc-3772-4837-a75a-3ee6ff0c62d5
 # ╟─7b2a4668-2fca-44e5-a1dc-968cd0d0e544
 # ╟─76db857b-e0a9-4a94-b351-0c7d208aa095
-# ╠═4c07905f-42bd-488a-a01f-d40c8bbc962b
-# ╟─a940600b-9e62-48b4-92c8-895363d314ac
-# ╟─b63b1c8b-e73e-4d07-9d00-430289b3510d
+# ╟─f07dd13c-42b7-4fd9-8000-42a95ce187ca
 # ╟─3cf9d404-6f69-417a-932c-51cb07dc3e8f
+# ╟─698b894d-4534-4587-8a2a-e23bf1139e36
+# ╟─a940600b-9e62-48b4-92c8-895363d314ac
+# ╠═4c07905f-42bd-488a-a01f-d40c8bbc962b
+# ╟─b63b1c8b-e73e-4d07-9d00-430289b3510d
 # ╠═42b25c2f-0170-4098-9fe3-db35d36e33e1
 # ╠═2ef5a429-6568-435c-9bfe-f92a739c3c5c
 # ╠═59940916-334e-4821-8518-b5242ae05cb5
