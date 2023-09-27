@@ -10,7 +10,7 @@ function check_dilutions(X, stock, vf, pip; species, a = 0.00001)
     if all(isapprox.(X, stock .* pip ./ vf, atol = a)) || all(isapprox.(reverse(X), stock .* pip ./ vf, atol = a)) 
       Markdown.MD(Markdown.Admonition("correct", "Correct!", [md"Your $(species) standard concentrations appear to be correct!"]))
     else
-      Markdown.MD(Markdown.Admonition("danger", "This doesn't seem right...", [md"One or more of your $(species) standard concentrations is incorrect."]))
+      Markdown.MD(Markdown.Admonition("danger", "This doesn't seem right...", [md"One or more of your $(species) standard concentrations is incorrect, or your stock concentration is incorrect. I used 62.004931 g/mol for the molar mass of nitrate and 84.9947 g/mol for the mass of sodium nitrate."]))
     end
   end
 end
