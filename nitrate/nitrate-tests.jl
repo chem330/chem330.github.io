@@ -1,4 +1,4 @@
-begin
+[
 function setstockconcs()
   	# nitrate_stock = 118.4 # mg/L
 	nitrate_stock = stock_nitrate_conc
@@ -52,4 +52,4 @@ end
 function check_nitrate_n(no3)
 	(no3/62) * (14)
 end
-end
+]
