@@ -1,7 +1,6 @@
 [
 function setstockconcs()
-  	# nitrate_stock = 118.4 # mg/L
-	nitrate_stock = stock_nitrate_conc
+  	nitrate_stock = 118.4 # mg/L
 	qc = 7.696 # mg/L
   	return (n = nitrate_stock, qc = qc)
 end
