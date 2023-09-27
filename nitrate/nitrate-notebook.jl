@@ -63,6 +63,14 @@ md"""
 # ╔═╡ b63b1c8b-e73e-4d07-9d00-430289b3510d
 md"## Standard Calculations"
 
+# ╔═╡ 3cf9d404-6f69-417a-932c-51cb07dc3e8f
+md"""
+
+A stock solution was prepared by dissolving 0.1623 g sodium nitrate (Fisher Lot# ) in DI water using a 1000-ml volumetric flask.  The sodium nitrate was ACS grade and had been dried overnight in an 80°C oven immediately prior to use.
+
+A QC solution was also prepared from sodium nitrate at a concentration of 7.696 mg/L.
+"""
+
 # ╔═╡ 42b25c2f-0170-4098-9fe3-db35d36e33e1
 stock_nitrate_conc = missing
 # enter the stock nitrate conc in mg/L
@@ -1527,6 +1535,7 @@ version = "1.4.1+0"
 # ╠═4c07905f-42bd-488a-a01f-d40c8bbc962b
 # ╟─a940600b-9e62-48b4-92c8-895363d314ac
 # ╟─b63b1c8b-e73e-4d07-9d00-430289b3510d
+# ╟─3cf9d404-6f69-417a-932c-51cb07dc3e8f
 # ╠═42b25c2f-0170-4098-9fe3-db35d36e33e1
 # ╠═2ef5a429-6568-435c-9bfe-f92a739c3c5c
 # ╠═59940916-334e-4821-8518-b5242ae05cb5
