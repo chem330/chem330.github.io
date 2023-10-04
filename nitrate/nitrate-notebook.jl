@@ -56,7 +56,7 @@ md"""
 
 A stock solution was prepared by dissolving 0.1623 g sodium nitrate (Fisher Lot # 912637A) in DI water using a 1000-ml volumetric flask.  The sodium nitrate was ACS grade and had been dried overnight in an 80°C oven immediately prior to use.
 
-A QC solution was also prepared from sodium nitrate at a concentration of 7.696 mg/L.
+A QC solution was also prepared from sodium nitrate at a concentration of 4.307 mg/L.
 """
 
 # ╔═╡ 698b894d-4534-4587-8a2a-e23bf1139e36
