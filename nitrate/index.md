@@ -56,17 +56,17 @@ The notebook template for this lab can be found on [GitHub](https://raw.githubus
 
 ## Determination of Nitrate
 
-### SpectroVis Setup
+### SpectroVis Usage
 
 1. If you haven't already, download [Vernier Spectral Analysis](https://www.vernier.com/product/spectral-analysis/) and install it on your computer.
-1. Open the Spectral Analysis software and expand the **Absorbance** mode menu.  From there, choose **Absorbance vs. Concentration (Beer's Law)**.
+1. Open the Spectral Analysis software and expand the **Absorbance** mode menu.  From there, choose **Absorbance vs. Wavelength**.
 1. Allow the lamp to automatically warm up for 90 seconds (do not skip). 
 1. When the 90 seconds has passed, insert a cuvette containing your blank (DI water) into the spectrometer and click **Finish Calibration**.  (This step appears to set the integration time of the spectrophotometer -- it does not actually calibrate it or measure the sample.)
-1. After the previous step, a wizard will appear to choose the measurement wavelength.  Place your high standard into the instrument and follow the on-screen instructions to choose the wavelength with the highest absorbance.  Enter that wavelength into the "Selected Wavelength" box.  *If the wizard does not appear, click the settings icon in the top right of the software to access it.*
+1. Leave the spectrometer turned in and warming up while you complete "Sample Color Development" below.
 
 ### Sample Color Development
 
-The following procedure should be performed on each of your 6 calibration standards and each of your water samples.
+The following procedure should be performed on each of your 5 calibration standards and each of your water samples.
 
 1. Place 25 mL of each standard and sample into separate 50-mL beakers or Erlenmeyer flasks.
 2. Create a blank with 25 mL of deionized water.
@@ -75,12 +75,20 @@ The following procedure should be performed on each of your 6 calibration standa
 
 ### Determination of Nitrate
 
-1. After the designated time, use a plastic pipette to transfer some of each solution to the cuvette and complete a measurement. **Follow the guidelines listed directly below!**
+**Follow the guidelines listed directly below when measuring your solutions!**
 
+   - Use a plastic pipette to transfer solutions, making sure not to transfer any of the particulate matter left from the NitraVer reaction!
    - Always work from lowest concentration to highest concentration to avoid cross-contamination!
    - Make sure to measure each standard once and each sample three times!
+   - Use the same cuvette for all solutions and orient it the same way for each measurement!
    - Make sure to rinse the cuvette 3 times with DI water between each measurement!
    - Make sure to record the instrument parameters (measurement wavelength) and your measurements in your notebook!
+
+1. Use a plastic pipette to transfer some of your blank into the cuvette and press **Collect** at the top of the Spectral Analysis window.  You should see a relatively flat line centered around 0.  If your line is not centered around 0 or has big features present, you need to re-do the blank measurement/Calibration (under the Settings menu).
+2. When you are satisfied with your spectrum press **Stop**.  You can now use the **...** icon at the top of the tabular data to rename the spectrum if you want.
+2. Repeat the above 2 steps for every standard, sample, blank, and QC (see "Determination of Nitrate" for additional instructions).
+3. Once complete, select the wavelength of maximum absorbance $(\lambda_{max})$ by clicking on the spectrum with the mouse. (It is typically close to 500 nm for NitraVer.)
+4. Record the absorbance values at $\lambda_{max}$ for all solutions.
 
 1. After measuring the absorbance of the standards, make a plot of absorbance versus concentration as described by your instructor using Excel.  Add a trendline to your graph with the intercept set to zero and add the equation for the trendline and the $R^2$ value to your graph.  Label the $x$- and $y$-axes, including units for the concentration.  Use the equation of the trendline to determine the nitrate concentration in the samples.
    
