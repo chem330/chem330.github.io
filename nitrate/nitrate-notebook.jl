@@ -81,6 +81,18 @@ md"## Standard Calculations"
 stock_nitrate_conc = missing
 # enter the stock nitrate conc in mg/L
 
+# ╔═╡ c367922a-30b7-4364-8d14-055f8c253702
+intermediate_pipette = missing
+# Enter size of pipette used to make intermediate stock
+
+# ╔═╡ f41eac74-9ccf-4a3f-a515-4bb05e285dc9
+intermediate_flask = missing
+# Enter size of flask used to make intermediate stock
+
+# ╔═╡ a1ac8ee1-6435-441d-806a-847ecd925f31
+intermediate_stock = missing
+# calculate the concentration of intermediate stock in mg/L
+
 # ╔═╡ 2ef5a429-6568-435c-9bfe-f92a739c3c5c
 qc_conc = missing
 # enter the qc concentration in mg/L
@@ -94,9 +106,6 @@ pipette_sizes = [missing, missing, missing, missing, missing] # ml
 # ╔═╡ 727fdda1-c8b3-4dac-8fe2-8519ca00beee
 std_concs_nitrate = missing
 
-# ╔═╡ 6baef5cf-7ec1-41d1-8ba0-6204b4f78d02
-check_dilutions(std_concs_nitrate, inst_stocks.n, vol_flask_sizes, pipette_sizes, species = "nitrate")
-
 # ╔═╡ a365bb76-a7ed-492c-a926-9b8974d572ce
 md"# Results and Data"
 
@@ -108,8 +117,8 @@ blank_A = 0
 
 # ╔═╡ 13dd6b7f-1480-4527-bdf0-76cdab8e1d9d
 std_data = DataFrame(
-	C = [0, 0, 0, 0, 0],     # concs in mg/L nitrate
-	A = [0, 0, 0, 0, 0] .- blank_A     # absorbance values
+	C = [0, 0, 0, 0, 0],     			# concs in mg/L nitrate
+	A = [0, 0, 0, 0, 0] .- blank_A      # absorbance values
 )
 
 # ╔═╡ d5c06c9f-a47a-414e-b28c-51f85633e333
@@ -242,6 +251,12 @@ md"![](https://github.com/chem330/chem330.github.io/blob/main/nitrate/PXL_202309
 
 # ╔═╡ 66561306-e037-45a0-a2e7-8f373e821c71
 PlutoUI.TableOfContents()
+
+# ╔═╡ 41a2b0c6-290a-46ab-8330-2a667dd8f2a6
+inst_stock_n = (inst_stocks.n * intermediate_pipette) / intermediate_flask;
+
+# ╔═╡ 6baef5cf-7ec1-41d1-8ba0-6204b4f78d02
+check_dilutions(std_concs_nitrate, inst_stock_n, vol_flask_sizes, pipette_sizes, species = "nitrate")
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -1545,11 +1560,14 @@ version = "1.4.1+0"
 # ╠═4c07905f-42bd-488a-a01f-d40c8bbc962b
 # ╟─b63b1c8b-e73e-4d07-9d00-430289b3510d
 # ╠═42b25c2f-0170-4098-9fe3-db35d36e33e1
+# ╠═c367922a-30b7-4364-8d14-055f8c253702
+# ╠═f41eac74-9ccf-4a3f-a515-4bb05e285dc9
+# ╠═a1ac8ee1-6435-441d-806a-847ecd925f31
 # ╠═2ef5a429-6568-435c-9bfe-f92a739c3c5c
 # ╠═59940916-334e-4821-8518-b5242ae05cb5
 # ╠═caab3e21-3e08-4178-adb2-a4640f9d2c83
 # ╠═727fdda1-c8b3-4dac-8fe2-8519ca00beee
-# ╟─6baef5cf-7ec1-41d1-8ba0-6204b4f78d02
+# ╠═6baef5cf-7ec1-41d1-8ba0-6204b4f78d02
 # ╟─a365bb76-a7ed-492c-a926-9b8974d572ce
 # ╟─f0fa078d-10ed-43c0-8845-3cc664dd7ee6
 # ╠═025436d6-47d3-4c11-9b70-8f413699f61b
@@ -1583,5 +1601,6 @@ version = "1.4.1+0"
 # ╟─bbba4d72-8b55-4a30-a69f-4d8010c81253
 # ╟─fe60269c-6a24-44a2-8915-1993709dce07
 # ╟─66561306-e037-45a0-a2e7-8f373e821c71
+# ╟─41a2b0c6-290a-46ab-8330-2a667dd8f2a6
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
