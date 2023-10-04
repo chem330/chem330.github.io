@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.27
+# v0.19.26
 
 using Markdown
 using InteractiveUtils
@@ -41,8 +41,26 @@ md"""
 # Materials and Methods
 """
 
-# ╔═╡ 4c07905f-42bd-488a-a01f-d40c8bbc962b
-# methods go here
+# ╔═╡ 76db857b-e0a9-4a94-b351-0c7d208aa095
+md"""
+## Sample Collection
+
+Samples were collected in 1-L polyethylene bottles that had been analytically cleaned with a laboratory dishwasher.  The bottles were sealed until being opened at the site, where they were rinsed three times with sample water.  Then, the bottles were filled by submerging underwater with the mouth facing upstream, taking care to move approximately 1 m upstream from where the bottles were rinsed to avoid collecting disturbed sediment.  Samples were immediately placed at 4°C and stored overnight prior to analysis.  Additional details about specific sampling sites are located in [Appendix A](http://localhost:1235/edit?id=b78697e4-5cb7-11ee-1850-3918f799a9a7#014fa456-f9ff-418f-9267-78a1a3c0aa12).
+"""
+
+# ╔═╡ f07dd13c-42b7-4fd9-8000-42a95ce187ca
+md"## Standards"
+
+# ╔═╡ 3cf9d404-6f69-417a-932c-51cb07dc3e8f
+md"""
+
+A stock solution was prepared by dissolving 0.1623 g sodium nitrate (Fisher Lot # 912637A) in DI water using a 1000-ml volumetric flask.  The sodium nitrate was ACS grade and had been dried overnight in an 80°C oven immediately prior to use.
+
+A QC solution was also prepared from sodium nitrate at a concentration of 7.696 mg/L.
+"""
+
+# ╔═╡ 698b894d-4534-4587-8a2a-e23bf1139e36
+md"## Absorbance Measurement"
 
 # ╔═╡ a940600b-9e62-48b4-92c8-895363d314ac
 md"""
@@ -53,12 +71,27 @@ md"""
 | Wavelengths(s) (nm)		|           |
 """
 
+# ╔═╡ 4c07905f-42bd-488a-a01f-d40c8bbc962b
+# more methods go here
+
 # ╔═╡ b63b1c8b-e73e-4d07-9d00-430289b3510d
 md"## Standard Calculations"
 
 # ╔═╡ 42b25c2f-0170-4098-9fe3-db35d36e33e1
 stock_nitrate_conc = missing
 # enter the stock nitrate conc in mg/L
+
+# ╔═╡ c367922a-30b7-4364-8d14-055f8c253702
+intermediate_pipette = missing
+# Enter size of pipette used to make intermediate stock
+
+# ╔═╡ f41eac74-9ccf-4a3f-a515-4bb05e285dc9
+intermediate_flask = missing
+# Enter size of flask used to make intermediate stock
+
+# ╔═╡ a1ac8ee1-6435-441d-806a-847ecd925f31
+intermediate_stock = missing
+# calculate the concentration of intermediate stock in mg/L
 
 # ╔═╡ 2ef5a429-6568-435c-9bfe-f92a739c3c5c
 qc_conc = missing
@@ -73,9 +106,6 @@ pipette_sizes = [missing, missing, missing, missing, missing] # ml
 # ╔═╡ 727fdda1-c8b3-4dac-8fe2-8519ca00beee
 std_concs_nitrate = missing
 
-# ╔═╡ 6baef5cf-7ec1-41d1-8ba0-6204b4f78d02
-check_dilutions(std_concs_nitrate, inst_stocks.n, vol_flask_sizes, pipette_sizes, species = "nitrate")
-
 # ╔═╡ a365bb76-a7ed-492c-a926-9b8974d572ce
 md"# Results and Data"
 
@@ -83,19 +113,19 @@ md"# Results and Data"
 md"## Raw Data"
 
 # ╔═╡ 025436d6-47d3-4c11-9b70-8f413699f61b
-blank_A = missing
+blank_A = 0
 
 # ╔═╡ 13dd6b7f-1480-4527-bdf0-76cdab8e1d9d
 std_data = DataFrame(
-	C = [0, 0, 0, 0, 0],     # concs in mg/L nitrate
-	A = [0, 0, 0, 0, 0]      # absorbance values
+	C = [0, 0, 0, 0, 0],     			# concs in mg/L nitrate
+	A = [0, 0, 0, 0, 0] .- blank_A      # absorbance values
 )
 
 # ╔═╡ d5c06c9f-a47a-414e-b28c-51f85633e333
 qc_A = missing
 
 # ╔═╡ bd9a6247-d5d7-4e49-94ce-1b3011535d1a
-sample_A = [missing, missing, missing]
+sample_A = [missing, missing, missing] .- blank_A 
 
 # ╔═╡ 6b620a1a-9f70-4990-8645-bb1d79c4def5
 md"## Standard Curve and Regression"
@@ -137,7 +167,7 @@ end
 md"## Sample Concentrations"
 
 # ╔═╡ 110ba4ab-cfb7-4a51-afcc-f3d1e0a5ead0
-nitrate_mg = ((sample_A .- coef(calibration_fit)[1]) / coef(calibration_fit)[2])
+nitrate_mg = missing
 
 # ╔═╡ e40e5c72-59d5-4276-ba1f-8bdbdb862b26
 if any(.!ismissing.(nitrate_mg))  && !ismissing(sample_A)
@@ -148,11 +178,8 @@ if any(.!ismissing.(nitrate_mg))  && !ismissing(sample_A)
 	end
 end
 
-# ╔═╡ 300419c4-fd83-48cb-8f7f-c409831639bb
-(.!ismissing.(nitrate_mg))
-
 # ╔═╡ 86fcfc32-f6cd-45fe-aa62-2f663630c370
-nitrate_N = (nitrate_mg/62) * (14)
+nitrate_N = missing
 
 # ╔═╡ 76dcd4aa-9be3-41fb-b0f9-d7f51409fde7
 if any(.!ismissing.(nitrate_N)) && any(.!ismissing.(nitrate_mg))
@@ -181,8 +208,55 @@ Write your conclusions below.  Here are some ideas of things to include:
 # ╔═╡ a9f869eb-aec4-4bf9-9d1c-6dd1e0dbc9bd
 # conclusion here
 
+# ╔═╡ 014fa456-f9ff-418f-9267-78a1a3c0aa12
+md"# Appendix A: Sampling Site Info"
+
+# ╔═╡ 854d1624-ec4f-4c96-bdf0-1b42c216d461
+md"""
+## Site 1: Tuckasegee River at Cullowhee Dam
+Coordiantes: (35.315002, -83.175344)
+
+Water was collected at the easternmost boat ramp at the Lena Harris River Access Area in Cullowhee, NC (above Cullowhee Dam and the WCU water intake).
+"""
+
+# ╔═╡ 42c1bee5-83f3-4559-a1ea-a8feaeb427b0
+md"""
+## Site 2: Tuckasegee River at TWSA
+Cooridinates: (35.350727, -83.238991)
+
+Water was collected approximately 1 m downstream from the discharge outlet of the Tuckaseigee Water and Sewer Authority Wastewater Treatment Plant on North River Road in Sylva, NC.  The site was approximately 5 m off of North River Road.
+
+Algae and trash/litter were visible on the river bed and growing on the waste pipe.
+"""
+
+# ╔═╡ 116686ba-72a6-4718-8828-b1856f1fda5a
+md"""
+![](https://github.com/chem330/chem330.github.io/blob/main/nitrate/PXL_20230926_200914356.jpg?raw=true)
+
+![](https://github.com/chem330/chem330.github.io/blob/main/nitrate/PXL_20230926_200928312.jpg?raw=true)
+"""
+
+# ╔═╡ 50e40630-92b1-495b-8290-c1eb4cd5c76c
+md"## Site 3: Tuckasegee River Below Scott Creek"
+
+# ╔═╡ 84263ef4-8aad-4687-a08b-6cb1f2320150
+md"""
+Coordiantes: (35.367044, -83.260866)
+
+This site is located approximately 500 meters downstream from the confluence with Scott Creek.  Water was sampled approximately 5 m off the road below the entrance to Harrison Construction.  Lots of fine, muddy sediment was noted to be coating rocks and woody debris along the river bank.
+"""
+
+# ╔═╡ 73c52c90-e4fc-4692-b70a-11858b918ff7
+md"![](https://github.com/chem330/chem330.github.io/blob/main/nitrate/PXL_20230926_201630378.jpg?raw=true)"
+
 # ╔═╡ 66561306-e037-45a0-a2e7-8f373e821c71
 PlutoUI.TableOfContents()
+
+# ╔═╡ 41a2b0c6-290a-46ab-8330-2a667dd8f2a6
+inst_stock_n = (inst_stocks.n * intermediate_pipette) / intermediate_flask;
+
+# ╔═╡ 6baef5cf-7ec1-41d1-8ba0-6204b4f78d02
+check_dilutions(std_concs_nitrate, inst_stock_n, vol_flask_sizes, pipette_sizes, species = "nitrate")
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -208,7 +282,7 @@ PlutoUI = "~0.7.52"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.9.2"
+julia_version = "1.9.1"
 manifest_format = "2.0"
 project_hash = "cccee819572f25c621bf55935401458e2caabd3d"
 
@@ -304,7 +378,7 @@ weakdeps = ["Dates", "LinearAlgebra"]
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
-version = "1.0.5+0"
+version = "1.0.2+0"
 
 [[deps.ConcurrentUtilities]]
 deps = ["Serialization", "Sockets"]
@@ -388,6 +462,12 @@ deps = ["Calculus", "NaNMath", "SpecialFunctions"]
 git-tree-sha1 = "5837a837389fccf076445fce071c8ddaea35a566"
 uuid = "fa6b7ba4-c1ee-5f82-b5fc-ecf0adba8f74"
 version = "0.6.8"
+
+[[deps.EpollShim_jll]]
+deps = ["Artifacts", "JLLWrappers", "Libdl"]
+git-tree-sha1 = "8e9441ee83492030ace98f9789a654a6d0b1f643"
+uuid = "2702e6a9-849d-5ed8-8c21-79e8b8f9ee43"
+version = "0.0.20230411+0"
 
 [[deps.ExceptionUnwrapping]]
 deps = ["Test"]
@@ -877,7 +957,7 @@ version = "0.42.2+0"
 [[deps.Pkg]]
 deps = ["Artifacts", "Dates", "Downloads", "FileWatching", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "REPL", "Random", "SHA", "Serialization", "TOML", "Tar", "UUIDs", "p7zip_jll"]
 uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
-version = "1.9.2"
+version = "1.9.0"
 
 [[deps.PlotThemes]]
 deps = ["PlotUtils", "Statistics"]
@@ -1229,7 +1309,7 @@ uuid = "41fe7b60-77ed-43a1-b4f0-825fd5a5650d"
 version = "0.2.0"
 
 [[deps.Wayland_jll]]
-deps = ["Artifacts", "Expat_jll", "JLLWrappers", "Libdl", "Libffi_jll", "Pkg", "XML2_jll"]
+deps = ["Artifacts", "EpollShim_jll", "Expat_jll", "JLLWrappers", "Libdl", "Libffi_jll", "Pkg", "XML2_jll"]
 git-tree-sha1 = "ed8d92d9774b077c53e1da50fd81a36af3744c1c"
 uuid = "a2964d1f-97da-50d4-b82a-358c7fce9d89"
 version = "1.21.0+0"
@@ -1472,15 +1552,22 @@ version = "1.4.1+0"
 # ╟─e7afde9c-110d-4cca-8a6e-2cf431df3f15
 # ╠═f03ffccc-3772-4837-a75a-3ee6ff0c62d5
 # ╟─7b2a4668-2fca-44e5-a1dc-968cd0d0e544
-# ╠═4c07905f-42bd-488a-a01f-d40c8bbc962b
+# ╟─76db857b-e0a9-4a94-b351-0c7d208aa095
+# ╟─f07dd13c-42b7-4fd9-8000-42a95ce187ca
+# ╟─3cf9d404-6f69-417a-932c-51cb07dc3e8f
+# ╟─698b894d-4534-4587-8a2a-e23bf1139e36
 # ╟─a940600b-9e62-48b4-92c8-895363d314ac
+# ╠═4c07905f-42bd-488a-a01f-d40c8bbc962b
 # ╟─b63b1c8b-e73e-4d07-9d00-430289b3510d
 # ╠═42b25c2f-0170-4098-9fe3-db35d36e33e1
+# ╠═c367922a-30b7-4364-8d14-055f8c253702
+# ╠═f41eac74-9ccf-4a3f-a515-4bb05e285dc9
+# ╠═a1ac8ee1-6435-441d-806a-847ecd925f31
 # ╠═2ef5a429-6568-435c-9bfe-f92a739c3c5c
 # ╠═59940916-334e-4821-8518-b5242ae05cb5
 # ╠═caab3e21-3e08-4178-adb2-a4640f9d2c83
 # ╠═727fdda1-c8b3-4dac-8fe2-8519ca00beee
-# ╟─6baef5cf-7ec1-41d1-8ba0-6204b4f78d02
+# ╠═6baef5cf-7ec1-41d1-8ba0-6204b4f78d02
 # ╟─a365bb76-a7ed-492c-a926-9b8974d572ce
 # ╟─f0fa078d-10ed-43c0-8845-3cc664dd7ee6
 # ╠═025436d6-47d3-4c11-9b70-8f413699f61b
@@ -1499,14 +1586,21 @@ version = "1.4.1+0"
 # ╟─974b1799-0277-4b0f-b280-5a6034273baf
 # ╠═110ba4ab-cfb7-4a51-afcc-f3d1e0a5ead0
 # ╟─e40e5c72-59d5-4276-ba1f-8bdbdb862b26
-# ╠═300419c4-fd83-48cb-8f7f-c409831639bb
 # ╠═86fcfc32-f6cd-45fe-aa62-2f663630c370
 # ╟─76dcd4aa-9be3-41fb-b0f9-d7f51409fde7
 # ╠═b5edb4e9-fc6a-413b-8d94-65db96eafb77
 # ╟─58e4ff0f-910e-48aa-a367-6f5efe119e99
 # ╠═a9f869eb-aec4-4bf9-9d1c-6dd1e0dbc9bd
+# ╟─014fa456-f9ff-418f-9267-78a1a3c0aa12
+# ╟─854d1624-ec4f-4c96-bdf0-1b42c216d461
+# ╟─42c1bee5-83f3-4559-a1ea-a8feaeb427b0
+# ╟─116686ba-72a6-4718-8828-b1856f1fda5a
+# ╟─50e40630-92b1-495b-8290-c1eb4cd5c76c
+# ╟─84263ef4-8aad-4687-a08b-6cb1f2320150
+# ╟─73c52c90-e4fc-4692-b70a-11858b918ff7
 # ╟─bbba4d72-8b55-4a30-a69f-4d8010c81253
 # ╟─fe60269c-6a24-44a2-8915-1993709dce07
 # ╟─66561306-e037-45a0-a2e7-8f373e821c71
+# ╟─41a2b0c6-290a-46ab-8330-2a667dd8f2a6
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
