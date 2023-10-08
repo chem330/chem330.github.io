@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    tags: 'all'
+  },
+  svg: {fontCache: 'global'}
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js" integrity="sha384-RTN08a0AXIioPBcVosEqPUfKK+rPp+h1x/izR7xMkdMyuwkcZCWdxO+RSwIFtJXN"  crossorigin="anonymous"></script>
+
+
+     
+  
+  <link rel="stylesheet" href="/css/jtd.css">
+  <link rel="icon" href="/assets/infra/logoF_square.gif">
+   <title>Experiment 4: Potentiometric Titration (Alkalinity)</title>  
+
+  <!-- PLOTLY -->
+  
+
+</head>
+<body>                      <!-- closed in foot.html -->
+  <div class="page-wrap">   <!-- closed in foot.html -->
+    <!-- SIDE BAR -->
+    <div class="side-bar">
+      <div class="header">
+        <a href="/" class="h1" style="font-size: 30px">CHEM 330</a>
+      </div>
+      <label for="show-menu" class="show-menu">MENU</label>
+      <input type="checkbox" id="show-menu" role="button">
+      <div class="menu" id="side-menu">
+        <ul class="menu-list">
+          <!-- HOME -->
+          <li class="menu-list-item "><a href="/" class="menu-list-link">💧 Course Overview</a>
+          <!-- Syllabi -->
+<!--		  <li class="menu-list-item {{ispage lecture-syllabus/*}}active{{end}}"><a href="/lecture-syllabus/" class="menu-list-link">📜 Lecture Syllabus</a> -->
+		  <li class="menu-list-item "><a href="/lab-syllabus/" class="menu-list-link">📜 Lab Syllabus</a>
+          <!-- Schedule -->
+		  <li class="menu-list-item "><a href="/schedule/" class="menu-list-link">📆 Schedule</a>
+          <!-- Lab Notebooks -->
+		  <li class="menu-list-item "><a href="/lab-notebooks/" class="menu-list-link">📓 Lab Notebooks</a>
+          <!-- Experiment 1 -->
+		  <li class="menu-list-parent "><a href="/error/" class="menu-list-link">🧪 Error</a>
+			  <ul class="menu-list-child-list">
+				<li class="menu-list-item "><a href="/error/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/error/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+         <!-- Experiment Hardness -->
+		  <li class="menu-list-parent "><a href="/hardness/" class="menu-list-link">🧪 Hardness</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/hardness/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/hardness/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>              
+          <!-- Experiment 2 -->
+		  <li class="menu-list-parent "><a href="/nitrate/" class="menu-list-link">🧪 Nitrate</a>
+			  <ul class="menu-list-child-list">
+				<li class="menu-list-item "><a href="/nitrate/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/nitrate/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 3 -->
+		  <li class="menu-list-parent "><a href="/phosphate/" class="menu-list-link">🧪 Phosphate</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/phosphate/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/phosphate/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 4 -->
+		  <li class="menu-list-parent active"><a href="/alkalinity/" class="menu-list-link">🧪 Alkalinity</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item active"><a href="/phosphate/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/alkalinity/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 5 -->
+		  <li class="menu-list-parent "><a href="/tds/" class="menu-list-link">🧪 TDS</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/tds/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/tds/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+ 
+   		  <li class="menu-list-parent "><a href="/ic/" class="menu-list-link">🧪 IC</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/ic/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/ic/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+              		  <li class="menu-list-parent "><a href="/icpms/" class="menu-list-link">🧪 ICP-MS</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/icpms/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/icpms/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+   		  <li class="menu-list-parent "><a href="/sem/" class="menu-list-link">🧪 SEM</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/sem/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/sem/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+
+          <!-- Project -->
+		  <li class="menu-list-parent "><a href="/project/" class="menu-list-link">🥼 Project</a>
+			  <!-- <ul class="menu-list-child-list "> -->
+			  <!-- 	<li class="menu-list-item {{ispage project/nitrate.html}}active{{end}}"><a href="/project/nitrate/" class="menu-list-link">Nitrate</a> -->
+			  <!-- 	<li class="menu-list-item {{ispage project/phosphate}}active{{end}}"><a href="/project/phosphate/" class="menu-list-link">Phosphate</a> -->
+			  <!-- </ul> -->
+      </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="main-content-wrap"> <!-- closed in foot.html -->
+      <div class="main-content" id="focus" tabindex="-1" style="outline:0;">    <!-- closed in foot.html -->
+        <div class="main-header">
+          <a name="pagetop"></a>
+		  <a id="github" href="https://github.com/chem330/chem330.github.io">GitHub Repository</a>
+        </div>
+
+<!-- Content appended here (in class franklin-content) -->
+<div class="franklin-content">
+<h1>Alkalinity &#40;Potentiometric Titration&#41;</h1>
+<h1 id="background"><a href="#background" class="header-anchor">Background</a></h1>
+<p>In this analysis, you will determine the alkalinity of samples.  To do this, you will perform a potentiometric titration.  In such a method, a titrant &#40;in this case the strong acid \(\ce{H2SO4}\)&#41; is slowly added to the sample, which contains a weak base &#40;&quot;alkalinity&quot; – actually multiple chemical species that we treat as one thing&#41;.  As the acid is added, the base becomes neutralized, and the volume of acid it takes to completely neutralize the sample is related to the alkalinity of the sample.  You will use a pH probe to monitor the reaction and determine when you have reached the <em>endpoint</em>.  The <em>equivalence point</em> can then be determined through multiple computational methods, including the <strong>inflection point method</strong> and <strong>Gran plot method</strong>.</p>
+<h1 id="procedure"><a href="#procedure" class="header-anchor">Procedure</a></h1>
+<ul>
+<li><p>The USGS provides an excellent <a href="https://pubs.usgs.gov/twri/twri9a6/twri9a66/twri9a_6.6.pdf">resource &#40;PDF&#41;</a> on the determination of alkalinity and acid neutralizing capacity, which you should follow here. You will complete a manual titration to determine alkalinity.</p>
+<ul>
+<li><p>See Figure 6.6-1 for an overview of the full process.</p>
+</li>
+<li><p>See Table 6.6-2 to determine how much sample you should use.</p>
+</li>
+<li><p>Review the tips on how to use a pipette to deliver the sample.</p>
+</li>
+<li><p>Use the <strong>Stirring Method</strong> in the procedure.</p>
+</li>
+</ul>
+</li>
+<li><p>The EPA also provides <a href="https://www.nemi.gov/methods/method_summary/5230/">Method 310.1 - Alkalinity &#40;Titrimetric, pH 4.5&#41;</a>, which may serve as an additional reference.</p>
+</li>
+<li><p>Alkalinity must be measured as soon as possible after sample collection; it cannot be measured after prolonged storage&#33;</p>
+</li>
+<li><p>You should <strong>filter your sample</strong> prior to analysis; if you do not filter your sample you will be measuring <em>acid neutralizing capacity &#40;ANC&#41;</em> instead of alkalinity.</p>
+</li>
+<li><p>You should titrate a primary standard prior to analysis to determine the concentration of your acid.</p>
+</li>
+<li><p>Then, you should perform 3 titrations of each sample.</p>
+</li>
+</ul>
+<h1 id="data_analysis"><a href="#data_analysis" class="header-anchor">Data Analysis</a></h1>
+<ul>
+<li><p>Data analysis will be discussed in lecture.</p>
+</li>
+</ul>
+<h1 id="what_to_turn_in"><a href="#what_to_turn_in" class="header-anchor">What to Turn In</a></h1>
+<ul>
+<li><p>Turn in .html and .jl files of your notebook on Canvas.</p>
+</li>
+</ul>
+<div class="page-foot">
+  <div class="copyright">
+    &copy; Al Fischer. Last modified: October 08, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div> <!-- end of class main-content -->
+    </div> <!-- end of class main-content-wrap -->
+    </div> <!-- end of class page-wrap-->
+    
+  </body>
+</html>
