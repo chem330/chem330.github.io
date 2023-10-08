@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <!-- Syntax highlighting via Prism, note: restricted langs -->
+<link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
+  <link rel="stylesheet" href="/css/jtd.css">
+  <link rel="icon" href="/assets/infra/logoF_square.gif">
+   <title>Project Information</title>  
+
+  <!-- PLOTLY -->
+  
+
+</head>
+<body>                      <!-- closed in foot.html -->
+  <div class="page-wrap">   <!-- closed in foot.html -->
+    <!-- SIDE BAR -->
+    <div class="side-bar">
+      <div class="header">
+        <a href="/" class="h1" style="font-size: 30px">CHEM 330</a>
+      </div>
+      <label for="show-menu" class="show-menu">MENU</label>
+      <input type="checkbox" id="show-menu" role="button">
+      <div class="menu" id="side-menu">
+        <ul class="menu-list">
+          <!-- HOME -->
+          <li class="menu-list-item "><a href="/" class="menu-list-link">💧 Course Overview</a>
+          <!-- Syllabi -->
+<!--		  <li class="menu-list-item {{ispage lecture-syllabus/*}}active{{end}}"><a href="/lecture-syllabus/" class="menu-list-link">📜 Lecture Syllabus</a> -->
+		  <li class="menu-list-item "><a href="/lab-syllabus/" class="menu-list-link">📜 Lab Syllabus</a>
+          <!-- Schedule -->
+		  <li class="menu-list-item "><a href="/schedule/" class="menu-list-link">📆 Schedule</a>
+          <!-- Lab Notebooks -->
+		  <li class="menu-list-item active"><a href="/lab-notebooks/" class="menu-list-link">📓 Lab Notebooks</a>
+          <!-- Experiment 1 -->
+		  <li class="menu-list-parent "><a href="/error/" class="menu-list-link">🧪 Error</a>
+			  <ul class="menu-list-child-list">
+				<li class="menu-list-item "><a href="/error/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/error/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+         <!-- Experiment Hardness -->
+		  <li class="menu-list-parent "><a href="/hardness/" class="menu-list-link">🧪 Hardness</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/hardness/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/hardness/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>              
+          <!-- Experiment 2 -->
+		  <li class="menu-list-parent "><a href="/nitrate/" class="menu-list-link">🧪 Nitrate</a>
+			  <ul class="menu-list-child-list">
+				<li class="menu-list-item "><a href="/nitrate/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/nitrate/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 3 -->
+		  <li class="menu-list-parent "><a href="/phosphate/" class="menu-list-link">🧪 Phosphate</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/phosphate/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/phosphate/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 4 -->
+		  <li class="menu-list-parent "><a href="/alkalinity/" class="menu-list-link">🧪 Alkalinity</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/phosphate/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/alkalinity/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 5 -->
+		  <li class="menu-list-parent "><a href="/tds/" class="menu-list-link">🧪 TDS</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/tds/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/tds/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+ 
+   		  <li class="menu-list-parent "><a href="/ic/" class="menu-list-link">🧪 IC</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/ic/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/ic/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+              		  <li class="menu-list-parent "><a href="/icpms/" class="menu-list-link">🧪 ICP-MS</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/icpms/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/icpms/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+   		  <li class="menu-list-parent "><a href="/sem/" class="menu-list-link">🧪 SEM</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/sem/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/sem/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+
+          <!-- Project -->
+		  <li class="menu-list-parent "><a href="/project/" class="menu-list-link">🥼 Project</a>
+			  <!-- <ul class="menu-list-child-list "> -->
+			  <!-- 	<li class="menu-list-item {{ispage project/nitrate.html}}active{{end}}"><a href="/project/nitrate/" class="menu-list-link">Nitrate</a> -->
+			  <!-- 	<li class="menu-list-item {{ispage project/phosphate}}active{{end}}"><a href="/project/phosphate/" class="menu-list-link">Phosphate</a> -->
+			  <!-- </ul> -->
+      </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="main-content-wrap"> <!-- closed in foot.html -->
+      <div class="main-content" id="focus" tabindex="-1" style="outline:0;">    <!-- closed in foot.html -->
+        <div class="main-header">
+          <a name="pagetop"></a>
+		  <a id="github" href="https://github.com/chem330/chem330.github.io">GitHub Repository</a>
+        </div>
+
+<!-- Content appended here (in class franklin-content) -->
+<div class="franklin-content">
+<h1 id="lab_notebook_guidelines_for_chem_330"><a href="#lab_notebook_guidelines_for_chem_330" class="header-anchor">Lab Notebook Guidelines for CHEM 330</a></h1>
+<div class="franklin-toc"><ol><li><a href="#lab_notebook_guidelines_for_chem_330">Lab Notebook Guidelines for CHEM 330</a></li><li><a href="#introduction_-_the_purpose_of_a_lab_notebook">Introduction - The purpose of a lab notebook</a></li><li><a href="#specific_requirements_for_chem_330">Specific Requirements for CHEM 330</a><ol><li><a href="#writing_your_procedures">Writing Your Procedures </a></li><li><a href="#significant_figures_and_errors">Significant Figures and Errors</a></li></ol></li><li><a href="#keeping_an_electronic_notebook">Keeping an Electronic Notebook</a></li><li><a href="#getting_started_with_pluto_notebooks">Getting Started with Pluto Notebooks</a><ol><li><a href="#installing_julia">Installing Julia</a><ol><li><a href="#launch_julia">Launch Julia</a></li></ol></li><li><a href="#install_pluto">Install Pluto</a><ol><li><a href="#launch_pluto">Launch Pluto</a></li></ol></li><li><a href="#assignment">Assignment</a></li></ol></li></ol></div>
+<h1 id="introduction_-_the_purpose_of_a_lab_notebook"><a href="#introduction_-_the_purpose_of_a_lab_notebook" class="header-anchor">Introduction - The purpose of a lab notebook</a></h1>
+<p>Your lab notebook is the single <strong>exact, permanent, legally defensible, archival record</strong> of what you did in lab.  In an academic setting, notebooks are often used by the person who wrote the notebook or a lab colleague when trying to repeat an experiment, process data, or publish results.  In a professional setting, they may be used to communicate work to new employees, defend against patent lawsuits, or support forensic or toxicological conclusions in a court of law.  A good test of your lab notebook is to imagine handing it to a peer who has never completed the lab.  Then, try to determine if there would enough information for them to &#40;1&#41; complete the lab with no other resources, &#40;2&#41; <strong>exactly</strong> repeat your data analysis and calculations and arrive at the <strong>exact</strong> same answer &#40;including all significant digits&#41;, and &#40;3&#41; understand your conclusions and how you arrived at those conclusions.  When in doubt, it&#39;s better to include too much than too little&#33;</p>
+<p>In the context of Aquatic Chemistry, you may imagine working in an EPA-certified water anlysis lab where a lack of thorough records may lead to the company losing EPA certification.  Or perhaps one may work for an environmental consulting firm that conducts water analysis that is the key evidence in a court case against a polluting entity – in such a case a good lab notebook could make or break the defense or prosecution&#33; You should record <strong>everything</strong> in your lab notebook –  <strong>during lab</strong>, not after&#33;</p>
+<h1 id="specific_requirements_for_chem_330"><a href="#specific_requirements_for_chem_330" class="header-anchor">Specific Requirements for CHEM 330</a></h1>
+<ol>
+<li><p>Include all relevant parameters you set on the instruments you use.  For example, if you use a spectrophotometer and have to set the collection wavelength, you should include that in your notebook.</p>
+</li>
+<li><p>Include the lot or batch numbers for all chemicals you use.  This is important in case contamination in the chemicals is found.</p>
+</li>
+<li><p>Include detailed sample descriptions / IDs, and make sure to keep track of these throughout the analysis.</p>
+</li>
+<li><p>Include the following sections:</p>
+<ol>
+<li><p><strong>Introduction:</strong> A brief &#40;1-2 paragraphs&#41; overview of what the lab is about and what you hope to find.  Include references to any standard methods or literature you find that&#39;s relevant to the experiment.  Also clearly state the problem you are trying to solve and what you expect to happen.</p>
+</li>
+<li><p><strong>Materals and Methods/Procedures:</strong> See below for more information.</p>
+</li>
+<li><p><strong>Results and Calculations:</strong> This is where you should put any data tables and calculations.  Your data and calculations should be recorded first in your notebook and then transferred to an electronic format if necessary.  The only exceptions are when data is exported in an electronic format from an instrument – in that case do your best to include it in your notebook, and specify the filename and location where the file is saved in your notebook.</p>
+</li>
+<li><p><strong>Discussion and Conclusions:</strong> A brief &#40;1-2 paragraphs&#41; summary of the experiment and outcomes.  Did the experiment go as expected?  Did anything go wrong?  What could you do differently to improve the experiment next time?  It is also good to compare your results to prior work / literature sources / standard values in this section &#40;and include reference for where you found the numbers&#41;.  For example, if you are measuring copper in drinking water, you might say whether or not your value is below the EPA limit and cite the EPA rule where that limit is given.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="writing_your_procedures"><a href="#writing_your_procedures" class="header-anchor">Writing Your Procedures </a></h2>
+<p>Your procedures in your notebook should state <em>exactly</em> what you did.  <em>Exactly&#33;</em>  This is your exact record you could use to redo calculations, remember what the sample looked like, remember what special steps you took on the instrument, etc.  This is not the same as the methods in a paper or lab report; those are a <em>summary</em> of what you did.</p>
+<ul>
+<li><p>Write all procedures in <em>past tense</em>. Do not just copy the handout.  </p>
+<ul>
+<li><p><em>Good:</em> I added 1.0162 g of acetaminophen to a 200-mL volumetric flask and brought to volume with ultrapure water.</p>
+</li>
+<li><p><em>Bad:</em> Add 1 g of acetaminophen to 200 mL of water.</p>
+</li>
+<li><p><em>Explanation:</em> The lab notebook is a record of what you did, not a cookbook.  If you were telling a friend about your vacation you wouldn&#39;t say &quot;Get on a plane. Fly to Europe. Go to hotel.&quot;, you would say &quot;I flew from Atlanta to Paris, and then stayed at a hotel in the city center.&quot;  Your lab notebook is no different. More importantly, the difference in significant digits is drastic. In the first example, the results will be limited to 5 significant digits by the balance &#40;the balance reports 4 decimal places, or 5 SF in this case, and the volumetric flask contains 200 &#43;/- 0.15 mL&#41;; in the second, all that precision has been thrown away and we&#39;re left with a single significant digit.  Finally, the second provides no indication as to the purity of the water used, although this is very important for trace instrumental analysis.</p>
+</li>
+</ul>
+</li>
+<li><p>Include direct observations.</p>
+<ul>
+<li><p><em>Good:</em> Upon collection, I saw that the e-cigarette liquid had turned from clear-yellow to clear-brown after aerosolization.</p>
+</li>
+<li><p><em>Bad:</em> e-Cigarette liquid was collected.</p>
+</li>
+<li><p><em>Explanation:</em> The first example includes pertinent observations of exactly what occurred when the step was performed.  This helps someone who is doing the lab for the first time know what to expect, and helps you remember what happened when you&#39;re going back through your notes.  Importantly, the color change probably indicates a chemical change occured in the sample, which may be worth investigating later.</p>
+</li>
+</ul>
+<div class="note"><div class="title">⚠ Note</div>
+<div class="content">Some students like to write out their procedures before coming to lab to help in planning.  This is great&#33;  However, these will by default be general procedures and not <em>exactly</em> what you did.  So if you do this, you should leave room to add exactly what you did – and make sure you do in fact add it in during lab&#33;</div></div>
+</li>
+</ul>
+<h2 id="significant_figures_and_errors"><a href="#significant_figures_and_errors" class="header-anchor">Significant Figures and Errors</a></h2>
+<ul>
+<li><p><strong>Balances:</strong> The exact number of significant digits from the balance may depend on which balance you use.  Be sure to record all digits on the balance when mass is important, even if they are zeroes; if the last digit fluctuates do the best you can to estimate it.  Remember you do NOT have to weigh out the masses exactly as they appear on the worksheet – what matters is that you get close and that you record the actual <em>exact</em> mass you used&#33;</p>
+</li>
+<li><p><strong>Volumetric Glassware:</strong> All volumetric pipettes and flasks are labeled with the volume of water they deliver or contain at room temperature along with the error associated with that volume.  Use this to determine your significant digits.  Flasks should be used <em>to contain</em> liquid &#40;marked TC&#41; and pipettes should be used <em>to deliver</em> liquid &#40;marked TD&#41;; if your pipette has lines for both make sure you use the correct one &#40;TD&#41;.</p>
+</li>
+<li><p><strong>Graduated cylinders:</strong> For small volumes, these typically have 3 significant digits.  You should interpolate to at least the nearest 0.5 mL when using a small or medium-sized graduated cylinder.  Remember, there is a large difference between recording 10 ml and 10.5 ml in your notebook in regards to significant figures &#40;1 vs 3&#41;&#33;  Most work in this course should use volumetric glassware and not graduated cylinders.</p>
+</li>
+<li><p><strong>Beakers/Erlenmeyer Flasks:</strong> These should not be used to measure volumes&#33;  They are just for temporarily holding solutions or performing a reaction / extraction.</p>
+</li>
+</ul>
+<h1 id="keeping_an_electronic_notebook"><a href="#keeping_an_electronic_notebook" class="header-anchor">Keeping an Electronic Notebook</a></h1>
+<p>Much of our data will be collected using chemical instrumentation and will be reported in electronic files; likewise, all of our data will be processed using a computer.  Thus, the final version of all our analyses will be in electronic form.  In an effort to track our experiments and data processing steps in a reproducible way, we will use electronic lab notebooks in this class.  The same ideas outlined above apply to an electronic notebook, but instead of recording your methods in a paper notebook and doing data processing in a separate computer program, you will record everything in one place using <strong>literate programming</strong>.  This is a component of many modern software packages that allows you to write text and execute data processing commands all in one file, which is often called a &quot;notebook&quot;.  Literate programming is a key component of reproducible research in data science.</p>
+<p>In CHEM 330, you will use the programming language <a href="https://julialang.org">Julia</a> for data processing, and will use the add-on notebook package for Julia called <a href="https://plutojl.org/">Pluto</a>.  Julia has been chosen because it is a modern language that has been designed for scientific applications.  Julia is also free and open-source, so there is not additional cost to students or the university when we use it, and it runs on all operating systems equally well.  Just as importantly, it allows the use of the Pluto notebook environment, which has been designed to make computation accessible &#40;and fun&#33;&#41; to students that may not have experience programming.  You will find as you go through the semester, the provided lab notebook templates will have built-in guides that will hopefully help direct you toward the correct process and an accurate answer.</p>
+<h1 id="getting_started_with_pluto_notebooks"><a href="#getting_started_with_pluto_notebooks" class="header-anchor">Getting Started with Pluto Notebooks</a></h1>
+<div class="note"><div class="title">⚠ Note</div>
+<div class="content">These tools are already installed on <a href="https://vcat.wcu.edu">VCAT</a>, which is WCU&#39;s official way of providing these tools.  If you do not want to install them on your computer, you can use them there.  However, the versions on VCAT are several years out of date and VCAT also present some unique challenges related to workflow that aren&#39;t present in a normal installation. Therefore, it is likely your work will be <em>much</em> easier if you install these on your own computer.</div></div>
+<h2 id="installing_julia"><a href="#installing_julia" class="header-anchor">Installing Julia</a></h2>
+<p>Before you can install Pluto, you must download and install Julia.</p>
+<ol>
+<li><p>Go to <a href="https://julialang.org/downloads/">julialang.org</a>, download the version appropriate for your system, and follow the instructions in the installer.</p>
+</li>
+</ol>
+<p>The video below shows the steps to install Julia and Pluto.  <em>You may also <a href="https://wcu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id&#61;8fe1c28d-3bc7-49ee-a2da-acb40149ccea">view the video on Panopto</a> if you have trouble with the embedded version below.</em></p>
+
+<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8fe1c28d-3bc7-49ee-a2da-acb40149ccea&autoplay=false&offerviewer=true&showtitle=false&showbrand=false&start=0&interactivity=all" height="405" width="720" frameBorder="0" style="border: 0px solid #464646; display: block; margin: auto;" allowfullscreen allow="autoplay">
+</iframe>
+
+<h3 id="launch_julia"><a href="#launch_julia" class="header-anchor">Launch Julia</a></h3>
+<ol>
+<li><p>The way you launch Julia will depend on your operating system.  You will see a window like the image below, which is called the <strong>REPL &#40;read-evaluate-print loop&#41;</strong>.</p>
+<ul>
+<li><p><strong>Windows:</strong> Search for Julia using Windows search.</p>
+</li>
+<li><p><strong>Mac OSX:</strong> Look for Julia in your Applications folder or search for  Julia using Spotlight &#40;<code>Cmd &#43; Space</code> on Mac brings up Spotlight&#41;.</p>
+</li>
+</ul>
+<div class="note"><div class="title">⚠ Note</div>
+<div class="content">If this is the first time you&#39;ve run Julia on your Mac you may have to right click &#40;or CTRL &#43; click&#41; on Julia in your Applications folder, choose Open, and give Julia permission to run on your machine.</div></div>
+<ul>
+<li><p><strong>Ubuntu Linux:</strong> Open the terminal and type <code>julia</code>. &#40;May require you to set a symlink.&#41;</p>
+</li>
+</ul>
+<p><img src="julia-repl.png" alt="A screenshot showing the Julia REPL window" /></p>
+</li>
+</ol>
+<h2 id="install_pluto"><a href="#install_pluto" class="header-anchor">Install Pluto</a></h2>
+<p>Now that Julia is installed, you can use Julia&#39;s package manager &#40;called Pkg&#41; to install Pluto.</p>
+<ol>
+<li><p>While in the Julia REPL, press <code>&#93;</code> on your keyboard to enter the package manager mode. &#40;You should see the green <code>julia&gt;</code> prompt change to a blue <code>pkg&gt;</code> prompt.</p>
+</li>
+<li><p>Type <code>add Pluto</code> and hit the Enter key.</p>
+</li>
+<li><p>Once Pluto is installed, you can exit Pkg by pressing the backspace key.</p>
+</li>
+</ol>
+<h3 id="launch_pluto"><a href="#launch_pluto" class="header-anchor">Launch Pluto</a></h3>
+<ol>
+<li><p>Open Pluto by typing the following commands into the Julia prompt and then hitting the Enter key.</p>
+</li>
+</ol>
+<pre><code class="language-julia">import Pluto; Pluto.run&#40;&#41;</code></pre>
+<p><img src="starting-pluto.png" alt="A screenshot showing the Julia REPL window with the command to open Pluto entered, import Pluto; Pluto.run&#40;&#41;" /></p>
+<ol>
+<li><p>Pluto should open in your default web browser &#40;it requires Firefox, Chrome, or another Chromium-based browser to run properly&#41;.</p>
+<div class="note"><div class="title">⚠ Note</div>
+<div class="content">If Pluto doesn&#39;t open automatically or you would like to use a different browser other than your default, copy and paste the link from the Julia REPL into your browser URL bar.  The link will look like &#39;localhost:1234/?secret&#61;...&#39;.</div></div>
+<div class="note"><div class="title">⚠ Note</div>
+<div class="content">You MUST use Google Chrome or Firefox to run Pluto&#33;  Using another browser will cause your work to save incorrectly&#33;</div></div>
+</li>
+</ol>
+<p><img src="pluto-window.png" alt="A screenshot showing the Pluto welcome page in the Firefox web browser" /></p>
+<h2 id="assignment"><a href="#assignment" class="header-anchor">Assignment</a></h2>
+<p>There are two exercises you need to complete, 0A and 0B.</p>
+<ol>
+<li><p>For each exercise, scroll down on the main Pluto page and click the exercise you want to complete under <strong>Featured Notebooks &gt; Getting Started</strong></p>
+</li>
+<li><p>In the top right corner of the page that opens, click <em>Edit or run this notebook</em>.</p>
+</li>
+<li><p>Complete the steps/follow the instructions in the Pluto template after the notebook finishes loading &#40;this usually takes 20-30 seconds&#41;.</p>
+</li>
+<li><p>When you are done, export your notebook as .html and .jl files:</p>
+<ol>
+<li><p>If you haven&#39;t already, save your notebook:</p>
+<ol>
+<li><p>Scroll to the top of the notebook.</p>
+</li>
+<li><p>Click in the box in the middle and type your file path and file name.  It must end in .jl  I suggest you create a folder on your computer for each notebook.  For example, I would save my first notebook as <code>~/Documents/chem330-notebooks/lab-0/fischer_getting-started.jl</code>.</p>
+</li>
+</ol>
+</li>
+<li><p>Once you have saved your notebook, click the <strong>Export</strong> button in the top right of the page.</p>
+</li>
+<li><p>Choose <strong>Static HTML</strong> to export an HTML file to your downloads folder.</p>
+</li>
+<li><p>Choose <strong>Notebook file</strong> to export the .jl file to your downloads folder.</p>
+</li>
+</ol>
+</li>
+<li><p>Upload both the .jl file and .html file from your Downloads folder to Canvas.</p>
+</li>
+</ol>
+<div class="page-foot">
+  <div class="copyright">
+    &copy; Al Fischer. Last modified: October 08, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div> <!-- end of class main-content -->
+    </div> <!-- end of class main-content-wrap -->
+    </div> <!-- end of class page-wrap-->
+    
+      <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+    
+  </body>
+</html>
