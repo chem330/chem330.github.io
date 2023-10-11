@@ -15,7 +15,8 @@ In this analysis, you will determine the alkalinity of samples.  To do this, you
   - See Figure 6.6-1 for an overview of the full process.
   - See Table 6.6-2 to determine how much sample you should use.
   - Review the tips on how to use a pipette to deliver the sample.
-  - Use the **Stirring Method** in the procedure.
+  - Use the **Buret titrator** method in the procedure.
+  - Before beginning, install Vernier Graphical Analysis and connect and calibrate your pH probe.
 - The EPA also provides [Method 310.1 - Alkalinity (Titrimetric, pH 4.5)](https://www.nemi.gov/methods/method_summary/5230/), which may serve as an additional reference.
 - Alkalinity must be measured as soon as possible after sample collection; it cannot be measured after prolonged storage!
 - You should **filter your sample** prior to analysis; if you do not filter your sample you will be measuring *acid neutralizing capacity (ANC)* instead of alkalinity.
