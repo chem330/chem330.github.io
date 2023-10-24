@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.19.27
+# v0.19.29
 
 using Markdown
 using InteractiveUtils
@@ -25,16 +25,13 @@ md"""
 # Materials and Methods
 """
 
-# ╔═╡ c36719ca-6c2f-48b9-8de1-52e107fcca89
-# Add an methods here using a Markdown cell
-
-# ╔═╡ 82fca6d8-2ff1-4dcc-9ba4-576167693b86
+# ╔═╡ dae7ede7-4514-4988-9f7c-40079a78742b
 md"""
-## Filtration of Samples
+Samples were collected at Western Carolina University.  Samples were collected by submerging a 1-L polypropylene bottle under water with the mouth pointing upstream; bottles were rinsed with the sample prior to filling.  Samples were immediately returned to the lab and filtered through a 0.45 μm filter and then analyzed immediately.
 """
 
-# ╔═╡ 99614363-34b0-418d-a360-3076cf047420
-# Add an methods here using a Markdown cell
+# ╔═╡ c36719ca-6c2f-48b9-8de1-52e107fcca89
+# Add a methods here using a Markdown cell
 
 # ╔═╡ e538d355-44b9-4970-81d5-e05101e6f4dd
 md"""
@@ -42,7 +39,7 @@ md"""
 """
 
 # ╔═╡ 08559691-7cc5-4204-9c94-c6b8d773bbfa
-# Add an methods here using a Markdown cell
+# Add a methods here using a Markdown cell
 
 # ╔═╡ 38b67c5f-e8ad-4961-944e-c5aeabdf7042
 burette_reading_standardization = 
@@ -132,6 +129,27 @@ pH_3 =
 		# replace 'missing' values with yours; add as many rows as needed
 	];
 
+# ╔═╡ 42fc66f8-b4bc-4fb0-9a74-41f940312f52
+md"""
+# Appendix A: Sampling Sites
+"""
+
+# ╔═╡ 63537ae7-9a86-47b7-a75d-590dba8f3de9
+md"## Site 1: Retention Pond"
+
+# ╔═╡ c6aee8c3-c7e3-4445-8044-8a4133d9b50d
+md"""
+![](https://github.com/chem330/chem330.github.io/blob/main/alkalinity/PXL_20231011_161308649.jpg?raw=true)
+"""
+
+# ╔═╡ 3b66bf2c-9d99-45c2-a4e9-7ae7dcda661a
+md"## Site 2: Cullowhee Creek"
+
+# ╔═╡ 80eb2a12-b7d7-4efd-8b45-74788446f251
+md"""
+![](https://github.com/chem330/chem330.github.io/blob/main/alkalinity/PXL_20231011_161854130.jpg?raw=true)
+"""
+
 # ╔═╡ 4167cb24-adeb-4c11-8d5e-80bca4dfb025
 volume_added_3 = burette_reading_3[1] .- burette_reading_3;
 
@@ -211,7 +229,7 @@ Plots = "~1.39.0"
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.9.2"
+julia_version = "1.9.1"
 manifest_format = "2.0"
 project_hash = "bacb5e85b3a6ee88193a36efc3b98cb30f016166"
 
@@ -291,7 +309,7 @@ weakdeps = ["Dates", "LinearAlgebra"]
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
-version = "1.0.5+0"
+version = "1.0.2+0"
 
 [[deps.ConcurrentUtilities]]
 deps = ["Serialization", "Sockets"]
@@ -740,7 +758,7 @@ version = "0.42.2+0"
 [[deps.Pkg]]
 deps = ["Artifacts", "Dates", "Downloads", "FileWatching", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "REPL", "Random", "SHA", "Serialization", "TOML", "Tar", "UUIDs", "p7zip_jll"]
 uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
-version = "1.9.2"
+version = "1.9.0"
 
 [[deps.PlotThemes]]
 deps = ["PlotUtils", "Statistics"]
@@ -1258,9 +1276,8 @@ version = "1.4.1+1"
 # ╟─0ec42f15-188c-4dc4-9f00-be19854e5472
 # ╠═90d1b8ec-7909-4c10-b347-ca08419cee91
 # ╟─eec8137e-efbc-45ef-b462-3d77b06bd379
+# ╟─dae7ede7-4514-4988-9f7c-40079a78742b
 # ╠═c36719ca-6c2f-48b9-8de1-52e107fcca89
-# ╟─82fca6d8-2ff1-4dcc-9ba4-576167693b86
-# ╠═99614363-34b0-418d-a360-3076cf047420
 # ╟─e538d355-44b9-4970-81d5-e05101e6f4dd
 # ╠═08559691-7cc5-4204-9c94-c6b8d773bbfa
 # ╠═38b67c5f-e8ad-4961-944e-c5aeabdf7042
@@ -1280,6 +1297,11 @@ version = "1.4.1+1"
 # ╟─54d667a0-63f3-4150-a297-ddc5c10fbaa2
 # ╠═638c6109-288c-4395-a1db-8f099f1216b4
 # ╠═74a1857e-4bc1-43d2-99d6-b3fa3ff609d3
+# ╟─42fc66f8-b4bc-4fb0-9a74-41f940312f52
+# ╟─63537ae7-9a86-47b7-a75d-590dba8f3de9
+# ╟─c6aee8c3-c7e3-4445-8044-8a4133d9b50d
+# ╟─3b66bf2c-9d99-45c2-a4e9-7ae7dcda661a
+# ╟─80eb2a12-b7d7-4efd-8b45-74788446f251
 # ╟─0de50eef-0986-46e3-9412-a964bba97e39
 # ╟─4167cb24-adeb-4c11-8d5e-80bca4dfb025
 # ╟─8b299081-4a4b-4023-a88e-aeff58c71335

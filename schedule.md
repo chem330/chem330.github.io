@@ -15,13 +15,13 @@ Lab assignments are due at 23:59:59 on Tuesday unless otherwise specified. The b
 | 1    | Aug 23 | Lab Safety, Intro to Julia |
 | 2    | Aug 30 | Statistics and Error       |
 | 3    | Sep 6  | Water Hardness - Titration |
-| 4    | Sep 13 | Water Hardness - FAAS      |
-| 5    | Sep 20 | Alkalinity Titration       |
-| 6    | Sep 27 | Phosphate / Nitrate        |
-| 7    | Oct 4  | Nitrate / Phosphate        |
-| 8    | Oct 11 | ICP-MS / IC / TDS          |
+| 4    | Sep 13 | Water Hardness - Titration |
+| 5    | Sep 20 | Water Hardness - FAAS      |
+| 6    | Sep 27 | Nitrate / Phosphate        |
+| 7    | Oct 4  | Phosphate / Nitrate        |
+| 8    | Oct 11 | Alkalinity                 |
 | *FB* | Oct 18 | *Fall Break - No Lab*      |
-| 9    | Oct 25 | ICP-MS / IC / TDS          |
+| 9    | Oct 25 | Project                    |
 | 10   | Nov 1  | Project                    |
 | 11   | Nov 8  | Project                    |
 | 12   | Nov 15 | Project                    |
