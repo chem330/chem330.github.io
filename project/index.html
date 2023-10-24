@@ -3,11 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+   <script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    tags: 'all'
+  },
+  svg: {fontCache: 'global'}
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js" integrity="sha384-RTN08a0AXIioPBcVosEqPUfKK+rPp+h1x/izR7xMkdMyuwkcZCWdxO+RSwIFtJXN"  crossorigin="anonymous"></script>
+
+
+     
   
   <link rel="stylesheet" href="/css/jtd.css">
   <link rel="icon" href="/assets/infra/logoF_square.gif">
-   <title>Class Project</title>  
+   <title>Suggested Timeline</title>  
 
   <!-- PLOTLY -->
   
@@ -64,27 +78,27 @@
 				<li class="menu-list-item "><a href="/alkalinity/instructor-info/" class="menu-list-link">Instructor Info</a>
 			  </ul>
           <!-- Experiment 5 -->
-		  <li class="menu-list-parent "><a href="/tds/" class="menu-list-link">🧪 TDS</a>
-			  <ul class="menu-list-child-list ">
-				<li class="menu-list-item "><a href="/tds/" class="menu-list-link">Lab Procedure</a>
-				<li class="menu-list-item "><a href="/tds/instructor-info/" class="menu-list-link">Instructor Info</a>
-			  </ul>
+		  <!-- <li class="menu-list-parent {{ispage tds/*}}active{{end}}"><a href="/tds/" class="menu-list-link">🧪 TDS</a> -->
+		  <!-- 	  <ul class="menu-list-child-list "> -->
+		  <!-- 		<li class="menu-list-item {{ispage tds/index.html}}active{{end}}"><a href="/tds/" class="menu-list-link">Lab Procedure</a> -->
+		  <!-- 		<li class="menu-list-item {{ispage tds/instructor-info}}active{{end}}"><a href="/tds/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+		  <!-- 	  </ul> -->
  
-   		  <li class="menu-list-parent "><a href="/ic/" class="menu-list-link">🧪 IC</a>
-			  <ul class="menu-list-child-list ">
-				<li class="menu-list-item "><a href="/ic/" class="menu-list-link">Lab Procedure</a>
-				<li class="menu-list-item "><a href="/ic/instructor-info/" class="menu-list-link">Instructor Info</a>
-			  </ul>
-              		  <li class="menu-list-parent "><a href="/icpms/" class="menu-list-link">🧪 ICP-MS</a>
-			  <ul class="menu-list-child-list ">
-				<li class="menu-list-item "><a href="/icpms/" class="menu-list-link">Lab Procedure</a>
-				<li class="menu-list-item "><a href="/icpms/instructor-info/" class="menu-list-link">Instructor Info</a>
-			  </ul>
-   		  <li class="menu-list-parent "><a href="/sem/" class="menu-list-link">🧪 SEM</a>
-			  <ul class="menu-list-child-list ">
-				<li class="menu-list-item "><a href="/sem/" class="menu-list-link">Lab Procedure</a>
-				<li class="menu-list-item "><a href="/sem/instructor-info/" class="menu-list-link">Instructor Info</a>
-			  </ul>
+   		  <!-- <li class="menu-list-parent {{ispage ic/*}}active{{end}}"><a href="/ic/" class="menu-list-link">🧪 IC</a> -->
+		  <!-- 	  <ul class="menu-list-child-list "> -->
+		  <!-- 		<li class="menu-list-item {{ispage ic/index.html}}active{{end}}"><a href="/ic/" class="menu-list-link">Lab Procedure</a> -->
+		  <!-- 		<li class="menu-list-item {{ispage ic/instructor-info}}active{{end}}"><a href="/ic/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+		  <!-- 	  </ul> -->
+              	  <!-- 	  <li class="menu-list-parent {{ispage icpms/*}}active{{end}}"><a href="/icpms/" class="menu-list-link">🧪 ICP-MS</a> -->
+		  <!-- 	  <ul class="menu-list-child-list "> -->
+		  <!-- 		<li class="menu-list-item {{ispage icpms/index.html}}active{{end}}"><a href="/icpms/" class="menu-list-link">Lab Procedure</a> -->
+		  <!-- 		<li class="menu-list-item {{ispage hardness/instructor-info}}active{{end}}"><a href="/icpms/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+		  <!-- 	  </ul> -->
+   		  <!-- <li class="menu-list-parent {{ispage sem/*}}active{{end}}"><a href="/sem/" class="menu-list-link">🧪 SEM</a> -->
+		  <!-- 	  <ul class="menu-list-child-list "> -->
+		  <!-- 		<li class="menu-list-item {{ispage sem/index.html}}active{{end}}"><a href="/sem/" class="menu-list-link">Lab Procedure</a> -->
+		  <!-- 		<li class="menu-list-item {{ispage ic/instructor-info}}active{{end}}"><a href="/sem/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+		  <!-- 	  </ul> -->
 
           <!-- Project -->
 		  <li class="menu-list-parent active"><a href="/project/" class="menu-list-link">🥼 Project</a>
@@ -103,12 +117,190 @@
         </div>
 
 <!-- Content appended here (in class franklin-content) -->
-<div class="franklin-content"><h1 id="class_project"><a href="#class_project" class="header-anchor">Class Project</a></h1>
-<p>The goal of the lab project this semester is to provide present a precise, accurate, thorough analysis of a local water body. As you work through each lab be vigilant about avoiding contamination, and use appropriate quality control measures to check your accuracy and precision as you work.  You should get an accurate answer before turning in your final report; if your results are not accurate or have unacceptably low precision you must repeat the analysis again to obtain high-quality data.</p>
+<div class="franklin-content"><h1>Class Project</h1>
+<div class="franklin-toc"><ol><li><a href="#suggested_timeline">Suggested Timeline</a></li><li><a href="#site_selection_study_design_sample_collection">Site Selection, Study Design, &amp; Sample Collection</a><ol><li><a href="#site_selection">Site Selection</a></li><li><a href="#sample_collection">Sample Collection</a></li><li><a href="#process_and_store_the_samples_if_needed">Process and Store the Samples &#40;if needed&#41;</a></li></ol></li><li><a href="#analysis_and_progress_reporting">Analysis and Progress Reporting</a><ol><li><a href="#required_analyses">Required Analyses</a><ol><li><a href="#field_measurements">Field Measurements</a></li><li><a href="#laboratory_measurements">Laboratory Measurements</a></li></ol></li><li><a href="#laboratory_notebooks_practices">Laboratory Notebooks &amp; Practices</a></li><li><a href="#data_analysis">Data Analysis</a></li><li><a href="#waste_disposal">Waste Disposal</a></li></ol></li><li><a href="#reporting">Reporting</a><ol><li><a href="#lab_report">Lab Report</a></li></ol></li></ol></div>
+<p>The goal of the lab project this semester is to provide present a precise, accurate, thorough analysis of a local water body. As you work through each lab be vigilant about avoiding contamination, and <strong>use appropriate quality control measures to check your accuracy and precision as you work</strong>.  You should get an accurate answer before turning in your final report; if your results are not accurate or show unacceptably low precision you should repeat the analysis again to obtain high-quality data.</p>
 <p><em>One intent for this project is to help you become self-sufficient in the lab and help you learn how to know that your data is likely to be accurate.  As such, there will be little day-to-day direction of your activities from your instructor, and it will be up to you and your lab partner to plan your time and implement appropriate practices in your lab work.</em></p>
+<p>You will work with 1 lab partner to complete this project.</p>
+<p>You may need to work outside of the normal lab period to complete this work.</p>
+<p>Check Canvas for due dates.</p>
+<h1 id="suggested_timeline"><a href="#suggested_timeline" class="header-anchor">Suggested Timeline</a></h1>
+<table><tr><th align="center">Week</th><th align="left">Milestone</th></tr><tr><td align="center">1</td><td align="left">Planning</td></tr><tr><td align="center">2</td><td align="left">Site selected, basic site info gathered, instrument trainings in progress</td></tr><tr><td align="center">3</td><td align="left">Field data collected and begin at least 1 analysis</td></tr><tr><td align="center">4</td><td align="left">1-2 analyses complete &#40;including data analysis&#41;</td></tr><tr><td align="center">4.5</td><td align="left">&#40;Thanksgiving&#41; Draft turned in, 3-4 analyses complete &#40;including data analysis&#41;</td></tr><tr><td align="center">5</td><td align="left">All analyses complete</td></tr><tr><td align="center">6</td><td align="left">Data analysis complete</td></tr><tr><td align="center">7</td><td align="left">Report turned in</td></tr></table>
+<h1 id="site_selection_study_design_sample_collection"><a href="#site_selection_study_design_sample_collection" class="header-anchor">Site Selection, Study Design, &amp; Sample Collection</a></h1>
+<h2 id="site_selection"><a href="#site_selection" class="header-anchor">Site Selection</a></h2>
+<ol>
+<li><p>You should choose at least two sampling sites for your analysis.  You will need to access your sites several times over the remainder of the semester, so they should be easily accessible.</p>
+<ol>
+<li><p>Existing sites on campus &#40;Gribble Gap, Cullowhee Creek, groundwater wells&#41;</p>
+</li>
+<li><p>The Tuckasegee River</p>
+</li>
+<li><p>Scott Creek, Savannah Creek, ..., other nearby sites</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>Choose your sites such that you could test a hypothesis and answer a scientific question.  For example, you might ask the question &quot;Does the paper mill affect the water quality of Scott Creek?&quot;.  You could then choose a site upstream from the mill and another one downstream.</p>
+<h2 id="sample_collection"><a href="#sample_collection" class="header-anchor">Sample Collection</a></h2>
+<ol>
+<li><p>Collect your samples in 1-L polypropylene bottles.</p>
+</li>
+<li><p>Include appropriate field blanks when sampling.</p>
+</li>
+<li><p>Try to avoid stirring up sediment as you sample.</p>
+</li>
+</ol>
+<h2 id="process_and_store_the_samples_if_needed"><a href="#process_and_store_the_samples_if_needed" class="header-anchor">Process and Store the Samples &#40;if needed&#41;</a></h2>
+<div class="note"><div class="title">⚠ Note</div>
+<div class="content">Note that analyses like alkalinity, nitrate, phosphate, and total anions must be done immediately upon collection.  Filtering / acidifying these samples will give you erroneous results.</div></div>
+<ol>
+<li><p>Filter the samples through a 0.45 μm filter using a Millipore apparatus immediately after collection, for any analyses of <em>dissolved</em> impurities.  </p>
+</li>
+<li><p>Place the filtered sample into a clean plastic bottle &#40;or wash the old one if needed&#41;.</p>
+</li>
+<li><p>Acidify the filtered sample to pH &lt; 2 with nitric acid.  Use pH paper to check the pH.</p>
+</li>
+<li><p>Place the sample in a refrigerator at 4°C until analysis.</p>
+</li>
+</ol>
+<h1 id="analysis_and_progress_reporting"><a href="#analysis_and_progress_reporting" class="header-anchor">Analysis and Progress Reporting</a></h1>
+<p><em>You may need to make solutions and gather equipment as part of your lab work, even if they were provided during previous labs.  The main exceptions to this will be any solutions requiring the use of concentrated acids or bases, or exceptionally toxic chemicals &#40;e.g. mercury&#41;.</em></p>
+<p>You will meet with your instructor weekly to discuss your progress and next steps.  You are expected to have new progress each week.</p>
+<h2 id="required_analyses"><a href="#required_analyses" class="header-anchor">Required Analyses</a></h2>
+<p>You will be expected to complete the following measurements on your samples:</p>
+<h3 id="field_measurements"><a href="#field_measurements" class="header-anchor">Field Measurements</a></h3>
+<ol>
+<li><p>Conductivity</p>
+</li>
+<li><p>Dissolved oxygen &#40;potentiometric&#41;</p>
+</li>
+<li><p>Temperature &#40;temperature probe&#41;</p>
+</li>
+<li><p>Nitrate &#40;potentiometric&#41;</p>
+</li>
+<li><p>ORP &#40;potentiometric&#41;</p>
+</li>
+<li><p>Thorough site description, with GPS coordinates</p>
+</li>
+</ol>
+<h3 id="laboratory_measurements"><a href="#laboratory_measurements" class="header-anchor">Laboratory Measurements</a></h3>
+<ol>
+<li><p>Major cation determination &#40;EPA Method 200.8&#41;</p>
+</li>
+<li><p>Major anion determination &#40;EPA Method 300.0&#41;</p>
+</li>
+<li><p>Nitrate determination &#40;colorimetric NitraVer method&#41;</p>
+</li>
+<li><p>Alkalinity determination &#40;USGS Method&#41;</p>
+</li>
+<li><p>Hardness determination &#40;as \(\ce{CaCO3}\)&#41;</p>
+</li>
+<li><p>Determination of one trace metal of interest &#40;choose one of scientific value for your site, use EPA Method 200.8&#41;</p>
+</li>
+<li><p>Fecal coliform presence</p>
+</li>
+</ol>
+<p>Report all concentrations in mg/L or ug/L.</p>
+<p>Plot the data from each site on a Piper &#40;or rectangular Piper&#41; and use it to determine what &quot;type&quot; the water is. &#40;Do this plot in software, not by hand.&#41;  Also prepare additional plots and/or diagrams as needed.</p>
+<h2 id="laboratory_notebooks_practices"><a href="#laboratory_notebooks_practices" class="header-anchor">Laboratory Notebooks &amp; Practices</a></h2>
+<p>You must keep a laboratory notebook while working in lab that fully captures the <em>exact</em> steps taken.  It is recommended that you use Pluto notebooks for this, but you can use a hardbound paper notebook if you prefer. Whichever option you use, it should be neatly organized and easily legible.  You will be required to turn in your notebook on a weekly basis.</p>
+<p>It is important that you avoid contamination during your lab work to avoid inaccurate results&#33;  Remember to wash all glassware with Alconox and warm water and then rinse it three times with deionized water prior to beginning analysis. &#40;The exception to this is the phosphate analysis – remember that Alconox contains a high percentage of phosphate&#33;&#41;  Do not assume the glassware is clean&#33;</p>
+<p>It is also important that your results are as accurate and precise as possible.  Remember to use the right glassware for each situation.</p>
+<ul>
+<li><p>Use volumetric pipettes to deliver a specified volume. Do not combine pipettes to get a desired volume; instead, find the pipette of appropriate volume &#40;or ask for one if you can&#39;t find it&#41;.</p>
+</li>
+<li><p>Use volumetric flasks to contain a specified volume.</p>
+</li>
+<li><p>Record all certain digits plus one uncertain digit when writing down data.</p>
+</li>
+</ul>
+<p>It is also important that you have high statistical confidence in the data.  Measure all samples in triplicate and report </p>
+<h2 id="data_analysis"><a href="#data_analysis" class="header-anchor">Data Analysis</a></h2>
+<p><strong>It is in your best interest to process as much data as possible in real time.</strong></p>
+<p>It is recommended that you use Julia/Pluto notebooks for your data analysis, but you may also use Excel, or another program of your choice to process the data.  I will be able to help you in Julia, but may have limited ability to help with other programs.</p>
+<p>Whichever program you use for data analysis, you must process your data using the principles of <em>reproducible research</em>.  This means I should be able to open your file and easily follow your analysis without having to do excessive digging through the file; I should also be able to open your file and <em>exactly</em> reproduce the results of your data analysis with the information provided.</p>
+<p>You should aim to communicate your data graphically whenever possible.  Your plots should be <em>publication quality</em> with descriptive axis titles and units, clear legend when needed, appropriate scaled axes, and an overall professional appearance.</p>
+<h2 id="waste_disposal"><a href="#waste_disposal" class="header-anchor">Waste Disposal</a></h2>
+<ul>
+<li><p>Waste for nitrate, phosphate, hardness, and anion analyses can be combined in a the waste bucket provided in lab.</p>
+</li>
+<li><p>Neutralized waste from the alkalinity titration can be disposed of down the drain.</p>
+</li>
+</ul>
+<h1 id="reporting"><a href="#reporting" class="header-anchor">Reporting</a></h1>
+<p>You should present your results in two ways a professional-quality lab report written in the style of a USGS water quality report.  &#40;This counts toward your lab grade.&#41;</p>
+<p>I encourage you to use a &quot;divide and conquer&quot; approach to writing this report – you each likely have different skills that you can use to benefit the group, so that breaking up the writing and figure preparation will both be more efficient and will produce better results.</p>
+<h2 id="lab_report"><a href="#lab_report" class="header-anchor">Lab Report</a></h2>
+<p>This report should be written as if it were a professional document prepared to be shared with aquatic chemists and other water-quality professionals who are familiar with water chemistry and chemical analysis.  You can assume this knowledge when writing it &#40;e.g. you do not need to explian what a titration is, but rather can just say you performed a specific type of titration&#41;.</p>
+<p><strong>The best way to get a sense of the tone used in these reports is to read examples&#33;</strong></p>
+<ul>
+<li><p>You should follow my <a href="https://chem370.github.io/technical-reports/writing-guide">style guide</a> for scientific writing when writing your report.</p>
+</li>
+<li><p>You should also read my <a href="https://chem370.github.io/technical-reports/figures">guide to publication-quality figure</a>.  All figures in your reports should be &quot;publication quality&quot;.</p>
+</li>
+<li><p>Some example reports are available via <a href="https://pubs.usgs.gov/ds/423/pdf/report.pdf">this link</a> &#40;PDF&#41; and <a href="https://pubs.usgs.gov/sir/2009/5149/pdf/sir20095149.pdf">this link</a> &#40;PDF&#41;.</p>
+</li>
+<li><p>An example &quot;good&quot; student report &#40;from another class&#41; can be viewed <a href="https://github.com/dr-fischer/chem370/raw/master/assets/pdf/chem370_technical_report_example.pdf">here</a>.</p>
+</li>
+<li><p>A Word template for your report is available <a href="https://catamountwcu-my.sharepoint.com/:w:/g/personal/dfischer_wcu_edu/EaZ2pihy7FVIhxbqDQQ2ZoEB7X-vEyG6d6eVY3yFnhgwpA?e&#61;9ctfg7">here</a>.</p>
+</li>
+<li><p>The rubric I will use to grade your report is available as a PDF download <a href="https://github.com/chem330/chem330.github.io/raw/main/_assets/pdf/lab-report-rubric-c330.pdf">here</a>.</p>
+</li>
+</ul>
+<p>We will conduct one or two rounds of peer-review on these reports. For the first round, aim to have the introduction written and whatever portion of the other section you are able to complete based on the analyses you&#39;ve finished.  For the second peer-review, you should fix any errors noted in the first round and have the report almost complete.</p>
+<p><strong>Your report should include the following sections:</strong></p>
+<p><em>Please review the rubric and style guides above for more complete guidance&#33;</em></p>
+<ol>
+<li><p>Title</p>
+</li>
+<li><p>Abstract</p>
+</li>
+<li><p>Introduction</p>
+<ol>
+<li><p>Purpose and Scope – what are you doing and why are you doing it.</p>
+</li>
+<li><p>A good introduction will put the work into perspective by citing the literature.</p>
+</li>
+</ol>
+</li>
+<li><p>Methods</p>
+<ol>
+<li><p>Description of the Study Area &#40;including map&#41;</p>
+</li>
+<li><p>Sampling methods</p>
+</li>
+<li><p>Chemical analysis and laboratory methods &#40;subsection or paragraph for each parameter&#41;</p>
+<ol start="3">
+<li><p>Include &quot;instrument tables&quot; of parameters where applicable</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Results and Discussion</p>
+<ol>
+<li><p>Results of your analyses, with comparisons to previous / similar studies / generally accepted values</p>
+</li>
+<li><p>A good results section will present key data in plots and/or tables, and discuss those data in relation to other studies, including explanations for any unexpected results.</p>
+</li>
+</ol>
+</li>
+<li><p>Conclusions</p>
+<ol>
+<li><p>A brief &#40;1-2 paragraph&#41; summary on your work, specifically highlighting the implications or broader impacts of the work.</p>
+</li>
+</ol>
+</li>
+<li><p>Works Cited</p>
+<ol>
+<li><p>Cite your references in ACS &#40;American Chemical Society&#41; format or a similar format common to the field of aquatic chemistry.</p>
+</li>
+</ol>
+</li>
+</ol>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Al Fischer. Last modified: October 10, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+    &copy; Al Fischer. Last modified: October 24, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
