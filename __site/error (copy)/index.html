@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel="stylesheet" href="/css/jtd.css">
+  <link rel="icon" href="/assets/infra/logoF_square.gif">
+   <title>Experiment 1: Error Analysis</title>  
+
+  <!-- PLOTLY -->
+  
+
+</head>
+<body>                      <!-- closed in foot.html -->
+  <div class="page-wrap">   <!-- closed in foot.html -->
+    <!-- SIDE BAR -->
+    <div class="side-bar">
+      <div class="header">
+        <a href="/" class="h1" style="font-size: 30px">CHEM 330</a>
+      </div>
+      <label for="show-menu" class="show-menu">MENU</label>
+      <input type="checkbox" id="show-menu" role="button">
+      <div class="menu" id="side-menu">
+        <ul class="menu-list">
+          <!-- HOME -->
+          <li class="menu-list-item "><a href="/" class="menu-list-link">💧 Course Overview</a>
+          <!-- Syllabi -->
+<!--		  <li class="menu-list-item {{ispage lecture-syllabus/*}}active{{end}}"><a href="/lecture-syllabus/" class="menu-list-link">📜 Lecture Syllabus</a> -->
+		  <li class="menu-list-item "><a href="/lab-syllabus/" class="menu-list-link">📜 Lab Syllabus</a>
+          <!-- Schedule -->
+		  <li class="menu-list-item "><a href="/schedule/" class="menu-list-link">📆 Schedule</a>
+          <!-- Lab Notebooks -->
+		  <li class="menu-list-item "><a href="/lab-notebooks/" class="menu-list-link">📓 Lab Notebooks</a>
+      <li class="menu-list-item "><a href="/matlab-onramp/" class="menu-list-link">🖥️ MATLAB Onramp</a>
+
+          <!-- Experiment 1 -->
+		  <li class="menu-list-parent active"><a href="/error/" class="menu-list-link">🧪 Error</a>
+			  <ul class="menu-list-child-list">
+				<li class="menu-list-item "><a href="/error/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/error/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+      <li class="menu-list-item "><a href="/geochemical-facies/" class="menu-list-link">🖥️ Geochemical Facies</a>
+         <!-- Experiment Hardness -->
+		  <!-- <li class="menu-list-parent {{ispage hardness/*}}active{{end}}"><a href="/hardness/" class="menu-list-link">🧪 Hardness</a> -->
+			  <!-- <ul class="menu-list-child-list "> -->
+				<!-- <li class="menu-list-item {{ispage hardness/index.html}}active{{end}}"><a href="/hardness/" class="menu-list-link">Lab Procedure</a> -->
+				<!-- <li class="menu-list-item {{ispage hardness/instructor-info}}active{{end}}"><a href="/hardness/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+			  <!-- </ul>               -->
+          <!-- Experiment 2 -->
+		  <!-- <li class="menu-list-parent {{ispage nitrate/*}}active{{end}}"><a href="/nitrate/" class="menu-list-link">🧪 Nitrate</a> -->
+			  <!-- <ul class="menu-list-child-list"> -->
+				<!-- <li class="menu-list-item {{ispage nitrate/index.html}}active{{end}}"><a href="/nitrate/" class="menu-list-link">Lab Procedure</a> -->
+				<!-- <li class="menu-list-item {{ispage nitrate/instructor-info}}active{{end}}"><a href="/nitrate/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+			  <!-- </ul> -->
+          <!-- Experiment 3 -->
+		  <!-- <li class="menu-list-parent {{ispage phosphate/*}}active{{end}}"><a href="/phosphate/" class="menu-list-link">🧪 Phosphate</a> -->
+			  <!-- <ul class="menu-list-child-list "> -->
+				<!-- <li class="menu-list-item {{ispage phosphate/index.html}}active{{end}}"><a href="/phosphate/" class="menu-list-link">Lab Procedure</a> -->
+				<!-- <li class="menu-list-item {{ispage phosphate/instructor-info}}active{{end}}"><a href="/phosphate/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+			  <!-- </ul> -->
+          <!-- Experiment 4 -->
+		  <li class="menu-list-parent "><a href="/alkalinity/" class="menu-list-link">🧪 Alkalinity</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/phosphate/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/alkalinity/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 5 -->
+		  <!-- <li class="menu-list-parent {{ispage tds/*}}active{{end}}"><a href="/tds/" class="menu-list-link">🧪 TDS</a> -->
+		  <!-- 	  <ul class="menu-list-child-list "> -->
+		  <!-- 		<li class="menu-list-item {{ispage tds/index.html}}active{{end}}"><a href="/tds/" class="menu-list-link">Lab Procedure</a> -->
+		  <!-- 		<li class="menu-list-item {{ispage tds/instructor-info}}active{{end}}"><a href="/tds/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+		  <!-- 	  </ul> -->
+ 
+   		  <li class="menu-list-parent "><a href="/ic/" class="menu-list-link">🧪 IC</a>
+		  	  <ul class="menu-list-child-list ">
+		  		<li class="menu-list-item "><a href="/ic/" class="menu-list-link">Lab Procedure</a>
+		  		<li class="menu-list-item "><a href="/ic/instructor-info/" class="menu-list-link">Instructor Info</a>
+		  	  </ul>
+              	  	  <li class="menu-list-parent "><a href="/icpms/" class="menu-list-link">🧪 ICP-MS</a>
+		  	  <ul class="menu-list-child-list ">
+		  		<li class="menu-list-item "><a href="/icpms/" class="menu-list-link">Lab Procedure</a>
+		  		<li class="menu-list-item "><a href="/icpms/instructor-info/" class="menu-list-link">Instructor Info</a>
+		  	  </ul>
+   		  <!-- <li class="menu-list-parent {{ispage sem/*}}active{{end}}"><a href="/sem/" class="menu-list-link">🧪 SEM</a> -->
+		  <!-- 	  <ul class="menu-list-child-list "> -->
+		  <!-- 		<li class="menu-list-item {{ispage sem/index.html}}active{{end}}"><a href="/sem/" class="menu-list-link">Lab Procedure</a> -->
+		  <!-- 		<li class="menu-list-item {{ispage ic/instructor-info}}active{{end}}"><a href="/sem/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+		  <!-- 	  </ul> -->
+
+          <!-- Project -->
+		  <li class="menu-list-parent "><a href="/project/" class="menu-list-link">🥼 Project</a>
+			  <!-- <ul class="menu-list-child-list "> -->
+			  <!-- 	<li class="menu-list-item {{ispage project/nitrate.html}}active{{end}}"><a href="/project/nitrate/" class="menu-list-link">Nitrate</a> -->
+			  <!-- 	<li class="menu-list-item {{ispage project/phosphate}}active{{end}}"><a href="/project/phosphate/" class="menu-list-link">Phosphate</a> -->
+			  <!-- </ul> -->
+      </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="main-content-wrap"> <!-- closed in foot.html -->
+      <div class="main-content" id="focus" tabindex="-1" style="outline:0;">    <!-- closed in foot.html -->
+        <div class="main-header">
+          <a name="pagetop"></a>
+		  <a id="github" href="https://github.com/chem330/chem330.github.io">GitHub Repository</a>
+        </div>
+
+<!-- Content appended here (in class franklin-content) -->
+<div class="franklin-content">
+<h1>Error Analysis</h1>
+<div class="franklin-toc"><ol><li><a href="#background">Background</a></li><li><a href="#part_1_measuring_volume_with_a_beaker">Part 1: Measuring Volume with a Beaker</a></li><li><a href="#part_2_measuring_volume_with_a_graduated_cylinder">Part 2: Measuring Volume with a Graduated Cylinder</a></li><li><a href="#part_3_volumetric_pipette">Part 3: Volumetric Pipette</a></li><li><a href="#part_4_mechanical_pipette">Part 4: Mechanical Pipette</a></li><li><a href="#what_to_turn_in">What to turn in</a></li></ol></div>
+<h1 id="background"><a href="#background" class="header-anchor">Background</a></h1>
+<p>In this lab, you will examine the uncertainty associated with different ways of delivering a specified volume of liquid.  You will do this by measuring deionized water using four methods: &#40;1&#41; a beaker, &#40;2&#41; a graduated cylinder, &#40;3&#41; a volumetric glass pipette, and &#40;4&#41; a mechanical pipette. Each of these will be compared against an analytical balance. To obtain a bigger dataset for analysis, we will compile the data and determine statistics at the class level.</p>
+<p>In the first part of this lab, you will measure the masses of known volumes of water with different methods and calculate the mean and standard deviation for each method.  You will also measure the mass of a set volume of an unknown liquid.  Further data analysis will take place outside of lab, and will involve calculating the density, confidence interval, accuracy for each method using the compiled class dataset.</p>
+<p>There is a Pluto notebook template for this lab.  Copy and past this link into the open from URL dialog box in Pluto: <a href="https://raw.githubusercontent.com/chem330/chem330.github.io/main/error/error-lab-notebook.jl">https://raw.githubusercontent.com/chem330/chem330.github.io/main/error/error-lab-notebook.jl</a></p>
+<p>&#40;Right click on the link, then choose &quot;Copy Link Address&quot; or &quot;Copy Link&quot; in Chrome or Firefox, respectively.&#41;</p>
+<h1 id="part_1_measuring_volume_with_a_beaker"><a href="#part_1_measuring_volume_with_a_beaker" class="header-anchor">Part 1: Measuring Volume with a Beaker</a></h1>
+<div class="note"><div class="title">⚠ Note</div>
+<div class="content">Before you begin, make sure to <strong>record the temperature</strong> of the room in your lab notebook&#33;</div></div>
+<p>Use a 25-ml beaker to measure 15.00 ml of distilled water.  Use a balance to measure the mass of this 15-ml sample of water.  Pour the water out, and repeat 4 more times.  Calculate the mean and standard deviation for of the masses you recorded, and enter them in the appropriate boxes in the lab notebook template.</p>
+<h1 id="part_2_measuring_volume_with_a_graduated_cylinder"><a href="#part_2_measuring_volume_with_a_graduated_cylinder" class="header-anchor">Part 2: Measuring Volume with a Graduated Cylinder</a></h1>
+<p>Repeat the experiment, except use a 25-ml graduate cylinder to measure the volume instead of a beaker.  Enter your results in the appropriate section of the notebook template.</p>
+<h1 id="part_3_volumetric_pipette"><a href="#part_3_volumetric_pipette" class="header-anchor">Part 3: Volumetric Pipette</a></h1>
+<p>Repeat the experiment, except use a 15-ml volumetric pipette to measure the volume instead of a beaker.  Enter your results in the appropriate section of the notebook template.</p>
+<h1 id="part_4_mechanical_pipette"><a href="#part_4_mechanical_pipette" class="header-anchor">Part 4: Mechanical Pipette</a></h1>
+<p>Repeat the experiment, except use a 5-ml mechanical pipette &#40;often called a micropipette&#41; to measure the volume instead of a beaker.  Enter your results in the appropriate section of the notebook template. &#40;There may be a limited number of 5-mL pipettes so please share with your neighbors&#33;&#41;</p>
+<h1 id="what_to_turn_in"><a href="#what_to_turn_in" class="header-anchor">What to turn in</a></h1>
+<p>When you have completed this notebook, you should:</p>
+<ol>
+<li><p>Click the &quot;Export Final Data&quot; button in the notebook.</p>
+</li>
+<li><p>Then, click the export button at the top of the notebook &#40;to the right of the filename&#41; and choose Static HTML.</p>
+</li>
+<li><p>Upload <strong>three</strong> files to Canvas.</p>
+<ol>
+<li><p>Your static HTML file &#40;probably in your web browser&#39;s download folder, .html extension&#41;	</p>
+</li>
+<li><p>Your final dataset &#40;found in your notebook working directory, .CSV extension&#41;</p>
+</li>
+<li><p>Your Notebook code file &#40;can found in your notebook working directory, .jl extension&#41;</p>
+</li>
+</ol>
+</li>
+</ol>
+<div class="page-foot">
+  <div class="copyright">
+    &copy; Al Fischer. Last modified: October 24, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div> <!-- end of class main-content -->
+    </div> <!-- end of class main-content-wrap -->
+    </div> <!-- end of class page-wrap-->
+    
+  </body>
+</html>

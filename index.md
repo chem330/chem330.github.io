@@ -9,28 +9,7 @@ This course is an introduction to environmental aquatic chemistry.  It is a hybr
 
 # Logistics
 
-- Course information for lecture and lab will be posted on this site.
-- Homework will be turned in on Canvas.
+- Lab handouts/procedures and prelab readings are posted on this site.
+- All work will be turned in on Canvas.
 - Office hours are by appointment.  Please use [Calendly](https://calendly.com/drfischer/office-hours) to sign up for a time.  Anytime shown is a time I'm available to meet.
 - There is an unofficial [Discord server](https://discord.gg/nyuhfZRf) for the class, find me there to ask questions or connect with your classmates.
-
-# Lecture Assignments
-
-You should generally expect 3-4 exams plus the final over the course of the semester along with weekly reading and homework assignments.  There may be occassional in-class quizzes on recent reading material and/or topics covered in lecture.
-
-# Lab Assignments
-
-## Individual
-
-- Lab 1
-- Lab 2
-- Lab 3
-- Lab 4
-- Lab 5
-- Group work grade
-- Lab safety & Professionalism
-
-## Group Assignments
-
-- Project lab
-- Final report / project

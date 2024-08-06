@@ -2,32 +2,39 @@
 title = "Lab Schedule"
 +++
 
-# Tentative Lab Schedule
+# Lab Schedule
 
-The lab consists of two parts: (1) *learning* techniques by completing basic labs during the first part of the semester and (2) *applying* those techniques to study a real-world problem during the second part of the semester.
-
-Lab assignments are due at 23:59:59 on Tuesday unless otherwise specified. The best place to keep track of due dates is Canvas.
+Lab assignments are due at 23:59:59 on Sunday unless otherwise specified. The best place to keep track of due dates is Canvas.  In general, the lab is highly flexible and it is up to you and your lab partner(s) to plan and making continual progress.
 
 *This schedule is subject to change as needed.*
 
-| Week | Date   | Lab                        |
-|:----:|:-------|:---------------------------|
-| 1    | Aug 23 | Lab Safety, Intro to Julia |
-| 2    | Aug 30 | Statistics and Error       |
-| 3    | Sep 6  | Water Hardness - Titration |
-| 4    | Sep 13 | Water Hardness - Titration |
-| 5    | Sep 20 | Water Hardness - FAAS      |
-| 6    | Sep 27 | Nitrate / Phosphate        |
-| 7    | Oct 4  | Phosphate / Nitrate        |
-| 8    | Oct 11 | Alkalinity                 |
-| *FB* | Oct 18 | *Fall Break - No Lab*      |
-| 9    | Oct 25 | Project                    |
-| 10   | Nov 1  | Project                    |
-| 11   | Nov 8  | Project                    |
-| 12   | Nov 15 | Project                    |
-| 13   | Nov 22 | *Thanksgiving - No Lab*    |
-| 14   | Nov 29 | Project                    |
-| 15   | Dec 6  | Project                    |
-| 16   | Dec 13 | *Final Exams - No Lab*     |
+| Week | Date   | Lab                                         |
+|:----:|:-------|:--------------------------------------------|
+| 1    | Aug 19 | Intro to MATLAB                             |
+| 2    | Aug 26 | Error Analysis                              |
+| 3    | Sep 2  | Geochemical Facies (Remote - no meeting)    |
+| 4    | Sep 9  | Sample Collection, Preparation, and Storage |
+| 5    | Sep 16 | Project                                     |
+| 6    | Sep 23 | Project                                     |
+| 7    | Sep 30 | Project                                     |
+| 8    | Oct 7  | Project                                     |
+| 9    | Oct 14 | *Fall Break - No Lab*                       |
+| 10   | Oct 21 | Project                                     |
+| 11   | Oct 28 | Project                                     |
+| 12   | Nov 4  | Project                                     |
+| 13   | Nov 11 | Project                                     |
+| 13   | Nov 18 | Project                                     |
+| 15   | Nov 25 | Project                                     |
+| 16   | Dec 2  | Project                                     |
+| 16   | Dec 9  | *Final Exams - No Lab*                      |
 
-*During the project lab, students will complete the water analyses listed here independently / in groups.  Small groups of students will meet with the instructor and/or Instrumentation Specialist to learn how to use instrumentation to analyze their samples independently.*
+During the project lab, students will complete the water analyses listed here independently / in groups. Students must learn to use chemical instrumentation available in WCU's instrumentation facility and use it to accurately analyze their samples.
+
+**Analysis methods for 2024:**
+1. ICP-MS (major cations and trace metals)
+2. Ion Chromatography (major anions)
+3. Alkalinity/ANC Titration
+
+Other analyses are possible if your group is interested -- just ask your instructor.
+
+Students should analyze their sample with these methods and complete a charge balance and analysis of geochemical facies.  You will very likely fail your first several tries at analyzing your samples -- this is why so much time is devoted to the project!  The goal is to turn in results that are both highly accurate and very precise at the end of the semester, and you should have enough data to strongly indicate high levels of precision and accuracy.  Again, you likely will not meet this bar after your first try at analyzing your samples, so anticipate redoing it until you get it right!

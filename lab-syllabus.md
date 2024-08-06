@@ -6,13 +6,13 @@
 
 **Email:** [dfischer@wcu.edu](mailto:dfischer@wcu.edu)  
 
-**Availability:** Email and office hours are good ways to find me; I'm typically available to respond to emails from late morning through about 9 PM during the week.  I have also created a [Discord server](https://discord.gg/gvr3kmm4) for the course -- this is a space for you to quickly ask me questions and connect with your classmates (it may be especially good for software-related questions).
+**Availability:** Email and office hours (see above) are the best ways to find me; I check emails several times per day through the evening M-F.  I also leave my office door open when I am available for drop-in questions, as time allows; if my door is open, you are welcome to stop in for help. (If my door is closed I am not available.) Typically this should be for quick questions that take no more than 5-10 minutes to answer.  I have also created a [Discord server](https://discord.gg/gvr3kmm4) for the course -- this is a space for you to quickly ask me questions and connect with your classmates (it may be especially good for software-related questions).
 
 \toc
 
 ## Overview 
 
-This course in an introduction to the chemical analysis of water samples.  Throughout the semester, students will work to develop both qualitative and quantitative analytical skills related to chemical analysis (both wet chemical and instrumental analysis methods), reproducible data analysis, scientific communication, and collaboration in the laboratory and field.  Some prerequisite chemical knowledge will be expected (CHEM 140), but no advanced chemistry knowledge is necessary.  Simultaneous enrollment in CHEM 330 lecture is expected.
+This course in an introduction to the chemical analysis of water samples.  Throughout the semester, students will work to develop both qualitative and quantitative analytical skills related to chemical analysis (both wet chemical and instrumental analysis methods), reproducible data analysis, scientific communication, and collaboration in the laboratory and/or field.  Some prerequisite chemical knowledge will be expected (CHEM 140), but no advanced chemistry knowledge is necessary.  Simultaneous enrollment in CHEM 330 lecture is expected.
 
 ## Student Learning Outcomes 
 
@@ -36,23 +36,22 @@ To achieve a satisfactory grade, students will:
 
 **Lab Manual:** All lab activities are posted [online](https://chem330.github.io)
 
-**Lab Notebook:** Students will keep an electronic lab notebook using the programming language [Julia](https://julialang.org) in conjunction with the electronic notebook environment [Pluto](https://plutojl.org/).
-
+**Lab Notebook:** Students should keep notes in a hardbound laboratory notebook.  Carbonless copy notebooks (like those used in CHEM 140) are suitable, but hardbound (not spiral) are preferred.  A simple composition notebook is sufficient for this purpose.
+ 
 **Technology:** Students will need a laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx) and should plan to bring this computer with them to lab every week.
 
 Students will need the following software:
 - Vernier [Logger Lite](https://www.vernier.com/downloads/logger-lite-updates/)
-- [Vernier Spectral Analysis](https://www.vernier.com/product/spectral-analysis/) (free)
-- [Julia](https://julialang.org) (free and open source, also available on VCAT)
-- [Pluto](https://plutojl.org/) (free and open source, also available on VCAT)
+- MATLAB (available to students through WCU's site license)
+- Word processing program such as Microsoft Word
+- Grammarly is highly recommended
 
 **Additional Required Course Materials:**  
 
-  - Goggles or safety glasses with splash gaurds rated for chemical protection
+  - Goggles or safety glasses with splash guards rated for chemical protection
   - Nitrile gloves
   - Appropriate clothing: closed-toed shoes, long pants, hair tie for long hair
   - Permanent, felt-tipped marker (e.g. a Sharpie®)
-  - A hardbound paper notebook for jotting down notes in lab
   - A blue or black pen (not pencil!) for writing in your lab notebook.
 
 Most materials are available from the WCU bookstore; goggles are also available from the WCU Chemistry Club (these goggles are recommended over cheaper ones).  A lab coat is optional.
@@ -69,11 +68,11 @@ Students will be provided with Excel templates for data analysis, and must turn 
 
 ## Field Work
 
-Portions of this course will be conducted outdoors in the field while collecting water samples for analysis.  This work may occur both on and off campus.  Students should make every effort to attend field trips, and will receive a grade for participation trips.  Any students not attending will be required to complete a makeup assignment with equal time and effort committments as the field trip.  Field work will occur rain or shine.
+Portions of this course will be conducted outdoors in the field while collecting water samples for analysis.  This work may occur both on and off campus.  Students should make every effort to attend field trips, and will receive a grade for participation trips.  Any students not attending will be required to complete a makeup assignment with equal time and effort commitments as the field trip.  Field work will occur rain or shine.
 
 The following materials are recommended during sampling days.  Keep in mind that all these materials may get dirty / rained on / fall in the river, etc., during field work, so don't bring your most favorite items unless you are prepared for them to get damaged.
 
-- Waterproof shoes (preferrably knee-high boots or waders)
+- Waterproof shoes (preferably knee-high boots or waders)
 - Rain jacket
 - Waterproof backpack
 - Waterproof notebook (e.g. Rite in the Rain) and Sharpie or pencil
@@ -84,14 +83,6 @@ The following materials are recommended during sampling days.  Keep in mind that
 This course will require the use of equipment in Chemistry's shared instrumentation facility.  Students will be required to coordinate with Chemistry's Instrumentation Specialist to get trained on these instruments outside of normal class time.
 
 ## Grading 
-
-Your grade will be determined based on your *mastery* of the Student Learning Outcomes (SLO) for the course, and you will receive both qualitative and quantitative feedback throughout the semester.  Most assignments will have a rubric based on these outcomes, and you can track your mastery through the semester.  Your level of mastery updates through the semester based on current and past performance, and may go up or down just like a grade.  As a general rule, a level of mastery of 5 indicates "A" level mastery, 4 "B" level, and so on.  Some assignments may provide feedback in real time, for example, by telling your if your calculation is correct or not as you enter it in your notebook; although there is no grade assigned to this, it is considered when judging your mastery and you should be easily getting the correct answer on all items by the end of the semester.
-
-Each SLO is given a score of 5 points in Canvas, and your final grade will be determined by summing your score for each and dividing by 30 (the total number of points possible) and multiplying by 100.  This gives your average level of mastery and yields a number ranging from 0-100.  This will be compared to the scale below to determine your final grade. (Relative weights for each SLO may change if needed.)
-
-If you are unsure how to calculate your grade please ask your instructor.
-
-### Grading Scale
 
 | Number Range | Letter Grade |
 |:------------:|:------------:|
@@ -119,11 +110,10 @@ Most assignments will be submitted electronically.  Unless otherwise specified, 
 
 When turning in assignments:
 
- - Files should be uploaded to the assignment page on Canvas.
+ - Files should be uploaded to the assignment page on Canvas and/or turned in via MATLAB (whichever is specified).
  - Files should be of the types and quantity specified in the assignment.
- - Files should be given a clear, logical filename.
  - Files may be sorted automatically by a computer.  Therefore, any files not named appropriately, not in the specified format, or submitted elsewhere (e.g. email) may not be graded.
- - Any electronic assignments turned in via hardcopy will not be graded.
+ - Any electronic assignments turned in via hardcopy or turned in via email will not be graded.
 
 Submissions that do not follow these guidelines may incur point deductions or may not be graded.
 
@@ -153,7 +143,7 @@ In an effort to maintain a productive work environment for all students, please 
 - Wear a hair tie for long hair.
 - Never wear tank tops, sleeveless shirts, shorts, or sandals.
 
-**After-hours Instrument Access:** You may occasionally want to conduct analyses outside of class time.  The instrument lab is typically open from 8AM to 4PM M-F; please plan your work to fit within that time (it's OK to start a run at the end of the day and leave it to run overnight).  If you are completing work outside of class you must work with a lab partner who is also familiar with the instrument you're working on.  *Never work in the lab alone!*  Likewise, please refrain from bringing guests into the instrument lab unless they have specifically passed the instrument safety training.  If you will require significant help on the instrument please schedule a time to meet with your instructor or the Instrumentation Specialist in advance.
+**After-hours Instrument Access:** You may occasionally want to conduct analyses outside of class time.  The instrument lab is typically open from 8AM to 4PM M-F; please plan your work to fit within that time (it's often OK to start a run at the end of the day and leave it to run overnight, if you are using an instrument that can be left unattended).  If you are completing work outside of class you must work with a lab partner who is also familiar with the instrument you're working on.  *Never work in the lab alone!*  Likewise, please refrain from bringing guests into the instrument lab unless they have specifically passed the instrument safety training.  If you will require significant help on the instrument please schedule a time to meet with your instructor or the Instrumentation Specialist in advance.
 
 **Pregnancy:** Certain chemicals can have severe harmful effects on unborn children.  Any student who is pregnant or might have become pregnant and wished to avoid these hazards should notify her TA or instructor before conducting any laboratory work so that proper safety precautions can be taken.
 
@@ -165,7 +155,9 @@ If you experience any symptoms of COVID-19, cold, flu, or other contagious sickn
 
 ## Institutional Policies 
 
-**Course Recording and Broadcasting:** Course recording is bound by [University Policy 122](https://www.wcu.edu/discover/leadership/office-of-the-chancellor/legal-counsel-office/university-policies/numerical-index/university-policy-122.aspx).  Students should request prior permission of their isntructor before recording and class meetings.
+All standard WCU required syllabus content](https://www.wcu.edu/learn/faculty/coulter-faculty-commons/teaching-and-learning/syllabus-additional.aspx) is included in this syllabus through this link and applies to this course.
+
+**Course Recording and Broadcasting:** Course recording is bound by [University Policy 122](https://www.wcu.edu/discover/leadership/office-of-the-chancellor/legal-counsel-office/university-policies/numerical-index/university-policy-122.aspx).  Students should request prior permission of their instructor before recording and class meetings.
 
 **Accommodations for Students with Disabilities:** Western Carolina University is committed to providing equal educational opportunities for students with documented disabilities and/or medical conditions. Students who require accommodations must identify themselves as having a disability and/or medical condition and provide current diagnostic documentation to the Office of Accessibility Resources. Please contact the Office of Accessibility Resources, 135 Killian Annex, (828) 227-3886 or by [email](mailto:accessibility@wcu.edu).  Visit the OAR website at [http://accessibility.wcu.edu/](https://www.wcu.edu/learn/academic-services/disability-services/index.aspx) for more information.
 

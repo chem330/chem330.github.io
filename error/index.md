@@ -1,48 +1,75 @@
 +++
-title = "Experiment 1: Error Analysis"
+title = "Analytical Skills and Error Analysis"
 +++
 
 Error Analysis
 =========================
 
+**Work in groups of 3 to complete this activity.  Each group member should make 2 solutions.**
+
 \toc
 
 # Background
 
-In this lab, you will examine the uncertainty associated with different ways of delivering a specified volume of liquid.  You will do this by measuring deionized water using four methods: (1) a beaker, (2) a graduated cylinder, (3) a volumetric glass pipette, and (4) a mechanical pipette. Each of these will be compared against an analytical balance. To obtain a bigger dataset for analysis, we will compile the data and determine statistics at the class level.
+The primary goal of this lab is to help you learn accurate and precise analytical lab technique.  The instrumentation we will use this semester can measure concentrations down to the part per trillion level, with relative precision on the order of 0.1%!  Usually, user lab technique is the limiting factor on the accuracy and precision of these instruments.  This lab will help you learn techniques to minimize that error, and will give you practice analyzing errors associated with the data you collect.
 
-In the first part of this lab, you will measure the masses of known volumes of water with different methods and calculate the mean and standard deviation for each method.  You will also measure the mass of a set volume of an unknown liquid.  Further data analysis will take place outside of lab, and will involve calculating the density, confidence interval, accuracy for each method using the compiled class dataset.
+In the first part of this lab, you will prepare solutions of an analyte at a known concentration using several different dilution techniques (using a process called *serial dilution*).  Then, your samples will be analyzed using an inductively coupled plasma mass spectrometer (ICP-MS).  Afterwards, you will assess your accuracy and precision compared to what should be readily achievable and compared to the rest of the class.  **Your score will be partially dependent on your ability to obtain accurate and precise data.  Before you begin, you should think carefully about potential sources of error and work to minimize them!**
 
-There is a Pluto notebook template for this lab.  Copy and past this link into the open from URL dialog box in Pluto: [https://raw.githubusercontent.com/chem330/chem330.github.io/main/error/error-lab-notebook.jl](https://raw.githubusercontent.com/chem330/chem330.github.io/main/error/error-lab-notebook.jl)
+There is a MATLAB notebook template for this lab.  Copy and past this link into the open from URL dialog box in Pluto: [https://raw.githubusercontent.com/chem330/chem330.github.io/main/error/error-lab-notebook.jl](https://raw.githubusercontent.com/chem330/chem330.github.io/main/error/error-lab-notebook.jl)
 
 (Right click on the link, then choose "Copy Link Address" or "Copy Link" in Chrome or Firefox, respectively.)
 
-# Part 1: Measuring Volume with a Beaker
+# Treatment A: Diluting Using Volumetric Glassware (the correct way)
 
-\note{ Before you begin, make sure to **record the temperature** of the room in your lab notebook! }
+1. Obtain the following:
+- 1 x 10 ml glass pipette
+- 1 x 50 ml volumetric flask
+- 3 x 50 ml plastic centrifuge tubes
+- DI wash bottle (may be shared with your table if needed)
 
-Use a 25-ml beaker to measure 15.00 ml of distilled water.  Use a balance to measure the mass of this 15-ml sample of water.  Pour the water out, and repeat 4 more times.  Calculate the mean and standard deviation for of the masses you recorded, and enter them in the appropriate boxes in the lab notebook template.
+   \note{ Before proceeding, think about what might lead to error, both from lab technique and contamination.  As you complete the follow steps, work to minimize these errors. }
 
-# Part 2: Measuring Volume with a Graduated Cylinder
+2. Using the glass pipette, transfer 10 ml of the standard solution in the volumetric flask and bring to volume with deionized water.
 
-Repeat the experiment, except use a 25-ml graduate cylinder to measure the volume instead of a beaker.  Enter your results in the appropriate section of the notebook template.
+   \note{ Make sure record the known values for your solution in your notebook and include calculations for the final concentration. }
 
-# Part 3: Volumetric Pipette
+3. Place your solution in a clean 50-ml plastic centrifuge tube. This is **Solution A1**.
 
-Repeat the experiment, except use a 15-ml volumetric pipette to measure the volume instead of a beaker.  Enter your results in the appropriate section of the notebook template.
+4. Clean your glassware, and then take 10 ml of **Solution A1** and place it in the volumetric flask.  Fill to volume with DI water.
 
-# Part 4: Mechanical Pipette
+5. Place this solution in a clean 50-ml plastic centrifuge tube. This is **Solution A2**.
 
-Repeat the experiment, except use a 5-ml mechanical pipette (often called a micropipette) to measure the volume instead of a beaker.  Enter your results in the appropriate section of the notebook template. (There may be a limited number of 5-mL pipettes so please share with your neighbors!)
+6. Clean your glassware, and then take 10 ml of **Solution A2** and place it in the volumetric flask.  Fill to volume with DI water.
+
+5. Place this solution in a clean 50-ml plastic centrifuge tube. This is **Solution A3**.
+
+# Treatment B: Diluting the Quick Way
+
+1. Obtain the following:
+- 1 x 10 ml graduate cylinder
+- 3 x 50 ml plastic centrifuge tubes
+- DI wash bottle (may be shared with your table if needed)
+
+   \note{ Before proceeding, think about what might lead to error, both from lab technique and contamination.  As you complete the follow steps, work to minimize these errors. }
+
+2. Using the graduated cylinder, transfer 10 ml of the standard solution to a clean 50-ml plastic centrifuge tube and fill to 50 ml with deionized water. This is **Solution B1**.
+
+3. Clean your glassware, and then take 10 ml of **Solution B1** and place it in a clean 50-ml plastic centrifuge tube.  Fill to 50 ml with DI water. This is **Solution B2**.
+
+3. Clean your glassware, and then take 10 ml of **Solution B2** and place it in a clean 50-ml plastic centrifuge tube.  Fill to 50 ml with DI water. This is **Solution B3**.
+
+# Analyze your Samples
+
+1. Obtain the following:
+   - 6 x 10 ml plastic centrifuge tubes
+   - Permanent marker
+2. Label each tube with your group name and the sample name (e.g. A1, B1, ...)
+3. Pour your solutions into the 10-ml tubes.  Just get about 10 ml in each tube -- you don't need to be exact for this step.
+4. Analyze your tubes on the ICP-MS with your instructor.
 
 # What to turn in
 
-When you have completed this notebook, you should:
+1. You will be provided with a report and/or data file for your samples.  As soon you have this information, you should enter it into the class data spreadsheet so that others are not waiting on your data to be able to complete the calculations.  You will receive separate credit for entering your data, and will get a 0 on that assignment if you do not add it to the class dataset!
+1. Complete MATLAB activity on Canvas for this lab. (You will not be able to complete this until all groups have added their data to the class data spreadsheet.)
 
-1. Click the "Export Final Data" button in the notebook.
-2. Then, click the export button at the top of the notebook (to the right of the filename) and choose Static HTML.
-3. Upload **three** files to Canvas.
-   1. Your static HTML file (probably in your web browser's download folder, .html extension)	
-   2. Your final dataset (found in your notebook working directory, .CSV extension)
-   3. Your Notebook code file (can found in your notebook working directory, .jl extension)
 
