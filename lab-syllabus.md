@@ -6,7 +6,7 @@
 
 **Email:** [dfischer@wcu.edu](mailto:dfischer@wcu.edu)  
 
-**Availability:** Email and office hours (see above) are the best ways to find me; I check emails several times per day through the evening M-F.  I also leave my office door open when I am available for drop-in questions, as time allows; if my door is open, you are welcome to stop in for help. (If my door is closed I am not available.) Typically this should be for quick questions that take no more than 5-10 minutes to answer.  I have also created a [Discord server](https://discord.gg/gvr3kmm4) for the course -- this is a space for you to quickly ask me questions and connect with your classmates (it may be especially good for software-related questions).
+**Availability:** Email and office hours (see above) are the best ways to find me; I check emails several times per day through the evening M-F.  I also leave my office door open when I am available for drop-in questions, as time allows; if my door is open, you are welcome to stop in for help. (If my door is closed I am not available.) Typically this should be for quick questions that take no more than 5-10 minutes to answer.  I have also created a [Discord server](https://discord.gg/gvr3kmm4) for the course -- this is a space for you to quickly ask me questions and connect with your classmates (it may be especially good for data-processing questions).
 
 \toc
 
@@ -84,36 +84,47 @@ This course will require the use of equipment in Chemistry's shared instrumentat
 
 ## Grading 
 
-| Number Range | Letter Grade |
-|:------------:|:------------:|
-|    97-100    |      A+      |
-|   93-96.9    |      A       |
-|   90-92.9    |      A-      |
-|   87-89.9    |      B+      |
-|   83-86.9    |      B       |
-|   80-82.9    |      B-      |
-|   77-79.9    |      C+      |
-|   73-76.9    |      C       |
-|   70-72.9    |      C-      |
-|   67-69.9    |      D+      |
-|   63-66.9    |      D       |
-|   60-62.9    |      D-      |
-|     <60      |      F       |
+In general, each correct answer on an exam or quiz is worth 1 point.  Most other assignments/questions will be graded on a 0-4 scale:
 
-These grades indicate levels in mastery from excellent to poor.  Students are responsible for knowing class attendance, withdrawal, and drop-add policies and procedures.
+| Number | Interpretation          |
+|:------:|:------------------------|
+|   4    | Exceptional             |
+|   3    | Good                    |
+|   2    | Satisfactory            |
+|   1    | Unsatisfactory          |
+|   0    | Failing / Not attempted |
+
+
+A score of 2 represents work that meets expectations and shows clear understanding of the material while 3 and 4 represent work that goes above and beyond the minimum guidelines given. Exam scores may be normalized to a 0-4 scale prior to calculation of final grades to avoid overweighting exams.
+
+Your final letter grade reported to WCU will be determined from the following scale:
+
+| 0-100 Scale |  0-4 Scale  | Letter Grade |
+|:-----------:|:-----------:|:------------:|
+|   97-100    | 3.835-4.000 |      A+      |
+|   93-96.9   | 3.505-3.834 |      A       |
+|   90-92.9   | 3.340-3.505 |      A-      |
+|   87-89.9   | 3.175-3.339 |      B+      |
+|   83-86.9   | 2.845-3.174 |      B       |
+|   80-82.9   | 2.515-2.844 |      B-      |
+|   77-79.9   | 2.350-2.514 |      C+      |
+|   73-76.9   | 2.020-2.350 |      C       |
+|   70-72.9   | 1.690-2.019 |      C-      |
+|   67-69.9   | 1.525-1.689 |      D+      |
+|   63-66.9   | 1.195-1.524 |      D       |
+|   60-62.9   | 0.865-1.194 |      D-      |
+|     <60     | <0.865      |      F       |
+
+
+These grades indicate levels in quality from excellent to unsatisfactory. Students are responsible for knowing class attendance, withdrawal, and drop-add policies and procedures.
+
+## Grading Technology
+
+Some items, including exams and quizzes, may be graded by computer software. Any answers not in the specified format will not be graded and will receive a score of 0. This will mean you will not get feedback on this work.  Written work may be checked for plagiarism using computer software.  Plagiarism will NOT be tolerated (see Academic Integrity section, below). Due dates/times are automatically enforced by Canvas.
 
 ## Turning Things In
 
-Most assignments will be submitted electronically.  Unless otherwise specified, assignments are due at 23:59:59 the night before lab and late work is not accepted.  A list of anticipated assignments is available in the Canvas site for the course, but is subject to change as needed.  *Canvas is the best place to track due dates!*
-
-### Submitting Assignments
-
-When turning in assignments:
-
- - Files should be uploaded to the assignment page on Canvas and/or turned in via MATLAB (whichever is specified).
- - Files should be of the types and quantity specified in the assignment.
- - Files may be sorted automatically by a computer.  Therefore, any files not named appropriately, not in the specified format, or submitted elsewhere (e.g. email) may not be graded.
- - Any electronic assignments turned in via hardcopy or turned in via email will not be graded.
+Most assignments will be submitted electronically. Unless otherwise specified, assignments are due at 23:59:59 on the due date.  Assignments may sometimes remain open until I have finished grading that assignment, but you are not guaranteed feedback if you turn in an assignment late.  A list of anticipated assignments is available in the Canvas site for the course, but is subject to change as needed.
 
 Submissions that do not follow these guidelines may incur point deductions or may not be graded.
 

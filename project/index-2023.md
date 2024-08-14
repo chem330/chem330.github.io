@@ -8,27 +8,40 @@ Class Project
 
 \toc
 
-The goal of the lab project this semester is to provide present a precise, accurate, thorough analysis of local water bodies. As you work through each lab be vigilant about avoiding contamination, and **use appropriate quality control measures to check your accuracy and precision as you work**.  You should get an accurate answer before turning in your final report; if your results are not accurate or show unacceptably low precision you should repeat the analysis again to obtain high-quality data.
+The goal of the lab project this semester is to provide present a precise, accurate, thorough analysis of a local water body. As you work through each lab be vigilant about avoiding contamination, and **use appropriate quality control measures to check your accuracy and precision as you work**.  You should get an accurate answer before turning in your final report; if your results are not accurate or show unacceptably low precision you should repeat the analysis again to obtain high-quality data.
 
 *One intent for this project is to help you become self-sufficient in the lab and help you learn how to know that your data is likely to be accurate.  As such, there will be little day-to-day direction of your activities from your instructor, and it will be up to you and your lab partner to plan your time and implement appropriate practices in your lab work.*
 
-You will work with 2 lab partners to complete this project.
+You will work with 1 lab partner to complete this project.
 
-You may sometimes need to work outside of the normal lab period to complete this work.
+You may need to work outside of the normal lab period to complete this work.
 
 Check Canvas for due dates.
 
 # Suggested Timeline
 
-See the [schedule](https://chem330.github.io/schedule) for a suggested timeline.
+| Week | Milestone                                                                       |
+|:----:|:--------------------------------------------------------------------------------|
+| 1    | Planning                                                                        |
+| 2    | Site selected, basic site info gathered, instrument trainings in progress       |
+| 3    | Field data collected and begin at least 1 analysis                              |
+| 4    | 1-2 analyses complete (including data analysis)                                 |
+| 4.5  | (Thanksgiving) Draft turned in, 3-4 analyses complete (including data analysis) |
+| 5    | All analyses complete                                                           |
+| 6    | Data analysis complete                                                          |
+| 7    | Report turned in                                                                |
+
 
 # Site Selection, Study Design, & Sample Collection
 
 ## Site Selection
 
-This year, the class will map out water quality across a watershed.
-
-1. You should choose a sampling site in the watershed of the Pigeon River.  You will likely need to access your sites several times over the remainder of the semester, so they should be accessible to an extent that you feel comfortable.
+1. You should choose at least two sampling sites for your analysis.  You will need to access your sites several times over the remainder of the semester, so they should be easily accessible.
+   1. Existing sites on campus (Gribble Gap, Cullowhee Creek, groundwater wells)
+   3. The Tuckasegee River
+   4. Scott Creek, Savannah Creek, ..., other nearby sites
+   
+Choose your sites such that you could test a hypothesis and answer a scientific question.  For example, you might ask the question "Does the paper mill affect the water quality of Scott Creek?".  You could then choose a site upstream from the mill and another one downstream.
    
 ## Sample Collection
    
@@ -56,24 +69,28 @@ You will meet with your instructor weekly to discuss your progress and next step
 You will be expected to complete the following measurements on your samples:
 
 ### Field Measurements
-  1. Dissolved oxygen (potentiometric)
-  2. Temperature (temperature probe)
-  3. Thorough site description, with GPS coordinates and pictures.
-  
+  1. Conductivity
+  2. Dissolved oxygen (potentiometric)
+  3. Temperature (temperature probe)
+  4. Nitrate (potentiometric)
+  5. ORP (potentiometric)
+  6. Thorough site description, with GPS coordinates
 ### Laboratory Measurements
   1. Major cation determination (EPA Method 200.8)
   2. Major anion determination (EPA Method 300.0)
+  3. Nitrate determination (colorimetric NitraVer method)
   4. Alkalinity determination (USGS Method)
-  4. Charge balance
+  5. Hardness determination (as $\ce{CaCO3}$)
+  6. Determination of one trace metal of interest (choose one of scientific value for your site, use EPA Method 200.8)
   7. Fecal coliform presence
 
 Report all concentrations in mg/L or ug/L.
 
-Plot the data from each site on a Piper diagram (or rectangular Piper diagram) and use it to determine what "type" the water is. (Do this plot in software, not by hand.)  Also prepare additional plots and/or diagrams as needed.
+Plot the data from each site on a Piper (or rectangular Piper) and use it to determine what "type" the water is. (Do this plot in software, not by hand.)  Also prepare additional plots and/or diagrams as needed.
 
 ## Laboratory Notebooks & Practices
 
-You must keep a laboratory notebook while working in lab that fully captures the *exact* steps taken. A marble-cover composition book is fine for this purpose.  I will not be collecting notebooks -- they are meant to help you remember the details of what you did.  If I cannot follow your work with enough detail in your final report you will receive point deductions, so make sure you record everything, even if you think it's not important at the moment!
+You must keep a laboratory notebook while working in lab that fully captures the *exact* steps taken.  It is recommended that you use Pluto notebooks for this, but you can use a hardbound paper notebook if you prefer. Whichever option you use, it should be neatly organized and easily legible.  You will be required to turn in your notebook on a weekly basis.
 
 It is important that you avoid contamination during your lab work to avoid inaccurate results!  Remember to wash all glassware with Alconox and warm water and then rinse it three times with deionized water prior to beginning analysis. (The exception to this is the phosphate analysis -- remember that Alconox contains a high percentage of phosphate!)  Do not assume the glassware is clean!
 
@@ -88,9 +105,11 @@ It is also important that you have high statistical confidence in the data.  Mea
 
 **It is in your best interest to process as much data as possible in real time.**
 
-Make sure to keep neat data files and analysis scripts.  I (or anyone in the class) should be able to open your file and easily follow your analysis without having to do excessive digging through the file; I should also be able to open your file and *exactly* reproduce the results of your data analysis with the information provided.
+It is recommended that you use Julia/Pluto notebooks for your data analysis, but you may also use Excel, or another program of your choice to process the data.  I will be able to help you in Julia, but may have limited ability to help with other programs.
 
-You should aim to communicate your data graphically whenever possible.  Your plots should be [*publication quality*](https://chem370.github.io/technical-reports/figures) with descriptive axis titles and units, a clear legend when needed, appropriately scaled axes, and an overall professional appearance.
+Whichever program you use for data analysis, you must process your data using the principles of *reproducible research*.  This means I should be able to open your file and easily follow your analysis without having to do excessive digging through the file; I should also be able to open your file and *exactly* reproduce the results of your data analysis with the information provided.
+
+You should aim to communicate your data graphically whenever possible.  Your plots should be *publication quality* with descriptive axis titles and units, clear legend when needed, appropriate scaled axes, and an overall professional appearance.
 
 ## Waste Disposal
 
@@ -99,7 +118,7 @@ You should aim to communicate your data graphically whenever possible.  Your plo
 
 # Reporting
 
-You should present your results in two ways: (1) a professional-quality lab report written in the style of a USGS water quality report (this counts toward your lab grade) and (2) a story map for the Pigeon River watershed that will be prepared as a whole class.  You will present your portion (2) at the end of the semester as part of a final presentation.
+You should present your results in two ways a professional-quality lab report written in the style of a USGS water quality report.  (This counts toward your lab grade.)
 
 I encourage you to use a "divide and conquer" approach to writing this report -- you each likely have different skills that you can use to benefit the group, so that breaking up the writing and figure preparation will both be more efficient and will produce better results.
 

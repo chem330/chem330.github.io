@@ -8,25 +8,25 @@ Lab assignments are due at 23:59:59 on Sunday unless otherwise specified. The be
 
 *This schedule is subject to change as needed.*
 
-| Week | Date   | Lab                                         |
-|:----:|:-------|:--------------------------------------------|
-| 1    | Aug 19 | Intro to MATLAB                             |
-| 2    | Aug 26 | Error Analysis                              |
-| 3    | Sep 2  | Geochemical Facies (Remote - no meeting)    |
-| 4    | Sep 9  | Sample Collection, Preparation, and Storage |
-| 5    | Sep 16 | Project                                     |
-| 6    | Sep 23 | Project                                     |
-| 7    | Sep 30 | Project                                     |
-| 8    | Oct 7  | Project                                     |
-| 9    | Oct 14 | *Fall Break - No Lab*                       |
-| 10   | Oct 21 | Project                                     |
-| 11   | Oct 28 | Project                                     |
-| 12   | Nov 4  | Project                                     |
-| 13   | Nov 11 | Project                                     |
-| 13   | Nov 18 | Project                                     |
-| 15   | Nov 25 | Project                                     |
-| 16   | Dec 2  | Project                                     |
-| 16   | Dec 9  | *Final Exams - No Lab*                      |
+| Week | Date   | Lab                                                           |
+|:----:|:-------|:--------------------------------------------------------------|
+| 1    | Aug 19 | Intro to MATLAB                                               |
+| 2    | Aug 26 | Error Analysis                                                |
+| 3    | Sep 2  | Geochemical Facies (Remote - no meeting)                      |
+| 4    | Sep 9  | Sample Collection, Preparation, and Storage                   |
+| 5    | Sep 16 | Project - Site Selection, Analysis Plan, Collect Trial Sample |
+| 6    | Sep 23 | Project - Begin Alkalinity Titration                          |
+| 7    | Sep 30 | Project                                                       |
+| 8    | Oct 7  | Project - Finish Alkalinity Titration - Draft Intro Complete  |
+| 9    | Oct 14 | *Fall Break - No Lab*                                         |
+| 10   | Oct 21 | Project - Begin IC and ICP-MS                                 |
+| 11   | Oct 28 | Project                                                       |
+| 12   | Nov 4  | Project - Draft Methods Complete                              |
+| 13   | Nov 11 | Project                                                       |
+| 13   | Nov 18 | Project - Finish IC and ICP-MS - Draft Report Complete        |
+| 15   | Nov 25 | Project - Collect Final Sample                                |
+| 16   | Dec 2  | Project - Final Analyses and Final Edits to Report            |
+| 16   | Dec 9  | *Final Exams - No Lab*                                        |
 
 During the project lab, students will complete the water analyses listed here independently / in groups. Students must learn to use chemical instrumentation available in WCU's instrumentation facility and use it to accurately analyze their samples.
 

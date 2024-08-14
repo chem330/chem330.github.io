@@ -15,10 +15,6 @@ The primary goal of this lab is to help you learn accurate and precise analytica
 
 In the first part of this lab, you will prepare solutions of an analyte at a known concentration using several different dilution techniques (using a process called *serial dilution*).  Then, your samples will be analyzed using an inductively coupled plasma mass spectrometer (ICP-MS).  Afterwards, you will assess your accuracy and precision compared to what should be readily achievable and compared to the rest of the class.  **Your score will be partially dependent on your ability to obtain accurate and precise data.  Before you begin, you should think carefully about potential sources of error and work to minimize them!**
 
-There is a MATLAB notebook template for this lab.  Copy and past this link into the open from URL dialog box in Pluto: [https://raw.githubusercontent.com/chem330/chem330.github.io/main/error/error-lab-notebook.jl](https://raw.githubusercontent.com/chem330/chem330.github.io/main/error/error-lab-notebook.jl)
-
-(Right click on the link, then choose "Copy Link Address" or "Copy Link" in Chrome or Firefox, respectively.)
-
 # Treatment A: Diluting Using Volumetric Glassware (the correct way)
 
 1. Obtain the following:

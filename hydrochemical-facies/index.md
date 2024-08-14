@@ -9,16 +9,15 @@ Hydrochemical Facies
 
 # Background
 
-MATLAB is a widely used scientific computing tool that will be used in this lab for processing data and submitting assignments.  The use of this tool allows you to get prompt, accurate feedback on your work and gives you exposure to a tool used by many professional scientists and graduate programs.  MATLAB is often better suited for scientific data processing than spreadsheet programs like Excel: It is better able to handle large, complex datasets and analyses requiring repetitive data processing tasks; it is less prone to autocorrection errors; and it allows your data processing steps to be more reproducible.  In addition, MATLAB is able to produce many statistical, chemical, and geographical plots that are not possible or are very difficult in spreadsheet programs.
+Water samples may be described by their chemical makeup, and the field of geochemistry has developed specific, standard ways of plotting the chemical makeup of water.  Often, this referred to as an analysis of hydrochemical facies, where a facies (note that facies is singular!) is a geochemical body with distinctive characteristics.  Thus, analysis of hydrochemical facies provides a way of understanding which samples have a distinct chemical makeup with respect to important hydrologic parameters.  Learning to interpret and prepare these plots is an important step toward becoming fluent in the language of aquatic chemistry.  The goal of this exercise is expose you to these types of plots and help you learn to create them in MATLAB.
 
-You are required to turn in your answers using MATLAB Grader, and are strongly encouraged to use MATLAB for your calculations.  This exercise will help you get familiar with the basic concepts required to work in MATLAB.  Although MATLAB is commercial software, it is available at no additional charge to WCU students when registering the product with your WCU email.  You may use it in the web browser or install the software directly on your computer; most instructions provided by your instructor will assume you are using the web interface.
+Before you continue, read sections 2.4.2 and 2.4.3 in Water Chemistry (p. 72-76), paying special attention to Figures 2.6 and 2.7.
 
 # Exercise
 
-1. Go to [matlab.mathworks.com](https://matlab.mathworks.com/) and enter your WCU email when signing in.
-2. Navigate to the [MATLAB Onramp](https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted) in the Online Training section of the MATLAB website.
-3. Complete the course and turn in a copy of your certificate on the Canvas page for lab when you're done.
+1. Go to the Lab 3 Canvas assignment, and click the link to the MATLAB live script there.
+2. Follow further instructions in the live script.
 
-\note{ You are encouraged to explore other modules on your own, especially if you are struggling with MATLAB, but they are not strictly required. }
+\note{ The live script contains a lot of information to read, too.  You should be reading it carefully and working out the problems as you read. If you skip things, you will likely feel lost!}
 
 
