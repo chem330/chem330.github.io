@@ -3,7 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+   <script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    tags: 'all'
+  },
+  svg: {fontCache: 'global'}
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js" integrity="sha384-RTN08a0AXIioPBcVosEqPUfKK+rPp+h1x/izR7xMkdMyuwkcZCWdxO+RSwIFtJXN"  crossorigin="anonymous"></script>
+
+
+     
   
   <link rel="stylesheet" href="/css/jtd.css">
   <link rel="icon" href="/assets/infra/logoF_square.gif">
@@ -108,20 +122,28 @@
 <!-- Content appended here (in class franklin-content) -->
 <div class="franklin-content"><h1>Class Project</h1>
 <div class="franklin-toc"><ol><li><a href="#suggested_timeline">Suggested Timeline</a></li><li><a href="#site_selection_study_design_sample_collection">Site Selection, Study Design, &amp; Sample Collection</a><ol><li><a href="#site_selection">Site Selection</a></li><li><a href="#sample_collection">Sample Collection</a></li><li><a href="#process_and_store_the_samples_if_needed">Process and Store the Samples &#40;if needed&#41;</a></li></ol></li><li><a href="#analysis_and_progress_reporting">Analysis and Progress Reporting</a><ol><li><a href="#required_analyses">Required Analyses</a><ol><li><a href="#field_measurements">Field Measurements</a></li></ol></li><li><a href="#laboratory_measurements">Laboratory Measurements</a></li><li><a href="#laboratory_notebooks_practices">Laboratory Notebooks &amp; Practices</a></li><li><a href="#data_analysis">Data Analysis</a></li><li><a href="#waste_disposal">Waste Disposal</a></li></ol></li><li><a href="#reporting">Reporting</a><ol><li><a href="#lab_report">Lab Report</a></li></ol></li></ol></div>
-<p>The goal of the lab project this semester is to provide present a precise, accurate, thorough analysis of local water bodies. As you work through each lab be vigilant about avoiding contamination, and <strong>use appropriate quality control measures to check your accuracy and precision as you work</strong>.  You should get an accurate answer before turning in your final report; if your results are not accurate or show unacceptably low precision you should repeat the analysis again to obtain high-quality data.</p>
+<p>The goal of the lab project this semester is to provide present a precise, accurate, thorough analysis of a local water body. As you work through each lab be vigilant about avoiding contamination, and <strong>use appropriate quality control measures to check your accuracy and precision as you work</strong>.  You should get an accurate answer before turning in your final report; if your results are not accurate or show unacceptably low precision you should repeat the analysis again to obtain high-quality data.</p>
 <p><em>One intent for this project is to help you become self-sufficient in the lab and help you learn how to know that your data is likely to be accurate.  As such, there will be little day-to-day direction of your activities from your instructor, and it will be up to you and your lab partner to plan your time and implement appropriate practices in your lab work.</em></p>
-<p>You will work with 2 lab partners to complete this project.</p>
-<p>You may sometimes need to work outside of the normal lab period to complete this work.</p>
+<p>You will work with 1 lab partner to complete this project.</p>
+<p>You may need to work outside of the normal lab period to complete this work.</p>
 <p>Check Canvas for due dates.</p>
 <h1 id="suggested_timeline"><a href="#suggested_timeline" class="header-anchor">Suggested Timeline</a></h1>
-<p>See the <a href="https://chem330.github.io/schedule">schedule</a> for a suggested timeline.</p>
+<table><tr><th align="center">Week</th><th align="left">Milestone</th></tr><tr><td align="center">1</td><td align="left">Planning</td></tr><tr><td align="center">2</td><td align="left">Site selected, basic site info gathered, instrument trainings in progress</td></tr><tr><td align="center">3</td><td align="left">Field data collected and begin at least 1 analysis</td></tr><tr><td align="center">4</td><td align="left">1-2 analyses complete &#40;including data analysis&#41;</td></tr><tr><td align="center">4.5</td><td align="left">&#40;Thanksgiving&#41; Draft turned in, 3-4 analyses complete &#40;including data analysis&#41;</td></tr><tr><td align="center">5</td><td align="left">All analyses complete</td></tr><tr><td align="center">6</td><td align="left">Data analysis complete</td></tr><tr><td align="center">7</td><td align="left">Report turned in</td></tr></table>
 <h1 id="site_selection_study_design_sample_collection"><a href="#site_selection_study_design_sample_collection" class="header-anchor">Site Selection, Study Design, &amp; Sample Collection</a></h1>
 <h2 id="site_selection"><a href="#site_selection" class="header-anchor">Site Selection</a></h2>
-<p>This year, the class will map out water quality across a watershed.</p>
 <ol>
-<li><p>You should choose a sampling site in the watershed of the Pigeon River.  You will likely need to access your sites several times over the remainder of the semester, so they should be accessible to an extent that you feel comfortable.</p>
+<li><p>You should choose at least two sampling sites for your analysis.  You will need to access your sites several times over the remainder of the semester, so they should be easily accessible.</p>
+<ol>
+<li><p>Existing sites on campus &#40;Gribble Gap, Cullowhee Creek, groundwater wells&#41;</p>
+</li>
+<li><p>The Tuckasegee River</p>
+</li>
+<li><p>Scott Creek, Savannah Creek, ..., other nearby sites</p>
 </li>
 </ol>
+</li>
+</ol>
+<p>Choose your sites such that you could test a hypothesis and answer a scientific question.  For example, you might ask the question &quot;Does the paper mill affect the water quality of Scott Creek?&quot;.  You could then choose a site upstream from the mill and another one downstream.</p>
 <h2 id="sample_collection"><a href="#sample_collection" class="header-anchor">Sample Collection</a></h2>
 <ol>
 <li><p>Collect your samples in 1-L polypropylene bottles.</p>
@@ -151,11 +173,17 @@
 <p>You will be expected to complete the following measurements on your samples:</p>
 <h3 id="field_measurements"><a href="#field_measurements" class="header-anchor">Field Measurements</a></h3>
 <ol>
+<li><p>Conductivity</p>
+</li>
 <li><p>Dissolved oxygen &#40;potentiometric&#41;</p>
 </li>
 <li><p>Temperature &#40;temperature probe&#41;</p>
 </li>
-<li><p>Thorough site description, with GPS coordinates and pictures.</p>
+<li><p>Nitrate &#40;potentiometric&#41;</p>
+</li>
+<li><p>ORP &#40;potentiometric&#41;</p>
+</li>
+<li><p>Thorough site description, with GPS coordinates</p>
 </li>
 </ol>
 <h3 id="laboratory_measurements"><a href="#laboratory_measurements" class="header-anchor">Laboratory Measurements</a></h3>
@@ -164,17 +192,21 @@
 </li>
 <li><p>Major anion determination &#40;EPA Method 300.0&#41;</p>
 </li>
+<li><p>Nitrate determination &#40;colorimetric NitraVer method&#41;</p>
+</li>
 <li><p>Alkalinity determination &#40;USGS Method&#41;</p>
 </li>
-<li><p>Charge balance</p>
+<li><p>Hardness determination &#40;as \(\ce{CaCO3}\)&#41;</p>
+</li>
+<li><p>Determination of one trace metal of interest &#40;choose one of scientific value for your site, use EPA Method 200.8&#41;</p>
 </li>
 <li><p>Fecal coliform presence</p>
 </li>
 </ol>
 <p>Report all concentrations in mg/L or ug/L.</p>
-<p>Plot the data from each site on a Piper diagram &#40;or rectangular Piper diagram&#41; and use it to determine what &quot;type&quot; the water is. &#40;Do this plot in software, not by hand.&#41;  Also prepare additional plots and/or diagrams as needed.</p>
+<p>Plot the data from each site on a Piper &#40;or rectangular Piper&#41; and use it to determine what &quot;type&quot; the water is. &#40;Do this plot in software, not by hand.&#41;  Also prepare additional plots and/or diagrams as needed.</p>
 <h2 id="laboratory_notebooks_practices"><a href="#laboratory_notebooks_practices" class="header-anchor">Laboratory Notebooks &amp; Practices</a></h2>
-<p>You must keep a laboratory notebook while working in lab that fully captures the <em>exact</em> steps taken. A marble-cover composition book is fine for this purpose.  I will not be collecting notebooks – they are meant to help you remember the details of what you did.  If I cannot follow your work with enough detail in your final report you will receive point deductions, so make sure you record everything, even if you think it&#39;s not important at the moment&#33;</p>
+<p>You must keep a laboratory notebook while working in lab that fully captures the <em>exact</em> steps taken.  It is recommended that you use Pluto notebooks for this, but you can use a hardbound paper notebook if you prefer. Whichever option you use, it should be neatly organized and easily legible.  You will be required to turn in your notebook on a weekly basis.</p>
 <p>It is important that you avoid contamination during your lab work to avoid inaccurate results&#33;  Remember to wash all glassware with Alconox and warm water and then rinse it three times with deionized water prior to beginning analysis. &#40;The exception to this is the phosphate analysis – remember that Alconox contains a high percentage of phosphate&#33;&#41;  Do not assume the glassware is clean&#33;</p>
 <p>It is also important that your results are as accurate and precise as possible.  Remember to use the right glassware for each situation.</p>
 <ul>
@@ -188,8 +220,9 @@
 <p>It is also important that you have high statistical confidence in the data.  Measure all samples in triplicate and report </p>
 <h2 id="data_analysis"><a href="#data_analysis" class="header-anchor">Data Analysis</a></h2>
 <p><strong>It is in your best interest to process as much data as possible in real time.</strong></p>
-<p>Make sure to keep neat data files and analysis scripts.  I &#40;or anyone in the class&#41; should be able to open your file and easily follow your analysis without having to do excessive digging through the file; I should also be able to open your file and <em>exactly</em> reproduce the results of your data analysis with the information provided.</p>
-<p>You should aim to communicate your data graphically whenever possible.  Your plots should be <a href="https://chem370.github.io/technical-reports/figures"><em>publication quality</em></a> with descriptive axis titles and units, a clear legend when needed, appropriately scaled axes, and an overall professional appearance.</p>
+<p>It is recommended that you use Julia/Pluto notebooks for your data analysis, but you may also use Excel, or another program of your choice to process the data.  I will be able to help you in Julia, but may have limited ability to help with other programs.</p>
+<p>Whichever program you use for data analysis, you must process your data using the principles of <em>reproducible research</em>.  This means I should be able to open your file and easily follow your analysis without having to do excessive digging through the file; I should also be able to open your file and <em>exactly</em> reproduce the results of your data analysis with the information provided.</p>
+<p>You should aim to communicate your data graphically whenever possible.  Your plots should be <em>publication quality</em> with descriptive axis titles and units, clear legend when needed, appropriate scaled axes, and an overall professional appearance.</p>
 <h2 id="waste_disposal"><a href="#waste_disposal" class="header-anchor">Waste Disposal</a></h2>
 <ul>
 <li><p>Waste for nitrate, phosphate, hardness, and anion analyses can be combined in a the waste bucket provided in lab.</p>
@@ -198,7 +231,7 @@
 </li>
 </ul>
 <h1 id="reporting"><a href="#reporting" class="header-anchor">Reporting</a></h1>
-<p>You should present your results in two ways: &#40;1&#41; a professional-quality lab report written in the style of a USGS water quality report &#40;this counts toward your lab grade&#41; and &#40;2&#41; a story map for the Pigeon River watershed that will be prepared as a whole class.  You will present your portion &#40;2&#41; at the end of the semester as part of a final presentation.</p>
+<p>You should present your results in two ways a professional-quality lab report written in the style of a USGS water quality report.  &#40;This counts toward your lab grade.&#41;</p>
 <p>I encourage you to use a &quot;divide and conquer&quot; approach to writing this report – you each likely have different skills that you can use to benefit the group, so that breaking up the writing and figure preparation will both be more efficient and will produce better results.</p>
 <h2 id="lab_report"><a href="#lab_report" class="header-anchor">Lab Report</a></h2>
 <p>This report should be written as if it were a professional document prepared to be shared with aquatic chemists and other water-quality professionals who are familiar with water chemistry and chemical analysis.  You can assume this knowledge when writing it &#40;e.g. you do not need to explian what a titration is, but rather can just say you performed a specific type of titration&#41;.</p>
@@ -270,7 +303,7 @@
 </ol>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Al Fischer. Last modified: August 14, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+    &copy; Al Fischer. Last modified: August 13, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

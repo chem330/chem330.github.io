@@ -1,0 +1,18 @@
+#+LATEX_CLASS: article
+#+LATEX_HEADER: \usepackage[margin=0.75in,letter]{geometry}
+#+LATEX_HEADER: \usepackage[version=4]{mhchem}
+#+LATEX_HEADER: \usepackage[dvipsnames]{xcolor}
+#+TITLE: CHEM 330 Project Week 2 Update
+#+OPTIONS: author:nil date:nil toc:nil
+
+\noindent For the first week of your work, you should choose a site, conduct background research, and develop a question and hypothesis.  This will likely include visiting the site and/or studying maps of the site.  It will definitely include finding comparison data to use as a starting point for your analyses.  This comparison data can be a previous analysis of the same site or nearby site, prior analysis of a similar site, or (if none of that is available) general values for your site type (e.g. stream water, groundwater, etc.) established in the literature; it may also include field measurements obtained at the site.
+
+1. What sites are you sampling from?  Provide site descriptions and coordinates.  What makes your site unique or an interesting site to study? (Write this so that it can be included in your methods section.)
+
+2. What question will you be trying to answer?  How will you sample to answer this question?
+
+3. What analysis/analyses do you plan to start with this week?  How will you determine those parameters? (Be as specific as possible -- this should basically be the method you will follow in the lab.)
+
+4. What are the reference values for the parameters you plan to determine this week?  For example, if you plan to determine alkalinity, what alkalinity do you expect to find?  Provide a list of your sources for these data.
+
+5. What questions do you have before proceeding?
