@@ -3,11 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  
+   <script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    tags: 'all'
+  },
+  svg: {fontCache: 'global'}
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js" integrity="sha384-RTN08a0AXIioPBcVosEqPUfKK+rPp+h1x/izR7xMkdMyuwkcZCWdxO+RSwIFtJXN"  crossorigin="anonymous"></script>
+
+
+     
+   <!-- Syntax highlighting via Prism, note: restricted langs -->
+<link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
   <link rel="stylesheet" href="/css/jtd.css">
   <link rel="icon" href="/assets/infra/logoF_square.gif">
-   <title>Experiment 1: Instructor Info</title>  
+   <title>Lab Schedule</title>  
 
   <!-- PLOTLY -->
   
@@ -108,19 +124,103 @@
 
 <!-- Content appended here (in class franklin-content) -->
 <div class="franklin-content">
-<h1>TDS Instructor / Prep Information</h1>
-<p>This experiment requires the following items.</p>
-<h1 id="supplies"><a href="#supplies" class="header-anchor">Supplies</a></h1>
-<h1 id="reagents"><a href="#reagents" class="header-anchor">Reagents</a></h1>
+<h1 id="publication-quality_figures"><a href="#publication-quality_figures" class="header-anchor">Publication-quality Figures</a></h1>
+<p>All figures turned in should follow these guidelines.  Captions may be omitted except in reports.</p>
+<h2 id="data_series"><a href="#data_series" class="header-anchor">Data series</a></h2>
+<ol>
+<li><p>All data points and lines should be clearly legible &#40;use thicker lines and bigger points if necessary&#41;.</p>
+</li>
+<li><p>If multiple series are plotted on the same plot, provide a clear legend explaining each.</p>
+</li>
+<li><p>Use color effectively, to differentiate data sets and provide symbolism where prudent, but don&#39;t rely on color to convey the point.</p>
+</li>
+</ol>
+<h2 id="axes"><a href="#axes" class="header-anchor">Axes</a></h2>
+<ol>
+<li><p>All axes should be clearly labeled, with units.</p>
+</li>
+<li><p>Axes should be scaled to show the data clearly; where practical, set the axes to cross at major scale divisions.  </p>
+</li>
+<li><p>Label axes with comprehensible numbers, in the range of 0.01 - 1000.  There are several ways to handle this:</p>
+<ul>
+<li><p>10,000,000 is hard to grasp and the large numbers clutter the axis; try dividing the axis by \(10^6\) and use the M &#40;mega&#41; prefix before the units in the axis.</p>
+</li>
+<li><p>2.5e-7 is hard to grasp and the exponents clutter the axis; label the axis as 2.5, and list an exponent of \(10^7\) in the label.</p>
+</li>
+<li><p>Convert to another unit, such as percent abundance rather than raw abundance.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="plot_types"><a href="#plot_types" class="header-anchor">Plot types</a></h2>
+<ol>
+<li><p>Use scatter plots &#40;or line plots, a subset of scatter plots&#41; for data with two continuous variables.  </p>
+</li>
+<li><p>Use bar charts or box plots for data with one continuous and one categorical variable. &#40;Bar charts are typically used for mass spectra.&#41;</p>
+</li>
+<li><p>Use 3-D plots with extreme caution, and only when absolutely necessary.</p>
+</li>
+</ol>
+<h2 id="saving_plots"><a href="#saving_plots" class="header-anchor">Saving plots</a></h2>
+<ol>
+<li><p>When possible, save plots as a vector graphic &#40;PDF or SVG&#41;; this provides infinite resolution.  If using a vector graphic isn&#39;t an option, save raster graphics &#40;jpeg, PNG, TIFF&#41; at a resolution of at least 300 dpi for printing in a paper, higher for a poster or presentation.</p>
+</li>
+</ol>
+<h2 id="displaying_plots"><a href="#displaying_plots" class="header-anchor">Displaying plots</a></h2>
+<ol>
+<li><p>Plots &#40;figures&#41; should be displayed in a manuscript in the order in which they are discussed.    </p>
+</li>
+<li><p>Correspondingly, each figure should be specifically referenced in the text.</p>
+</li>
+<li><p>Chart titles should be avoided; instead, each figure should have a caption below the figure that reads:</p>
+<blockquote>
+<p>Figure <em>n</em>: A brief title. A brief description of figure <em>n</em>.</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="examples"><a href="#examples" class="header-anchor">Examples</a></h2>
+<h3 id="a_publication-quality_infrared_spectrum_for_color_prints"><a href="#a_publication-quality_infrared_spectrum_for_color_prints" class="header-anchor">A Publication-quality infrared spectrum &#40;for color prints&#41;</a></h3>
+<p>The <em>following</em> figure is an example of a publication-quality infrared spectrum. The data series are clearly distinguishable with contrasting colors, the lines are clearly visible, and axes are clearly and intuitively labeled &#40;with units&#41;, and there is an appropriate caption.  Moreover, the figure is clear, undistorted, and unpixellated. Note that the caption for this image includes a summary of the key message of the figure.</p>
+<p><img src="good.png" alt="A good plot if printed in color." /></p>
+<p><strong>Figure 1:</strong> Example normalized ATR FT-IR spectra of <em>Usnea</em> lichens.    The two species have clearly distinguishable spectra.  Notably, <em>U. strigosa</em> has a less intense -OH stretch peak but more intense bands in the fingerprint region.</p>
+<h3 id="a_publication-quality_infrared_spectrum_for_black_and_white_prints"><a href="#a_publication-quality_infrared_spectrum_for_black_and_white_prints" class="header-anchor">A Publication-quality infrared spectrum &#40;for black and white prints&#41;</a></h3>
+<p>Sometimes it&#39;s not possible to print in color, and some journals require figures be legible in black and white.  If your figure must be printed in black and white, you should use easily distinguishable shades of grey for data series &#40;colors that look different in color may turn into the same shade of grey in black and white&#41;.  You should also distinguish data with different line types or marker shapes.  The following figure shows this.  In this case, the caption only provides a title; this practice is acceptable.</p>
+<p><img src="goodBW.png" alt="A good plot for black and white printing." /></p>
+<p><img src="goodBW.png" alt="asdf" /></p>
+<p><strong>Figure 1:</strong> Example normalized ATR FT-IR spectra of <em>Usnea</em> lichens.</p>
+<h3 id="what_not_to_do"><a href="#what_not_to_do" class="header-anchor">What Not to Do</a></h3>
+<p>The <strong>following</strong> figure is an example of what <strong>not to do</strong>&#33;  Key problems:</p>
+<ul>
+<li><p>The axes are either unlabelled or labelled poorly; although there is a legend, the names are incomprehensible.</p>
+</li>
+<li><p>There are far too many ticks labeled on both axes.</p>
+</li>
+<li><p>The scale on the <em>y</em>-axis needs to be tightened to more clearly show the data.</p>
+</li>
+<li><p>The gridlines are overpowering compared to the data.</p>
+</li>
+<li><p>The lines representing the data are too thin and the colors to not contrast enough.</p>
+</li>
+<li><p>The chart is pixellated and distorted.</p>
+</li>
+<li><p>The caption is terse and unnumbered.</p>
+</li>
+</ul>
+<p><img src="bad.png" alt="A plot showing what not to do.  This is a bad example of a plot&#33;" /></p>
+<p>Spectra of Sample</p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Al Fischer. Last modified: August 14, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+    &copy; Al Fischer. Last modified: August 17, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
     </div> <!-- end of class main-content -->
     </div> <!-- end of class main-content-wrap -->
     </div> <!-- end of class page-wrap-->
+    
+      <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
     
   </body>
 </html>

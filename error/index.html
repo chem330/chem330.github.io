@@ -3,7 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+   <script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    tags: 'all'
+  },
+  svg: {fontCache: 'global'}
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js" integrity="sha384-RTN08a0AXIioPBcVosEqPUfKK+rPp+h1x/izR7xMkdMyuwkcZCWdxO+RSwIFtJXN"  crossorigin="anonymous"></script>
+
+
+     
   
   <link rel="stylesheet" href="/css/jtd.css">
   <link rel="icon" href="/assets/infra/logoF_square.gif">
@@ -31,9 +45,10 @@
 		  <li class="menu-list-item "><a href="/lab-syllabus/" class="menu-list-link">📜 Lab Syllabus</a>
           <!-- Schedule -->
 		  <li class="menu-list-item "><a href="/schedule/" class="menu-list-link">📆 Schedule</a>
+		    <li class="menu-list-item "><a href="/figures/" class="menu-list-link">📊 Figure Guide</a>
           <!-- Lab Notebooks -->
 		  <li class="menu-list-item "><a href="/lab-notebooks/" class="menu-list-link">📓 Lab Notebooks</a>
-      <li class="menu-list-item "><a href="/matlab-onramp/" class="menu-list-link">🖥️ MATLAB Onramp</a>
+<!--      <li class="menu-list-item {{ispage matlab-onramp/*}}active{{end}}"><a href="/matlab-onramp/" class="menu-list-link">🖥️ MATLAB Onramp</a> -->
 
           <!-- Experiment 1 -->
 		  <li class="menu-list-parent active"><a href="/error/" class="menu-list-link">🧪 Error</a>
@@ -109,15 +124,13 @@
 <div class="franklin-content">
 <h1>Error Analysis</h1>
 <p><strong>Work in groups of 3 to complete this activity.  Each group member should make 2 solutions.</strong></p>
-<div class="franklin-toc"><ol><li><a href="#background">Background</a></li><li><a href="#treatment_a_diluting_using_volumetric_glassware_the_correct_way">Treatment A: Diluting Using Volumetric Glassware &#40;the correct way&#41;</a></li><li><a href="#treatment_b_diluting_the_quick_way">Treatment B: Diluting the Quick Way</a></li><li><a href="#analyze_your_samples">Analyze your Samples</a></li><li><a href="#what_to_turn_in">What to turn in</a></li></ol></div>
+<div class="franklin-toc"><ol><li><a href="#background">Background</a></li><li><a href="#treatment_a_diluting_using_volumetric_glassware_the_correct_way">Treatment A: Diluting Using Volumetric Glassware &#40;the correct way&#41;</a></li><li><a href="#treatment_b_diluting_the_quick_way">Treatment B: Diluting the Quick Way</a></li><li><a href="#analyze_your_samples">Analyze your Samples</a></li><li><a href="#process_the_data">Process the Data</a></li><li><a href="#what_to_turn_in">What to turn in</a></li></ol></div>
 <h1 id="background"><a href="#background" class="header-anchor">Background</a></h1>
 <p>The primary goal of this lab is to help you learn accurate and precise analytical lab technique.  The instrumentation we will use this semester can measure concentrations down to the part per trillion level, with relative precision on the order of 0.1&#37;&#33;  Usually, user lab technique is the limiting factor on the accuracy and precision of these instruments.  This lab will help you learn techniques to minimize that error, and will give you practice analyzing errors associated with the data you collect.</p>
 <p>In the first part of this lab, you will prepare solutions of an analyte at a known concentration using several different dilution techniques &#40;using a process called <em>serial dilution</em>&#41;.  Then, your samples will be analyzed using an inductively coupled plasma mass spectrometer &#40;ICP-MS&#41;.  Afterwards, you will assess your accuracy and precision compared to what should be readily achievable and compared to the rest of the class.  <strong>Your score will be partially dependent on your ability to obtain accurate and precise data.  Before you begin, you should think carefully about potential sources of error and work to minimize them&#33;</strong></p>
 <h1 id="treatment_a_diluting_using_volumetric_glassware_the_correct_way"><a href="#treatment_a_diluting_using_volumetric_glassware_the_correct_way" class="header-anchor">Treatment A: Diluting Using Volumetric Glassware &#40;the correct way&#41;</a></h1>
 <ol>
 <li><p>Obtain the following:</p>
-</li>
-</ol>
 <ul>
 <li><p>1 x 10 ml glass pipette</p>
 </li>
@@ -126,11 +139,11 @@
 <li><p>3 x 50 ml plastic centrifuge tubes</p>
 </li>
 <li><p>DI wash bottle &#40;may be shared with your table if needed&#41;</p>
+</li>
+</ul>
 <div class="note"><div class="title">⚠ Note</div>
 <div class="content">Before proceeding, think about what might lead to error, both from lab technique and contamination.  As you complete the follow steps, work to minimize these errors.</div></div>
 </li>
-</ul>
-<ol start="2">
 <li><p>Using the glass pipette, transfer 10 ml of the standard solution in the volumetric flask and bring to volume with deionized water.</p>
 <div class="note"><div class="title">⚠ Note</div>
 <div class="content">Make sure record the known values for your solution in your notebook and include calculations for the final concentration.</div></div>
@@ -152,7 +165,7 @@
 </li>
 </ol>
 <ul>
-<li><p>1 x 10 ml graduate cylinder</p>
+<li><p>1 x 10 ml graduated cylinder</p>
 </li>
 <li><p>3 x 50 ml plastic centrifuge tubes</p>
 </li>
@@ -186,16 +199,73 @@
 <li><p>Analyze your tubes on the ICP-MS with your instructor.</p>
 </li>
 </ol>
+<h1 id="process_the_data"><a href="#process_the_data" class="header-anchor">Process the Data</a></h1>
+<ol>
+<li><p>Using your preferred data analysis software, calculate the following &#40;all also listed in the template for this lab&#41;:</p>
+<ol>
+<li><p>The mean solution concentration for <strong>each lab group</strong>, for each treatment &#40;A and B&#41;. &#40;Make sure to factor in the dilutions – ideally, all solutions should end up the same concentration&#41;.</p>
+</li>
+<li><p>The standard deviation of the solution concentration for <strong>each lab group</strong>, for each treatment.</p>
+</li>
+<li><p>The percent error for <strong>each lab group</strong> compared to the know concentration, for each treatment.</p>
+</li>
+<li><p>The mean solution concentration for <strong>each treatment</strong> &#40;averaging the data for the full class&#41;.</p>
+</li>
+<li><p>The standard deviation of the solution concentration for <strong>each treatment</strong>  &#40;using the data for the full class&#41;. </p>
+</li>
+<li><p>The 95&#37; CI on the concentrations for the <strong>class data</strong>.</p>
+</li>
+<li><p>The average percent error for the <strong>class data</strong> compared to the known concentration for each treatment &#40;A or B&#41;.</p>
+</li>
+</ol>
+<div class="note"><div class="title">⚠ Note</div>
+<div class="content">The template provided is only for submitting your answers.  You will likely want to do your calculations elsewhere.</div></div>
+<div class="note"><div class="title">⚠ Note</div>
+<div class="content">You should specify all concentrations in \(\mu\)g/L.</div></div>
+</li>
+<li><p>Prepare a bar plot of the mean concentration measured by each group.  Ensure your plot is publication quality, includes the specific items below, and then export it to PDF and submit it to Canvas.</p>
+<ul>
+<li><p>You should have the twice the number of bars as there are lab groups &#40;2 bars per group&#41;.</p>
+</li>
+<li><p>Your y-axis should be in units of concentration.</p>
+</li>
+<li><p>Your x-axis should be divided by lab group.</p>
+</li>
+<li><p>Each group should show two separate bars: One for Treatment A and one for Treatment B.  These should be color coded and a legend should be included.  This is called a <em>grouped bar plot</em>.</p>
+</li>
+<li><p>To make your plot standout, you could add a line showing the known concentration.  This should be shown in a legend.</p>
+</li>
+</ul>
+</li>
+<li><p>Prepare a bar plot of the average concentration for each treatment, using the data from the whole class. Ensure your plot is publication quality, includes the specific items below, and then export it to PDF and submit it to Canvas.</p>
+<ul>
+<li><p>You should have two bars total, one for Treatment A and one for Treatment B.</p>
+</li>
+<li><p>Include error bars representing the 95&#37; CI for each treatment.</p>
+</li>
+<li><p>Your y-axis should be in units of concentration.</p>
+</li>
+<li><p>Your x-axis should be divided by treatment.</p>
+</li>
+<li><p>To make your plot standout, you could add a line showing the known concentration.  This should be shown in a legend.</p>
+</li>
+</ul>
+<div class="note"><div class="title">⚠ Note</div>
+<div class="content">The y-axis of a bar plot should always start a 0 to avoid making differences appear larger than they actually are.</div></div>
+</li>
+</ol>
 <h1 id="what_to_turn_in"><a href="#what_to_turn_in" class="header-anchor">What to turn in</a></h1>
 <ol>
 <li><p>You will be provided with a report and/or data file for your samples.  As soon you have this information, you should enter it into the class data spreadsheet so that others are not waiting on your data to be able to complete the calculations.  You will receive separate credit for entering your data, and will get a 0 on that assignment if you do not add it to the class dataset&#33;</p>
 </li>
-<li><p>Complete MATLAB activity on Canvas for this lab. &#40;You will not be able to complete this until all groups have added their data to the class data spreadsheet.&#41;</p>
+<li><p>Complete data processing steps above and turn in the requested materials on Canvas. &#40;You will not be able to complete this until all groups have added their data to the class data spreadsheet.&#41;</p>
+</li>
+<li><p>Complete the Canvas post-lab quiz for this assignment.  You will need to finish the data processing first.</p>
 </li>
 </ol>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Al Fischer. Last modified: August 14, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+    &copy; Al Fischer. Last modified: August 17, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->

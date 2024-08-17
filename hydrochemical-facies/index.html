@@ -3,8 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  
+   <script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    tags: 'all'
+  },
+  svg: {fontCache: 'global'}
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js" integrity="sha384-RTN08a0AXIioPBcVosEqPUfKK+rPp+h1x/izR7xMkdMyuwkcZCWdxO+RSwIFtJXN"  crossorigin="anonymous"></script>
+
+
+     
+   <!-- Syntax highlighting via Prism, note: restricted langs -->
+<link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
   <link rel="stylesheet" href="/css/jtd.css">
   <link rel="icon" href="/assets/infra/logoF_square.gif">
    <title>Hydrochemical Facies</title>  
@@ -31,9 +47,10 @@
 		  <li class="menu-list-item "><a href="/lab-syllabus/" class="menu-list-link">📜 Lab Syllabus</a>
           <!-- Schedule -->
 		  <li class="menu-list-item "><a href="/schedule/" class="menu-list-link">📆 Schedule</a>
+		    <li class="menu-list-item "><a href="/figures/" class="menu-list-link">📊 Figure Guide</a>
           <!-- Lab Notebooks -->
 		  <li class="menu-list-item "><a href="/lab-notebooks/" class="menu-list-link">📓 Lab Notebooks</a>
-      <li class="menu-list-item "><a href="/matlab-onramp/" class="menu-list-link">🖥️ MATLAB Onramp</a>
+<!--      <li class="menu-list-item {{ispage matlab-onramp/*}}active{{end}}"><a href="/matlab-onramp/" class="menu-list-link">🖥️ MATLAB Onramp</a> -->
 
           <!-- Experiment 1 -->
 		  <li class="menu-list-parent "><a href="/error/" class="menu-list-link">🧪 Error</a>
@@ -108,28 +125,104 @@
 <!-- Content appended here (in class franklin-content) -->
 <div class="franklin-content">
 <h1>Hydrochemical Facies</h1>
-<div class="franklin-toc"><ol><li><a href="#background">Background</a></li><li><a href="#exercise">Exercise</a></li></ol></div>
+<div class="franklin-toc"><ol><li><a href="#background">Background</a></li><li><a href="#exercise">Exercise</a><ol><li><a href="#obtain_your_dataset">Obtain your dataset</a></li><li><a href="#import_and_preprocess_your_data">Import and preprocess your data</a></li><li><a href="#plot_your_data">Plot your data</a><ol><li><a href="#rectangular_piper_diagram">Rectangular Piper Diagram</a></li></ol></li><li><a href="#chadha_diagram">Chadha Diagram</a></li></ol></li><li><a href="#what_to_turn_in">What to turn in</a></li><li><a href="#example_plots">Example Plots</a></li></ol></div>
 <h1 id="background"><a href="#background" class="header-anchor">Background</a></h1>
-<p>Water samples may be described by their chemical makeup, and the field of geochemistry has developed specific, standard ways of plotting the chemical makeup of water.  Often, this referred to as an analysis of hydrochemical facies, where a facies &#40;note that facies is singular&#33;&#41; is a geochemical body with distinctive characteristics.  Thus, analysis of hydrochemical facies provides a way of understanding which samples have a distinct chemical makeup with respect to important hydrologic parameters.  Learning to interpret and prepare these plots is an important step toward becoming fluent in the language of aquatic chemistry.  The goal of this exercise is expose you to these types of plots and help you learn to create them in MATLAB.</p>
+<p>Water samples may be described by their chemical makeup, and the field of geochemistry has developed specific, standard ways of plotting the chemical makeup of water.  Often, this referred to as an analysis of hydrochemical facies, where a facies &#40;singular&#33;&#41; is a geochemical body with distinctive characteristics.  Thus, analysis of geochemical facies provides a way of understanding which samples have a distinct chemical makeup with respect to important hydrologic parameters.  Learning to interpret and prepare these plots is an important step toward becoming fluent in the language of aquatic chemistry.</p>
 <p>Before you continue, read sections 2.4.2 and 2.4.3 in Water Chemistry &#40;p. 72-76&#41;, paying special attention to Figures 2.6 and 2.7.</p>
+<p>If you wish to use MATLAB to process your data, you can work from the live script here: <a href="https://drive.mathworks.com/sharing/b119bae0-156f-4169-acb1-e10aeb16ddd2">MATLAB Live Script</a>.  &#40;MATLAB is availble with no charge when using your WCU email to log in.&#41;</p>
 <h1 id="exercise"><a href="#exercise" class="header-anchor">Exercise</a></h1>
+<h2 id="obtain_your_dataset"><a href="#obtain_your_dataset" class="header-anchor">Obtain your dataset</a></h2>
+<p>You will work with publicly available data for this exercise.  The NC Department of Environmental Quality &#40;NCDEQ&#41; provides rich datasets for groundwater wells around the state, and this dataset will be used in this lab.  You will choose a unique site for your analysis.</p>
 <ol>
-<li><p>Go to the Lab 3 Canvas assignment, and click the link to the MATLAB live script there.</p>
+<li><p>Navigate to <a href="https://www.ncwater.org/?page&#61;343">NC Water</a> in a web browser.</p>
 </li>
-<li><p>Follow further instructions in the live script.</p>
+<li><p>Click on the monitoring site you wish to work with; please choose a site different from others in the class, so that we are able to observe many different sites across the state.</p>
+</li>
+<li><p>You will be taken to a site-specific page; once there, click on the specific well you wish to work with, then click Download WQ data, and finally click  download your data &#40;labres<em>your</em>site_number.csv&#41;.  If you do not see the link to download WQ data it is not available for that well and you must choose a different well or site&#33;</p>
+</li>
+<li><p>Find the downloaded CSV file on your computer, and upload it to MATLAB Drive.</p>
 </li>
 </ol>
-<div class="note"><div class="title">⚠ Note</div>
-<div class="content">The live script contains a lot of information to read, too.  You should be reading it carefully and working out the problems as you read. If you skip things, you will likely feel lost&#33;</div></div>
+<h2 id="import_and_preprocess_your_data"><a href="#import_and_preprocess_your_data" class="header-anchor">Import and preprocess your data</a></h2>
+<ol>
+<li><p>Import your data to your preferred data analyis software.  In Excel, for example, go to File &gt; Open and browse for your CSV data file.</p>
+</li>
+<li><p>Find the following ions in your dataset: Ca, Mg, Na, and K &#40;these are the cations&#41; and carbonate, bicarbonate, sulfate, and chloride &#40;these are the anions&#41;.  Some files contain multiple measurements, so make sure you are working only with one measurement.</p>
+</li>
+<li><p>Convert the concentrations for these ions to meq/L.</p>
+</li>
+</ol>
+<h2 id="plot_your_data"><a href="#plot_your_data" class="header-anchor">Plot your data</a></h2>
+<p>Typically, the ions would be plotted on a Piper diagram.  However, this is difficult to do in Excel and other plots types that are easier to make can display identical information.  We will use both a Chadha diagram here and rectangular Piper diagram here.  For your projects, you can use whichever you prefer.  Examples are shown <a href="http://chem330.github.io/hydrochemical-facies/#example_plots">below</a>.</p>
+<h3 id="rectangular_piper_diagram"><a href="#rectangular_piper_diagram" class="header-anchor">Rectangular Piper Diagram</a></h3>
+<ol>
+<li><p>First prepare the cation plot:</p>
+<ol>
+<li><p>Create a x-y scatter plot with \(\ce{ [Ca^2+] }\) on the x-axis &#40;in meq/L&#41; and \(\ce{ [Mg^2+] }\) on the y-axis &#40;in meq/L&#41;.</p>
+</li>
+<li><p>Adjust the axes and other plot parameters until they look like the left side of the rectangular Piper diagram shown below. &#40;You are not required to show the grey lines of different types for now, just the overall plot.&#41;</p>
+</li>
+<li><p>You should have a single point on your plot, since you are only working with one sample.</p>
+</li>
+</ol>
+</li>
+<li><p>Next, create the anion plot:</p>
+<ol>
+<li><p>Create a x-y scatter plot with \(\ce{ [Cl-]}\) on the x-axis &#40;in meq/L&#41; and \(\ce{ [SO_4^{2-} ] }\) on the y-axis &#40;in meq/L&#41;.</p>
+</li>
+<li><p>Adjust the axes and other plot parameters until they look like the right side of the rectangular Piper diagram shown below. &#40;You are not required to show the grey lines of different types for now, just the overall plot.&#41;</p>
+</li>
+<li><p>You should have a single point on your plot, since you are only working with one sample.</p>
+</li>
+</ol>
+</li>
+<li><p>Finally, create the combined anion-cation plot.</p>
+<ol>
+<li><p>Create a x-y scatter plot with the sum of \(\ce{ [Na+] }\) and \(\ce{ K+ }\) on the x-axis &#40;in meq/L&#41; and the sum of \(\ce{ [Cl-]}\) and \(\ce{ [SO4^{2-}] }\) on the y-axis &#40;in meq/L&#41;.</p>
+</li>
+<li><p>Adjust the axes and other plot parameters until they look like the middle panel of the rectangular Piper diagram shown below. &#40;You are not required to show the grey lines of different types for now, just the overall plot.&#41;  Make sure to add label for all 4 axes.</p>
+</li>
+<li><p>You should have a single point on your plot, since you are only working with one sample.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="chadha_diagram"><a href="#chadha_diagram" class="header-anchor">Chadha Diagram</a></h3>
+<ol>
+<li><p>Create an x-y scatter plot with the sum of \(\ce{ Ca^{2+} }\) and \(\ce{ Mg^{2+} }\) minus the sum of \(\ce{ Na+ }\) and \(\ce{ K+ }\) on the x-axis and the sum of carbonate and bicarbonate minus the sum of chloride and sulfate on the y-axis:</p>
+</li>
+</ol>
+<p>&#36;&#36;\text&#123;x-axis: &#125; \ce&#123; &#40;&#91;Ca^&#123;2&#43;&#125;&#93; &#43; &#91;Mg^&#123;2&#43;&#125;&#93;&#41; - &#40;&#91;Na&#43;&#93; &#43; &#91;K&#43;&#93;&#41; &#125;&#36;&#36;
+&#36;&#36;\text&#123;y-axis: &#125; \ce&#123; &#40;&#91;HCO3^-&#93; &#43; &#91;CO3^&#123;2-&#125;&#93;&#41; - &#40;&#91;Cl-&#93; &#43; &#91;SO4^&#123;2-&#125;&#93;&#41; &#125;&#36;&#36;</p>
+<ol start="2">
+<li><p>Adjust the axes and other plot parameters until they look like the middle panel of the rectangular Piper diagram shown below. &#40;You are not required to show the grey lines of different types for now, just the overall plot.  However, they should be relatively straightforward to add and would make your plot standout&#33;&#41;</p>
+</li>
+<li><p>You should have a single point on your plot, since you are only working with one sample.</p>
+</li>
+</ol>
+<h1 id="what_to_turn_in"><a href="#what_to_turn_in" class="header-anchor">What to turn in</a></h1>
+<ol>
+<li><p>Complete the steps above and turn in the requested plots on Canvas. </p>
+</li>
+<li><p>Complete the Canvas post-lab quiz for this assignment.</p>
+</li>
+</ol>
+<h1 id="example_plots"><a href="#example_plots" class="header-anchor">Example Plots</a></h1>
+<p><em>If the plots are small on your screen, try right click &gt; open image in new tab.</em></p>
+<p><img src="piper.png" alt="Example of typical Piper diagram" /> <img src="chadha.png" alt="Example of Chadha diagram" /> <img src="rect-piper.png" alt="Example of rectangular Piper diagram" /></p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Al Fischer. Last modified: August 14, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+    &copy; Al Fischer. Last modified: August 17, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
     </div> <!-- end of class main-content -->
     </div> <!-- end of class main-content-wrap -->
     </div> <!-- end of class page-wrap-->
+    
+      <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
     
   </body>
 </html>
