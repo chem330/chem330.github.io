@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)']],
+    tags: 'all'
+  },
+  svg: {fontCache: 'global'}
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js" integrity="sha384-RTN08a0AXIioPBcVosEqPUfKK+rPp+h1x/izR7xMkdMyuwkcZCWdxO+RSwIFtJXN"  crossorigin="anonymous"></script>
+
+
+     
+   <!-- Syntax highlighting via Prism, note: restricted langs -->
+<link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
+  <link rel="stylesheet" href="/css/jtd.css">
+  <link rel="icon" href="/assets/infra/logoF_square.gif">
+   <title>Figure Guide</title>  
+
+  <!-- PLOTLY -->
+  
+
+</head>
+<body>                      <!-- closed in foot.html -->
+  <div class="page-wrap">   <!-- closed in foot.html -->
+    <!-- SIDE BAR -->
+    <div class="side-bar">
+      <div class="header">
+        <a href="/" class="h1" style="font-size: 30px">CHEM 330</a>
+      </div>
+      <label for="show-menu" class="show-menu">MENU</label>
+      <input type="checkbox" id="show-menu" role="button">
+      <div class="menu" id="side-menu">
+        <ul class="menu-list">
+          <!-- HOME -->
+          <li class="menu-list-item "><a href="/" class="menu-list-link">💧 Course Overview</a>
+          <!-- Syllabi -->
+<!--		  <li class="menu-list-item {{ispage lecture-syllabus/*}}active{{end}}"><a href="/lecture-syllabus/" class="menu-list-link">📜 Lecture Syllabus</a> -->
+		  <li class="menu-list-item "><a href="/lab-syllabus/" class="menu-list-link">📜 Lab Syllabus</a>
+          <!-- Schedule -->
+		  <li class="menu-list-item "><a href="/schedule/" class="menu-list-link">📆 Schedule</a>
+		    <li class="menu-list-item "><a href="/figures/" class="menu-list-link">📊 Figure Guide</a>
+          <!-- Lab Notebooks -->
+		  <li class="menu-list-item "><a href="/lab-notebooks/" class="menu-list-link">📓 Lab Notebooks</a>
+<!--      <li class="menu-list-item {{ispage matlab-onramp/*}}active{{end}}"><a href="/matlab-onramp/" class="menu-list-link">🖥️ MATLAB Onramp</a> -->
+
+          <!-- Experiment 1 -->
+		  <li class="menu-list-parent "><a href="/error/" class="menu-list-link">🧪 Error</a>
+			  <ul class="menu-list-child-list">
+				<li class="menu-list-item "><a href="/error/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/error/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+      <li class="menu-list-item "><a href="/hydrochemical-facies/" class="menu-list-link">🖥️ Hydrochemical Facies</a>
+         <!-- Experiment Hardness -->
+		  <!-- <li class="menu-list-parent {{ispage hardness/*}}active{{end}}"><a href="/hardness/" class="menu-list-link">🧪 Hardness</a> -->
+			  <!-- <ul class="menu-list-child-list "> -->
+				<!-- <li class="menu-list-item {{ispage hardness/index.html}}active{{end}}"><a href="/hardness/" class="menu-list-link">Lab Procedure</a> -->
+				<!-- <li class="menu-list-item {{ispage hardness/instructor-info}}active{{end}}"><a href="/hardness/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+			  <!-- </ul>               -->
+          <!-- Experiment 2 -->
+		  <!-- <li class="menu-list-parent {{ispage nitrate/*}}active{{end}}"><a href="/nitrate/" class="menu-list-link">🧪 Nitrate</a> -->
+			  <!-- <ul class="menu-list-child-list"> -->
+				<!-- <li class="menu-list-item {{ispage nitrate/index.html}}active{{end}}"><a href="/nitrate/" class="menu-list-link">Lab Procedure</a> -->
+				<!-- <li class="menu-list-item {{ispage nitrate/instructor-info}}active{{end}}"><a href="/nitrate/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+			  <!-- </ul> -->
+          <!-- Experiment 3 -->
+		  <!-- <li class="menu-list-parent {{ispage phosphate/*}}active{{end}}"><a href="/phosphate/" class="menu-list-link">🧪 Phosphate</a> -->
+			  <!-- <ul class="menu-list-child-list "> -->
+				<!-- <li class="menu-list-item {{ispage phosphate/index.html}}active{{end}}"><a href="/phosphate/" class="menu-list-link">Lab Procedure</a> -->
+				<!-- <li class="menu-list-item {{ispage phosphate/instructor-info}}active{{end}}"><a href="/phosphate/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+			  <!-- </ul> -->
+          <!-- Experiment 4 -->
+		  <li class="menu-list-parent "><a href="/alkalinity/" class="menu-list-link">🧪 Alkalinity</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/phosphate/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/alkalinity/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 5 -->
+		  <!-- <li class="menu-list-parent {{ispage tds/*}}active{{end}}"><a href="/tds/" class="menu-list-link">🧪 TDS</a> -->
+		  <!-- 	  <ul class="menu-list-child-list "> -->
+		  <!-- 		<li class="menu-list-item {{ispage tds/index.html}}active{{end}}"><a href="/tds/" class="menu-list-link">Lab Procedure</a> -->
+		  <!-- 		<li class="menu-list-item {{ispage tds/instructor-info}}active{{end}}"><a href="/tds/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+		  <!-- 	  </ul> -->
+ 
+   		  <li class="menu-list-parent "><a href="/ic/" class="menu-list-link">🧪 IC</a>
+		  	  <ul class="menu-list-child-list ">
+		  		<li class="menu-list-item "><a href="/ic/" class="menu-list-link">Lab Procedure</a>
+		  		<li class="menu-list-item "><a href="/ic/instructor-info/" class="menu-list-link">Instructor Info</a>
+		  	  </ul>
+              	  	  <li class="menu-list-parent "><a href="/icpms/" class="menu-list-link">🧪 ICP-MS</a>
+		  	  <ul class="menu-list-child-list ">
+		  		<li class="menu-list-item "><a href="/icpms/" class="menu-list-link">Lab Procedure</a>
+		  		<li class="menu-list-item "><a href="/icpms/instructor-info/" class="menu-list-link">Instructor Info</a>
+		  	  </ul>
+   		  <!-- <li class="menu-list-parent {{ispage sem/*}}active{{end}}"><a href="/sem/" class="menu-list-link">🧪 SEM</a> -->
+		  <!-- 	  <ul class="menu-list-child-list "> -->
+		  <!-- 		<li class="menu-list-item {{ispage sem/index.html}}active{{end}}"><a href="/sem/" class="menu-list-link">Lab Procedure</a> -->
+		  <!-- 		<li class="menu-list-item {{ispage ic/instructor-info}}active{{end}}"><a href="/sem/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+		  <!-- 	  </ul> -->
+
+          <!-- Project -->
+		  <li class="menu-list-parent "><a href="/project/" class="menu-list-link">🥼 Project</a>
+			  <!-- <ul class="menu-list-child-list "> -->
+			  <!-- 	<li class="menu-list-item {{ispage project/nitrate.html}}active{{end}}"><a href="/project/nitrate/" class="menu-list-link">Nitrate</a> -->
+			  <!-- 	<li class="menu-list-item {{ispage project/phosphate}}active{{end}}"><a href="/project/phosphate/" class="menu-list-link">Phosphate</a> -->
+			  <!-- </ul> -->
+      </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="main-content-wrap"> <!-- closed in foot.html -->
+      <div class="main-content" id="focus" tabindex="-1" style="outline:0;">    <!-- closed in foot.html -->
+        <div class="main-header">
+          <a name="pagetop"></a>
+		  <a id="github" href="https://github.com/chem330/chem330.github.io">GitHub Repository</a>
+        </div>
+
+<!-- Content appended here (in class franklin-content) -->
+<div class="franklin-content">
+<h1 id="publication-quality_figures"><a href="#publication-quality_figures" class="header-anchor">Publication-quality Figures</a></h1>
+<p>All figures turned in should follow these guidelines.  Captions may be omitted except in reports.</p>
+<h2 id="data_series"><a href="#data_series" class="header-anchor">Data series</a></h2>
+<ol>
+<li><p>All data points and lines should be clearly legible &#40;use thicker lines and bigger points if necessary&#41;.</p>
+</li>
+<li><p>If multiple series are plotted on the same plot, provide a clear legend explaining each.</p>
+</li>
+<li><p>Use color effectively, to differentiate data sets and provide symbolism where prudent, but don&#39;t rely on color to convey the point.</p>
+</li>
+</ol>
+<h2 id="legends_and_titles"><a href="#legends_and_titles" class="header-anchor">Legends and Titles</a></h2>
+<p>Generally, main titles should <em>not</em> be used, and legends should only be used when needed.  If there is only one series on a plot, the legend should be removed.</p>
+<h2 id="axes"><a href="#axes" class="header-anchor">Axes</a></h2>
+<ol>
+<li><p>All axes should be clearly labeled, with units.</p>
+</li>
+<li><p>Axes should be scaled to show the data clearly; where practical, set the axes to cross at major scale divisions.  </p>
+</li>
+<li><p>Label axes with comprehensible numbers, in the range of 0.01 - 1000.  There are several ways to handle this:</p>
+<ul>
+<li><p>10,000,000 is hard to grasp and the large numbers clutter the axis; try dividing the axis by \(10^6\) and use the M &#40;mega&#41; prefix before the units in the axis.</p>
+</li>
+<li><p>2.5e-7 is hard to grasp and the exponents clutter the axis; label the axis as 2.5, and list an exponent of \(10^7\) in the label.</p>
+</li>
+<li><p>Convert to another unit, such as percent abundance rather than raw abundance.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="plot_types"><a href="#plot_types" class="header-anchor">Plot types</a></h2>
+<ol>
+<li><p>Use scatter plots &#40;or line plots, a subset of scatter plots&#41; for data with two continuous variables.  </p>
+</li>
+<li><p>Use bar charts or box plots for data with one continuous and one categorical variable. &#40;Bar charts are typically used for mass spectra.&#41;</p>
+</li>
+<li><p>Use 3-D plots with extreme caution, and only when absolutely necessary.</p>
+</li>
+</ol>
+<h2 id="saving_plots"><a href="#saving_plots" class="header-anchor">Saving plots</a></h2>
+<ol>
+<li><p>When possible, save plots as a vector graphic &#40;PDF or SVG&#41;; this provides infinite resolution.  If using a vector graphic isn&#39;t an option, save raster graphics &#40;jpeg, PNG, TIFF&#41; at a resolution of at least 300 dpi for printing in a paper, higher for a poster or presentation.</p>
+</li>
+</ol>
+<h2 id="displaying_plots"><a href="#displaying_plots" class="header-anchor">Displaying plots</a></h2>
+<ol>
+<li><p>Plots &#40;figures&#41; should be displayed in a manuscript in the order in which they are discussed.    </p>
+</li>
+<li><p>Correspondingly, each figure should be specifically referenced in the text.</p>
+</li>
+<li><p>Chart titles should be avoided; instead, each figure should have a caption below the figure that reads:</p>
+<blockquote>
+<p>Figure <em>n</em>: A brief title. A brief description of figure <em>n</em>.</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="examples"><a href="#examples" class="header-anchor">Examples</a></h2>
+<h3 id="a_publication-quality_infrared_spectrum"><a href="#a_publication-quality_infrared_spectrum" class="header-anchor">A Publication-quality infrared spectrum</a></h3>
+<p>The <em>following</em> figure is an example of a publication-quality infrared spectrum. The data series are clearly distinguishable with contrasting colors, the lines are clearly visible, and axes are clearly and intuitively labeled &#40;with units&#41;, and there is an appropriate caption.  Moreover, the figure is clear, undistorted, and unpixellated. Note that the caption for this image includes a summary of the key message of the figure.</p>
+<p><img src="good.png" alt="A good plot if printed in color." /></p>
+<p><strong>Figure 1:</strong> Example normalized ATR FT-IR spectra of <em>Usnea</em> lichens.    The two species have clearly distinguishable spectra.  Notably, <em>U. strigosa</em> has a less intense -OH stretch peak but more intense bands in the fingerprint region.</p>
+<h3 id="what_not_to_do"><a href="#what_not_to_do" class="header-anchor">What Not to Do</a></h3>
+<p>The <strong>following</strong> figure is an example of what <strong>not to do</strong>&#33;  Key problems:</p>
+<ul>
+<li><p>The axes are either unlabelled or labelled poorly; although there is a legend, the names are incomprehensible.</p>
+</li>
+<li><p>There are far too many ticks labeled on both axes.</p>
+</li>
+<li><p>The scale on the <em>y</em>-axis needs to be tightened to more clearly show the data.</p>
+</li>
+<li><p>The gridlines are overpowering compared to the data.</p>
+</li>
+<li><p>The lines representing the data are too thin and the colors to not contrast enough.</p>
+</li>
+<li><p>The chart is pixellated and distorted.</p>
+</li>
+<li><p>The caption is terse and unnumbered.</p>
+</li>
+</ul>
+
+<figure style="text-align:center;">
+<img src="/figures/bad.png" style="padding:0; width:\textwidth" alt=" spectra of sample"/>
+<figcaption> spectra of sample</figcaption>
+</figure>
+
+<div class="page-foot">
+  <div class="copyright">
+    &copy; Al Fischer. Last modified: August 17, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div> <!-- end of class main-content -->
+    </div> <!-- end of class main-content-wrap -->
+    </div> <!-- end of class page-wrap-->
+    
+      <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+    
+  </body>
+</html>

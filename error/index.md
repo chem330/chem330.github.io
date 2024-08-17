@@ -18,10 +18,10 @@ In the first part of this lab, you will prepare solutions of an analyte at a kno
 # Treatment A: Diluting Using Volumetric Glassware (the correct way)
 
 1. Obtain the following:
-- 1 x 10 ml glass pipette
-- 1 x 50 ml volumetric flask
-- 3 x 50 ml plastic centrifuge tubes
-- DI wash bottle (may be shared with your table if needed)
+   - 1 x 10 ml glass pipette
+   - 1 x 50 ml volumetric flask
+   - 3 x 50 ml plastic centrifuge tubes
+   - DI wash bottle (may be shared with your table if needed)
 
    \note{ Before proceeding, think about what might lead to error, both from lab technique and contamination.  As you complete the follow steps, work to minimize these errors. }
 
@@ -42,7 +42,7 @@ In the first part of this lab, you will prepare solutions of an analyte at a kno
 # Treatment B: Diluting the Quick Way
 
 1. Obtain the following:
-- 1 x 10 ml graduate cylinder
+- 1 x 10 ml graduated cylinder
 - 3 x 50 ml plastic centrifuge tubes
 - DI wash bottle (may be shared with your table if needed)
 
@@ -63,9 +63,39 @@ In the first part of this lab, you will prepare solutions of an analyte at a kno
 3. Pour your solutions into the 10-ml tubes.  Just get about 10 ml in each tube -- you don't need to be exact for this step.
 4. Analyze your tubes on the ICP-MS with your instructor.
 
+# Process the Data
+
+1. Using your preferred data analysis software, calculate the following (all also listed in the template for this lab):
+   1. The mean solution concentration for **each lab group**, for each treatment (A and B). (Make sure to factor in the dilutions -- ideally, all solutions should end up the same concentration).
+   2. The standard deviation of the solution concentration for **each lab group**, for each treatment.
+   3. The percent error for **each lab group** compared to the know concentration, for each treatment.
+   3. The mean solution concentration for **each treatment** (averaging the data for the full class).
+   4. The standard deviation of the solution concentration for **each treatment**  (using the data for the full class). 
+   5. The 95% CI on the concentrations for the **class data**.
+   6. The average percent error for the **class data** compared to the known concentration for each treatment (A or B).
+   \note{ The template provided is only for submitting your answers.  You will likely want to do your calculations elsewhere. }
+   
+   \note{ You should specify all concentrations in $\mu$g/L. }
+   
+2. Prepare a bar plot of the mean concentration measured by each group.  Ensure your plot is publication quality, includes the specific items below, and then export it to PDF and submit it to Canvas.
+   - You should have the twice the number of bars as there are lab groups (2 bars per group).
+   - Your y-axis should be in units of concentration.
+   - Your x-axis should be divided by lab group.
+   - Each group should show two separate bars: One for Treatment A and one for Treatment B.  These should be color coded and a legend should be included.  This is called a *grouped bar plot*.
+    - To make your plot standout, you could add a line showing the known concentration.  This should be shown in a legend.
+3. Prepare a bar plot of the average concentration for each treatment, using the data from the whole class. Ensure your plot is publication quality, includes the specific items below, and then export it to PDF and submit it to Canvas.
+   - You should have two bars total, one for Treatment A and one for Treatment B.
+   - Include error bars representing the 95% CI for each treatment.
+   - Your y-axis should be in units of concentration.
+   - Your x-axis should be divided by treatment.
+   - To make your plot standout, you could add a line showing the known concentration.  This should be shown in a legend.
+   
+   \note{ The y-axis of a bar plot should always start a 0 to avoid making differences appear larger than they actually are. }
+
 # What to turn in
 
 1. You will be provided with a report and/or data file for your samples.  As soon you have this information, you should enter it into the class data spreadsheet so that others are not waiting on your data to be able to complete the calculations.  You will receive separate credit for entering your data, and will get a 0 on that assignment if you do not add it to the class dataset!
-1. Complete MATLAB activity on Canvas for this lab. (You will not be able to complete this until all groups have added their data to the class data spreadsheet.)
+1. Complete data processing steps above and turn in the requested materials on Canvas. (You will not be able to complete this until all groups have added their data to the class data spreadsheet.)
+2. Complete the Canvas post-lab quiz for this assignment.  You will need to finish the data processing first.
 
 

@@ -14,8 +14,14 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>figures/index.html</loc>
+    <lastmod>2024-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>error/instructor-info/index.html</loc>
-    <lastmod>2024-08-14</lastmod>
+    <lastmod>2024-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -51,7 +57,7 @@
 </url>
 <url>
     <loc>icpms/instructor-info/index.html</loc>
-    <lastmod>2024-08-14</lastmod>
+    <lastmod>2024-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -62,20 +68,14 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>lecture-syllabus/index.html</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>ic/instructor-info/index.html</loc>
-    <lastmod>2024-08-14</lastmod>
+    <lastmod>2024-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>schedule/index.html</loc>
-    <lastmod>2024-08-14</lastmod>
+    <lastmod>2024-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -87,25 +87,25 @@
 </url>
 <url>
     <loc>icpms/index.html</loc>
-    <lastmod>2024-08-14</lastmod>
+    <lastmod>2024-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>hydrochemical-facies/index.html</loc>
-    <lastmod>2024-08-14</lastmod>
+    <lastmod>2024-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>lab-syllabus/index.html</loc>
-    <lastmod>2024-08-14</lastmod>
+    <lastmod>2024-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>error/index.html</loc>
-    <lastmod>2024-08-14</lastmod>
+    <lastmod>2024-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>

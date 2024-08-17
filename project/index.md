@@ -90,7 +90,7 @@ It is also important that you have high statistical confidence in the data.  Mea
 
 Make sure to keep neat data files and analysis scripts.  I (or anyone in the class) should be able to open your file and easily follow your analysis without having to do excessive digging through the file; I should also be able to open your file and *exactly* reproduce the results of your data analysis with the information provided.
 
-You should aim to communicate your data graphically whenever possible.  Your plots should be [*publication quality*](https://chem370.github.io/technical-reports/figures) with descriptive axis titles and units, a clear legend when needed, appropriately scaled axes, and an overall professional appearance.
+You should aim to communicate your data graphically whenever possible.  Your plots should be [*publication quality*](https://chem330.github.io/figures/) with descriptive axis titles and units, a clear legend when needed, appropriately scaled axes, and an overall professional appearance.
 
 ## Waste Disposal
 

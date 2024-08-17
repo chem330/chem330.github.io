@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel="stylesheet" href="/css/jtd.css">
+  <link rel="icon" href="/assets/infra/logoF_square.gif">
+   <title>Lab Schedule</title>  
+
+  <!-- PLOTLY -->
+  
+
+</head>
+<body>                      <!-- closed in foot.html -->
+  <div class="page-wrap">   <!-- closed in foot.html -->
+    <!-- SIDE BAR -->
+    <div class="side-bar">
+      <div class="header">
+        <a href="/" class="h1" style="font-size: 30px">CHEM 330</a>
+      </div>
+      <label for="show-menu" class="show-menu">MENU</label>
+      <input type="checkbox" id="show-menu" role="button">
+      <div class="menu" id="side-menu">
+        <ul class="menu-list">
+          <!-- HOME -->
+          <li class="menu-list-item "><a href="/" class="menu-list-link">💧 Course Overview</a>
+          <!-- Syllabi -->
+<!--		  <li class="menu-list-item {{ispage lecture-syllabus/*}}active{{end}}"><a href="/lecture-syllabus/" class="menu-list-link">📜 Lecture Syllabus</a> -->
+		  <li class="menu-list-item "><a href="/lab-syllabus/" class="menu-list-link">📜 Lab Syllabus</a>
+          <!-- Schedule -->
+		  <li class="menu-list-item active"><a href="/schedule/" class="menu-list-link">📆 Schedule</a>
+          <!-- Lab Notebooks -->
+		  <li class="menu-list-item "><a href="/lab-notebooks/" class="menu-list-link">📓 Lab Notebooks</a>
+<!--      <li class="menu-list-item {{ispage matlab-onramp/*}}active{{end}}"><a href="/matlab-onramp/" class="menu-list-link">🖥️ MATLAB Onramp</a> -->
+
+          <!-- Experiment 1 -->
+		  <li class="menu-list-parent "><a href="/error/" class="menu-list-link">🧪 Error</a>
+			  <ul class="menu-list-child-list">
+				<li class="menu-list-item "><a href="/error/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/error/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+      <li class="menu-list-item "><a href="/hydrochemical-facies/" class="menu-list-link">🖥️ Hydrochemical Facies</a>
+         <!-- Experiment Hardness -->
+		  <!-- <li class="menu-list-parent {{ispage hardness/*}}active{{end}}"><a href="/hardness/" class="menu-list-link">🧪 Hardness</a> -->
+			  <!-- <ul class="menu-list-child-list "> -->
+				<!-- <li class="menu-list-item {{ispage hardness/index.html}}active{{end}}"><a href="/hardness/" class="menu-list-link">Lab Procedure</a> -->
+				<!-- <li class="menu-list-item {{ispage hardness/instructor-info}}active{{end}}"><a href="/hardness/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+			  <!-- </ul>               -->
+          <!-- Experiment 2 -->
+		  <!-- <li class="menu-list-parent {{ispage nitrate/*}}active{{end}}"><a href="/nitrate/" class="menu-list-link">🧪 Nitrate</a> -->
+			  <!-- <ul class="menu-list-child-list"> -->
+				<!-- <li class="menu-list-item {{ispage nitrate/index.html}}active{{end}}"><a href="/nitrate/" class="menu-list-link">Lab Procedure</a> -->
+				<!-- <li class="menu-list-item {{ispage nitrate/instructor-info}}active{{end}}"><a href="/nitrate/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+			  <!-- </ul> -->
+          <!-- Experiment 3 -->
+		  <!-- <li class="menu-list-parent {{ispage phosphate/*}}active{{end}}"><a href="/phosphate/" class="menu-list-link">🧪 Phosphate</a> -->
+			  <!-- <ul class="menu-list-child-list "> -->
+				<!-- <li class="menu-list-item {{ispage phosphate/index.html}}active{{end}}"><a href="/phosphate/" class="menu-list-link">Lab Procedure</a> -->
+				<!-- <li class="menu-list-item {{ispage phosphate/instructor-info}}active{{end}}"><a href="/phosphate/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+			  <!-- </ul> -->
+          <!-- Experiment 4 -->
+		  <li class="menu-list-parent "><a href="/alkalinity/" class="menu-list-link">🧪 Alkalinity</a>
+			  <ul class="menu-list-child-list ">
+				<li class="menu-list-item "><a href="/phosphate/" class="menu-list-link">Lab Procedure</a>
+				<li class="menu-list-item "><a href="/alkalinity/instructor-info/" class="menu-list-link">Instructor Info</a>
+			  </ul>
+          <!-- Experiment 5 -->
+		  <!-- <li class="menu-list-parent {{ispage tds/*}}active{{end}}"><a href="/tds/" class="menu-list-link">🧪 TDS</a> -->
+		  <!-- 	  <ul class="menu-list-child-list "> -->
+		  <!-- 		<li class="menu-list-item {{ispage tds/index.html}}active{{end}}"><a href="/tds/" class="menu-list-link">Lab Procedure</a> -->
+		  <!-- 		<li class="menu-list-item {{ispage tds/instructor-info}}active{{end}}"><a href="/tds/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+		  <!-- 	  </ul> -->
+ 
+   		  <li class="menu-list-parent "><a href="/ic/" class="menu-list-link">🧪 IC</a>
+		  	  <ul class="menu-list-child-list ">
+		  		<li class="menu-list-item "><a href="/ic/" class="menu-list-link">Lab Procedure</a>
+		  		<li class="menu-list-item "><a href="/ic/instructor-info/" class="menu-list-link">Instructor Info</a>
+		  	  </ul>
+              	  	  <li class="menu-list-parent "><a href="/icpms/" class="menu-list-link">🧪 ICP-MS</a>
+		  	  <ul class="menu-list-child-list ">
+		  		<li class="menu-list-item "><a href="/icpms/" class="menu-list-link">Lab Procedure</a>
+		  		<li class="menu-list-item "><a href="/icpms/instructor-info/" class="menu-list-link">Instructor Info</a>
+		  	  </ul>
+   		  <!-- <li class="menu-list-parent {{ispage sem/*}}active{{end}}"><a href="/sem/" class="menu-list-link">🧪 SEM</a> -->
+		  <!-- 	  <ul class="menu-list-child-list "> -->
+		  <!-- 		<li class="menu-list-item {{ispage sem/index.html}}active{{end}}"><a href="/sem/" class="menu-list-link">Lab Procedure</a> -->
+		  <!-- 		<li class="menu-list-item {{ispage ic/instructor-info}}active{{end}}"><a href="/sem/instructor-info/" class="menu-list-link">Instructor Info</a> -->
+		  <!-- 	  </ul> -->
+
+          <!-- Project -->
+		  <li class="menu-list-parent "><a href="/project/" class="menu-list-link">🥼 Project</a>
+			  <!-- <ul class="menu-list-child-list "> -->
+			  <!-- 	<li class="menu-list-item {{ispage project/nitrate.html}}active{{end}}"><a href="/project/nitrate/" class="menu-list-link">Nitrate</a> -->
+			  <!-- 	<li class="menu-list-item {{ispage project/phosphate}}active{{end}}"><a href="/project/phosphate/" class="menu-list-link">Phosphate</a> -->
+			  <!-- </ul> -->
+      </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="main-content-wrap"> <!-- closed in foot.html -->
+      <div class="main-content" id="focus" tabindex="-1" style="outline:0;">    <!-- closed in foot.html -->
+        <div class="main-header">
+          <a name="pagetop"></a>
+		  <a id="github" href="https://github.com/chem330/chem330.github.io">GitHub Repository</a>
+        </div>
+
+<!-- Content appended here (in class franklin-content) -->
+<div class="franklin-content">
+<h1 id="lab_schedule"><a href="#lab_schedule" class="header-anchor">Lab Schedule</a></h1>
+<p>Lab assignments are due at 23:59:59 on Sunday unless otherwise specified. The best place to keep track of due dates is Canvas.  In general, the lab is highly flexible and it is up to you and your lab partner&#40;s&#41; to plan and making continual progress.</p>
+<p><em>This schedule is subject to change as needed.</em></p>
+<table><tr><th align="center">Week</th><th align="left">Date</th><th align="left">Lab</th></tr><tr><td align="center">1</td><td align="left">Aug 19</td><td align="left">Intro and Lab Safety</td></tr><tr><td align="center">2</td><td align="left">Aug 26</td><td align="left">Error Analysis</td></tr><tr><td align="center">3</td><td align="left">Sep 2</td><td align="left">Hydrochemical Facies &#40;Remote - no meeting&#41;</td></tr><tr><td align="center">4</td><td align="left">Sep 9</td><td align="left">Sample Collection, Preparation, and Storage</td></tr><tr><td align="center">5</td><td align="left">Sep 16</td><td align="left">Project - Site Selection, Analysis Plan, Collect Trial Sample</td></tr><tr><td align="center">6</td><td align="left">Sep 23</td><td align="left">Project - Begin Alkalinity Titration</td></tr><tr><td align="center">7</td><td align="left">Sep 30</td><td align="left">Project</td></tr><tr><td align="center">8</td><td align="left">Oct 7</td><td align="left">Project - Finish Alkalinity Titration - Draft Intro Complete</td></tr><tr><td align="center">9</td><td align="left">Oct 14</td><td align="left"><em>Fall Break - No Lab</em></td></tr><tr><td align="center">10</td><td align="left">Oct 21</td><td align="left">Project - Begin IC and ICP-MS</td></tr><tr><td align="center">11</td><td align="left">Oct 28</td><td align="left">Project</td></tr><tr><td align="center">12</td><td align="left">Nov 4</td><td align="left">Project - Draft Methods Complete</td></tr><tr><td align="center">13</td><td align="left">Nov 11</td><td align="left">Project</td></tr><tr><td align="center">13</td><td align="left">Nov 18</td><td align="left">Project - Finish IC and ICP-MS - Draft Report Complete</td></tr><tr><td align="center">15</td><td align="left">Nov 25</td><td align="left">Project - Collect Final Sample</td></tr><tr><td align="center">16</td><td align="left">Dec 2</td><td align="left">Project - Final Analyses and Final Edits to Report</td></tr><tr><td align="center">16</td><td align="left">Dec 9</td><td align="left"><em>Final Exams - No Lab</em></td></tr></table>
+<p>During the project lab, students will complete the water analyses listed here independently / in groups. Students must learn to use chemical instrumentation available in WCU&#39;s instrumentation facility and use it to accurately analyze their samples.</p>
+<p><strong>Analysis methods for 2024:</strong></p>
+<ol>
+<li><p>ICP-MS &#40;major cations and trace metals&#41;</p>
+</li>
+<li><p>Ion Chromatography &#40;major anions&#41;</p>
+</li>
+<li><p>Alkalinity/ANC Titration</p>
+</li>
+</ol>
+<p>Other analyses are possible if your group is interested – just ask your instructor.</p>
+<p>Students should analyze their sample with these methods and complete a charge balance and analysis of geochemical facies.  You will very likely fail your first several tries at analyzing your samples – this is why so much time is devoted to the project&#33;  The goal is to turn in results that are both highly accurate and very precise at the end of the semester, and you should have enough data to strongly indicate high levels of precision and accuracy.  Again, you likely will not meet this bar after your first try at analyzing your samples, so anticipate redoing it until you get it right&#33;</p>
+<div class="page-foot">
+  <div class="copyright">
+    &copy; Al Fischer. Last modified: August 17, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div> <!-- end of class main-content -->
+    </div> <!-- end of class main-content-wrap -->
+    </div> <!-- end of class page-wrap-->
+    
+  </body>
+</html>
