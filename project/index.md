@@ -8,6 +8,12 @@ Class Project
 
 \toc
 
+**Enter your project preferences here:**
+
+~~~
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe9NjLKjI7boX1IcIsHFJ_O45S6CrB3hztLxY7IHALvFFJkfQ/viewform?embedded=true" width="640" height="698" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+~~~
+
 The goal of the lab project this semester is to provide present a precise, accurate, thorough analysis of local water bodies. As you work through each lab be vigilant about avoiding contamination, and **use appropriate quality control measures to check your accuracy and precision as you work**.  You should get an accurate answer before turning in your final report; if your results are not accurate or show unacceptably low precision you should repeat the analysis again to obtain high-quality data.
 
 *One intent for this project is to help you become self-sufficient in the lab and help you learn how to know that your data is likely to be accurate.  As such, there will be little day-to-day direction of your activities from your instructor, and it will be up to you and your lab partner to plan your time and implement appropriate practices in your lab work.*
